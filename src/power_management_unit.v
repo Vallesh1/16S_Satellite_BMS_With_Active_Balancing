@@ -13,6 +13,5 @@ module bms_power_mgmt (
         else
             is_sleeping <= (!comm_active && !fault_condition);
     end
-    // Clock Gating Logic
     assign logic_clk_en = clk & !is_sleeping;
 endmodule

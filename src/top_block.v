@@ -1,3 +1,6 @@
+// =========================================================
+// TOP MODULE: 16s SATELLITE BMS (ACTIVE TRANSFER EDITION)
+// =========================================================
 module bms_satellite_top (
     input  wire                   clk,        
     input  wire                   rst_n,      
@@ -11,8 +14,10 @@ module bms_satellite_top (
     input  wire                   iso_rx,     
     output wire                   iso_tx,     
 
-    // Hardware Outputs
-    output wire [15:0]            bal_sw,     
+    // Hardware Outputs (UPDATED FOR ACTIVE BALANCING)
+    output wire [15:0]            active_tx_sw, // Connects high cell to transfer bus
+    output wire [15:0]            active_rx_sw, // Connects low cell to transfer bus
+    output wire [15:0]            passive_sw,   // Connects cells to heat dissipation resistors
     output wire                   fault_trip  
 );
 
@@ -40,12 +45,14 @@ module bms_satellite_top (
         .soc_out    (current_soc)
     );
 
-    // Instantiate Block 3: Balancer
+    // Instantiate Block 3: TRUE Active Balancer
     bms_active_balancer u_abal (
-        .clk        (clk_gated),
-        .rst_n      (rst_n),
-        .cell_v     (cell_v),
-        .bal_sw     (bal_sw)
+        .clk          (clk_gated),
+        .rst_n        (rst_n),
+        .cell_v       (cell_v),
+        .active_tx_sw (active_tx_sw),
+        .active_rx_sw (active_rx_sw),
+        .passive_sw   (passive_sw)
     );
 
     // Instantiate Block 4: Power Strategist

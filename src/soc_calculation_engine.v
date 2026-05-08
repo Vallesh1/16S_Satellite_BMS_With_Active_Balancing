@@ -10,8 +10,8 @@ module bms_soc_engine (
         if (!rst_n)
             coulomb_acc <= 32'h0000_8000; // Init at 50%
         else
-            // Sign-extend current and add to accumulator
-            coulomb_acc <= coulomb_acc + {{16{pack_i[15]}}, pack_i};
+            coulomb_acc <= coulomb_acc + {{16{pack_i[15]}}, pack_i}; //pack[15] is 0 means battery is charging else discharging
+            //output of above like is copied to all the cells if pack[15] is 1 then coloum_acc = 1111111111111111
     end
     assign soc_out = coulomb_acc[31:16];
 endmodule
