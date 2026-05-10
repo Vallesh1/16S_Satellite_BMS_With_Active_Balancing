@@ -1,6 +1,13 @@
 // =========================================================
 // TOP MODULE: 16s SATELLITE BMS (ACTIVE TRANSFER EDITION)
 // =========================================================
+
+`include "active_balancer_fsm.v"
+`include "digital_fault_processor.v"
+`include "power_management_unit.v"
+`include "serial_communication_unit.v"
+`include "soc_calculation_engine.v"
+
 module bms_satellite_top (
     input  wire                   clk,        
     input  wire                   rst_n,      
