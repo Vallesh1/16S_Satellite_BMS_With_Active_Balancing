@@ -26,7 +26,7 @@ module bms_satellite_top (
     wire [3:0]  fault_code;
     wire        clk_gated;
     wire        comm_active;
-    wire        comm_active = ~iso_rx;
+    assign        comm_active = ~iso_rx;
 
     // Instantiate Block 1: Safety Guard
     bms_fault_processor u_dfp (
