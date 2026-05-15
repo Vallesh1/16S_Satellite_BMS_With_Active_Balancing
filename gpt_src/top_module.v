@@ -4,6 +4,15 @@
 //   Complete Satellite BMS Integration Top Module
 // ============================================================
 
+`include"active_balancer_unit.v"
+`include"fault_processor_unit.v"
+`include"power_management_unit.v"
+`include"soc_engine.v"
+`include"uart_tx.v"
+`include"tx_scheduler.v"
+
+
+
 module bms_satellite_top (
 
     input  wire                   clk,
