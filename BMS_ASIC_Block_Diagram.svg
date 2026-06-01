@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 1120" width="1280" height="1120"
+     font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+
+  <!-- ══════════════════════════════════════════════════════════════
+       DEFS — Arrowheads (all auto-orient, same geometry)
+  ══════════════════════════════════════════════════════════════ -->
+  <defs>
+    <marker id="ah-gray"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#546E7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-blue"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#1565C0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-red"    viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#B71C1C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-green"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#1B5E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#4527A0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-amber"  viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#E65100" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="ah-teal"   viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 2 L8.5 5 L1 8" fill="none" stroke="#00695C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PAGE BACKGROUND
+  ══════════════════════════════════════════════════════════════ -->
+  <rect width="1280" height="1120" fill="#EAECEF"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       TITLE BAR   h=58
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="0" y="0" width="1280" height="58" fill="#0D1B6E"/>
+  <text x="26" y="20" font-size="9.5" fill="#90CAF9" font-weight="400" letter-spacing="1.8">VLSI DESIGN  ·  BATTERY MANAGEMENT SYSTEM  ·  ASIC ARCHITECTURE</text>
+  <text x="26" y="44" font-size="17" fill="#FFFFFF" font-weight="700" letter-spacing="0.3">Modular 16S Satellite BMS ASIC — System Architecture Block Diagram</text>
+  <text x="1254" y="22" font-size="9" fill="#90CAF9" text-anchor="end">Rev 1.0  ·  ISO 26262 / AEC-Q100</text>
+  <text x="1254" y="38" font-size="9" fill="#90CAF9" text-anchor="end">Nano Banana Architecture Method</text>
+  <text x="1254" y="52" font-size="9" fill="#7986CB" text-anchor="end">Backend VLSI — Floor-Plan Reference</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       ASIC DIE BOUNDARY   x=64 y=170 w=980 h=772
+       (contains AFE-I, DFP, HAE-SOC, A-BAL, D-COMM, P-MGMT)
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="64" y="170" width="980" height="772" rx="14"
+        fill="#E4E8EE" stroke="#455A64" stroke-width="1.4" stroke-dasharray="10 5"/>
+  <text x="82" y="163" font-size="9" fill="#455A64" font-weight="700" letter-spacing="1.2">ASIC DIE BOUNDARY</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       BATTERY STACK
+       Box: x=290  y=68  w=548  h=76
+       Header row: y=68..92  Content area: y=92..144
+  ══════════════════════════════════════════════════════════════ -->
+  <!-- outer shell -->
+  <rect x="290" y="68" width="548" height="80" rx="10" fill="#263238" stroke="#37474F" stroke-width="1.5"/>
+  <!-- 16 cell rects, evenly spaced inside top part of box -->
+  <!-- cell w=24, gap=10, total=16*24+15*10=534, left pad=7 -->
+  <g fill="#455A64" stroke="#607D8B" stroke-width="0.6">
+    <rect x="297" y="74" width="24" height="20" rx="2"/>
+    <rect x="331" y="74" width="24" height="20" rx="2"/>
+    <rect x="365" y="74" width="24" height="20" rx="2"/>
+    <rect x="399" y="74" width="24" height="20" rx="2"/>
+    <rect x="433" y="74" width="24" height="20" rx="2"/>
+    <rect x="467" y="74" width="24" height="20" rx="2"/>
+    <rect x="501" y="74" width="24" height="20" rx="2"/>
+    <rect x="535" y="74" width="24" height="20" rx="2"/>
+    <rect x="569" y="74" width="24" height="20" rx="2"/>
+    <rect x="603" y="74" width="24" height="20" rx="2"/>
+    <rect x="637" y="74" width="24" height="20" rx="2"/>
+    <rect x="671" y="74" width="24" height="20" rx="2"/>
+    <rect x="705" y="74" width="24" height="20" rx="2"/>
+    <rect x="739" y="74" width="24" height="20" rx="2"/>
+    <rect x="773" y="74" width="24" height="20" rx="2"/>
+    <rect x="807" y="74" width="24" height="20" rx="2"/>
+  </g>
+  <!-- cell labels V1 and V16 -->
+  <text x="297" y="107" font-size="8" fill="#4CAF50">V1</text>
+  <text x="807" y="107" font-size="8" fill="#4CAF50">V16</text>
+  <!-- connector line top of cells -->
+  <line x1="309" y1="94" x2="831" y2="94" stroke="#4CAF50" stroke-width="0.7" stroke-dasharray="2 2"/>
+  <!-- title text — y computed: box bottom = 148, text area starts y=96, line-h=15 -->
+  <text x="564" y="112" text-anchor="middle" font-size="11" fill="#B0BEC5" font-weight="700" letter-spacing="1">BATTERY STACK — 16 CELLS IN SERIES (V1 – V16)</text>
+  <text x="564" y="130" text-anchor="middle" font-size="9"   fill="#78909C">Li-Ion / LiFePO4  ·  17 sense wires (one tap per cell + GND reference)</text>
+  <text x="564" y="144" text-anchor="middle" font-size="8.5" fill="#607D8B" font-style="italic">Max cell voltage 4.25 V  ·  Stack up to 68 V (16S)</text>
+
+  <!-- Sense-wire bus arrow -->
+  <line x1="564" y1="148" x2="564" y2="176" stroke="#546E7A" stroke-width="2" marker-end="url(#ah-gray)"/>
+  <rect x="490" y="152" width="148" height="16" rx="4" fill="#CFD8DC" stroke="#90A4AE" stroke-width="0.8"/>
+  <text x="564" y="164" text-anchor="middle" font-size="9" fill="#37474F" font-weight="600">17 sense wires (analog bus)</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       AFE-I — ANALOG FRONT-END
+       Box: x=172  y=176  w=784  h=110
+       Header: y=176..206   Content: y=206..286
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="172" y="176" width="784" height="110" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <!-- header fill -->
+  <rect x="172" y="176" width="784" height="30" rx="10" fill="#1565C0"/>
+  <rect x="172" y="194" width="784" height="12" fill="#1565C0"/>
+  <!-- header text: vertically centred in 176..206 => mid=191 -->
+  <text x="564" y="196" text-anchor="middle" font-size="12" fill="#FFFFFF" font-weight="700" letter-spacing="1">AFE-I — ANALOG FRONT-END</text>
+
+  <!-- Left description group — x centre = 310, content y=206..286, pad 10 -->
+  <text x="310" y="224" text-anchor="middle" font-size="10"  fill="#0D47A1" font-weight="700">[ The Eyes ]</text>
+  <text x="310" y="242" text-anchor="middle" font-size="9.5" fill="#1A237E">16-ch analog multiplexer</text>
+  <text x="310" y="258" text-anchor="middle" font-size="9.5" fill="#37474F">16-bit delta-sigma ADC core</text>
+  <text x="310" y="274" text-anchor="middle" font-size="9"   fill="#1565C0" font-style="italic">Quiet analog — near top pads</text>
+
+  <!-- Sub-block: Voltage ADC    x=500 y=210 w=148 h=66 -->
+  <rect x="500" y="210" width="148" height="66" rx="6" fill="#BBDEFB" stroke="#1565C0" stroke-width="1"/>
+  <rect x="500" y="210" width="148" height="20" rx="6" fill="#1976D2"/>
+  <rect x="500" y="222" width="148" height="8"  fill="#1976D2"/>
+  <text x="574" y="224" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Voltage ADC</text>
+  <text x="574" y="244" text-anchor="middle" font-size="9" fill="#0D47A1">16-bit ΔΣ converter</text>
+  <text x="574" y="260" text-anchor="middle" font-size="9" fill="#37474F">±1 mV accuracy</text>
+  <text x="574" y="272" text-anchor="middle" font-size="8.5" fill="#546E7A">Oversampling ratio: 256</text>
+
+  <!-- Sub-block: Temp ADC       x=660 y=210 w=148 h=66 -->
+  <rect x="660" y="210" width="148" height="66" rx="6" fill="#BBDEFB" stroke="#1565C0" stroke-width="1"/>
+  <rect x="660" y="210" width="148" height="20" rx="6" fill="#1976D2"/>
+  <rect x="660" y="222" width="148" height="8"  fill="#1976D2"/>
+  <text x="734" y="224" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Temp ADC</text>
+  <text x="734" y="244" text-anchor="middle" font-size="9" fill="#0D47A1">NTC / PTC interface</text>
+  <text x="734" y="260" text-anchor="middle" font-size="9" fill="#37474F">±0.5 °C resolution</text>
+  <text x="734" y="272" text-anchor="middle" font-size="8.5" fill="#546E7A">Range: −40 °C to 85 °C</text>
+
+  <!-- ──────────────────────────────────────────────────────────
+       DATA BUSES: AFE-I (bottom y=286) → DFP / HAE-SOC / A-BAL
+  ────────────────────────────────────────────────────────── -->
+  <!-- → DFP (centre x=220) -->
+  <path d="M310 286 Q310 310 220 330" fill="none" stroke="#1565C0" stroke-width="1.8" marker-end="url(#ah-blue)"/>
+  <rect x="238" y="298" width="52" height="16" rx="4" fill="#E3F2FD" stroke="#1565C0" stroke-width="0.8"/>
+  <text x="264" y="310" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="700">&lt;Data&gt;</text>
+
+  <!-- → HAE-SOC (centre x=564) -->
+  <line x1="564" y1="286" x2="564" y2="330" stroke="#1565C0" stroke-width="1.8" marker-end="url(#ah-blue)"/>
+  <rect x="538" y="298" width="52" height="16" rx="4" fill="#E3F2FD" stroke="#1565C0" stroke-width="0.8"/>
+  <text x="564" y="310" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="700">&lt;Data&gt;</text>
+
+  <!-- → A-BAL (centre x=908) -->
+  <path d="M820 286 Q820 310 908 330" fill="none" stroke="#1565C0" stroke-width="1.8" marker-end="url(#ah-blue)"/>
+  <rect x="836" y="298" width="52" height="16" rx="4" fill="#E3F2FD" stroke="#1565C0" stroke-width="0.8"/>
+  <text x="862" y="310" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="700">&lt;Data&gt;</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       DFP — DIGITAL FAULT PROCESSOR
+       Box: x=80  y=330  w=280  h=148
+       Header: y=330..360   Content: y=360..478
+       Centre-x = 220
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="80" y="330" width="280" height="148" rx="10" fill="#FFEBEE" stroke="#B71C1C" stroke-width="2"/>
+  <rect x="80" y="330" width="280" height="30" rx="10" fill="#B71C1C"/>
+  <rect x="80" y="348" width="280" height="12" fill="#B71C1C"/>
+  <text x="220" y="350" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="700" letter-spacing="0.5">DFP — DIGITAL FAULT PROC.</text>
+  <!-- content: top pad 12 from header bottom (360), line-h 18 -->
+  <text x="220" y="378" text-anchor="middle" font-size="10"  fill="#B71C1C" font-weight="700">[ The Guard ]</text>
+  <text x="220" y="396" text-anchor="middle" font-size="9.5" fill="#37474F">OVP · UVP · OCP · OTP</text>
+  <text x="220" y="414" text-anchor="middle" font-size="9.5" fill="#37474F">Comparator logic · threshold regs</text>
+  <text x="220" y="432" text-anchor="middle" font-size="9.5" fill="#37474F">Zero-latency fault detection</text>
+  <text x="220" y="450" text-anchor="middle" font-size="9"   fill="#B71C1C" font-style="italic">OVP trip at 4.25 V per cell</text>
+  <text x="220" y="466" text-anchor="middle" font-size="9"   fill="#546E7A" font-style="italic">Placed near Trip pad on die</text>
+  <!-- bottom of box = 478, last text at 466, clearance = 12 ✓ -->
+
+  <!-- ══════════════════════════════════════════════════════════════
+       HAE-SOC — MATH ENGINE
+       Box: x=424  y=330  w=280  h=148
+       Centre-x = 564
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="424" y="330" width="280" height="148" rx="10" fill="#E8F5E9" stroke="#1B5E20" stroke-width="2"/>
+  <rect x="424" y="330" width="280" height="30" rx="10" fill="#1B5E20"/>
+  <rect x="424" y="348" width="280" height="12" fill="#1B5E20"/>
+  <text x="564" y="350" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="700" letter-spacing="0.5">HAE-SOC — MATH ENGINE</text>
+  <text x="564" y="378" text-anchor="middle" font-size="10"  fill="#1B5E20" font-weight="700">[ The Genius ]</text>
+  <text x="564" y="396" text-anchor="middle" font-size="9.5" fill="#37474F">Coulomb counting · EKF filter</text>
+  <text x="564" y="414" text-anchor="middle" font-size="9.5" fill="#37474F">SoC · SoH · SoP estimation</text>
+  <text x="564" y="432" text-anchor="middle" font-size="9.5" fill="#37474F">HW multiply-accumulate · LUT</text>
+  <text x="564" y="450" text-anchor="middle" font-size="9"   fill="#1B5E20" font-style="italic">RTL: Verilog HAE-SOC engine</text>
+  <text x="564" y="466" text-anchor="middle" font-size="9"   fill="#546E7A" font-style="italic">Fixed-pt arithmetic · 32-bit</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       A-BAL — ACTIVE BALANCER
+       Box: x=768  y=330  w=280  h=148
+       Centre-x = 908
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="768" y="330" width="280" height="148" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <rect x="768" y="330" width="280" height="30" rx="10" fill="#E65100"/>
+  <rect x="768" y="348" width="280" height="12" fill="#E65100"/>
+  <text x="908" y="350" text-anchor="middle" font-size="11" fill="#FFFFFF" font-weight="700" letter-spacing="0.5">A-BAL — ACTIVE BALANCER</text>
+  <text x="908" y="378" text-anchor="middle" font-size="10"  fill="#E65100" font-weight="700">[ The Nurse ]</text>
+  <text x="908" y="396" text-anchor="middle" font-size="9.5" fill="#37474F">Cell delta-V detect · PWM gen.</text>
+  <text x="908" y="414" text-anchor="middle" font-size="9.5" fill="#37474F">Energy redistribution control</text>
+  <text x="908" y="432" text-anchor="middle" font-size="9.5" fill="#37474F">Flying-cap / inductor topology</text>
+  <text x="908" y="450" text-anchor="middle" font-size="9"   fill="#E65100" font-style="italic">Waits for SoX before balancing</text>
+  <text x="908" y="466" text-anchor="middle" font-size="9"   fill="#546E7A" font-style="italic">Balances to ±5 mV delta</text>
+
+  <!-- ──────────────────────────────────────────────────────────
+       NET: HAE-SOC → A-BAL  (SoX)   mid-y=404
+  ────────────────────────────────────────────────────────── -->
+  <line x1="704" y1="404" x2="768" y2="404" stroke="#1B5E20" stroke-width="2" marker-end="url(#ah-green)"/>
+  <rect x="716" y="390" width="44" height="16" rx="4" fill="#E8F5E9" stroke="#1B5E20" stroke-width="0.8"/>
+  <text x="738" y="402" text-anchor="middle" font-size="9" fill="#1B5E20" font-weight="700">SoX</text>
+
+  <!-- ──────────────────────────────────────────────────────────
+       TRIP NET — zero-latency left rail
+       From DFP left edge (x=80) at y=370, rail to y=636
+       then to EXT FAULT PAD (left)
+  ────────────────────────────────────────────────────────── -->
+  <line x1="80"  y1="376" x2="44"  y2="376" stroke="#B71C1C" stroke-width="2.4"/>
+  <line x1="44"  y1="376" x2="44"  y2="636" stroke="#B71C1C" stroke-width="2.4" marker-end="url(#ah-red)"/>
+  <!-- rotated label beside left rail -->
+  <text x="30" y="510" text-anchor="middle" font-size="8.5" fill="#B71C1C" font-weight="700"
+        transform="rotate(-90 30 510)">⚡  TRIP — ZERO LATENCY</text>
+
+  <!-- TRIP net — top horizontal to right EXT FAULT PAD -->
+  <line x1="360" y1="345" x2="1072" y2="345" stroke="#B71C1C" stroke-width="1.8" stroke-dasharray="8 4" marker-end="url(#ah-red)"/>
+  <rect x="590" y="330" width="90" height="17" rx="4" fill="#FFEBEE" stroke="#B71C1C" stroke-width="0.8"/>
+  <text x="635" y="342" text-anchor="middle" font-size="9" fill="#B71C1C" font-weight="700">⚡ TRIP net</text>
+
+  <!-- EXT FAULT PAD — right side
+       Box: x=1072 y=320 w=140 h=100
+       Header: y=320..350   Content: y=350..420
+       Centre-x=1142
+  -->
+  <rect x="1072" y="320" width="140" height="100" rx="8" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.8"/>
+  <rect x="1072" y="320" width="140" height="28" rx="8" fill="#B71C1C"/>
+  <rect x="1072" y="336" width="140" height="12" fill="#B71C1C"/>
+  <text x="1142" y="338" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">EXT FAULT PAD</text>
+  <text x="1142" y="363" text-anchor="middle" font-size="9.5" fill="#B71C1C" font-weight="600">Hard-trip signal</text>
+  <text x="1142" y="380" text-anchor="middle" font-size="9.5" fill="#37474F">FET gate → OFF</text>
+  <text x="1142" y="397" text-anchor="middle" font-size="9.5" fill="#37474F">Battery disconnect</text>
+  <text x="1142" y="413" text-anchor="middle" font-size="8.5" fill="#B71C1C" font-style="italic">(off-chip)</text>
+
+  <!-- EXT FAULT PAD — left side (from left rail)
+       Box: x=8 y=606 w=132 h=98
+       Header: y=606..634  Content: y=634..704
+       Centre-x=74
+  -->
+  <line x1="44" y1="636" x2="8"  y2="636" stroke="#B71C1C" stroke-width="2.4"/>
+  <line x1="8"  y1="606" x2="8"  y2="704" stroke="#B71C1C" stroke-width="1.4"/>
+  <line x1="8"  y1="606" x2="140" y2="606" stroke="#B71C1C" stroke-width="1.4"/>
+  <line x1="140" y1="606" x2="140" y2="704" stroke="#B71C1C" stroke-width="1.4"/>
+  <line x1="8"  y1="704" x2="140" y2="704" stroke="#B71C1C" stroke-width="1.4"/>
+  <rect x="8"   y="606" width="132" height="98" rx="8" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.8"/>
+  <rect x="8"   y="606" width="132" height="28" rx="8" fill="#B71C1C"/>
+  <rect x="8"   y="622" width="132" height="12" fill="#B71C1C"/>
+  <text x="74"  y="624" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">EXT FAULT PAD</text>
+  <text x="74"  y="649" text-anchor="middle" font-size="9.5" fill="#B71C1C" font-weight="600">Hard-trip signal</text>
+  <text x="74"  y="666" text-anchor="middle" font-size="9.5" fill="#37474F">FET gate → OFF</text>
+  <text x="74"  y="683" text-anchor="middle" font-size="9.5" fill="#37474F">Battery disconnect</text>
+  <text x="74"  y="696" text-anchor="middle" font-size="8.5" fill="#B71C1C" font-style="italic">(off-chip)</text>
+
+  <!-- ──────────────────────────────────────────────────────────
+       NET: DFP → D-COMM  (ALERT)
+       From DFP bottom y=478, route to D-COMM top y=546
+  ────────────────────────────────────────────────────────── -->
+  <path d="M220 478 L220 514 Q220 530 250 536 L350 546" fill="none" stroke="#4527A0" stroke-width="1.8" marker-end="url(#ah-purple)"/>
+  <rect x="186" y="502" width="60" height="16" rx="4" fill="#EDE7F6" stroke="#4527A0" stroke-width="0.8"/>
+  <text x="216" y="514" text-anchor="middle" font-size="9" fill="#4527A0" font-weight="700">ALERT</text>
+
+  <!-- NET: A-BAL → D-COMM  (BUSY)
+       From A-BAL bottom y=478, route to D-COMM top y=546
+  -->
+  <path d="M908 478 L908 514 Q908 530 880 536 L776 546" fill="none" stroke="#E65100" stroke-width="1.8" marker-end="url(#ah-amber)"/>
+  <rect x="882" y="502" width="52" height="16" rx="4" fill="#FFF3E0" stroke="#E65100" stroke-width="0.8"/>
+  <text x="908" y="514" text-anchor="middle" font-size="9" fill="#E65100" font-weight="700">BUSY</text>
+
+  <!-- NET: A-BAL → BAL_SWITCHES  (PWM) — right side rail
+       From A-BAL right x=1048, y=404 → down to BAL_SWITCHES top y=744
+  -->
+  <line x1="1048" y1="404" x2="1100" y2="404" stroke="#E65100" stroke-width="1.8"/>
+  <line x1="1100" y1="404" x2="1100" y2="744"  stroke="#E65100" stroke-width="1.8" marker-end="url(#ah-amber)"/>
+  <rect x="1068" y="560" width="44" height="16" rx="4" fill="#FFF3E0" stroke="#E65100" stroke-width="0.8"/>
+  <text x="1090" y="572" text-anchor="middle" font-size="9" fill="#E65100" font-weight="700">PWM</text>
+
+  <!-- BAL SWITCHES — external HW
+       Box: x=1064 y=744 w=176 h=120
+       Header: y=744..772  Content: y=772..864
+       Centre-x=1152
+  -->
+  <rect x="1064" y="744" width="176" height="120" rx="8" fill="#FFF8E1" stroke="#E65100" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <rect x="1064" y="744" width="176" height="28" rx="8" fill="#EF6C00"/>
+  <rect x="1064" y="760" width="176" height="12" fill="#EF6C00"/>
+  <text x="1152" y="762" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">BAL SWITCHES</text>
+  <text x="1152" y="788" text-anchor="middle" font-size="9.5" fill="#E65100" font-weight="600">MOSFET gate array</text>
+  <text x="1152" y="806" text-anchor="middle" font-size="9.5" fill="#37474F">Flying-cap topology</text>
+  <text x="1152" y="824" text-anchor="middle" font-size="9.5" fill="#37474F">Cell-to-cell transfer</text>
+  <text x="1152" y="842" text-anchor="middle" font-size="9"   fill="#37474F">Efficiency &gt; 92 %</text>
+  <text x="1152" y="857" text-anchor="middle" font-size="8.5" fill="#E65100" font-style="italic">External hardware</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       D-COMM — COMMUNICATION HUB
+       Box: x=172  y=546  w=784  h=162
+       Header: y=546..576   Content: y=576..708
+       Centre-x=564
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="172" y="546" width="784" height="162" rx="10" fill="#EDE7F6" stroke="#4527A0" stroke-width="2"/>
+  <rect x="172" y="546" width="784" height="30" rx="10" fill="#4527A0"/>
+  <rect x="172" y="564" width="784" height="12" fill="#4527A0"/>
+  <text x="564" y="566" text-anchor="middle" font-size="12" fill="#FFFFFF" font-weight="700" letter-spacing="0.8">D-COMM — COMMUNICATION HUB</text>
+  <!-- content: y=576..708, line-h=18, top pad=14 -->
+  <text x="564" y="592" text-anchor="middle" font-size="10"  fill="#4527A0" font-weight="700">[ The Radio · Noisy digital — placed far from AFE-I ]</text>
+  <text x="564" y="610" text-anchor="middle" font-size="9.5" fill="#37474F">CAN FD · SMBus · I²C · UART · ISO 26262 compliant</text>
+
+  <!-- 4 sub-blocks inside D-COMM, each w=176 h=60 -->
+  <!-- gap between sub-blocks: total inner w=784-24=760, 4 blocks*176=704, gaps=760-704=56, 3 gaps=18.7 ≈ 19 -->
+  <!-- x starts = 172+12=184, then 184+176+19=379, 379+176+19=574, 574+176+19=769 -->
+  <!-- Sub-block 1: CAN FD PHY -->
+  <rect x="184" y="622" width="174" height="74" rx="6" fill="#D1C4E9" stroke="#4527A0" stroke-width="0.9"/>
+  <rect x="184" y="622" width="174" height="22" rx="6" fill="#512DA8"/>
+  <rect x="184" y="636" width="174" height="8"  fill="#512DA8"/>
+  <text x="271" y="636" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">CAN FD PHY</text>
+  <text x="271" y="656" text-anchor="middle" font-size="9" fill="#311B92">ISO 11898-2</text>
+  <text x="271" y="672" text-anchor="middle" font-size="8.5" fill="#37474F">Multi-drop bus</text>
+  <text x="271" y="686" text-anchor="middle" font-size="8"   fill="#546E7A">Up to 5 Mbit/s</text>
+
+  <!-- Sub-block 2: SMBus / I²C -->
+  <rect x="370" y="622" width="174" height="74" rx="6" fill="#D1C4E9" stroke="#4527A0" stroke-width="0.9"/>
+  <rect x="370" y="622" width="174" height="22" rx="6" fill="#512DA8"/>
+  <rect x="370" y="636" width="174" height="8"  fill="#512DA8"/>
+  <text x="457" y="636" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">SMBus / I²C</text>
+  <text x="457" y="656" text-anchor="middle" font-size="9" fill="#311B92">100 kHz – 1 MHz</text>
+  <text x="457" y="672" text-anchor="middle" font-size="8.5" fill="#37474F">Peripheral control</text>
+  <text x="457" y="686" text-anchor="middle" font-size="8"   fill="#546E7A">7-bit addressing</text>
+
+  <!-- Sub-block 3: Msg Encoder -->
+  <rect x="556" y="622" width="174" height="74" rx="6" fill="#D1C4E9" stroke="#4527A0" stroke-width="0.9"/>
+  <rect x="556" y="622" width="174" height="22" rx="6" fill="#512DA8"/>
+  <rect x="556" y="636" width="174" height="8"  fill="#512DA8"/>
+  <text x="643" y="636" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Msg Encoder</text>
+  <text x="643" y="656" text-anchor="middle" font-size="9" fill="#311B92">Fault frame builder</text>
+  <text x="643" y="672" text-anchor="middle" font-size="8.5" fill="#37474F">Packet assembly</text>
+  <text x="643" y="686" text-anchor="middle" font-size="8"   fill="#546E7A">CRC-15 check</text>
+
+  <!-- Sub-block 4: Crypto / Auth -->
+  <rect x="742" y="622" width="202" height="74" rx="6" fill="#D1C4E9" stroke="#4527A0" stroke-width="0.9"/>
+  <rect x="742" y="622" width="202" height="22" rx="6" fill="#512DA8"/>
+  <rect x="742" y="636" width="202" height="8"  fill="#512DA8"/>
+  <text x="843" y="636" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Crypto / Auth</text>
+  <text x="843" y="656" text-anchor="middle" font-size="9" fill="#311B92">CMAC · AES-128</text>
+  <text x="843" y="672" text-anchor="middle" font-size="8.5" fill="#37474F">Secure messaging</text>
+  <text x="843" y="686" text-anchor="middle" font-size="8"   fill="#546E7A">Key store 256-bit</text>
+
+  <!-- NET: D-COMM → Vehicle ECU  (CAN FD out)
+       From D-COMM right x=956, y=627 → right to ECU x=1072
+  -->
+  <line x1="956" y1="627" x2="1072" y2="627" stroke="#4527A0" stroke-width="1.8" stroke-dasharray="6 3" marker-end="url(#ah-purple)"/>
+  <rect x="972" y="612" width="84" height="16" rx="4" fill="#EDE7F6" stroke="#4527A0" stroke-width="0.8"/>
+  <text x="1014" y="624" text-anchor="middle" font-size="9" fill="#4527A0" font-weight="700">CAN FD out</text>
+
+  <!-- Vehicle ECU — external
+       Box: x=1072 y=590 w=164 h=120
+       Header: y=590..618  Content: y=618..710
+       Centre-x=1154
+  -->
+  <rect x="1072" y="590" width="164" height="120" rx="8" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <rect x="1072" y="590" width="164" height="28" rx="8" fill="#6A1B9A"/>
+  <rect x="1072" y="606" width="164" height="12" fill="#6A1B9A"/>
+  <text x="1154" y="608" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">Vehicle ECU</text>
+  <text x="1154" y="636" text-anchor="middle" font-size="9.5" fill="#6A1B9A" font-weight="600">Main BMS host</text>
+  <text x="1154" y="654" text-anchor="middle" font-size="9.5" fill="#37474F">ISO 26262 ASIL-D</text>
+  <text x="1154" y="672" text-anchor="middle" font-size="9"   fill="#37474F">SoC · fault display</text>
+  <text x="1154" y="690" text-anchor="middle" font-size="8.5" fill="#6A1B9A" font-style="italic">External SoC</text>
+  <text x="1154" y="703" text-anchor="middle" font-size="8.5" fill="#546E7A" font-style="italic">(off-chip)</text>
+
+  <!-- NET: D-COMM → P-MGMT  (PWR CTRL)
+       From D-COMM bottom y=708, down to P-MGMT top y=756
+  -->
+  <line x1="564" y1="708" x2="564" y2="756" stroke="#00695C" stroke-width="1.8" marker-end="url(#ah-teal)"/>
+  <rect x="526" y="722" width="76" height="16" rx="4" fill="#E0F7FA" stroke="#00695C" stroke-width="0.8"/>
+  <text x="564" y="734" text-anchor="middle" font-size="9" fill="#00695C" font-weight="700">PWR CTRL</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       P-MGMT — POWER MANAGEMENT
+       Box: x=172  y=756  w=784  h=174
+       Header: y=756..786   Content: y=786..930
+       Centre-x=564
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="172" y="756" width="784" height="174" rx="10" fill="#E0F7FA" stroke="#00695C" stroke-width="2"/>
+  <rect x="172" y="756" width="784" height="30" rx="10" fill="#00695C"/>
+  <rect x="172" y="774" width="784" height="12" fill="#00695C"/>
+  <text x="564" y="776" text-anchor="middle" font-size="12" fill="#FFFFFF" font-weight="700" letter-spacing="0.8">P-MGMT — POWER MANAGEMENT</text>
+  <text x="564" y="800" text-anchor="middle" font-size="10"  fill="#00695C" font-weight="700">[ The Governor — die-wide power strategy ]</text>
+  <text x="564" y="818" text-anchor="middle" font-size="9.5" fill="#37474F">LDO regulators · sleep FSM · clock gating · wake-on-fault · POR / WDT</text>
+
+  <!-- 4 sub-blocks inside P-MGMT — same spacing logic -->
+  <!-- x: 184, 370, 556, 742  w: 174, 174, 174, 202  h=76 -->
+  <!-- Sub-block 1: Sleep FSM -->
+  <rect x="184" y="828" width="174" height="90" rx="6" fill="#B2EBF2" stroke="#00695C" stroke-width="0.9"/>
+  <rect x="184" y="828" width="174" height="22" rx="6" fill="#00796B"/>
+  <rect x="184" y="842" width="174" height="8"  fill="#00796B"/>
+  <text x="271" y="842" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Sleep FSM</text>
+  <text x="271" y="862" text-anchor="middle" font-size="9" fill="#004D40">IDLE / SLEEP / WAKE</text>
+  <text x="271" y="878" text-anchor="middle" font-size="8.5" fill="#37474F">State machine ctrl</text>
+  <text x="271" y="894" text-anchor="middle" font-size="8"   fill="#546E7A">μA quiescent target</text>
+  <text x="271" y="910" text-anchor="middle" font-size="8"   fill="#546E7A">BUSY-aware gating</text>
+
+  <!-- Sub-block 2: Clock Gating -->
+  <rect x="370" y="828" width="174" height="90" rx="6" fill="#B2EBF2" stroke="#00695C" stroke-width="0.9"/>
+  <rect x="370" y="828" width="174" height="22" rx="6" fill="#00796B"/>
+  <rect x="370" y="842" width="174" height="8"  fill="#00796B"/>
+  <text x="457" y="842" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">Clock Gating</text>
+  <text x="457" y="862" text-anchor="middle" font-size="9" fill="#004D40">Per-block enable</text>
+  <text x="457" y="878" text-anchor="middle" font-size="8.5" fill="#37474F">ICG cells on all paths</text>
+  <text x="457" y="894" text-anchor="middle" font-size="8"   fill="#546E7A">DFP always-on domain</text>
+  <text x="457" y="910" text-anchor="middle" font-size="8"   fill="#546E7A">Saves up to 40 % power</text>
+
+  <!-- Sub-block 3: LDO Regulators -->
+  <rect x="556" y="828" width="174" height="90" rx="6" fill="#B2EBF2" stroke="#00695C" stroke-width="0.9"/>
+  <rect x="556" y="828" width="174" height="22" rx="6" fill="#00796B"/>
+  <rect x="556" y="842" width="174" height="8"  fill="#00796B"/>
+  <text x="643" y="842" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">LDO Regulators</text>
+  <text x="643" y="862" text-anchor="middle" font-size="9" fill="#004D40">1.8 V / 3.3 V rails</text>
+  <text x="643" y="878" text-anchor="middle" font-size="8.5" fill="#37474F">PSRR &gt; 60 dB</text>
+  <text x="643" y="894" text-anchor="middle" font-size="8"   fill="#546E7A">Separate analog / digital</text>
+  <text x="643" y="910" text-anchor="middle" font-size="8"   fill="#546E7A">Soft-start on wake</text>
+
+  <!-- Sub-block 4: POR / WDT -->
+  <rect x="742" y="828" width="202" height="90" rx="6" fill="#B2EBF2" stroke="#00695C" stroke-width="0.9"/>
+  <rect x="742" y="828" width="202" height="22" rx="6" fill="#00796B"/>
+  <rect x="742" y="842" width="202" height="8"  fill="#00796B"/>
+  <text x="843" y="842" text-anchor="middle" font-size="9" fill="#FFFFFF" font-weight="700">POR / WDT</text>
+  <text x="843" y="862" text-anchor="middle" font-size="9" fill="#004D40">Power-on reset · watchdog</text>
+  <text x="843" y="878" text-anchor="middle" font-size="8.5" fill="#37474F">100 ms timeout default</text>
+  <text x="843" y="894" text-anchor="middle" font-size="8"   fill="#546E7A">Fault-safe reset path</text>
+  <text x="843" y="910" text-anchor="middle" font-size="8"   fill="#546E7A">Brown-out detect</text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LEGEND BOX
+       Box: x=64  y=960  w=1152  h=132
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="64"  y="960" width="1152" height="132" rx="8" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1.2"/>
+  <rect x="64"  y="960" width="1152" height="28"  rx="8" fill="#263238"/>
+  <rect x="64"  y="976" width="1152" height="12"  fill="#263238"/>
+  <text x="88"  y="978" font-size="10.5" fill="#ECEFF1" font-weight="700" letter-spacing="1">NET LEGEND — Signal Definitions &amp; Routing Intent</text>
+
+  <!-- Row 1: y baseline = 1006  (960+28+18) -->
+  <line x1="88"  y1="1006" x2="128" y2="1006" stroke="#1565C0" stroke-width="2"   marker-end="url(#ah-blue)"/>
+  <text x="136"  y="1010" font-size="9.5" fill="#263238" font-weight="600">&lt;Data&gt;</text>
+  <text x="190"  y="1010" font-size="9.5" fill="#546E7A">Digitized V/T samples: AFE-I → DFP, HAE-SOC, A-BAL</text>
+
+  <line x1="488"  y1="1006" x2="528" y2="1006" stroke="#B71C1C" stroke-width="2.2" marker-end="url(#ah-red)"/>
+  <text x="536"  y="1010" font-size="9.5" fill="#263238" font-weight="600">TRIP</text>
+  <text x="568"  y="1010" font-size="9.5" fill="#546E7A">Zero-latency hard-fault → EXT pad (bypasses all logic)</text>
+
+  <line x1="912"  y1="1006" x2="952" y2="1006" stroke="#4527A0" stroke-width="2"   marker-end="url(#ah-purple)"/>
+  <text x="960"  y="1010" font-size="9.5" fill="#263238" font-weight="600">ALERT</text>
+  <text x="1002" y="1010" font-size="9.5" fill="#546E7A">Fault code → D-COMM → Vehicle ECU</text>
+
+  <!-- Row 2: y=1030 -->
+  <line x1="88"  y1="1030" x2="128" y2="1030" stroke="#1B5E20" stroke-width="2"   marker-end="url(#ah-green)"/>
+  <text x="136"  y="1034" font-size="9.5" fill="#263238" font-weight="600">SoX</text>
+  <text x="166"  y="1034" font-size="9.5" fill="#546E7A">State of Charge / Health — HAE-SOC → A-BAL (energy-aware)</text>
+
+  <line x1="488"  y1="1030" x2="528" y2="1030" stroke="#E65100" stroke-width="2"   marker-end="url(#ah-amber)"/>
+  <text x="536"  y="1034" font-size="9.5" fill="#263238" font-weight="600">BUSY</text>
+  <text x="576"  y="1034" font-size="9.5" fill="#546E7A">Balancing active → P-MGMT (blocks sleep entry)</text>
+
+  <line x1="912"  y1="1030" x2="952" y2="1030" stroke="#E65100" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#ah-amber)"/>
+  <text x="960"  y="1034" font-size="9.5" fill="#263238" font-weight="600">PWM</text>
+  <text x="996"  y="1034" font-size="9.5" fill="#546E7A">Gate drive → BAL_SWITCHES MOSFET array</text>
+
+  <!-- Row 3: y=1054 -->
+  <line x1="88"  y1="1054" x2="128" y2="1054" stroke="#00695C" stroke-width="2"   marker-end="url(#ah-teal)"/>
+  <text x="136"  y="1058" font-size="9.5" fill="#263238" font-weight="600">PWR CTRL</text>
+  <text x="204"  y="1058" font-size="9.5" fill="#546E7A">Sleep / wake commands D-COMM → P-MGMT</text>
+
+  <line x1="488"  y1="1054" x2="528" y2="1054" stroke="#4527A0" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#ah-purple)"/>
+  <text x="536"  y="1058" font-size="9.5" fill="#263238" font-weight="600">CAN FD out</text>
+  <text x="608"  y="1058" font-size="9.5" fill="#546E7A">ISO 26262 vehicle bus → main ECU (external)</text>
+
+  <rect x="912" y="1046" width="48" height="16" rx="3" fill="none" stroke="#455A64" stroke-width="1.1" stroke-dasharray="5 3"/>
+  <text x="968"  y="1058" font-size="9.5" fill="#546E7A">Dashed border = external / off-die block</text>
+
+  <!-- Row 4: placement note — y=1082 -->
+  <text x="88" y="1082" font-size="8.5" fill="#90A4AE" font-style="italic">
+    Floor-plan: AFE-I top die (sense pads, quiet zone)  ·  D-COMM far from AFE-I (noisy digital)  ·  DFP near Trip pad  ·  P-MGMT centre-bottom
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════════ -->
+  <rect x="0" y="1102" width="1280" height="18" fill="#0D1B6E"/>
+  <text x="22" y="1114" font-size="8.5" fill="#90CAF9">Modular 16S Satellite BMS ASIC — Architecture Block Diagram · Nano Banana Method · Rev 1.0 · ISO 26262 / AEC-Q100</text>
+  <text x="1258" y="1114" font-size="8.5" fill="#90CAF9" text-anchor="end">Generated for VLSI Backend Engineering</text>
+
+</svg>
