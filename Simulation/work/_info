@@ -1,0 +1,457 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+!s11f vlog 2022.1_2 2022.04, Apr  2 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Simulation
+T_opt
+!s110 1782231082
+VcZmbSV8h14jc[[ni7hfNO1
+Z2 04 31 4 work tb_bms_system_3lmu_top_enhanced fast 0
+=1-208810b9d0a7-6a3ab02a-b1ed1-22f8ac
+R0
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2022.1_2;75
+R1
+T_opt1
+!s110 1782230881
+VimZKzKizzbbkZ@4d_D0ho3
+R2
+=1-208810b9d0a7-6a3aaf60-9098b-22c5ea
+R0
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt1
+R5
+R1
+vbms_active_balancer
+Z6 !s110 1782231316
+!i10b 1
+!s100 SAJ0jX2X<NXJ9:ah[lFzj3
+IC4<;`n<YlOlX0iPI9F_5f3
+R1
+Z7 w1782228156
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v
+!i122 99
+L0 1 127
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2022.1_2;75
+r1
+!s85 0
+31
+Z10 !s108 1782231316.000000
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vbms_adc_if
+R6
+!i10b 1
+!s100 ;[8dM8V?C4gi3YY_V2hbG0
+IRaB5Wbbo?;k9i]VMFUl7A1
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v
+!i122 100
+L0 1 52
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v|
+!i113 0
+R11
+R4
+vbms_can_status_if
+R6
+!i10b 1
+!s100 MjJ^1Lh<Dm4lXT75:n>YD2
+I0;<fT[FdAPlZhY9jU>ogN0
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v
+!i122 95
+Z12 L0 1 19
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v|
+!i113 0
+R11
+R4
+vbms_comm_hub
+R6
+!i10b 1
+!s100 8P1zQ`fmgO?Q7lF=d2kcB0
+IlSAD8<@La^>`3:jiPC^<n1
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v
+!i122 96
+L0 1 50
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v|
+!i113 0
+R11
+R4
+vbms_current_limit_supervisor
+Z13 !s110 1782231317
+!i10b 1
+!s100 ^iJLz_lc_K2^oOQE7cd_Q1
+IoEkmS]HbSUYW]nY[FB1h]2
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v
+!i122 109
+L0 1 57
+R8
+R9
+r1
+!s85 0
+31
+Z14 !s108 1782231317.000000
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v|
+!i113 0
+R11
+R4
+vbms_emi_guard
+R6
+!i10b 1
+!s100 9W<K8N8FCUac[[oYR4J]?1
+IaDG^L`We4_L:UjgzJ7j5R3
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v
+!i122 101
+L0 1 20
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v|
+!i113 0
+R11
+R4
+vbms_fault_logger
+R6
+!i10b 1
+!s100 4KSTD`hE5[3W:^Shmb98:0
+I=9hT67TFE:Nk_bY]6kTid0
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v
+!i122 102
+L0 1 28
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v|
+!i113 0
+R11
+R4
+vbms_fault_processor
+R6
+!i10b 1
+!s100 oXA`kO8U47TVD^fiHeKeE1
+IL8cCeaMiK><3U[NF@GKGD1
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v
+!i122 103
+L0 1 102
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v|
+!i113 0
+R11
+R4
+vbms_isolation_monitor
+R13
+!i10b 1
+!s100 >DeiI@fI?VP`_h6DSGlL^2
+IgPEGB79PLH14MeLFHcCho3
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v
+!i122 104
+L0 1 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v|
+!i113 0
+R11
+R4
+vbms_lmu_wrapper
+R13
+!i10b 1
+!s100 ^2]mDCmC;i?F:5DbRAL9F1
+IJGRBi<K`L3e4cjh4AlUCI1
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v
+!i122 105
+L0 1 59
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v|
+!i113 0
+R11
+R4
+vbms_master_control_unit_enhanced
+R13
+!i10b 1
+!s100 h5;U8fz5>=<chkEH3bEl00
+IegIDJjWViF^]FUhQW1U[M0
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v
+!i122 110
+L0 1 142
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v|
+!i113 0
+R11
+R4
+vbms_power_mgmt
+R13
+!i10b 1
+!s100 Zi`Gh9L@U_WF:DZ52@lUZ2
+ICH@mVBj8ST9zC`NfR2Wha0
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v
+!i122 106
+R12
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v|
+!i113 0
+R11
+R4
+vbms_satellite_top
+R13
+!i10b 1
+!s100 hENA2QV=Bk9;P>d5M^PLi3
+IEGB4V>HgYOjz@AgBZC:Pc0
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v
+!i122 107
+L0 1 170
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v|
+!i113 0
+R11
+R4
+vbms_soc_soh_engine
+R13
+!i10b 1
+!s100 b76G<_>5hf^^VNjH>IRGJ2
+IZeURYzVF[1eZfEGC90Fl_2
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v
+!i122 108
+L0 1 71
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v|
+!i113 0
+R11
+R4
+vbms_spi_master
+R13
+!i10b 1
+!s100 j;0nPZOeED<eANzNWUGK22
+I3>HZj7mzJd<oO5nfEeU780
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v
+!i122 111
+L0 1 94
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v|
+!i113 0
+R11
+R4
+vbms_spi_slave
+R6
+!i10b 1
+!s100 ^4fWmoM`EmU;LSF<VoG340
+I>2D^6QNkmDeT3K[2ZQJKP3
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v
+!i122 97
+L0 1 55
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v|
+!i113 0
+R11
+R4
+vbms_system_3lmu_top_enhanced
+R13
+!i10b 1
+!s100 Jg:7_MFn0mJV14ClOonSN2
+IR:30=BlKEgRbZ:>[CMVg20
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v
+!i122 112
+L0 1 105
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v|
+!i113 0
+R11
+R4
+vbms_uart_tx
+R6
+!i10b 1
+!s100 d6:3WkUSo[C@ahaV;FkPo0
+IKZ^SO@H5SklPN]ES?XY7a3
+R1
+R7
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v
+!i122 98
+L0 1 80
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v|
+!i113 0
+R11
+R4
+vtb_bms_system_3lmu_top_enhanced
+R13
+!i10b 1
+!s100 ObiKjH;9V094b`kmlRLoW0
+I<G1f0_;id1cd?FOVI?ad@3
+R1
+w1782230039
+8/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/tb/system_top_testbench.v
+F/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/tb/system_top_testbench.v
+!i122 113
+L0 3 224
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/tb/system_top_testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/tb/system_top_testbench.v|
+!i113 0
+R11
+R4

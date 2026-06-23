@@ -1,0 +1,152 @@
+# //  Questa Sim-64
+# //  Version 2022.1_2 linux_x86_64 Apr  2 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+project open /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Simulation/16_Satellite_BMS
+# Loading project 16_Satellite_BMS
+# Compile of bms_can_status_if.v was successful.
+# Compile of bms_comm_hub.v was successful.
+# Compile of bms_spi_slave.v was successful.
+# Compile of bms_uart_tx.v was successful.
+# Compile of bms_active_balancer.v was successful.
+# Compile of bms_adc_if.v was successful.
+# Compile of bms_emi_guard.v was successful.
+# Compile of bms_fault_logger.v was successful.
+# Compile of bms_fault_processor.v was successful.
+# Compile of bms_isolation_monitor.v was successful.
+# Compile of bms_lmu_wrapper.v was successful.
+# Compile of bms_power_mgmt.v was successful.
+# Compile of bms_satellite_top.v was successful.
+# Compile of bms_soc_soh_engine.v was successful.
+# Compile of bms_current_limit_supervisor.v was successful.
+# Compile of bms_master_control_unit_enhanced.v was successful.
+# Compile of bms_spi_master.v was successful.
+# Compile of bms_system_3lmu_top_enhanced.v was successful.
+# Compile of system_top_testbench.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -vopt work.tb_bms_system_3lmu_top_enhanced
+# vsim -vopt work.tb_bms_system_3lmu_top_enhanced 
+# Start time: 21:41:22 on Jun 23,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_bms_system_3lmu_top_enhanced(fast)
+# Compile of bms_can_status_if.v was successful.
+# Compile of bms_comm_hub.v was successful.
+# Compile of bms_spi_slave.v was successful.
+# Compile of bms_uart_tx.v was successful.
+# Compile of bms_active_balancer.v was successful.
+# Compile of bms_adc_if.v was successful.
+# Compile of bms_emi_guard.v was successful.
+# Compile of bms_fault_logger.v was successful.
+# Compile of bms_fault_processor.v was successful.
+# Compile of bms_isolation_monitor.v was successful.
+# Compile of bms_lmu_wrapper.v was successful.
+# Compile of bms_power_mgmt.v was successful.
+# Compile of bms_satellite_top.v was successful.
+# Compile of bms_soc_soh_engine.v was successful.
+# Compile of bms_current_limit_supervisor.v was successful.
+# Compile of bms_master_control_unit_enhanced.v was successful.
+# Compile of bms_spi_master.v was successful.
+# Compile of bms_system_3lmu_top_enhanced.v was successful.
+# Compile of system_top_testbench.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -vopt work.tb_bms_system_3lmu_top_enhanced -voptargs=+acc
+# End time: 21:42:15 on Jun 23,2026, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 4
+# vsim -vopt work.tb_bms_system_3lmu_top_enhanced -voptargs="+acc" 
+# Start time: 21:42:15 on Jun 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_bms_system_3lmu_top_enhanced(fast)
+# Loading work.bms_system_3lmu_top_enhanced(fast)
+# Loading work.bms_lmu_wrapper(fast)
+# Loading work.bms_satellite_top(fast)
+# Loading work.bms_adc_if(fast)
+# Loading work.bms_emi_guard(fast)
+# Loading work.bms_isolation_monitor(fast)
+# Loading work.bms_fault_processor(fast)
+# Loading work.bms_soc_soh_engine(fast)
+# Loading work.bms_active_balancer(fast)
+# Loading work.bms_power_mgmt(fast)
+# Loading work.bms_comm_hub(fast)
+# Loading work.bms_uart_tx(fast)
+# Loading work.bms_spi_slave(fast)
+# Loading work.bms_can_status_if(fast)
+# Loading work.bms_fault_logger(fast)
+# Loading work.bms_master_control_unit_enhanced(fast)
+# Loading work.bms_spi_master(fast)
+# Loading work.bms_current_limit_supervisor(fast)
+add wave -position insertpoint sim:/tb_bms_system_3lmu_top_enhanced/uut/*
+run
+# ==================================================
+#    BMS 3-LMU CORNER-CASE VERIFICATION STARTING    
+# ==================================================
+# 
+# [TIME: 40000] COMBO 1: GOLDEN RUN (Nominal Params)
+add wave -position insertpoint sim:/tb_bms_system_3lmu_top_enhanced/*
+# Can't move the Now cursor.
+run
+# Compile of bms_can_status_if.v was successful.
+# Compile of bms_comm_hub.v was successful.
+# Compile of bms_spi_slave.v was successful.
+# Compile of bms_uart_tx.v was successful.
+# Compile of bms_active_balancer.v was successful.
+# Compile of bms_adc_if.v was successful.
+# Compile of bms_emi_guard.v was successful.
+# Compile of bms_fault_logger.v was successful.
+# Compile of bms_fault_processor.v was successful.
+# Compile of bms_isolation_monitor.v was successful.
+# Compile of bms_lmu_wrapper.v was successful.
+# Compile of bms_power_mgmt.v was successful.
+# Compile of bms_satellite_top.v was successful.
+# Compile of bms_soc_soh_engine.v was successful.
+# Compile of bms_current_limit_supervisor.v was successful.
+# Compile of bms_master_control_unit_enhanced.v was successful.
+# Compile of bms_spi_master.v was successful.
+# Compile of bms_system_3lmu_top_enhanced.v was successful.
+# Compile of system_top_testbench.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -vopt -voptargs=+acc work.tb_bms_system_3lmu_top_enhanced
+# End time: 21:45:32 on Jun 23,2026, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 2
+# vsim -vopt -voptargs="+acc" work.tb_bms_system_3lmu_top_enhanced 
+# Start time: 21:45:32 on Jun 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_bms_system_3lmu_top_enhanced(fast)
+# Loading work.bms_system_3lmu_top_enhanced(fast)
+# Loading work.bms_lmu_wrapper(fast)
+# Loading work.bms_satellite_top(fast)
+# Loading work.bms_adc_if(fast)
+# Loading work.bms_emi_guard(fast)
+# Loading work.bms_isolation_monitor(fast)
+# Loading work.bms_fault_processor(fast)
+# Loading work.bms_soc_soh_engine(fast)
+# Loading work.bms_active_balancer(fast)
+# Loading work.bms_power_mgmt(fast)
+# Loading work.bms_comm_hub(fast)
+# Loading work.bms_uart_tx(fast)
+# Loading work.bms_spi_slave(fast)
+# Loading work.bms_can_status_if(fast)
+# Loading work.bms_fault_logger(fast)
+# Loading work.bms_master_control_unit_enhanced(fast)
+# Loading work.bms_spi_master(fast)
+# Loading work.bms_current_limit_supervisor(fast)
+add wave -position insertpoint sim:/tb_bms_system_3lmu_top_enhanced/uut/*
+run
+# ==================================================
+#    BMS 3-LMU CORNER-CASE VERIFICATION STARTING    
+# ==================================================
+# 
+# [TIME: 40000] COMBO 1: GOLDEN RUN (Nominal Params)
+#   -> Allowed Current: 300 A (Expected 300)
+#   -> Global Fault: 0 | Supervisor Code: 00
+# 
+# [TIME: 550000] COMBO 2: WORST CASE (OTP + Overcurrent + Iso Fault)
