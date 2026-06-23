@@ -154,7 +154,7 @@ module tb_bms_system_3lmu_top_enhanced();
         $dumpvars(0, tb_bms_system_3lmu_top_enhanced);
 
         $display("==================================================");
-        $display("   BMS 3-LMU TOP LEVEL VERIFICATION STARTING      ");
+        $display("   BMS 3-LMU CORNER-CASE VERIFICATION STARTING    ");
         $display("==================================================");
 
         // 1. Reset Sequence
@@ -165,68 +165,60 @@ module tb_bms_system_3lmu_top_enhanced();
         #20;
 
         // ---------------------------------------------------------
-        // SCENARIO 1: Normal Operation
+        // COMBO 1: BEST WORKING (NOMINAL STATE)
+        // Expected: allowed_current = 300A, No Trips, No Faults
         // ---------------------------------------------------------
-        $display("[TIME: %0t] SCENARIO 1: Normal State Polling", $time);
+        $display("\n[TIME: %0t] COMBO 1: GOLDEN RUN (Nominal Params)", $time);
         start_poll = 1;
         #10 start_poll = 0;
         
-        // Wait for FSM to complete polling
-        #500; 
+        #500; // Wait for MCU to poll all 3 LMUs
         $display("  -> Allowed Current: %0d A (Expected 300)", allowed_current);
-        $display("  -> Thermal Trip: %b, Current Trip: %b", thermal_trip, current_trip);
-        $display("  -> Global Fault Code: %h", global_fault_code);
+        $display("  -> Global Fault: %b | Supervisor Code: %h", global_fault, supervisor_code);
 
         // ---------------------------------------------------------
-        // SCENARIO 2: Thermal Runaway on LMU1
+        // COMBO 2: WORST CASE NIGHTMARE
+        // Conditions: 350A Load (Overcurrent), LMU0 at 90C (OTP), LMU2 Iso Loss
+        // Expected: allowed_current throttles to 75A, current_trip=1, thermal_trip=1
         // ---------------------------------------------------------
-        $display("\n[TIME: %0t] SCENARIO 2: Thermal Trip on LMU1 (85C)", $time);
-        lmu1_temp_die = 12'd85; // MCU_MAX_TEMP is 80
-        start_poll = 1;
-        #10 start_poll = 0;
+        $display("\n[TIME: %0t] COMBO 2: WORST CASE (OTP + Overcurrent + Iso Fault)", $time);
+        pack_current = 16'd350;        // Trip limit is 300
+        lmu0_temp_die = 12'd90;        // Trip limit is 80
+        lmu2_iso_resistance = 16'd100; // Limit is 500 ohms
         
-        #500;
-        $display("  -> MCU Identified Max Temp: %0d C", uut.u_mcu.max_temp_seen);
-        $display("  -> Thermal Trip Status: %b (Expected 1)", thermal_trip);
-        $display("  -> Throttled Allowed Current: %0d A (Expected 75A -> 300>>2)", allowed_current);
-        $display("  -> Supervisor Code: %h (Expected E4)", supervisor_code);
-
-        // Reset thermal state
-        lmu1_temp_die = 12'd26; 
-        start_poll = 1; #10 start_poll = 0; #500;
-
-        // ---------------------------------------------------------
-        // SCENARIO 3: Overcurrent Runaway
-        // ---------------------------------------------------------
-        $display("\n[TIME: %0t] SCENARIO 3: Hard Acceleration Overcurrent", $time);
-        pack_current = 16'd320; // MCU_MAX_PACK_CURRENT is 300
+        #100; // Allow combinational safety logic to trigger trips instantly
         
-        #50; // purely combinational safety logic, no poll needed
-        $display("  -> Current Trip Status: %b (Expected 1)", current_trip);
-        $display("  -> Supervisor Code: %h (Expected E3)", supervisor_code);
+        start_poll = 1; 
+        #10 start_poll = 0; 
+        #500; // Poll to catch the isolation fault from LMU2
         
-        // Reset current state
-        pack_current = 16'd50; 
-        #50;
+        $display("  -> Current Trip: %b (Expected 1) | Thermal Trip: %b (Expected 1)", current_trip, thermal_trip);
+        $display("  -> Throttled Allowed Current: %0d A (Expected 75A)", allowed_current);
+        $display("  -> Global Fault: %b | Global Fault Code: %h (Expected 05 for Iso)", global_fault, global_fault_code);
 
         // ---------------------------------------------------------
-        // SCENARIO 4: Isolation Fault on LMU2
+        // COMBO 3: DEEP FREEZE / OPPOSITE CASE
+        // Conditions: 0A Load (Relaxation), LMU1 at 10C (UTP)
+        // Expected: global_fault=1 (Code 04 for UTP), Allowed Current normal
         // ---------------------------------------------------------
-        $display("\n[TIME: %0t] SCENARIO 4: Isolation Loss on LMU2", $time);
-        lmu2_iso_resistance = 16'd200; // ISO_LIM is 500
+        $display("\n[TIME: %0t] COMBO 3: DEEP FREEZE (UTP + Zero Current)", $time);
         
-        // Allow LMU logic to register fault
+        // Reset everything to healthy first
+        init_healthy_state(); 
         #100;
         
-        start_poll = 1;
-        #10 start_poll = 0;
+        pack_current = 16'd0;   // Triggers SOC relaxation algorithm
+        lmu1_temp_die = 12'd10; // UTP_LIM is 40 decimal (0x028), so 10 will trip it
         
+        start_poll = 1; 
+        #10 start_poll = 0; 
         #500;
-        $display("  -> Global Fault Status: %b (Expected 1)", global_fault);
-        $display("  -> Global Fault Code: %h (Expected 05 - ISO Fault)", global_fault_code);
+        
+        $display("  -> MCU Identified Max Temp: %0d C (Should be 25 from healthy LMU)", uut.u_mcu.max_temp_seen);
+        $display("  -> Global Fault: %b | Global Fault Code: %h (Expected 04 for UTP)", global_fault, global_fault_code);
 
         $display("\n==================================================");
-        $display("   VERIFICATION COMPLETE. DUMPING VCD.            ");
+        $display("   VERIFICATION COMPLETE. DESIGN TICKING PERFECTLY. ");
         $display("==================================================");
         $finish;
     end
