@@ -28,8 +28,42 @@ set rtl_path "$rtl_path $iop/pr_macro/rtl"
 set rtl_path "$rtl_path $iop/srams/rtl"
 set_app_var search_path "$search_path $iop/include $rtl_path "
 
+######################################################################
+# BMS-SPECIFIC SYNTHESIS CONSTRAINTS
+# Target: bms_system_3lmu_top_enhanced
+######################################################################
+
+# 1. Main System Clock Definition (10ns = 100MHz)
+create_clock -name sys_clk -period 10.0 [get_ports clk]
+
+# 2. SPI Generated Clock
+# The bms_spi_master generates a divided clock. The synthesis tool must 
+# know this relationship to properly build the Clock Tree Synthesis (CTS).
+create_generated_clock -name spi_clk \
+    -source [get_ports clk] \
+    -divide_by 16 \
+    [get_pins u_mcu/u_spi_master/sclk_reg/Q]
+
+# 3. Clock Domain Crossings (CDC)
+# Prevents the timing engine from incorrectly optimizing false paths 
+# between the 100MHz system clock and the slower SPI comm domains.
+set_clock_groups -asynchronous -group {sys_clk} -group {spi_clk}
+
+# 4. Critical Safety Path Max Delays (Combinational Logic)
+# The current limit supervisor is pure combinational logic. We must force 
+# the synthesis tool to prioritize these paths with low-Vt standard cells 
+# so the hardware trips instantly during thermal runaway or overcurrent.
+set_max_delay -from [get_ports *temp_die*]   -to [get_ports allowed_current*] 5.0
+set_max_delay -from [get_ports pack_current*] -to [get_ports allowed_current*] 5.0
+
+# 5. External I/O Trace Delays (30% of clock period budget)
+set_input_delay  -clock sys_clk -max 3.0 [all_inputs]
+set_output_delay -clock sys_clk -max 3.0 [all_outputs]
+
+######################################################################
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # For a hierarchical flow, add the block-level results directories to the
   # For a hierarchical flow, add the block-level results directories to the
   # search path to find the block-level design files.
 
