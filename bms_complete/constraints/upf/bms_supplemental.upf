@@ -1,0 +1,102 @@
+# ==============================================================================
+# SUPPLEMENTAL UPF SPECIFICATION: Connections & Implementation Strategies
+# Standard: IEEE 1801 (UPF 2.1)
+# Description: Defines physical MTCMOS Header switches, Isolation Cell rules,
+#              and Level Shifter strategies for the switchable domains.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. POWER SWITCHES (MTCMOS Headers)
+# ------------------------------------------------------------------------------
+# Maps RTL logical 'sleep_mode' signals to physical Header Power Switches.
+
+# LMU 0 Power Switch Connection
+create_power_switch header_sw_lmu0 \
+    -domain PD_LMU0 \
+    -input_supply_port {vin VDD} \
+    -output_supply_port {vout VDD_LMU0_SW} \
+    -control_port {sleep_en u_lmu0/u_pwr/sleep_mode} \
+    -on_state {ON_STATE vin {!sleep_en}} \
+    -off_state {OFF_STATE {sleep_en}}
+
+# LMU 1 Power Switch Connection
+create_power_switch header_sw_lmu1 \
+    -domain PD_LMU1 \
+    -input_supply_port {vin VDD} \
+    -output_supply_port {vout VDD_LMU1_SW} \
+    -control_port {sleep_en u_lmu1/u_pwr/sleep_mode} \
+    -on_state {ON_STATE vin {!sleep_en}} \
+    -off_state {OFF_STATE {sleep_en}}
+
+# LMU 2 Power Switch Connection
+create_power_switch header_sw_lmu2 \
+    -domain PD_LMU2 \
+    -input_supply_port {vin VDD} \
+    -output_supply_port {vout VDD_LMU2_SW} \
+    -control_port {sleep_en u_lmu2/u_pwr/sleep_mode} \
+    -on_state {ON_STATE vin {!sleep_en}} \
+    -off_state {OFF_STATE {sleep_en}}
+
+# ------------------------------------------------------------------------------
+# 2. ISOLATION STRATEGIES
+# ------------------------------------------------------------------------------
+# Clamps outputs of sleeping LMUs to '0' to prevent 'X' (unknown) propagation 
+# into the active PD_CORE (MCU) domain.
+
+# LMU 0 Isolation Rules
+set_isolation iso_lmu0 \
+    -domain PD_LMU0 \
+    -isolation_power_net VDD \
+    -isolation_ground_net VSS \
+    -clamp_value 0 \
+    -applies_to outputs
+
+set_isolation_control iso_lmu0 \
+    -domain PD_LMU0 \
+    -isolation_signal u_lmu0/u_pwr/sleep_mode \
+    -isolation_sense high \
+    -location parent
+
+# LMU 1 Isolation Rules
+set_isolation iso_lmu1 \
+    -domain PD_LMU1 \
+    -isolation_power_net VDD \
+    -isolation_ground_net VSS \
+    -clamp_value 0 \
+    -applies_to outputs
+
+set_isolation_control iso_lmu1 \
+    -domain PD_LMU1 \
+    -isolation_signal u_lmu1/u_pwr/sleep_mode \
+    -isolation_sense high \
+    -location parent
+
+# LMU 2 Isolation Rules
+set_isolation iso_lmu2 \
+    -domain PD_LMU2 \
+    -isolation_power_net VDD \
+    -isolation_ground_net VSS \
+    -clamp_value 0 \
+    -applies_to outputs
+
+set_isolation_control iso_lmu2 \
+    -domain PD_LMU2 \
+    -isolation_signal u_lmu2/u_pwr/sleep_mode \
+    -isolation_sense high \
+    -location parent
+
+# ------------------------------------------------------------------------------
+# 3. LEVEL SHIFTER STRATEGIES
+# ------------------------------------------------------------------------------
+# Ensures robust voltage crossing. Even if nominally 1.2V, dynamic voltage 
+# drops (IR drop) between domains require level shifters for safety.
+
+set_level_shifter ls_lmu_to_core \
+    -domain PD_CORE \
+    -applies_to inputs \
+    -rule both \
+    -location self
+
+# ==============================================================================
+# END OF SUPPLEMENTAL UPF
+# ==============================================================================
