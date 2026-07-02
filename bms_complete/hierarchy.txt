@@ -1,0 +1,23 @@
+|   |--rtl
+│   │   ├── common
+│   │   │   ├── bms_can_status_if.v
+│   │   │   ├── bms_comm_hub.v
+│   │   │   ├── bms_spi_slave.v
+│   │   │   └── bms_uart_tx.v
+│   │   ├── lmu
+│   │   │   ├── bms_active_balancer.v
+│   │   │   ├── bms_adc_if.v
+│   │   │   ├── bms_emi_guard.v
+│   │   │   ├── bms_fault_logger.v
+│   │   │   ├── bms_fault_processor.v
+│   │   │   ├── bms_isolation_monitor.v
+│   │   │   ├── bms_lmu_wrapper.v
+│   │   │   ├── bms_power_mgmt.v
+│   │   │   ├── bms_satellite_top.v
+│   │   │   └── bms_soc_soh_engine.v
+│   │   ├── mcu
+│   │   │   ├── bms_current_limit_supervisor.v
+│   │   │   ├── bms_master_control_unit_enhanced.v
+│   │   │   └── bms_spi_master.v
+│   │   └── top
+│   │       └── bms_system_3lmu_top_enhanced.v
