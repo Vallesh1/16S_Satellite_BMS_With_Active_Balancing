@@ -1,3 +1,11 @@
+// ==============================================================================
+// MODULE: bms_soc_soh_engine
+// Target Technology: 14nm FinFET ASIC
+// Description: State of Charge (SOC) and State of Health (SOH) calculation.
+// Fixes Applied: Extracted 'cycle_loss' to a combinational wire to eliminate 
+//                VER-134 blocking/non-blocking synthesis conflicts.
+// ==============================================================================
+
 module bms_soc_soh_engine #(
     parameter [31:0] NOMINAL_CAPACITY = 32'd100000,
     parameter [15:0] OCV_FULL = 16'hCE66,
@@ -20,8 +28,14 @@ module bms_soc_soh_engine #(
     reg [15:0] ocv_soc;
     reg [31:0] soh_calc;
     reg [15:0] abs_pack_i;
-    reg [31:0] cycle_loss;
+    
+    // --- Purely Combinational Intermediate ---
+    // Moved out of the sequential block to prevent VER-134 mixing assignment errors
+    wire [31:0] cycle_loss = charge_cycles * CYCLE_AGING_STEP;
 
+    // --------------------------------------------------------------------------
+    // Sequential Logic (Datapath updates)
+    // --------------------------------------------------------------------------
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             coulomb_acc <= 32'sd214748364;
@@ -31,15 +45,17 @@ module bms_soc_soh_engine #(
             ocv_soc     <= 16'h8000;
             soh_calc    <= NOMINAL_CAPACITY;
             abs_pack_i  <= 16'd0;
-            cycle_loss  <= 32'd0;
         end else if (en) begin
+            // 1. Absolute Current Calculation
             if (pack_i[15])
                 abs_pack_i <= (~pack_i) + 16'd1;
             else
                 abs_pack_i <= pack_i;
 
+            // 2. Coulomb Counting (Integration)
             coulomb_acc <= coulomb_acc + {{16{pack_i[15]}}, pack_i};
 
+            // 3. Relaxation Timer (Deadband Tracking)
             if (abs_pack_i <= CURRENT_DEADBAND) begin
                 if (relax_cnt < RELAX_COUNT_MAX)
                     relax_cnt <= relax_cnt + 32'd1;
@@ -47,6 +63,7 @@ module bms_soc_soh_engine #(
                 relax_cnt <= 32'd0;
             end
 
+            // 4. Open Circuit Voltage (OCV) Mapping
             if (pack_v_avg <= OCV_EMPTY)
                 ocv_soc <= 16'd0;
             else if (pack_v_avg >= OCV_FULL)
@@ -54,17 +71,19 @@ module bms_soc_soh_engine #(
             else
                 ocv_soc <= ((pack_v_avg - OCV_EMPTY) * 16'hFFFF) / (OCV_FULL - OCV_EMPTY);
 
+            // 5. SOC Output Decision (Fuse OCV and Coulomb Counter)
             if (relax_cnt >= RELAX_COUNT_MAX)
-                soc_out <= (soc_out >> 1) + (ocv_soc >> 1);
+                soc_out <= (soc_out >> 1) + (ocv_soc >> 1); // Averaging
             else
                 soc_out <= coulomb_acc[30:15];
 
-            cycle_loss = charge_cycles * CYCLE_AGING_STEP;
+            // 6. SOH Degradation Math (Using the combinational cycle_loss wire)
             if (cycle_loss >= (NOMINAL_CAPACITY >> 1))
-                soh_calc <= (NOMINAL_CAPACITY >> 1);
+                soh_calc <= (NOMINAL_CAPACITY >> 1); // Cap maximum degradation to 50%
             else
                 soh_calc <= NOMINAL_CAPACITY - cycle_loss;
 
+            // Normalize SOH to 16-bit output
             soh_out <= (soh_calc * 16'hFFFF) / NOMINAL_CAPACITY;
         end
     end
