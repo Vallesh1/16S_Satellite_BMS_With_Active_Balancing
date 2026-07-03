@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -group in2out
+        -max_paths 1
+Design : bms_lmu_wrapper
+Version: T-2022.03-SP4
+Date   : Fri Jul  3 21:45:40 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+Wire Load Model Mode: top
+
+  Startpoint: spi_ss_n (input port clocked by sys_clk)
+  Endpoint: spi_miso (output port clocked by sys_clk)
+  Path Group: in2out
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    3.00       3.00 f    
+  spi_ss_n (in)                                           0.00       3.00 f    
+  u_lmu/spi_ss_n (bms_lmu_wrapper_bms_satellite_top_0)
+                                                          0.00       3.00 f    
+  u_lmu/u_comm/spi_ss_n (bms_lmu_wrapper_bms_comm_hub_0)
+                                                          0.00       3.00 f    
+  u_lmu/u_comm/u_spi/ss_n (bms_lmu_wrapper_bms_spi_slave_0)
+                                                          0.00       3.00 f    
+  u_lmu/u_comm/u_spi/U10/X (SAEDRVT14_INV_0P5)            0.01       3.01 r    0.60
+  u_lmu/u_comm/u_spi/U12/X (SAEDRVT14_OA221_U_0P5)        0.07       3.08 r    0.60
+  u_lmu/u_comm/u_spi/miso (bms_lmu_wrapper_bms_spi_slave_0)
+                                                          0.00       3.08 r    
+  u_lmu/u_comm/spi_miso (bms_lmu_wrapper_bms_comm_hub_0)
+                                                          0.00       3.08 r    
+  u_lmu/spi_miso (bms_lmu_wrapper_bms_satellite_top_0)
+                                                          0.00       3.08 r    
+  spi_miso (out)                                          0.00       3.08 r    
+  data arrival time                                                  3.08      
+
+  clock sys_clk (rise edge)                              10.00      10.00      
+  clock network delay (ideal)                             0.00      10.00      
+  clock uncertainty                                      -0.15       9.85      
+  output external delay                                  -3.00       6.85      
+  data required time                                                 6.85      
+  ------------------------------------------------------------------------------------
+  data required time                                                 6.85      
+  data arrival time                                                 -3.08      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        3.77      
+
+
+1

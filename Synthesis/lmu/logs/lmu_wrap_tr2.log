@@ -513,4 +513,1293 @@ Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper
 Error: Value for list '-from' must have 1 elements. (CMD-036)
 Error: Value for list '-to' must have 1 elements. (CMD-036)
 1
+dc_shell> Warning: Can't find object 'u_mcu/u_spi_master/sclk_reg/Q' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-group' must have 1 elements. (CMD-036)
+Current design is 'bms_lmu_wrapper'.
+Current design is 'bms_lmu_wrapper'.
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+Warning: Can't find ports matching 'pack_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+1
+dc_shell> Error: unknown command 'x-special/nautilus-clipboard' (CMD-005)
+dc_shell> Error: ambiguous command 'copy' matched 3 commands:
+	(copy_collection, copy_design, copy_mw_lib) (CMD-006)
+dc_shell> Error: unknown command 'file:///home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/constraints/sdc/bms_lmu_wrapper.sdc' (CMD-005)
+dc_shell> Current design is 'bms_lmu_wrapper'.
+Current design is 'bms_lmu_wrapper'.
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> 1
+dc_shell> 1
+dc_shell> 1
+dc_shell> dc_shell> Error: unknown command 'analyze_mv_feasibility' (CMD-005)
+dc_shell> compile_ultra -gate_clock -scan -gate_clock
+dc_shell> dc_shell> RM-info: Running compile_ultra -gate_clock -scan -gate_clock
+dc_shell> Warning: duplicate option '-gate_clock' overrides previous value. (CMD-018)
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db"
+Analyzing: "/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db"
+Library analysis succeeded.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.4 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.4 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -scan -gate_clock                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2098                                   |
+| Number of User Hierarchies                              | 13                                     |
+| Sequential Cell Count                                   | 989                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 1                                      |
+| Number of Path Groups                                   | 7                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 2                                      |
+| Number of Dont Touch Cells                              | 308                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | true                                   |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 191 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+Warning: No operating condition has been set explicitly on the current design. A default operating condition ss0p6v125c from library saed14rvt_ss0p6v125c will be assumed. (MV-028)
+Information: Related supplies are not explicitly specified on 450 port(s) and primary supplies (VDD, VSS) of top power domain will be assumed as the related supply. (UPF-405)
+Information: Total 0 repeater cells are inserted. (UPF-464)
+Information: A total of 0 isolation cells are inserted. (UPF-214)
+  Simplifying Design 'bms_lmu_wrapper'
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_valid_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_uart/tx_ready_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/overflow_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_pwr/sleep_mode_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/balance_busy_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/sensor_mismatch_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[15]' will be removed. (OPT-1207)
+Information: Performing clock-gating with positive edge logic: 'integrated' and negative edge logic: 'integrated'. (PWR-1047)
+
+Loaded alib file './alib-52/saed14rvt_ss0p6v125c.db.alib'
+Loaded alib file './alib-52/saed14lvt_ss0p6v125c.db.alib' (placeholder)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bms_adc_if'
+ Implement Synthetic for 'bms_adc_if'.
+  Processing 'bms_active_balancer'
+ Implement Synthetic for 'bms_active_balancer'.
+Information: Added key list 'DesignWare' to design 'bms_active_balancer'. (DDB-72)
+  Processing 'bms_can_status_if'
+Information: The register 'frame_data_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[33]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[34]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[35]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[36]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[37]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[38]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[39]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[42]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[43]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[44]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[45]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[46]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[47]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[48]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[49]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[50]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[51]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[52]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[53]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[54]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[56]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[57]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[58]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[63]' is a constant and will be removed. (OPT-1206)
+  Processing 'bms_fault_processor'
+Information: Added key list 'DesignWare' to design 'bms_fault_processor'. (DDB-72)
+Information: The register 'fault_code_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[7]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'bms_fault_processor'.
+  Processing 'bms_lmu_wrapper'
+  Processing 'bms_spi_slave'
+Information: Added key list 'DesignWare' to design 'bms_spi_slave'. (DDB-72)
+Information: The register 'tx_shift_reg[0]' is a constant and will be removed. (OPT-1206)
+Warning: The register alt2726/*cell*2321 is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register 'tx_bit_cnt_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_bit_cnt_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_bit_cnt_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_bit_cnt_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_bit_cnt_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_bit_cnt_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register tx_bit_cnt_reg[0] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_bit_cnt_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_bit_cnt_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[3] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[4] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[5] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[6] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[7] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Error: The register 'tx_bit_cnt_reg[0]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_bit_cnt_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_bit_cnt_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[3]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[4]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[5]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[6]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[7]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+  Processing 'bms_fault_logger'
+Information: Added key list 'DesignWare' to design 'bms_fault_logger'. (DDB-72)
+  Processing 'bms_isolation_monitor'
+ Implement Synthetic for 'bms_isolation_monitor'.
+Information: Added key list 'DesignWare' to design 'bms_isolation_monitor'. (DDB-72)
+  Processing 'bms_power_mgmt'
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_can_status_if'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_0'
+  Mapping integrated clock gating circuitry
+  Processing 'bms_soc_soh_engine'
+ Implement Synthetic for 'bms_soc_soh_engine'.
+  Processing 'bms_soc_soh_engine_DW_div_uns_J4_0'
+  Processing 'bms_soc_soh_engine_DW_div_uns_J4_1'
+Information: Added key list 'DesignWare' to design 'bms_soc_soh_engine'. (DDB-72)
+  Processing 'bms_satellite_top'
+  Processing 'bms_uart_tx'
+Information: Added key list 'DesignWare' to design 'bms_uart_tx'. (DDB-72)
+ Implement Synthetic for 'bms_uart_tx'.
+  Processing 'bms_comm_hub'
+  Processing 'bms_emi_guard'
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_fault_logger'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_LOW_bms_spi_slave'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0'
+  Mapping integrated clock gating circuitry
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_spi/tx_shift_reg[0]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_spi/tx_shift_reg[0]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_spi/tx_shift_reg[0]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_spi/tx_shift_reg[0]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+
+  Updating timing information
+Information: The register 'u_lmu/u_log/wr_ptr_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[0]' will be removed. (OPT-1207)
+Information: Updating design information... (UID-85)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Information: The library cell 'SAEDRVT14_TIE1_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design bms_lmu_wrapper, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_comm_hub, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_logger, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_adc_if_DW01_inc_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_37, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_39, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_42, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_49, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_54, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_57, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_59, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_62, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_64, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_67, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_69, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_72, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_74, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_77, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_79, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DP_OP_29J4_122_4080_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_div_uns_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_mult_uns_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_add_J4_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_div_uns_J4_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_inc_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_add_J4_38, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW01_inc_J2_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW01_sub_J2_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_33, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_uart_tx_DW01_inc_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_LOW_bms_spi_slave, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_can_status_if, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_uart_tx_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_1, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design bms_active_balancer. (PWR-730)
+Information: Performing clock-gating on design bms_uart_tx. (PWR-730)
+Information: Performing clock-gating on design bms_fault_processor. (PWR-730)
+Information: Performing clock-gating on design bms_emi_guard. (PWR-730)
+Information: Performing clock-gating on design bms_spi_slave. (PWR-730)
+Information: Performing clock-gating on design bms_adc_if. (PWR-730)
+Information: Performing clock-gating on design bms_soc_soh_engine. (PWR-730)
+Information: Performing clock-gating on design bms_satellite_top. (PWR-730)
+Information: Performing clock-gating on design bms_power_mgmt. (PWR-730)
+Information: Performing clock-gating on design bms_isolation_monitor. (PWR-730)
+Information: Performing clock-gating on design bms_can_status_if. (PWR-730)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Information: Total 0 level shifters are removed. (MV-238)
+Information: Total 0 level shifters are inserted. (MV-239)
+Information: Added key list 'DesignWare' to design 'bms_satellite_top'. (DDB-72)
+Information: Removing unused design 'bms_fault_logger'. (OPT-1055)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[3] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[4] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[5] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[6] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[7] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Error: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_fault/mismatch_cnt_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[19]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[18]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[22]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[23]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[24]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[25]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[26]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[27]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[28]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[29]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[30]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[31]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[2]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[3]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[4]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[5]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[6]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[7]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[8]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[9]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[11]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[12]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[13]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[14]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[1]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[2]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[3]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[4]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[5]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[6]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[7]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[8]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[9]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[10]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[11]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[12]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[13]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[14]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[15]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'bms_adc_if'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+Information: The register 'u_lmu/u_adc/sample_idx_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[20]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:45    4194.1      0.00       0.0   66568.4                           21802936.0000
+    0:00:45    4194.1      0.00       0.0   66568.4                           21802936.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+Warning: Clock port 'spi_clk' is assigned input delay relative to clock 'sys_clk'. (TIM-111)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:49    3712.1      0.00       0.0   53076.3                           14966909.0000
+    0:00:49    3712.1      0.00       0.0   53076.3                           14966909.0000
+    0:00:49    3712.1      0.00       0.0   53076.3                           14966909.0000
+    0:00:49    3712.1      0.00       0.0   53076.3                           14966909.0000
+    0:00:51    3682.5      0.00       0.0   52679.6                           14881457.0000
+    0:00:51    3682.5      0.00       0.0   52679.6                           14881457.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+Information: Total 0 level shifters are removed incrementally. (MV-238)
+Information: Total 0 level shifters are inserted incrementally. (MV-239)
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:01:05    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:05    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:05    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:05    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:11    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:12    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:12    3673.2      0.00       0.0   52548.3                           14812612.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:13    3673.0      0.00       0.0   50569.0                           14259009.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:01:31    4129.3      0.00       0.0   49761.8 u_lmu/u_bal/net29825      19506248.0000
+    0:01:32    4117.6      0.00       0.0   49725.6 u_lmu/u_soc_soh/soc_out[1] 19559140.0000
+    0:01:33    4124.0      0.00       0.0   49644.0                           19567300.0000
+    0:01:33    4124.0      0.00       0.0   49644.0                           19567300.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:33    4124.0      0.00       0.0   49644.0                           19567300.0000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:01:38    3986.1      0.00       0.0   48730.9                           18817942.0000
+    0:01:38    3986.1      0.00       0.0   48730.9                           18817942.0000
+    0:01:38    3986.1      0.00       0.0   48730.9                           18817942.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+    0:01:39    3961.5      0.00       0.0   48718.4                           16800492.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:40    3960.4      0.00       0.0   48718.4                           16842482.0000
+    0:01:43    3901.8      0.00       0.0   48457.1                           16646591.0000
+    0:01:43    3901.8      0.00       0.0   48457.1                           16646591.0000
+    0:01:43    3901.8      0.00       0.0   48457.1                           16646591.0000
+    0:01:44    3898.9      0.00       0.0   48448.5                           16545721.0000
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:01:49    3898.9      0.00       0.0   48448.5                           16545721.0000
+    0:01:49    3898.9      0.00       0.0   48448.5                           16545721.0000
+    0:01:49    3898.9      0.00       0.0   48448.5                           16545721.0000
+    0:01:49    3898.9      0.00       0.0   48448.5                           16545721.0000
+    0:01:59    3928.5      0.00       0.0   48622.4 u_lmu/u_adc/net41057      16691644.0000
+    0:02:00    3974.0      0.00       0.0   49712.9 u_lmu/u_comm/u_uart/net41940 16968206.0000
+    0:02:03    3972.2      0.00       0.0   49690.2 u_lmu/u_soc_soh/net40841  16963606.0000
+    0:02:05    3971.1      0.00       0.0   48823.8 u_lmu/u_bal/passive_sw[0] 17028214.0000
+    0:02:06    3970.7      0.00       0.0   48821.8                           17024376.0000
+    0:02:06    3970.7      0.00       0.0   48821.8                           17024376.0000
+    0:02:06    3970.7      0.00       0.0   48821.8                           17024376.0000
+    0:02:06    3970.7      0.00       0.0   48821.8                           17024376.0000
+    0:02:06    3974.9      0.00       0.0   48821.8                           17066366.0000
+    0:02:06    3974.9      0.00       0.0   48821.8                           17066366.0000
+    0:02:07    3971.2      0.00       0.0   48826.5                           17049688.0000
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'bms_lmu_wrapper' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_lmu/u_adc/clk_gate_sample_idx_reg/TE': 1071 load(s), 1 driver(s)
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+dc_shell> Information: Uniquified 1 instances of design 'bms_active_balancer_DW01_inc_J2_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_can_status_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_5'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_6'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_8'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_10'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_11'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_32'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_13'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_34'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_37'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_15'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_39'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_16'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_42'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_44'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_18'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_47'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_49'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_20'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_52'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_21'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_54'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_57'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_23'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_59'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_62'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_25'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_64'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_26'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_67'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_69'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_28'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_72'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_74'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_30'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_77'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_31'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_79'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_comm_hub'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_LOW_bms_spi_slave'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DP_OP_29J4_122_4080_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW_div_uns_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW01_inc_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW01_add_J4_38'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_uart_tx_DW01_inc_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_5'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_6'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_8'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_10'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_11'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_13'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_15'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_16'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_18'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_20'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_21'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_23'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_25'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_26'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_28'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_30'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_31'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_32'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_uart_tx'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_emi_guard'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_spi_slave'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_adc_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_satellite_top'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_power_mgmt'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_isolation_monitor'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_can_status_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J20_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J21_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_6'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_8'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_10'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_16'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_18'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_20'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_26'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_28'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_30'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_32'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J2_34'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW_mult_uns_J15_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW01_sub_J20_0'. (OPT-1056)
+1
+dc_shell> Warning: In the design bms_lmu_wrapper, net 'net10109' is connecting multiple ports. (UCN-1)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_J15_0_0, net 'a[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_J15_0_0, net 'product[17]' is connecting multiple ports. (UCN-1)
+1
+dc_shell> Information: Writing parasitics to file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.spef'. (WP-3)
+1
+dc_shell> 1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Warning: In the design bms_lmu_wrapper, net 'can_frame[8]' is connecting multiple ports. (UCN-1)
+1
+dc_shell> dc_shell> dc_shell> RM-info: Writing out bottom-level design
+Error: Design 'bms_lmu_wrapper' contains unmapped logic, which is not supported by the create_block_abstraction command. (ABS-263)
+Warning: Some cells to be written lack PG pin information (MV-512)
+Warning: Logical lib_cell **SEQGEN** (linked to cell u_lmu/u_comm/u_spi/tx_bit_cnt_reg_0_) does not have power/ground pin definition. (MV-512)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.pg.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing ddc file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.ddc'.
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> dc_shell> RM-info: Running save_upf -include_supply_exceptions -supplemental /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.supplement.upf
+1
+dc_shell> dc_shell> dc_shell> Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing ddc file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.ddc'.
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> dc_shell> Error: extra characters after close-brace
+	Use error_info for more info. (CMD-013)
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> RM-info: Writing out top level design without hierarchical blocks
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing ddc file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.mapped.ddc'.
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> dc_shell> Error: extra characters after close-brace
+	Use error_info for more info. (CMD-013)
+dc_shell> save_upf
+dc_shell> save_upf -include_supply_exceptions -supplemental /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.supplement.upf
+dc_shell> RM-info: Running save_upf -include_supply_exceptions -supplemental /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs/bms_lmu_wrapper.supplement.upf
+dc_shell> 1
+dc_shell> Error: extra characters after close-brace
+	Use error_info for more info. (CMD-013)
+dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> SYNTHESIS COMPLETED :)
 dc_shell> 
+Memory usage for this session 1568 Mbytes.
+Memory usage for this session including child processes 2000 Mbytes.
+CPU usage for this session 375 seconds ( 0.10 hours ).
+Elapsed time for this session 2057 seconds ( 0.57 hours ).
+
+Thank you...

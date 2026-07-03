@@ -1,0 +1,253 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Fri Jul  3 21:37:59 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     24
+    Unconnected ports (LINT-28)                                    24
+
+Cells                                                              76
+    Cells do not drive (LINT-1)                                    19
+    Connected to power or ground (LINT-32)                         56
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                               74
+    Unloaded nets (LINT-2)                                         74
+--------------------------------------------------------------------------------
+
+Warning: In design 'bms_satellite_top', cell 'u_log' does not drive any nets. (LINT-1)
+Warning: In design 'bms_satellite_top', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'bms_adc_if', cell 'C3359' does not drive any nets. (LINT-1)
+Warning: In design 'bms_isolation_monitor', cell 'C73' does not drive any nets. (LINT-1)
+Warning: In design 'bms_fault_processor', cell 'C797' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine', cell 'C1030' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine', cell 'C1035' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine', cell 'C1040' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine', cell 'C1043' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine', cell 'C1046' does not drive any nets. (LINT-1)
+Warning: In design 'bms_active_balancer', cell 'C1770' does not drive any nets. (LINT-1)
+Warning: In design 'bms_active_balancer', cell 'C1777' does not drive any nets. (LINT-1)
+Warning: In design 'bms_fault_logger', cell 'C1614' does not drive any nets. (LINT-1)
+Warning: In design 'bms_uart_tx', cell 'C389' does not drive any nets. (LINT-1)
+Warning: In design 'bms_uart_tx', cell 'C396' does not drive any nets. (LINT-1)
+Warning: In design 'bms_uart_tx', cell 'C397' does not drive any nets. (LINT-1)
+Warning: In design 'bms_uart_tx', cell 'C401' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_slave', cell 'C230' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_slave', cell 'C239' does not drive any nets. (LINT-1)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sleep_mode' driven by pin 'u_lmu/u_pwr/sleep_mode' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[0]' driven by pin 'u_lmu/u_bal/low_id_o[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[1]' driven by pin 'u_lmu/u_bal/low_id_o[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[2]' driven by pin 'u_lmu/u_bal/low_id_o[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[3]' driven by pin 'u_lmu/u_bal/low_id_o[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/high_id[0]' driven by pin 'u_lmu/u_bal/high_id_o[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/high_id[1]' driven by pin 'u_lmu/u_bal/high_id_o[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/high_id[2]' driven by pin 'u_lmu/u_bal/high_id_o[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/high_id[3]' driven by pin 'u_lmu/u_bal/high_id_o[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/balance_busy' driven by pin 'u_lmu/u_bal/balance_busy' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sensor_mismatch' driven by pin 'u_lmu/u_fault/sensor_mismatch' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[0]' driven by pin 'u_lmu/u_fault/uv_map[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[1]' driven by pin 'u_lmu/u_fault/uv_map[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[2]' driven by pin 'u_lmu/u_fault/uv_map[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[3]' driven by pin 'u_lmu/u_fault/uv_map[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[4]' driven by pin 'u_lmu/u_fault/uv_map[4]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[5]' driven by pin 'u_lmu/u_fault/uv_map[5]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[6]' driven by pin 'u_lmu/u_fault/uv_map[6]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[7]' driven by pin 'u_lmu/u_fault/uv_map[7]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[8]' driven by pin 'u_lmu/u_fault/uv_map[8]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[9]' driven by pin 'u_lmu/u_fault/uv_map[9]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[10]' driven by pin 'u_lmu/u_fault/uv_map[10]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[11]' driven by pin 'u_lmu/u_fault/uv_map[11]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[12]' driven by pin 'u_lmu/u_fault/uv_map[12]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[13]' driven by pin 'u_lmu/u_fault/uv_map[13]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[14]' driven by pin 'u_lmu/u_fault/uv_map[14]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/uv_map[15]' driven by pin 'u_lmu/u_fault/uv_map[15]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[0]' driven by pin 'u_lmu/u_fault/ov_map[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[1]' driven by pin 'u_lmu/u_fault/ov_map[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[2]' driven by pin 'u_lmu/u_fault/ov_map[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[3]' driven by pin 'u_lmu/u_fault/ov_map[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[4]' driven by pin 'u_lmu/u_fault/ov_map[4]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[5]' driven by pin 'u_lmu/u_fault/ov_map[5]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[6]' driven by pin 'u_lmu/u_fault/ov_map[6]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[7]' driven by pin 'u_lmu/u_fault/ov_map[7]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[8]' driven by pin 'u_lmu/u_fault/ov_map[8]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[9]' driven by pin 'u_lmu/u_fault/ov_map[9]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[10]' driven by pin 'u_lmu/u_fault/ov_map[10]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[11]' driven by pin 'u_lmu/u_fault/ov_map[11]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[12]' driven by pin 'u_lmu/u_fault/ov_map[12]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[13]' driven by pin 'u_lmu/u_fault/ov_map[13]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[14]' driven by pin 'u_lmu/u_fault/ov_map[14]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/ov_map[15]' driven by pin 'u_lmu/u_fault/ov_map[15]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[0]' driven by pin 'u_lmu/u_iso/iso_margin[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[1]' driven by pin 'u_lmu/u_iso/iso_margin[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[2]' driven by pin 'u_lmu/u_iso/iso_margin[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[3]' driven by pin 'u_lmu/u_iso/iso_margin[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[4]' driven by pin 'u_lmu/u_iso/iso_margin[4]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[5]' driven by pin 'u_lmu/u_iso/iso_margin[5]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[6]' driven by pin 'u_lmu/u_iso/iso_margin[6]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[7]' driven by pin 'u_lmu/u_iso/iso_margin[7]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[8]' driven by pin 'u_lmu/u_iso/iso_margin[8]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[9]' driven by pin 'u_lmu/u_iso/iso_margin[9]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[10]' driven by pin 'u_lmu/u_iso/iso_margin[10]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[11]' driven by pin 'u_lmu/u_iso/iso_margin[11]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[12]' driven by pin 'u_lmu/u_iso/iso_margin[12]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[13]' driven by pin 'u_lmu/u_iso/iso_margin[13]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[14]' driven by pin 'u_lmu/u_iso/iso_margin[14]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/iso_margin[15]' driven by pin 'u_lmu/u_iso/iso_margin[15]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sample_idx[0]' driven by pin 'u_lmu/u_adc/sample_idx[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sample_idx[1]' driven by pin 'u_lmu/u_adc/sample_idx[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sample_idx[2]' driven by pin 'u_lmu/u_adc/sample_idx[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sample_idx[3]' driven by pin 'u_lmu/u_adc/sample_idx[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sample_idx[4]' driven by pin 'u_lmu/u_adc/sample_idx[4]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_valid_open' driven by pin 'u_lmu/u_comm/u_spi/rx_valid' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[0]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[0]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[1]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[1]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[2]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[2]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[3]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[3]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[4]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[4]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[5]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[5]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[6]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[6]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/spi_rx_byte_open[7]' driven by pin 'u_lmu/u_comm/u_spi/rx_byte[7]' has no loads. (LINT-2)
+Warning: In design 'bms_lmu_wrapper', net 'u_lmu/u_comm/uart_ready' driven by pin 'u_lmu/u_comm/u_uart/tx_ready' has no loads. (LINT-2)
+Warning: In design 'bms_fault_logger', port 'fault_code[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'fault_code[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_fault_logger', port 'timestamp[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[63]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[62]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[61]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[60]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[59]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[58]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[57]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[56]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[55]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[54]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[53]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[52]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[51]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[50]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[49]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[48]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[47]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[46]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[45]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[44]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[43]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[42]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[41]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[40]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[39]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[38]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[37]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[36]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[35]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[34]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[33]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[32]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[31]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[30]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[29]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[28]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[27]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[26]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[25]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[24]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[23]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[22]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[21]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[20]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[19]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[18]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[17]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[16]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[15]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[14]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[13]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[12]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[11]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[10]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[9]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', a pin on submodule 'u_can' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'payload[8]' is connected to logic 0. 
+Warning: In design 'bms_comm_hub', the same net is connected to more than one pin on submodule 'u_can'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'payload[63]', 'payload[62]'', 'payload[61]', 'payload[60]', 'payload[59]', 'payload[58]', 'payload[57]', 'payload[56]', 'payload[55]', 'payload[54]', 'payload[53]', 'payload[52]', 'payload[51]', 'payload[50]', 'payload[49]', 'payload[48]', 'payload[47]', 'payload[46]', 'payload[45]', 'payload[44]', 'payload[43]', 'payload[42]', 'payload[41]', 'payload[40]', 'payload[39]', 'payload[38]', 'payload[37]', 'payload[36]', 'payload[35]', 'payload[34]', 'payload[33]', 'payload[32]', 'payload[31]', 'payload[30]', 'payload[29]', 'payload[28]', 'payload[27]', 'payload[26]', 'payload[25]', 'payload[24]', 'payload[23]', 'payload[22]', 'payload[21]', 'payload[20]', 'payload[19]', 'payload[18]', 'payload[17]', 'payload[16]', 'payload[15]', 'payload[14]', 'payload[13]', 'payload[12]', 'payload[11]', 'payload[10]', 'payload[9]', 'payload[8]'.
+1

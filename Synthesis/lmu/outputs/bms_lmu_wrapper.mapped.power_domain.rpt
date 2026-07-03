@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : power_domain
+Design : bms_lmu_wrapper
+Version: T-2022.03-SP4
+Date   : Fri Jul  3 21:46:02 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_CORE
+ Current Scope            : bms_lmu_wrapper
+ Elements                 : <top_level>
+ Available Supply Nets    : VDD, VSS
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD                     VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+1
