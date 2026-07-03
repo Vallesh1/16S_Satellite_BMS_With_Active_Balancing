@@ -1,0 +1,516 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP4 for linux64 - Aug 24, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home1/IITR_PD3/MulukuriVNath/.synopsys_dc_gui/preferences.tcl
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> 1
+dc_shell> bms_lmu_wrapper
+dc_shell> dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs
+dc_shell> dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts
+dc_shell> dc_shell> hier
+dc_shell> dc_shell> bottom
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> golden
+dc_shell> dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.upf
+dc_shell> dc_shell> bms_lmu_wrapper.ndm
+dc_shell> dc_shell> /home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf
+dc_shell> dc_shell> /home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm
+dc_shell> dc_shell> dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+dc_shell> /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+dc_shell>  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top 
+dc_shell> dc_shell> dc_shell> dc_shell> .
+dc_shell> dc_shell> true
+dc_shell> dc_shell> /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db 
+dc_shell> dc_shell> /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db 
+dc_shell> dw_foundation.sldb
+dc_shell> * /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db  dw_foundation.sldb
+dc_shell> dc_shell> dc_shell> set_check_library_options -mcmm
+dc_shell> set_check_library_options -mcmm -upf
+dc_shell> RM-info: Running set_check_library_options -mcmm -upf
+dc_shell> 1
+dc_shell> dc_shell> false
+dc_shell> all
+dc_shell> true
+dc_shell> true
+dc_shell> 1
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+Presto compilation completed successfully.
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+1
+dc_shell> Error: wrong # args: should be "foreach varList list ?varList list ...? command"
+	Use error_info for more info. (CMD-013)
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v
+Presto compilation completed successfully.
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v
+Presto compilation completed successfully.
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v
+Presto compilation completed successfully.
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v
+Presto compilation completed successfully.
+dc_shell> Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ss0p6v125c'
+  Loading link library 'saed14lvt_ss0p6v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (bms_lmu_wrapper)
+Elaborated 1 design.
+Current design is now 'bms_lmu_wrapper'.
+Information: Building the design 'bms_satellite_top'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_satellite_top line 52 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    timestamp_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bms_satellite_top line 59 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  fault_trip_d_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_satellite_top)
+Information: Building the design 'bms_adc_if'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v:38: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_adc_if line 18 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sample_idx_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   cell_v_bus_reg    | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+| cell_v_red_bus_reg  | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   frame_done_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    bank_sel_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    adc_busy_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_adc_if)
+Information: Building the design 'bms_emi_guard'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_emi_guard line 11 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      hist_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    emi_alert_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_emi_guard)
+Information: Building the design 'bms_isolation_monitor'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_isolation_monitor line 10 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   iso_margin_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    iso_fault_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_isolation_monitor)
+Information: Building the design 'bms_fault_processor'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_fault_processor line 116 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     uv_map_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sensor_mismatch_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  mismatch_cnt_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    fault_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   fault_code_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     ov_map_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_fault_processor)
+Information: Building the design 'bms_soc_soh_engine'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v:56: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v:78: signed to unsigned part selection occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_soc_soh_engine line 39 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   coulomb_acc_reg   | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   coulomb_acc_reg   | Flip-flop |  14   |  Y  | N  | N  | Y  | N  | N  | N  |
+|     ocv_soc_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     ocv_soc_reg     | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    relax_cnt_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   abs_pack_i_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     soh_out_reg     | Flip-flop |  16   |  Y  | N  | N  | Y  | N  | N  | N  |
+|    soh_calc_reg     | Flip-flop |  26   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    soh_calc_reg     | Flip-flop |   6   |  Y  | N  | N  | Y  | N  | N  | N  |
+|     soc_out_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     soc_out_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_soc_soh_engine)
+Information: Building the design 'bms_active_balancer'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v:64: signed to unsigned part selection occurs. (VER-318)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v:68: signed to unsigned part selection occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_active_balancer line 34 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    dwell_cnt_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    phase_on_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  active_tx_sw_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  active_rx_sw_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   passive_sw_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  balance_busy_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    high_id_o_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    low_id_o_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_active_balancer)
+Information: Building the design 'bms_power_mgmt'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_power_mgmt line 10 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sleep_mode_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  logic_clk_en_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_power_mgmt)
+Information: Building the design 'bms_comm_hub'. (HDL-193)
+Presto compilation completed successfully. (bms_comm_hub)
+Information: Building the design 'bms_fault_logger'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v:20: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_fault_logger line 14 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wr_ptr_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    overflow_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_fault_logger)
+Information: Building the design 'bms_uart_tx'. (HDL-193)
+
+Statistics for case statements in always block at line 22 in file
+	'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            32            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine bms_uart_tx line 22 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     tx_wire_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     bit_idx_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      shreg_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    tx_ready_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    baud_cnt_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_uart_tx)
+Information: Building the design 'bms_spi_slave'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_spi_slave line 26 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rx_shift_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    rx_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rx_byte_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bit_cnt_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bms_spi_slave line 51 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   tx_bit_cnt_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    tx_shift_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_spi_slave)
+Information: Building the design 'bms_can_status_if'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_can_status_if line 9 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   frame_data_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   frame_valid_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_can_status_if)
+1
+dc_shell> Current design is 'bms_lmu_wrapper'.
+{bms_lmu_wrapper}
+dc_shell> 
+  Linking design 'bms_lmu_wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (14 designs)              /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/work/bms_lmu_wrapper.db, etc
+  saed14rvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db
+  saed14lvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db
+  dw_foundation.sldb (library) /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb
+
+1
+dc_shell> false
+dc_shell> RM-info: Running load_upf /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.upf -strict_check true
+
+
+Loading Golden UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.upf ...
+# ==============================================================================
+# GOLDEN UPF SPECIFICATION: Battery Management System (BMS)
+# Standard: IEEE 1801 (UPF 2.1)
+# Top Module: bms_system_3lmu_top_enhanced
+# Description: Defines the architectural Power Domains, Supply Networks, and
+#              the Global Power State Table (PST) for sign-off.
+# ==============================================================================
+upf_version 2.1
+set_design_top bms_system_3lmu_top_enhanced
+Warning: Can't find object 'bms_system_3lmu_top_enhanced' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'instance' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 1. POWER DOMAIN CREATION
+# ------------------------------------------------------------------------------
+# PD_CORE: Always-On Domain (Includes Top Pad Ring & MCU Macro)
+create_power_domain PD_CORE -include_scope
+# PD_LMU[0:2]: Switchable Voltage Islands for Edge Satellites
+create_power_domain PD_LMU0 -elements {u_lmu0}
+Warning: Can't find cell 'u_lmu0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU1 -elements {u_lmu1}
+Warning: Can't find cell 'u_lmu1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU2 -elements {u_lmu2}
+Warning: Can't find cell 'u_lmu2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 2. GLOBAL SUPPLY PORTS & NETS
+# ------------------------------------------------------------------------------
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+# Global Nets in Top Domain
+create_supply_net VDD -domain PD_CORE
+create_supply_net VSS -domain PD_CORE
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+# ------------------------------------------------------------------------------
+# 3. DOMAIN SUPPLY NETS & PRIMARY ROUTING
+# ------------------------------------------------------------------------------
+# Route Global Power/Ground to LMUs (Before Switches)
+create_supply_net VDD -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Create the Switched Power Nets (The rails *after* the header switches)
+create_supply_net VDD_LMU0_SW -domain PD_LMU0
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU1_SW -domain PD_LMU1
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU2_SW -domain PD_LMU2
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Assign Primary Nets to Domains
+set_domain_supply_net PD_CORE -primary_power_net VDD -primary_ground_net VSS
+set_domain_supply_net PD_LMU0 -primary_power_net VDD_LMU0_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU1 -primary_power_net VDD_LMU1_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 4. POWER STATE DEFINITIONS & PST (Power State Table)
+# ------------------------------------------------------------------------------
+# Define the nominal operating voltages for states
+add_port_state VDD -state {VDD_NOM 1.2}
+add_port_state VSS -state {GND 0.0}
+add_port_state header_sw_lmu0/vout -state {LMU0_ON 1.2} -state {LMU0_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu1/vout -state {LMU1_ON 1.2} -state {LMU1_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu2/vout -state {LMU2_ON 1.2} -state {LMU2_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+# Create the Power State Table to dictate legal combinations
+create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+Error: Nothing matched for VDD_LMU0_SW (SEL-005)
+Error: Nothing matched for VDD_LMU1_SW (SEL-005)
+Error: Nothing matched for VDD_LMU2_SW (SEL-005)
+# Legal State 1: EVERYTHING ON (Active Drive)
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 2: ALL LMUS ASLEEP (Standby / Parked)
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 3: LMU 0 ACTIVE, OTHERS SLEEP (Localized Wakeup)
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# ------------------------------------------------------------------------------
+# 5. LOAD SUPPLEMENTAL FILE (Switches, Isolation, Level Shifters)
+# ------------------------------------------------------------------------------
+load_upf constraints/upf/bms_power_supplemental.upf
+
+
+Loading Golden UPF file constraints/upf/bms_power_supplemental.upf ...
+Error: could not open script file "constraints/upf/bms_power_supplemental.upf" (CMD-015)
+Error: Errors while reading the UPF file: . Use the error_info command for more information. (UPF-044)
+
+End loading UPF file constraints/upf/bms_power_supplemental.upf
+# ==============================================================================
+# END OF GOLDEN UPF
+# ==============================================================================
+End loading UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.upf
+1
+dc_shell> 1
+dc_shell> 1
+dc_shell> false
+dc_shell> --------------------------------------------------------------------------------
+                      Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                         Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+dc_shell> dc_shell> dc_shell> Error: Unit conflict found: Constraint resistance unit is 'kOhm'; main library resistance unit is 'MOhm'. (IFS-001)
+Warning: Can't find object 'u_mcu/u_spi_master/sclk_reg/Q' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-group' must have 1 elements. (CMD-036)
+Current design is 'bms_lmu_wrapper'.
+Current design is 'bms_lmu_wrapper'.
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+Warning: Can't find ports matching 'pack_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+dc_shell> Warning: Can't find object 'u_mcu/u_spi_master/sclk_reg/Q' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find clock 'spi_clk' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-group' must have 1 elements. (CMD-036)
+Current design is 'bms_lmu_wrapper'.
+Current design is 'bms_lmu_wrapper'.
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+Warning: Can't find ports matching 'pack_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Warning: Can't find ports matching 'allowed_current*' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+1
+dc_shell> 

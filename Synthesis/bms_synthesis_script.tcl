@@ -3,32 +3,43 @@ set_host_options -max_cores 8
 ######################################################################
 # Global Variables & Environment Setup
 ######################################################################
-set DESIGN_NAME "bms_system_3lmu_top_enhanced"
-set OUTPUTS_DIR "./outputs"
-set SCRIPTS "./scripts"
-set DESIGN_STYLE hier
-set PHYSICAL_HIERARCHY_LEVEL "top"
-set DC_BLOCK_ABSTRACTION_DESIGNS ""
-set DDC_HIER_DESIGNS ""
-set UPF_MODE golden
-set UPF_FILE "constraints/upf/bms_power_intent.upf"
-set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
-set TECH_FILE ""
-set REFERENCE_LIBRARY ""
+set DESIGN_NAME bms_lmu_wrapper
 
-# Ensure outputs directory exists
-file mkdir $OUTPUTS_DIR
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs"
+
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts"
+
+set DESIGN_STYLE hier
+
+set PHYSICAL_HIERARCHY_LEVEL bottom
+
+set DC_BLOCK_ABSTRACTION_DESIGNS ""
+
+set DDC_HIER_DESIGNS ""
+
+set UPF_MODE golden
+
+set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+
+set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+
+set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
+
+set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+
 
 ######################################################################
 # RTL Variables & Search Paths
 ######################################################################
-set opensparc ""
-set iop "$opensparc/design/sys/iop"
 set rtl_path {}
-set rtl_path "$rtl_path $iop/fpu/rtl"
-set rtl_path "$rtl_path $iop/common/rtl"
-set rtl_path "$rtl_path $iop/pr_macro/rtl"
-set rtl_path "$rtl_path $iop/srams/rtl"
+set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
+set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu"
+set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
+set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
+set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
 
 # Append standard paths and RTL targets to the DC search path
 set_app_var search_path "$search_path $iop/include $rtl_path "
