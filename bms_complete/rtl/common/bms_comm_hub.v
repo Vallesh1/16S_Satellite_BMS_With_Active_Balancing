@@ -1,3 +1,10 @@
+// ==============================================================================
+// MODULE: bms_comm_hub
+// Description: Multiplexes payload data to UART, SPI, or CAN.
+// Fixes Applied: Added explicit floating wires for unconnected SPI slave ports 
+//                to prevent any potential synthesis elaboration warnings in DC.
+// ==============================================================================
+
 module bms_comm_hub(
     input  wire       clk,
     input  wire       rst_n,
@@ -16,6 +23,10 @@ module bms_comm_hub(
     wire uart_ready;
     wire uart_busy;
 
+    // Dummy wires to cleanly terminate unused outputs without warnings
+    wire [7:0] spi_rx_byte_open;
+    wire       spi_rx_valid_open;
+
     bms_uart_tx u_uart (
         .clk(clk),
         .rst_n(rst_n),
@@ -33,8 +44,8 @@ module bms_comm_hub(
         .mosi(spi_mosi),
         .tx_byte(tx_byte),
         .miso(spi_miso),
-        .rx_byte(),
-        .rx_valid()
+        .rx_byte(spi_rx_byte_open),     // Explicitly routed to prevent warnings
+        .rx_valid(spi_rx_valid_open)    // Explicitly routed to prevent warnings
     );
 
     bms_can_status_if u_can (
@@ -47,4 +58,5 @@ module bms_comm_hub(
     );
 
     assign comm_active = uart_busy | (~spi_ss_n) | can_valid;
+    
 endmodule
