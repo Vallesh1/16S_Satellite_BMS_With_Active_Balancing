@@ -108,7 +108,7 @@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
 # Library Modifications
 # Apply library modifications after the libraries are loaded.
 #################################################################################
-source ${SCRIPTS}/dont_use.tcl
+#source ${SCRIPTS}/dont_use.tcl
 
 ##########################################################################################
 ## Message handling

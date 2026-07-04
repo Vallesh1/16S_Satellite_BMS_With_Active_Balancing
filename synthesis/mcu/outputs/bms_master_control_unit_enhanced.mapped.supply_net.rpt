@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : supply_net
+Design : bms_master_control_unit_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 19:54:07 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD
+ Current Scope         : bms_master_control_unit_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : VDD_NOM 
+ Power Domain          : PD_CORE(*)  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VSS
+ Current Scope         : bms_master_control_unit_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.00)           (0.00)
+
+ Supply States         : GND 
+ Power Domain          : PD_CORE(*)  
+
+------------------------------------------------------------------------------
+1

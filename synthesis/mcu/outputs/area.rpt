@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : bms_master_control_unit_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 19:53:50 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
+    saed14lvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db)
+
+Number of ports:                          695
+Number of nets:                          1362
+Number of cells:                          767
+Number of combinational cells:            644
+Number of sequential cells:               106
+Number of macros/black boxes:               0
+Number of buf/inv:                        225
+Number of references:                      33
+
+Combinational area:                241.491597
+Buf/Inv area:                       45.998399
+Noncombinational area:             137.329202
+Macro/Black Box area:                0.000000
+Net Interconnect area:             480.676399
+
+Total cell area:                   378.820799
+Total area:                        859.497197
+1

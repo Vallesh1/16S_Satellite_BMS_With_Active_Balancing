@@ -1,0 +1,44 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Sat Jul  4 19:42:02 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              10
+    Cells do not drive (LINT-1)                                     4
+    Connected to power or ground (LINT-32)                          4
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                                9
+    Unloaded nets (LINT-2)                                          9
+--------------------------------------------------------------------------------
+
+Warning: In design 'bms_master_control_unit_enhanced', cell 'C531' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_master', cell 'C626' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_master', cell 'C627' does not drive any nets. (LINT-1)
+Warning: In design 'bms_current_limit_supervisor', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[0]' driven by pin 'u_spi_master/rx_byte[0]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[1]' driven by pin 'u_spi_master/rx_byte[1]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[2]' driven by pin 'u_spi_master/rx_byte[2]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[3]' driven by pin 'u_spi_master/rx_byte[3]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[4]' driven by pin 'u_spi_master/rx_byte[4]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[5]' driven by pin 'u_spi_master/rx_byte[5]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[6]' driven by pin 'u_spi_master/rx_byte[6]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_rx_byte[7]' driven by pin 'u_spi_master/rx_byte[7]' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', net 'spi_busy' driven by pin 'u_spi_master/busy' has no loads. (LINT-2)
+Warning: In design 'bms_master_control_unit_enhanced', a pin on submodule 'u_curr_sup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'active_lmu_count[3]' is connected to logic 0. 
+Warning: In design 'bms_master_control_unit_enhanced', a pin on submodule 'u_curr_sup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'active_lmu_count[2]' is connected to logic 0. 
+Warning: In design 'bms_master_control_unit_enhanced', a pin on submodule 'u_curr_sup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'active_lmu_count[1]' is connected to logic 1. 
+Warning: In design 'bms_master_control_unit_enhanced', a pin on submodule 'u_curr_sup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'active_lmu_count[0]' is connected to logic 1. 
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'u_curr_sup'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'active_lmu_count[3]', 'active_lmu_count[2]''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'u_curr_sup'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'active_lmu_count[1]', 'active_lmu_count[0]''.
+1

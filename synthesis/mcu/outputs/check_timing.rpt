@@ -1,0 +1,27 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+  Allocating blocks in 'DW_div_uns_a_width16_b_width2'
+  Allocating blocks in 'DW_div_a_width16_b_width2_tc_mode0_rem_mode1'
+Warning: Design 'DW_div_uns_a_width16_b_width2' inherited license information from design 'DW_div_a_width16_b_width2_tc_mode0_rem_mode1'. (DDB-74)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+pack_soc_avg_reg[15]/next_state
+pack_soh_avg_reg[15]/next_state
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

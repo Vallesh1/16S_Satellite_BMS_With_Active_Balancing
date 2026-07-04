@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : qor
+Design : bms_master_control_unit_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 19:53:50 2026
+****************************************
+
+
+  Timing Path Group 'in2reg'
+  -----------------------------------
+  Levels of Logic:              56.00
+  Critical Path Length:          1.93
+  Critical Path Slack:           4.90
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2out'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.29
+  Critical Path Slack:           6.56
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          0.32
+  Critical Path Slack:           9.51
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'sys_clk'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.05
+  Critical Path Slack:           6.78
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         17
+  Hierarchical Port Count:        426
+  Leaf Cell Count:                750
+  Buf/Inv Cell Count:             225
+  Buf Cell Count:                   7
+  Inv Cell Count:                 224
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       644
+  Sequential Cell Count:          106
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      241.491597
+  Noncombinational Area:   137.329202
+  Buf/Inv Area:             45.998399
+  Total Buffer Area:             7.28
+  Total Inverter Area:          45.64
+  Macro/Black Box Area:      0.000000
+  Net Area:                480.676399
+  -----------------------------------
+  Cell Area:               378.820799
+  Design Area:             859.497197
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           994
+  Nets With Violations:           982
+  Max Trans Violations:             0
+  Max Cap Violations:             982
+  -----------------------------------
+
+
+  Hostname: mavenserver-RH3
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.48
+  Logic Optimization:                 13.44
+  Mapping Optimization:               28.81
+  -----------------------------------------
+  Overall Compile Time:              100.86
+  Overall Compile Wall Clock Time:    98.86
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

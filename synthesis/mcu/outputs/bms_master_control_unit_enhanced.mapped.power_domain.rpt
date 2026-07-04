@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : power_domain
+Design : bms_master_control_unit_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 19:54:07 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_CORE
+ Current Scope            : bms_master_control_unit_enhanced
+ Elements                 : <top_level>
+ Available Supply Nets    : VDD, VSS
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD                     VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+1
