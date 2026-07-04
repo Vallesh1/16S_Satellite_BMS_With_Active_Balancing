@@ -202,7 +202,7 @@ if {$UPF_MODE != "none"} {
 # set_voltage commands will be written out in SDC version 1.8 and might
 # be defined as a part of the SDC for your design.
 
-set_voltage 0.6 -object_list {VDD}
+set_voltage 0.6 -object_list {VDD VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
 set_voltage 0.0 -object_list {VSS}
 
 # Check and exit if any supply nets are missing a defined voltage.
