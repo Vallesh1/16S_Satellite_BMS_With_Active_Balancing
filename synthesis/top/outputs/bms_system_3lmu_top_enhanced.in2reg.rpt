@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -group in2reg
+        -max_paths 1
+Design : bms_system_3lmu_top_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 22:11:02 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+Wire Load Model Mode: top
+
+  Startpoint: lmu0_pack_i[0]
+              (input port clocked by sys_clk)
+  Endpoint: u_lmu0/u_lmu/u_soc_soh/coulomb_acc_reg_31_
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: in2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bms_system_3lmu_top_enhanced
+                     16000                 saed14rvt_ss0p6v125c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    3.00       3.00 r    
+  lmu0_pack_i[0] (in)                                     0.00       3.00 r    
+  u_lmu0/pack_i[0] (bms_lmu_wrapper_2)                    0.00       3.00 r    
+  u_lmu0/u_lmu/pack_i[0] (bms_satellite_top_2)            0.00       3.00 r    
+  u_lmu0/u_lmu/u_soc_soh/pack_i[0] (bms_soc_soh_engine_2)
+                                                          0.00       3.00 r    
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/B[0] (bms_soc_soh_engine_2_DW01_add_J14_38)
+                                                          0.00       3.00 r    
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U70/CO (SAEDRVT14_ADDH_0P5)
+                                                          0.03       3.03 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U69/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.05       3.08 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U68/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.14 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U67/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.20 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U66/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.26 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U65/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.31 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U64/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.37 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U63/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.43 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U62/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.48 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U61/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.54 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U60/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.60 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U59/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.66 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U58/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.71 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U57/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.06       3.77 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U56/CO (SAEDRVT14_ADDF_V1_0P5)
+                                                          0.05       3.82 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U43/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       3.88 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U53/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       3.94 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U52/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.00 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U51/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.06 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U42/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.12 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U50/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.18 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U41/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.24 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U40/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.29 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U49/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.35 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U48/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.41 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U39/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.47 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U47/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.53 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U46/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.59 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U38/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.65 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U45/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.70 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U44/CO (SAEDRVT14_ADDF_V2_0P5)
+                                                          0.06       4.76 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/U71/X (SAEDRVT14_EO2_V1_0P75)
+                                                          0.03       4.79 r    0.60
+  u_lmu0/u_lmu/u_soc_soh/add_x_1/SUM[31] (bms_soc_soh_engine_2_DW01_add_J14_38)
+                                                          0.00       4.79 r    
+  u_lmu0/u_lmu/u_soc_soh/coulomb_acc_reg_31_/D (SAEDRVT14_FSDPRBQ_V2LP_1)
+                                                          0.00       4.80 r    0.60
+  data arrival time                                                  4.80      
+
+  clock sys_clk (rise edge)                              10.00      10.00      
+  clock network delay (ideal)                             0.00      10.00      
+  clock uncertainty                                      -0.15       9.85      
+  u_lmu0/u_lmu/u_soc_soh/coulomb_acc_reg_31_/CK (SAEDRVT14_FSDPRBQ_V2LP_1)
+                                                          0.00       9.85 r    
+  library setup time                                     -0.02       9.83      
+  data required time                                                 9.83      
+  ------------------------------------------------------------------------------------
+  data required time                                                 9.83      
+  data arrival time                                                 -4.80      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        5.03      
+
+
+1

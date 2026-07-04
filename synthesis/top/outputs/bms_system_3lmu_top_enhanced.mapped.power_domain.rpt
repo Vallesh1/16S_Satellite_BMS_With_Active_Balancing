@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power_domain
+Design : bms_system_3lmu_top_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 22:11:13 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_CORE
+ Current Scope            : bms_system_3lmu_top_enhanced
+ Elements                 : <top_level>
+ Available Supply Nets    : VDD, VSS
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD                     VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_LMU0
+ Current Scope            : bms_system_3lmu_top_enhanced
+ Elements                 : u_lmu0
+ Available Supply Nets    : VDD, VSS, VDD_LMU0_SW
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD_LMU0_SW             VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_LMU1
+ Current Scope            : bms_system_3lmu_top_enhanced
+ Elements                 : u_lmu1
+ Available Supply Nets    : VDD, VSS, VDD_LMU1_SW
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD_LMU1_SW             VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD_LMU2
+ Current Scope            : bms_system_3lmu_top_enhanced
+ Elements                 : u_lmu2
+ Available Supply Nets    : VDD, VSS, VDD_LMU2_SW
+ Available Supply Sets    : 
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD_LMU2_SW             VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+
+------------------------------------------------------------------------------
+1

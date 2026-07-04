@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Sat Jul  4 21:30:09 2026
+#@ # Date:   Sat Jul  4 21:46:14 2026
 #@ # Run by: MulukuriVNath@mavenserver-RH3
 #@ 
 
@@ -8823,13 +8823,13 @@ gui_start
 #@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/iwidgets4.1/iwidgets.tcl
 
 gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {LeafCells}
-#@ # -- Starting source /tmp/dc_shell.mdtXqc
+#@ # -- Starting source /tmp/dc_shell.Bjsqpu
 
 #@ set_host_options -max_cores 8
-#@ # -- End source /tmp/dc_shell.mdtXqc
+#@ # -- End source /tmp/dc_shell.Bjsqpu
 
 set_host_options -max_cores 8
-#@ # -- Starting source /tmp/dc_shell.BzVlCY
+#@ # -- Starting source /tmp/dc_shell.KLJVcQ
 
 #@ set DESIGN_NAME bms_system_3lmu_top_enhanced
 #@ 
@@ -8840,7 +8840,24 @@ set_host_options -max_cores 8
 #@ set DESIGN_STYLE hier
 #@ 
 #@ set PHYSICAL_HIERARCHY_LEVEL top
-#@ # -- End source /tmp/dc_shell.BzVlCY
+#@ 
+#@ set DC_BLOCK_ABSTRACTION_DESIGNS ""
+#@ 
+#@ set DDC_HIER_DESIGNS ""
+#@ 
+#@ set UPF_MODE golden
+#@ 
+#@ set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+#@ 
+#@ set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+#@ 
+#@ set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
+#@ 
+#@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+#@ # -- End source /tmp/dc_shell.KLJVcQ
 
 set DESIGN_NAME bms_system_3lmu_top_enhanced
 
@@ -8851,18 +8868,6 @@ set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Acti
 set DESIGN_STYLE hier
 
 set PHYSICAL_HIERARCHY_LEVEL top
-#@ # -- Starting source /tmp/dc_shell.ozzctQ
-
-#@ set DC_BLOCK_ABSTRACTION_DESIGNS ""
-#@ 
-#@ set DDC_HIER_DESIGNS ""
-#@ 
-#@ set UPF_MODE golden
-#@ 
-#@ set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
-#@ 
-#@ set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
-#@ # -- End source /tmp/dc_shell.ozzctQ
 
 set DC_BLOCK_ABSTRACTION_DESIGNS ""
 
@@ -8873,15 +8878,6 @@ set UPF_MODE golden
 set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
 
 set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
-#@ # -- Starting source /tmp/dc_shell.rottHI
-
-#@ set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
-#@ 
-#@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
-#@ /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
-#@ /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
-#@ /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
-#@ # -- End source /tmp/dc_shell.rottHI
 
 set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
 
@@ -8889,7 +8885,7 @@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14
 /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
 /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
 /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
-#@ # -- Starting source /tmp/dc_shell.zcPdmA
+#@ # -- Starting source /tmp/dc_shell.wRYiNp
 
 #@ set rtl_path {}
 #@ set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
@@ -8897,7 +8893,8 @@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14
 #@ set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
 #@ set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
 #@ set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
-#@ # -- End source /tmp/dc_shell.zcPdmA
+#@ 
+#@ # -- End source /tmp/dc_shell.wRYiNp
 
 set rtl_path {}
 set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
@@ -8905,7 +8902,8 @@ set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_A
 set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
 set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
 set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
-#@ # -- Starting source /tmp/dc_shell.nwanIB
+
+#@ # -- Starting source /tmp/dc_shell.cqeRDF
 
 #@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 #@   # For a hierarchical flow, add the block-level results directories to the
@@ -8920,7 +8918,7 @@ set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
 #@   # Formality to find the output UPF files.
 #@   lappend search_path ${OUTPUTS_DIR}
 #@ }
-#@ # -- End source /tmp/dc_shell.nwanIB
+#@ # -- End source /tmp/dc_shell.cqeRDF
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # For a hierarchical flow, add the block-level results directories to the
@@ -8935,59 +8933,53 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # Formality to find the output UPF files.
   lappend search_path ${OUTPUTS_DIR}
 }
-#@ # -- Starting source /tmp/dc_shell.dOxxwD
+#@ # -- Starting source /tmp/dc_shell.fqDVbt
 
 #@ set_app_var alib_library_analysis_path .
-#@ # -- End source /tmp/dc_shell.dOxxwD
+#@ # -- End source /tmp/dc_shell.fqDVbt
 
 set_app_var alib_library_analysis_path .
-#@ # -- Starting source /tmp/dc_shell.atoFoA
+#@ # -- Starting source /tmp/dc_shell.HRTEjX
 
 #@ if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
-#@ # -- End source /tmp/dc_shell.atoFoA
+#@ # -- End source /tmp/dc_shell.HRTEjX
 
 if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
-#@ # -- Starting source /tmp/dc_shell.sYYxhy
+#@ # -- Starting source /tmp/dc_shell.siLcrF
 
 #@ if {$UPF_MODE == "golden"} {
 #@   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
 #@   # physical implementation, and verification flow.
 #@   set_app_var enable_golden_upf true
 #@ }
-#@ # -- End source /tmp/dc_shell.sYYxhy
+#@ # -- End source /tmp/dc_shell.siLcrF
 
 if {$UPF_MODE == "golden"} {
   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
   # physical implementation, and verification flow.
   set_app_var enable_golden_upf true
 }
-#@ # -- Starting source /tmp/dc_shell.KvvsFF
+#@ # -- Starting source /tmp/dc_shell.noOMUB
 
 #@ set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
 #@ /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
-#@ # -- End source /tmp/dc_shell.KvvsFF
+#@ 
+#@ 
+#@ 
+#@ set_app_var target_library ${TARGET_LIBRARY_FILES}
+#@ set_app_var synthetic_library dw_foundation.sldb
+#@ set_app_var link_library "* $target_library $synthetic_library"
+#@ # -- End source /tmp/dc_shell.noOMUB
 
 set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
 /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
-#@ # -- Starting source /tmp/dc_shell.CEUnBp
 
-#@ set_app_var target_library ${TARGET_LIBRARY_FILES}
-#@ # -- End source /tmp/dc_shell.CEUnBp
+
 
 set_app_var target_library ${TARGET_LIBRARY_FILES}
-#@ # -- Starting source /tmp/dc_shell.CRUrkc
-
-#@ set_app_var synthetic_library dw_foundation.sldb
-#@ # -- End source /tmp/dc_shell.CRUrkc
-
 set_app_var synthetic_library dw_foundation.sldb
-#@ # -- Starting source /tmp/dc_shell.jDkvls
-
-#@ set_app_var link_library "* $target_library $synthetic_library"
-#@ # -- End source /tmp/dc_shell.jDkvls
-
 set_app_var link_library "* $target_library $synthetic_library"
-#@ # -- Starting source /tmp/dc_shell.NQVfpC
+#@ # -- Starting source /tmp/dc_shell.TgSOOz
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
@@ -9005,7 +8997,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 #@     eval ${create_lib_cmd}
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.NQVfpC
+#@ # -- End source /tmp/dc_shell.TgSOOz
 
 if {[shell_is_in_topographical_mode]} {
   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
@@ -9023,120 +9015,120 @@ if {[shell_is_in_topographical_mode]} {
     eval ${create_lib_cmd}
   }
 }
-#@ # -- Starting source /tmp/dc_shell.QbRudR
+#@ # -- Starting source /tmp/dc_shell.rprNNq
 
 #@ set set_check_library_cmd "set_check_library_options -mcmm"
-#@ # -- End source /tmp/dc_shell.QbRudR
+#@ # -- End source /tmp/dc_shell.rprNNq
 
 set set_check_library_cmd "set_check_library_options -mcmm"
-#@ # -- Starting source /tmp/dc_shell.VTXevO
+#@ # -- Starting source /tmp/dc_shell.KnBJpc
 
 #@ if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
 #@ puts "RM-info: Running $set_check_library_cmd"
 #@ eval ${set_check_library_cmd}
 #@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
-#@ # -- End source /tmp/dc_shell.VTXevO
+#@ # -- End source /tmp/dc_shell.KnBJpc
 
 if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
 puts "RM-info: Running $set_check_library_cmd"
 eval ${set_check_library_cmd}
 redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
-#@ # -- Starting source /tmp/dc_shell.mclamP
+#@ # -- Starting source /tmp/dc_shell.MnZSxu
 
 #@ set_app_var sh_new_variable_message false
-#@ # -- End source /tmp/dc_shell.mclamP
+#@ # -- End source /tmp/dc_shell.MnZSxu
 
 set_app_var sh_new_variable_message false
-#@ # -- Starting source /tmp/dc_shell.oaWThW
+#@ # -- Starting source /tmp/dc_shell.ZBqeQj
 
 #@ set_app_var auto_insert_level_shifters_on_clocks all
-#@ # -- End source /tmp/dc_shell.oaWThW
+#@ # -- End source /tmp/dc_shell.ZBqeQj
 
 set_app_var auto_insert_level_shifters_on_clocks all
-#@ # -- Starting source /tmp/dc_shell.zXBCOt
+#@ # -- Starting source /tmp/dc_shell.sPAUsX
 
 #@ set_app_var spg_enable_via_resistance_support true
-#@ # -- End source /tmp/dc_shell.zXBCOt
+#@ # -- End source /tmp/dc_shell.sPAUsX
 
 set_app_var spg_enable_via_resistance_support true
-#@ # -- Starting source /tmp/dc_shell.HxFrls
+#@ # -- Starting source /tmp/dc_shell.yjsvOP
 
 #@ set_app_var simplified_verification_mode true
-#@ # -- End source /tmp/dc_shell.HxFrls
+#@ # -- End source /tmp/dc_shell.yjsvOP
 
 set_app_var simplified_verification_mode true
-#@ # -- Starting source /tmp/dc_shell.jCiGMc
+#@ # -- Starting source /tmp/dc_shell.SBULUe
 
 #@ set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
-#@ # -- End source /tmp/dc_shell.jCiGMc
+#@ # -- End source /tmp/dc_shell.SBULUe
 
 set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
-#@ # -- Starting source /tmp/dc_shell.JJDJWb
+#@ # -- Starting source /tmp/dc_shell.oJXkAg
 
 #@ analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
-#@ # -- End source /tmp/dc_shell.JJDJWb
+#@ # -- End source /tmp/dc_shell.oJXkAg
 
 analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
-#@ # -- Starting source /tmp/dc_shell.cQMicl
+#@ # -- Starting source /tmp/dc_shell.aVobrO
 
 #@ foreach path $rtl_path_1 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.cQMicl
+#@ # -- End source /tmp/dc_shell.aVobrO
 
 foreach path $rtl_path_1 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.XEkYnL
+#@ # -- Starting source /tmp/dc_shell.Povfgh
 
 #@ foreach path $rtl_path_2 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.XEkYnL
+#@ # -- End source /tmp/dc_shell.Povfgh
 
 foreach path $rtl_path_2 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.AVgENR
+#@ # -- Starting source /tmp/dc_shell.SRAojq
 
 #@ foreach path $rtl_path_3 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.AVgENR
+#@ # -- End source /tmp/dc_shell.SRAojq
 
 foreach path $rtl_path_3 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.TKpKtZ
+#@ # -- Starting source /tmp/dc_shell.YTPtFF
 
 #@ foreach path $rtl_path_4 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.TKpKtZ
+#@ # -- End source /tmp/dc_shell.YTPtFF
 
 foreach path $rtl_path_4 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.ijLxNh
+#@ # -- Starting source /tmp/dc_shell.EFwekZ
 
 #@ elaborate ${DESIGN_NAME}
-#@ # -- End source /tmp/dc_shell.ijLxNh
+#@ # -- End source /tmp/dc_shell.EFwekZ
 
 elaborate ${DESIGN_NAME}
-#@ # -- Starting source /tmp/dc_shell.GbHKPw
+#@ # -- Starting source /tmp/dc_shell.LtGROQ
 
 #@ current_design ${DESIGN_NAME}
-#@ # -- End source /tmp/dc_shell.GbHKPw
+#@ # -- End source /tmp/dc_shell.LtGROQ
 
 current_design ${DESIGN_NAME}
 link
-#@ # -- Starting source /tmp/dc_shell.onLOBp
+#@ # -- Starting source /tmp/dc_shell.xrZJzr
 
 #@ set upf_create_implicit_supply_sets false
-#@ # -- End source /tmp/dc_shell.onLOBp
+#@ # -- End source /tmp/dc_shell.xrZJzr
 
 set upf_create_implicit_supply_sets false
-#@ # -- Starting source /tmp/dc_shell.sYqGzS
+#@ # -- Starting source /tmp/dc_shell.yWgaCp
 
 #@ if {$UPF_MODE != "none"} {
 #@   if {$UPF_FILE != ""} {
@@ -9148,8 +9140,7 @@ set upf_create_implicit_supply_sets false
 #@     eval ${load_upf_cmd}
 #@   }
 #@ }
-#@ 
-#@ # -- End source /tmp/dc_shell.sYqGzS
+#@ # -- End source /tmp/dc_shell.yWgaCp
 
 if {$UPF_MODE != "none"} {
   if {$UPF_FILE != ""} {
@@ -9161,22 +9152,21 @@ if {$UPF_MODE != "none"} {
     eval ${load_upf_cmd}
   }
 }
+#@ # -- Starting source /tmp/dc_shell.XAROnz
 
-#@ # -- Starting source /tmp/dc_shell.lSAGZp
-
-#@ set_voltage 0.6 -object_list {VDD}
+#@ set_voltage 0.6 -object_list {VDD VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
 #@ set_voltage 0.0 -object_list {VSS}
-#@ # -- End source /tmp/dc_shell.lSAGZp
+#@ # -- End source /tmp/dc_shell.XAROnz
 
-set_voltage 0.6 -object_list {VDD}
+set_voltage 0.6 -object_list {VDD VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
 set_voltage 0.0 -object_list {VSS}
-#@ # -- Starting source /tmp/dc_shell.RVfIlc
+#@ # -- Starting source /tmp/dc_shell.XliLal
 
 #@ set check_mv_design_failed false
-#@ # -- End source /tmp/dc_shell.RVfIlc
+#@ # -- End source /tmp/dc_shell.XliLal
 
 set check_mv_design_failed false
-#@ # -- Starting source /tmp/dc_shell.BHiJGX
+#@ # -- Starting source /tmp/dc_shell.sULOHq
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   ## For MCMM, perform this check for each scenario.
@@ -9194,7 +9184,7 @@ set check_mv_design_failed false
 #@     set check_mv_design_failed true
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.BHiJGX
+#@ # -- End source /tmp/dc_shell.sULOHq
 
 if {[shell_is_in_topographical_mode]} {
   ## For MCMM, perform this check for each scenario.
@@ -9212,10 +9202,594 @@ if {[shell_is_in_topographical_mode]} {
     set check_mv_design_failed true
   }
 }
-#@ # -- Starting source /tmp/dc_shell.RWXPLf
+#@ # -- Starting source /tmp/dc_shell.ewDmGH
 
 #@ if {$check_mv_design_failed} {
 #@   puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
 #@   puts "This script will now exit."
 #@   exit 1
 #@ }
+#@ # -- End source /tmp/dc_shell.ewDmGH
+
+if {$check_mv_design_failed} {
+  puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
+  puts "This script will now exit."
+  exit 1
+}
+#@ # -- Starting source /tmp/dc_shell.vdiFXL
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+#@   # Check the readiness of the block abstraction
+#@   if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
+#@     check_block_abstraction
+#@   }
+#@ }
+#@ # -- End source /tmp/dc_shell.vdiFXL
+
+if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # Check the readiness of the block abstraction
+  if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
+    check_block_abstraction
+  }
+}
+#@ # -- Starting source /tmp/dc_shell.QQxLib
+
+#@ source ${SCRIPTS}/${DESIGN_NAME}.sdc
+#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/top/scripts/bms_system_3lmu_top_enhanced.sdc
+
+#@ # ==============================================================================
+#@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
+#@ # Architecture: Top-Down Chip Level Constraint Matrix
+#@ # Target Node: 14nm FinFET 
+#@ # Target Module: bms_system_3lmu_top_enhanced (Absolute Chip Boundary)
+#@ # ==============================================================================
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 1. TIMING ENVIRONMENT SETTINGS & VARIABLES
+#@ # ------------------------------------------------------------------------------
+#@ set SYS_CLK_PERIOD       10.0      ;# 100 MHz System Clock Targeted Period
+#@ set SYS_CLK_UNCERT_SETUP 0.15      ;# 150ps Clock Tree Jitter + Pre-CTS Skew Budget
+#@ set SYS_CLK_UNCERT_HOLD  0.05      ;# 50ps Hold Uncertainty Margin
+#@ set MAX_TRANSITION       0.15      ;# 150ps Slew Limit to combat 14nm wire resistance
+#@ set MAX_CAPACITANCE      0.05      ;# 50fF Gate Drive Pin Cap Limit
+#@ set IO_DELAY_MAX         3.0       ;# 30% Setup Window Budget for external traces
+#@ set IO_DELAY_MIN         0.2       ;# Minimum hold margin for board routing
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 2. CLOCK TREE STRUCTURE DEFINITIONS
+#@ # ------------------------------------------------------------------------------
+#@ # Define Primary Master Clock Node at the main chip input port
+#@ create_clock -name sys_clk -period $SYS_CLK_PERIOD -waveform {0 5.0} [get_ports clk]
+#@ 
+#@ # The SPI clock is internally generated by the SPI Master instance inside the MCU.
+#@ # The tool will trace this logic tree down to route CTS networks for the whole chip.
+#@ create_generated_clock -name spi_clk \
+#@     -source [get_ports clk] \
+#@     -divide_by 16 \
+#@     [get_pins u_mcu/u_spi_master/sclk_reg/Q]
+#@ 
+#@ # Enforce Jitter and Margin Rules to Ensure 14nm Structural Closure
+#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks sys_clk]
+#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks sys_clk]
+#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks spi_clk]
+#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks spi_clk]
+#@ 
+#@ set_clock_transition 0.05 [get_clocks {sys_clk spi_clk}]
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 3. CLOCK DOMAIN CROSSING (CDC) ISOLATION
+#@ # ------------------------------------------------------------------------------
+#@ # Declares the 100MHz main clock and the internal SPI clock as asynchronous.
+#@ # This prevents metastability violation reports inside the comm_hub modules.
+#@ set_clock_groups -asynchronous -group [get_clocks sys_clk] -group [get_clocks spi_clk]
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 4. CHIP IO INTERFACE DELAYS (Absolute Chip Boundary)
+#@ # ------------------------------------------------------------------------------
+#@ # Constrain all pad inputs (Analog ADC data, fault lines) except the main clock
+#@ set_input_delay -clock sys_clk -max $IO_DELAY_MAX [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_input_delay -clock sys_clk -min $IO_DELAY_MIN [remove_from_collection [all_inputs] [get_ports clk]]
+#@ 
+#@ # Constrain all pad outputs leaving the chip to the Vehicle Control Unit (VCU)
+#@ set_output_delay -clock sys_clk -max $IO_DELAY_MAX [all_outputs]
+#@ set_output_delay -clock sys_clk -min $IO_DELAY_MIN [all_outputs]
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 5. 14nm ELECTRICAL DESIGN RULE CONSTRAINTS (DRC)
+#@ # ------------------------------------------------------------------------------
+#@ set_max_transition $MAX_TRANSITION [current_design]
+#@ set_max_capacitance $MAX_CAPACITANCE [current_design]
+#@ set_load 5.0 [all_outputs] ;# Typical 5pF board-level pin load
+#@ 
+#@ # ------------------------------------------------------------------------------
+#@ # 6. ARCHITECTURE-SPECIFIC EXCEPTIONS & TIMING STRATEGIES
+#@ # ------------------------------------------------------------------------------
+#@ # SAFETY CRITICAL: Combinational path tightening for instant current throttling.
+#@ # In the Top Level, these are true input ports traversing combinational logic to an output port.
+#@ # Using explicit inputs (pack_current and the three LMU temperatures) prevents UID-10 errors.
+#@ set_max_delay 5.0 -from [get_ports {pack_current lmu0_temp_die lmu1_temp_die lmu2_temp_die}] -to [get_ports allowed_current]
+#@ 
+#@ # Setup and Hold window guardbands around internal Integrated Clock Gating (ICG)
+#@ # Pushed down hierarchically into the three LMUs via the power management blocks.
+#@ set_clock_gating_check -setup 0.15 -hold 0.05 [get_cells -hierarchical *logic_clk_en*]
+#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/top/scripts/bms_system_3lmu_top_enhanced.sdc
+
+#@ # -- End source /tmp/dc_shell.QQxLib
+
+source ${SCRIPTS}/${DESIGN_NAME}.sdc
+#@ # -- Starting source /tmp/dc_shell.CWCzyQ
+
+#@ check_design > ${OUTPUTS_DIR}/check_design.rpt
+#@ check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+#@ 
+#@ #Path Group
+#@ group_path -from [all_registers] -to [all_registers] -name reg2reg
+#@ group_path -from [all_registers] -to [all_outputs] -name reg2out
+#@ group_path -from [all_inputs] -to [all_registers] -name in2reg
+#@ group_path -from [all_inputs] -to [all_outputs] -name in2out
+#@ # -- End source /tmp/dc_shell.CWCzyQ
+
+check_design > ${OUTPUTS_DIR}/check_design.rpt
+check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+
+#Path Group
+group_path -from [all_registers] -to [all_registers] -name reg2reg
+group_path -from [all_registers] -to [all_outputs] -name reg2out
+group_path -from [all_inputs] -to [all_registers] -name in2reg
+group_path -from [all_inputs] -to [all_outputs] -name in2out
+#@ # -- Starting source /tmp/dc_shell.vTBrAg
+
+#@ analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
+#@ # -- End source /tmp/dc_shell.vTBrAg
+
+analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
+#@ # -- Starting source /tmp/dc_shell.MUaUTB
+
+#@ set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+#@ # -- End source /tmp/dc_shell.MUaUTB
+
+set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+#@ # -- Starting source /tmp/dc_shell.LMGOnr
+
+#@ if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
+#@ puts "RM-info: Running $compile_ultra_cmd"
+#@ # -- End source /tmp/dc_shell.LMGOnr
+
+if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
+puts "RM-info: Running $compile_ultra_cmd"
+#@ # -- Starting source /tmp/dc_shell.QbPpxi
+
+#@ eval ${compile_ultra_cmd}
+#@ # -- End source /tmp/dc_shell.QbPpxi
+
+eval ${compile_ultra_cmd}
+#@ # -- Starting source /tmp/dc_shell.wkpmyq
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
+#@   # If this will be a sub-block in a hierarchical design, uniquify with block unique names
+#@   # to avoid name collisions when integrating the design at the top level
+#@   set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
+#@   uniquify -force
+#@ }
+#@ # -- End source /tmp/dc_shell.wkpmyq
+
+if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
+  # If this will be a sub-block in a hierarchical design, uniquify with block unique names
+  # to avoid name collisions when integrating the design at the top level
+  set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
+  uniquify -force
+}
+#@ # -- Starting source /tmp/dc_shell.syBQzN
+
+#@ change_names -rules verilog -hierarchy
+#@ # -- End source /tmp/dc_shell.syBQzN
+
+change_names -rules verilog -hierarchy
+#@ # -- Starting source /tmp/dc_shell.AaifMy
+
+#@ write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
+#@ # Write out link library information for PrimeTime when using instance-based target library settings
+#@ write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+#@ report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
+#@ report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
+#@ report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
+#@ report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
+#@ report_area > ${OUTPUTS_DIR}/area.rpt
+#@ report_qor > ${OUTPUTS_DIR}/qor.rpt
+#@ change_names -rules verilog
+#@ # -- End source /tmp/dc_shell.AaifMy
+
+write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
+# Write out link library information for PrimeTime when using instance-based target library settings
+write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
+report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
+report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
+report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
+report_area > ${OUTPUTS_DIR}/area.rpt
+report_qor > ${OUTPUTS_DIR}/qor.rpt
+change_names -rules verilog
+#@ # -- Starting source /tmp/dc_shell.MFCfwl
+
+#@ if {[shell_is_in_topographical_mode]} {
+#@   # For MCMM, some MV reports could have different voltages for different scenarios
+#@   set current_scenario_saved [current_scenario]
+#@   foreach scenario [all_active_scenarios] {
+#@     current_scenario ${scenario}
+#@ 
+#@     # Report all power domains in the design
+#@     redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.power_domain.rpt ] \
+#@       {report_power_domain -hierarchy}
+#@ 
+#@     # Report the top level supply nets
+#@     redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.supply_net.rpt ] \
+#@       {report_supply_net}
+#@ 
+#@     # Report the level shifters in the design
+#@     if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+#@       redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt ] \
+#@         {report_level_shifter -domain [get_power_domains * -hierarchical]}
+#@     } else {
+#@       redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt] \
+#@         {report_level_shifter}
+#@     }
+#@   }
+#@   current_scenario ${current_scenario_saved}
+#@ } else {
+#@   # Report all power domains in the design
+#@   redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.power_domain.rpt \
+#@     {report_power_domain -hierarchy}
+#@ 
+#@   # Report the top level supply nets
+#@   redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.supply_net.rpt \
+#@     {report_supply_net}
+#@ 
+#@   # Report the level shifters in the design
+#@   if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+#@     redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+#@       {report_level_shifter -domain [get_power_domains * -hierarchical]}
+#@   } else {
+#@     redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+#@       {report_level_shifter}
+#@   }
+#@ }
+#@ 
+#@ # -- End source /tmp/dc_shell.MFCfwl
+
+if {[shell_is_in_topographical_mode]} {
+  # For MCMM, some MV reports could have different voltages for different scenarios
+  set current_scenario_saved [current_scenario]
+  foreach scenario [all_active_scenarios] {
+    current_scenario ${scenario}
+
+    # Report all power domains in the design
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.power_domain.rpt ] \
+      {report_power_domain -hierarchy}
+
+    # Report the top level supply nets
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.supply_net.rpt ] \
+      {report_supply_net}
+
+    # Report the level shifters in the design
+    if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt ] \
+        {report_level_shifter -domain [get_power_domains * -hierarchical]}
+    } else {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt] \
+        {report_level_shifter}
+    }
+  }
+  current_scenario ${current_scenario_saved}
+} else {
+  # Report all power domains in the design
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.power_domain.rpt \
+    {report_power_domain -hierarchy}
+
+  # Report the top level supply nets
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.supply_net.rpt \
+    {report_supply_net}
+
+  # Report the level shifters in the design
+  if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter -domain [get_power_domains * -hierarchical]}
+  } else {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter}
+  }
+}
+
+#@ # -- Starting source /tmp/dc_shell.vsUTOO
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+#@ 
+#@   #################################################################################
+#@   # Write out Top-Level Design Without Hierarchical Blocks
+#@   #
+#@   # Note: The write command will automatically skip writing .ddc physical hierarchical
+#@   #       blocks in Design Compiler topographical mode and Design Compiler block
+#@   #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+#@   #       the top-level design. In the same way for the multivoltage flow, save_upf will
+#@   #       skip hierarchical blocks when saving the power intent data.
+#@   #
+#@   # When reading the design into other tools, read in all of the mapped hierarchical
+#@   # blocks and the mapped top-level design.
+#@   #
+#@   # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+#@   #                     block mapped netlist.
+#@   # For Formality: Verify each block and top separately.
+#@   #
+#@   #################################################################################
+#@ 
+#@   puts "RM-info: Writing out top level design without hierarchical blocks"
+#@ 
+#@   # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+#@   if {![shell_is_in_topographical_mode]} {
+#@     if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+#@       remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+#@     }
+#@   }
+#@ 
+#@   write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+#@ 
+#@   # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+#@   if {![shell_is_in_topographical_mode]} {
+#@     if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+#@       remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+#@     }
+#@   }
+#@ 
+#@   # Write out ddc mapped top-level design
+#@   write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+#@ 
+#@ } else {
+#@ 
+#@   if {$DESIGN_STYLE == "flat"} {
+#@     puts "RM-info: Writing out flat design"
+#@   } else {
+#@     puts "RM-info: Writing out bottom-level design"
+#@     create_block_abstraction
+#@   }
+#@ 
+#@   if {$UPF_MODE == "golden"} {
+#@     write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+#@   }
+#@   write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+#@   write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+#@ 
+#@ }
+#@ # -- End source /tmp/dc_shell.vsUTOO
+
+if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+
+  #################################################################################
+  # Write out Top-Level Design Without Hierarchical Blocks
+  #
+  # Note: The write command will automatically skip writing .ddc physical hierarchical
+  #       blocks in Design Compiler topographical mode and Design Compiler block
+  #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+  #       the top-level design. In the same way for the multivoltage flow, save_upf will
+  #       skip hierarchical blocks when saving the power intent data.
+  #
+  # When reading the design into other tools, read in all of the mapped hierarchical
+  # blocks and the mapped top-level design.
+  #
+  # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+  #                     block mapped netlist.
+  # For Formality: Verify each block and top separately.
+  #
+  #################################################################################
+
+  puts "RM-info: Writing out top level design without hierarchical blocks"
+
+  # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+
+  # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  # Write out ddc mapped top-level design
+  write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+} else {
+
+  if {$DESIGN_STYLE == "flat"} {
+    puts "RM-info: Writing out flat design"
+  } else {
+    puts "RM-info: Writing out bottom-level design"
+    create_block_abstraction
+  }
+
+  if {$UPF_MODE == "golden"} {
+    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+  }
+  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+}
+#@ # -- Starting source /tmp/dc_shell.jwNDpK
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+#@ 
+#@   #################################################################################
+#@   # Write out Top-Level Design Without Hierarchical Blocks
+#@   #
+#@   # Note: The write command will automatically skip writing .ddc physical hierarchical
+#@   #       blocks in Design Compiler topographical mode and Design Compiler block
+#@   #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+#@   #       the top-level design. In the same way for the multivoltage flow, save_upf will
+#@   #       skip hierarchical blocks when saving the power intent data.
+#@   #
+#@   # When reading the design into other tools, read in all of the mapped hierarchical
+#@   # blocks and the mapped top-level design.
+#@   #
+#@   # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+#@   #                     block mapped netlist.
+#@   # For Formality: Verify each block and top separately.
+#@   #
+#@   #################################################################################
+#@ 
+#@   puts "RM-info: Writing out top level design without hierarchical blocks"
+#@ 
+#@   # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+#@   if {![shell_is_in_topographical_mode]} {
+#@     if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+#@       remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+#@     }
+#@   }
+#@ 
+#@   write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+#@ 
+#@   # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+#@   if {![shell_is_in_topographical_mode]} {
+#@     if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+#@       remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+#@     }
+#@   }
+#@ 
+#@   # Write out ddc mapped top-level design
+#@   write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+#@ 
+#@ } else {
+#@ 
+#@   if {$DESIGN_STYLE == "flat"} {
+#@     puts "RM-info: Writing out flat design"
+#@   } else {
+#@     puts "RM-info: Writing out bottom-level design"
+#@     create_block_abstraction
+#@   }
+#@ 
+#@   if {$UPF_MODE == "golden"} {
+#@     write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+#@   }
+#@   write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+#@   write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+#@ 
+#@ }
+#@ # -- End source /tmp/dc_shell.jwNDpK
+
+if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+
+  #################################################################################
+  # Write out Top-Level Design Without Hierarchical Blocks
+  #
+  # Note: The write command will automatically skip writing .ddc physical hierarchical
+  #       blocks in Design Compiler topographical mode and Design Compiler block
+  #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+  #       the top-level design. In the same way for the multivoltage flow, save_upf will
+  #       skip hierarchical blocks when saving the power intent data.
+  #
+  # When reading the design into other tools, read in all of the mapped hierarchical
+  # blocks and the mapped top-level design.
+  #
+  # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+  #                     block mapped netlist.
+  # For Formality: Verify each block and top separately.
+  #
+  #################################################################################
+
+  puts "RM-info: Writing out top level design without hierarchical blocks"
+
+  # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+
+  # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  # Write out ddc mapped top-level design
+  write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+} else {
+
+  if {$DESIGN_STYLE == "flat"} {
+    puts "RM-info: Writing out flat design"
+  } else {
+    puts "RM-info: Writing out bottom-level design"
+    create_block_abstraction
+  }
+
+  if {$UPF_MODE == "golden"} {
+    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+  }
+  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+}
+#@ # -- Starting source /tmp/dc_shell.RaJcWx
+
+#@ if {$UPF_MODE != "none"} {
+#@   set save_upf_cmd "save_upf"
+#@   if {$UPF_MODE == "golden"} {
+#@     lappend save_upf_cmd -include_supply_exceptions
+#@     lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
+#@   } elseif {$UPF_MODE == "prime"} {
+#@     lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
+#@   }
+#@   puts "RM-info: Running $save_upf_cmd"
+#@   eval ${save_upf_cmd}
+#@ }
+#@ # -- End source /tmp/dc_shell.RaJcWx
+
+if {$UPF_MODE != "none"} {
+  set save_upf_cmd "save_upf"
+  if {$UPF_MODE == "golden"} {
+    lappend save_upf_cmd -include_supply_exceptions
+    lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
+  } elseif {$UPF_MODE == "prime"} {
+    lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
+  }
+  puts "RM-info: Running $save_upf_cmd"
+  eval ${save_upf_cmd}
+}
+#@ # -- Starting source /tmp/dc_shell.egulHr
+
+#@ set_svf -off
+#@ # -- End source /tmp/dc_shell.egulHr
+
+set_svf -off
+#@ # -- Starting source /tmp/dc_shell.WEXDhk
+
+#@ if {[shell_is_in_topographical_mode]} {
+#@   save_lib
+#@ }
+#@ # -- End source /tmp/dc_shell.WEXDhk
+
+if {[shell_is_in_topographical_mode]} {
+  save_lib
+}
+#@ # -- Starting source /tmp/dc_shell.LaKfPJ
+
+#@ puts "SYNTHESIS COMPLETED :)"
+#@ # -- End source /tmp/dc_shell.LaKfPJ
+
+puts "SYNTHESIS COMPLETED :)"
+change_selection [get_cells bms_system_3lmu_top_enhanced]
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
+change_selection [get_cells bms_system_3lmu_top_enhanced]
+change_selection 
+change_selection [get_cells u_mcu]
+change_selection 
+change_selection [get_cells bms_system_3lmu_top_enhanced]
+change_selection [get_cells bms_system_3lmu_top_enhanced]
+exit

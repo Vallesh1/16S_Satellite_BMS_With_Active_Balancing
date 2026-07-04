@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : bms_system_3lmu_top_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 22:11:02 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
+    saed14lvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db)
+
+Number of ports:                        23298
+Number of nets:                         51043
+Number of cells:                        31167
+Number of combinational cells:          28427
+Number of sequential cells:              2284
+Number of macros/black boxes:               0
+Number of buf/inv:                       7845
+Number of references:                       7
+
+Combinational area:               8664.615524
+Buf/Inv area:                     1569.451174
+Noncombinational area:            2891.816484
+Macro/Black Box area:                0.000000
+Net Interconnect area:           20106.519126
+
+Total cell area:                 11556.432007
+Total area:                      31662.951134
+1

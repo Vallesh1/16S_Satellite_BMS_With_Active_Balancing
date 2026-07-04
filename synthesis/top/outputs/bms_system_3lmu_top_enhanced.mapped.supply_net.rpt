@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : supply_net
+Design : bms_system_3lmu_top_enhanced
+Version: T-2022.03-SP4
+Date   : Sat Jul  4 22:11:13 2026
+****************************************
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD
+ Current Scope         : bms_system_3lmu_top_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : VDD_NOM 
+ Power Domain          : PD_CORE(*) PD_LMU0 PD_LMU1 PD_LMU2  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VSS
+ Current Scope         : bms_system_3lmu_top_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.00)           (0.00)
+
+ Supply States         : GND 
+ Power Domain          : PD_CORE(*) PD_LMU0(*) PD_LMU1(*) PD_LMU2(*)  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD_LMU0_SW
+ Current Scope         : bms_system_3lmu_top_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD_LMU0(*)  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD_LMU1_SW
+ Current Scope         : bms_system_3lmu_top_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD_LMU1(*)  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD_LMU2_SW
+ Current Scope         : bms_system_3lmu_top_enhanced
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD_LMU2(*)  
+
+------------------------------------------------------------------------------
+1
