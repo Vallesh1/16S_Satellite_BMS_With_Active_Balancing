@@ -1,0 +1,87 @@
+# ==============================================================================
+# GOLDEN UPF SPECIFICATION: Battery Management System (BMS)
+# Standard: IEEE 1801 (UPF 2.1)
+# Top Module: bms_system_3lmu_top_enhanced
+# Description: Defines the architectural Power Domains, Supply Networks, and
+#              the Global Power State Table (PST) for sign-off.
+# ==============================================================================
+
+upf_version 2.1
+set_design_top bms_system_3lmu_top_enhanced
+
+# ------------------------------------------------------------------------------
+# 1. POWER DOMAIN CREATION
+# ------------------------------------------------------------------------------
+# PD_CORE: Always-On Domain (Includes Top Pad Ring & MCU Macro)
+create_power_domain PD_CORE -include_scope
+
+# PD_LMU[0:2]: Switchable Voltage Islands for Edge Satellites
+create_power_domain PD_LMU0 -elements {u_lmu0}
+create_power_domain PD_LMU1 -elements {u_lmu1}
+create_power_domain PD_LMU2 -elements {u_lmu2}
+
+# ------------------------------------------------------------------------------
+# 2. GLOBAL SUPPLY PORTS & NETS
+# ------------------------------------------------------------------------------
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+
+# Global Nets in Top Domain
+create_supply_net VDD -domain PD_CORE
+create_supply_net VSS -domain PD_CORE
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+
+# ------------------------------------------------------------------------------
+# 3. DOMAIN SUPPLY NETS & PRIMARY ROUTING
+# ------------------------------------------------------------------------------
+# Route Global Power/Ground to LMUs (Before Switches)
+create_supply_net VDD -domain PD_LMU0 -reuse
+create_supply_net VSS -domain PD_LMU0 -reuse
+create_supply_net VDD -domain PD_LMU1 -reuse
+create_supply_net VSS -domain PD_LMU1 -reuse
+create_supply_net VDD -domain PD_LMU2 -reuse
+create_supply_net VSS -domain PD_LMU2 -reuse
+
+# Create the Switched Power Nets (The rails *after* the header switches)
+create_supply_net VDD_LMU0_SW -domain PD_LMU0
+create_supply_net VDD_LMU1_SW -domain PD_LMU1
+create_supply_net VDD_LMU2_SW -domain PD_LMU2
+
+# Assign Primary Nets to Domains
+set_domain_supply_net PD_CORE -primary_power_net VDD -primary_ground_net VSS
+set_domain_supply_net PD_LMU0 -primary_power_net VDD_LMU0_SW -primary_ground_net VSS
+set_domain_supply_net PD_LMU1 -primary_power_net VDD_LMU1_SW -primary_ground_net VSS
+set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net VSS
+
+# ------------------------------------------------------------------------------
+# 4. POWER STATE DEFINITIONS & PST (Power State Table)
+# ------------------------------------------------------------------------------
+# Define the nominal operating voltages for states
+add_port_state VDD -state {VDD_NOM 1.2}
+add_port_state VSS -state {GND 0.0}
+
+add_port_state header_sw_lmu0/vout -state {LMU0_ON 1.2} -state {LMU0_OFF off}
+add_port_state header_sw_lmu1/vout -state {LMU1_ON 1.2} -state {LMU1_OFF off}
+add_port_state header_sw_lmu2/vout -state {LMU2_ON 1.2} -state {LMU2_OFF off}
+
+# Create the Power State Table to dictate legal combinations
+create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+
+# Legal State 1: EVERYTHING ON (Active Drive)
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+
+# Legal State 2: ALL LMUS ASLEEP (Standby / Parked)
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+
+# Legal State 3: LMU 0 ACTIVE, OTHERS SLEEP (Localized Wakeup)
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
+
+# ------------------------------------------------------------------------------
+# 5. LOAD SUPPLEMENTAL FILE (Switches, Isolation, Level Shifters)
+# ------------------------------------------------------------------------------
+load_upf constraints/upf/bms_power_supplemental.upf
+
+# ==============================================================================
+# END OF GOLDEN UPF
+# ==============================================================================
