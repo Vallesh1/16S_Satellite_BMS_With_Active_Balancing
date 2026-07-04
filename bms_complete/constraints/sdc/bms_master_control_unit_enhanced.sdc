@@ -66,6 +66,6 @@ set_load 5.0 [all_outputs]
 # ------------------------------------------------------------------------------
 # SAFETY CRITICAL: Combinational path tightening for instant current throttling.
 # Ensures the dynamic derating logic synthesizes using fast, low-Vt standard cells.
-# Note: 'max_temp_seen' is an internal register/output, so it is inherently constrained 
-# by the clock period. 'pack_current' is a direct input, so we explicitly constrain its feedthrough path.
+# Note: 'max_temp_seen' is an output port, so it cannot be used as a -from startpoint.
+# 'pack_current' is a direct input, so we explicitly constrain its feedthrough path.
 set_max_delay 5.0 -from [get_ports pack_current*] -to [get_ports allowed_current*]
