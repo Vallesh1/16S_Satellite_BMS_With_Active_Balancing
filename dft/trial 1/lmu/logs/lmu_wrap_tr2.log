@@ -1,4 +1,4 @@
-/home/cad/eda/Mentor_Graphics/tessent_2022.2/bin/tessent -shell -logfile ./logs/lmu_wrap_tr_1.log -replace
+/home/cad/eda/Mentor_Graphics/tessent_2022.2/bin/tessent -shell -logfile ./logs/lmu_wrap_tr2.log -replace
 //  Tessent Shell  2022.2    Fri May 27 22:24:01 GMT 2022
 //                Unpublished work. Copyright 2022 Siemens
 //
@@ -8,180 +8,32 @@
 //     information is strictly limited as set forth in the Customer's 
 //                   applicable agreements with SISW. 
 //
-//  Siemens software executing under x86-64 Linux on Sat Jul 04 20:53:14 IST 2026.
+//  Siemens software executing under x86-64 Linux on Wed Jul 08 13:23:31 IST 2026.
 //  64 bit version
 //  Host: mavenserver-RH3 (255072 MB RAM, 122071 MB Swap)
 //
+//  command: set_context patterns -scan
 //  command: set_context dft -scan
 //  command: read_cell_library adk.tcelllib 
 //  Reading DFT Library file adk.tcelllib
 //  Finished reading file adk.tcelllib
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/*.v
 //  command: read_verilog bms_lmu_wrapper.mapped.v 
-//  command: set_current_design bms_lmu_wrapper
-//  Warning: Undefined modules were found.
-//           Before using "set_system_mode" or "create_flat_model", you must either define
-//           the missing modules using "read_verilog" and/or "read_cell_library", or use the
-//           following command to treat them as black boxes:
-             add_black_boxes -modules { \
-                    SAEDLVT14_EO2_1 \
-                    SAEDLVT14_ND4_0P75 \
-                    SAEDLVT14_NR2_MM_0P5 \
-                    SAEDLVT14_TIE0_V1_2 \
-                    SAEDLVT14_TIE1_4 \
-                    SAEDRVT14_ADDF_V1_0P5 \
-                    SAEDRVT14_ADDF_V2_0P5 \
-                    SAEDRVT14_ADDH_0P5 \
-                    SAEDRVT14_AN2B_MM_1 \
-                    SAEDRVT14_AN2B_PMM_2 \
-                    SAEDRVT14_AN2_0P5 \
-                    SAEDRVT14_AN2_MM_0P5 \
-                    SAEDRVT14_AN2_MM_1 \
-                    SAEDRVT14_AN3_0P5 \
-                    SAEDRVT14_AN4_0P75 \
-                    SAEDRVT14_AO21B_0P5 \
-                    SAEDRVT14_AO21_U_0P5 \
-                    SAEDRVT14_AO221_0P5 \
-                    SAEDRVT14_AO32_U_0P5 \
-                    SAEDRVT14_AOI21_0P5 \
-                    SAEDRVT14_AOI21_0P75 \
-                    SAEDRVT14_AOI22_0P5 \
-                    SAEDRVT14_AOI31_0P5 \
-                    SAEDRVT14_BUF_PS_1P5 \
-                    SAEDRVT14_BUF_S_3 \
-                    SAEDRVT14_BUF_U_0P5 \
-                    SAEDRVT14_CKGTNLT_V5_1 \
-                    SAEDRVT14_CKGTPLT_V5_1 \
-                    SAEDRVT14_CLKSPLT_1 \
-                    SAEDRVT14_EN2_0P5 \
-                    SAEDRVT14_EO2_0P5 \
-                    SAEDRVT14_EO2_1 \
-                    SAEDRVT14_EO2_V1_0P75 \
-                    SAEDRVT14_FDPRBQ_V2LP_0P5 \
-                    SAEDRVT14_FDPRBQ_V2LP_1 \
-                    SAEDRVT14_FSDPRBQ_V2LP_1 \
-                    SAEDRVT14_FSDPRBQ_V2LP_2 \
-                    SAEDRVT14_FSDPSBQ_V2LP_1 \
-                    SAEDRVT14_INV_0P5 \
-                    SAEDRVT14_INV_0P75 \
-                    SAEDRVT14_MUX2_U_0P5 \
-                    SAEDRVT14_MUXI2_U_0P5 \
-                    SAEDRVT14_ND2B_U_0P5 \
-                    SAEDRVT14_ND2_CDC_1 \
-                    SAEDRVT14_ND2_ECO_1 \
-                    SAEDRVT14_ND2_MM_0P5 \
-                    SAEDRVT14_ND3B_0P75 \
-                    SAEDRVT14_ND3_0P5 \
-                    SAEDRVT14_ND4_0P5 \
-                    SAEDRVT14_NR2B_2 \
-                    SAEDRVT14_NR2_1 \
-                    SAEDRVT14_NR3_0P5 \
-                    SAEDRVT14_NR4_0P75 \
-                    SAEDRVT14_OA21B_1 \
-                    SAEDRVT14_OA21_1 \
-                    SAEDRVT14_OA21_MM_1 \
-                    SAEDRVT14_OA221_U_0P5 \
-                    SAEDRVT14_OA22_U_0P5 \
-                    SAEDRVT14_OA2BB2_V1_0P5 \
-                    SAEDRVT14_OA31_1 \
-                    SAEDRVT14_OA31_2 \
-                    SAEDRVT14_OAI211_0P5 \
-                    SAEDRVT14_OAI21_0P5 \
-                    SAEDRVT14_OAI22_0P5 \
-                    SAEDRVT14_OAI31_1 \
-                    SAEDRVT14_OR2_0P5 \
-                    SAEDRVT14_OR2_MM_0P5 \
-                    SAEDRVT14_OR2_MM_1P5 \
-                    SAEDRVT14_OR3_0P5 \
-                    SAEDRVT14_OR4_1 \
-                    \**SEQGEN**  \
-             }
-//           You can also use "add_black_boxes -auto" to black box all undefined modules but
-//           it is recommended that you do not add this command to your dofile. Doing so may
-//           unintentionally black-box new undefined modules in future runs.
-//  Warning: 473 cases: Undriven net in netlist module
-//  Warning: 13 cases: Net in netlist not connected
-//  Warning: 4 cases: Undefined module pin assumed to be input
-//  Note: Issue set_current_design with the -show_elaboration_warnings option to see more details about previous warnings
 //  command: set_current_design bms_lmu_wrapper -show_elaboration_warnings
-//  Warning: Pin 'A' of module 'SAEDRVT14_AN2B_PMM_2' is undefined, direction assumed to be input
-//  Warning: Pin 'A3' of module 'SAEDRVT14_AN3_0P5' is undefined, direction assumed to be input
-//  Warning: Pin 'A1' of module 'SAEDRVT14_AOI22_0P5' is undefined, direction assumed to be input
-//  Warning: Pin 'A' of module 'SAEDRVT14_INV_0P75' is undefined, direction assumed to be input
+//  Warning: Pin 'preset' of module '\**SEQGEN** ' is undefined, direction assumed to be input
+//  Warning: Pin 'data_in' of module '\**SEQGEN** ' is undefined, direction assumed to be input
+//  Warning: Pin 'enable' of module '\**SEQGEN** ' is undefined, direction assumed to be input
+//  Warning: Pin 'synch_clear' of module '\**SEQGEN** ' is undefined, direction assumed to be input
+//  Warning: Pin 'synch_preset' of module '\**SEQGEN** ' is undefined, direction assumed to be input
+//  Warning: Pin 'synch_toggle' of module '\**SEQGEN** ' is undefined, direction assumed to be input
 //  Warning: Undefined modules were found.
 //           Before using "set_system_mode" or "create_flat_model", you must either define
 //           the missing modules using "read_verilog" and/or "read_cell_library", or use the
 //           following command to treat them as black boxes:
              add_black_boxes -modules { \
-                    SAEDLVT14_EO2_1 \
-                    SAEDLVT14_ND4_0P75 \
-                    SAEDLVT14_NR2_MM_0P5 \
-                    SAEDLVT14_TIE0_V1_2 \
-                    SAEDLVT14_TIE1_4 \
-                    SAEDRVT14_ADDF_V1_0P5 \
-                    SAEDRVT14_ADDF_V2_0P5 \
-                    SAEDRVT14_ADDH_0P5 \
-                    SAEDRVT14_AN2B_MM_1 \
-                    SAEDRVT14_AN2B_PMM_2 \
-                    SAEDRVT14_AN2_0P5 \
-                    SAEDRVT14_AN2_MM_0P5 \
-                    SAEDRVT14_AN2_MM_1 \
-                    SAEDRVT14_AN3_0P5 \
-                    SAEDRVT14_AN4_0P75 \
-                    SAEDRVT14_AO21B_0P5 \
-                    SAEDRVT14_AO21_U_0P5 \
-                    SAEDRVT14_AO221_0P5 \
-                    SAEDRVT14_AO32_U_0P5 \
-                    SAEDRVT14_AOI21_0P5 \
-                    SAEDRVT14_AOI21_0P75 \
-                    SAEDRVT14_AOI22_0P5 \
-                    SAEDRVT14_AOI31_0P5 \
-                    SAEDRVT14_BUF_PS_1P5 \
-                    SAEDRVT14_BUF_S_3 \
-                    SAEDRVT14_BUF_U_0P5 \
-                    SAEDRVT14_CKGTNLT_V5_1 \
-                    SAEDRVT14_CKGTPLT_V5_1 \
-                    SAEDRVT14_CLKSPLT_1 \
-                    SAEDRVT14_EN2_0P5 \
-                    SAEDRVT14_EO2_0P5 \
-                    SAEDRVT14_EO2_1 \
-                    SAEDRVT14_EO2_V1_0P75 \
-                    SAEDRVT14_FDPRBQ_V2LP_0P5 \
-                    SAEDRVT14_FDPRBQ_V2LP_1 \
-                    SAEDRVT14_FSDPRBQ_V2LP_1 \
-                    SAEDRVT14_FSDPRBQ_V2LP_2 \
-                    SAEDRVT14_FSDPSBQ_V2LP_1 \
-                    SAEDRVT14_INV_0P5 \
-                    SAEDRVT14_INV_0P75 \
-                    SAEDRVT14_MUX2_U_0P5 \
-                    SAEDRVT14_MUXI2_U_0P5 \
-                    SAEDRVT14_ND2B_U_0P5 \
-                    SAEDRVT14_ND2_CDC_1 \
-                    SAEDRVT14_ND2_ECO_1 \
-                    SAEDRVT14_ND2_MM_0P5 \
-                    SAEDRVT14_ND3B_0P75 \
-                    SAEDRVT14_ND3_0P5 \
-                    SAEDRVT14_ND4_0P5 \
-                    SAEDRVT14_NR2B_2 \
-                    SAEDRVT14_NR2_1 \
-                    SAEDRVT14_NR3_0P5 \
-                    SAEDRVT14_NR4_0P75 \
-                    SAEDRVT14_OA21B_1 \
-                    SAEDRVT14_OA21_1 \
-                    SAEDRVT14_OA21_MM_1 \
-                    SAEDRVT14_OA221_U_0P5 \
-                    SAEDRVT14_OA22_U_0P5 \
-                    SAEDRVT14_OA2BB2_V1_0P5 \
-                    SAEDRVT14_OA31_1 \
-                    SAEDRVT14_OA31_2 \
-                    SAEDRVT14_OAI211_0P5 \
-                    SAEDRVT14_OAI21_0P5 \
-                    SAEDRVT14_OAI22_0P5 \
-                    SAEDRVT14_OAI31_1 \
-                    SAEDRVT14_OR2_0P5 \
-                    SAEDRVT14_OR2_MM_0P5 \
-                    SAEDRVT14_OR2_MM_1P5 \
-                    SAEDRVT14_OR3_0P5 \
-                    SAEDRVT14_OR4_1 \
                     \**SEQGEN**  \
              }
 //           You can also use "add_black_boxes -auto" to black box all undefined modules but
@@ -673,93 +525,7 @@
 //  Warning: Net 'frame_data[10]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
 //  Warning: Net 'frame_data[9]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
 //  Warning: Net 'frame_data[8]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
-//  command: add_black_boxes -auto
-//  command: analyze_control_signals -auto_fix
-//  Warning: Rule FN1 violation occurs 486 times
-//  Flattening process completed, gates=23371, PIs=294, POs=156, CPU time=0.05 sec.
-//  ---------------------------------------------------------------------------
-//  Begin circuit learning analyses.
-//  --------------------------------
-//  Learning completed, CPU time=0.01 sec.
-//  ---------------------------------------------------------------------------
-//  Begin control signals identification analysis.
-//  ---------------------------------------------------------------------------
-//  Identified 0 clock control primary inputs.
-//  Identified 0 set control primary inputs.
-//  Identified 0 reset control primary inputs.
-//  Identified 0 read control primary inputs.
-//  Identified 0 write control primary inputs.
-//  ---------------------------------------------------------------------------
-//  Total number of internal lines is 0 (0 clocks, 0 sets , 0 resets, 0 reads, 0 writes).
-//  Total number of potentially clockable internal lines is 0 (0 clocks, 0 sets , 0 resets, 0 reads, 0 writes).
-//  Total number of not clockable internal lines is 0 (0 clocks, 0 sets , 0 resets, 0 reads, 0 writes).
-//  Total number of added primary input controls 0 (0 clocks, 0 sets , 0 resets, 0 reads, 0 writes).
-//  ---------------------------------------------------------------------------
-//  Warning: Flattened model deleted.
-//  command: check_design_rules 
-//  Warning: Rule FN1 violation occurs 486 times
-//  Flattening process completed, gates=23371, PIs=294, POs=156, CPU time=0.05 sec.
-//  ---------------------------------------------------------------------------
-//  Begin circuit learning analyses.
-//  --------------------------------
-//  Learning completed, CPU time=0.00 sec.
-//  ---------------------------------------------------------------------------
-//  Begin scan chain identification process, memory elements = 0,
-//  sequential library cells = 0.
-//  ---------------------------------------------------------------------------
-//  Circuit has no memory elements.
-//  0 sequential library cells identified as scannable.
-//  Number of targeted sequential library cells = 0
-//  Warning: The tool may require a shift-capture clock during insertion, 
-//           but no 'shift_capture_clock' DFT signal was identified and no TCLK source was specified using the command 'set_scan_signals -tclk'.
-//  Error: No valid system clock can be used as the shift-capture clock.
-//  command: set_scan_insertion_options -chain_count 10
-//  command: add_scan_mode unwrapped -chain_count 10
-//  Error: Command 'add_scan_mode' is not available in the current system mode.
-//         It is available in the following system modes: analysis.
-//  command: set_system_mode analysis
-//  ---------------------------------------------------------------------------
-//  Begin scan chain identification process, memory elements = 0,
-//  sequential library cells = 0.
-//  ---------------------------------------------------------------------------
-//  Circuit has no memory elements.
-//  0 sequential library cells identified as scannable.
-//  Number of targeted sequential library cells = 0
-//  Warning: The tool may require a shift-capture clock during insertion, 
-//           but no 'shift_capture_clock' DFT signal was identified and no TCLK source was specified using the command 'set_scan_signals -tclk'.
-//  Error: No valid system clock can be used as the shift-capture clock.
-//  command: set_scan_insertion_options -chain_count 20
-//  command: add_scan_mode unwrapped -chain_count 20
-//  Error: Command 'add_scan_mode' is not available in the current system mode.
-//         It is available in the following system modes: analysis.
-//  command: analyze_scan_chains 
-//  Error: Command 'analyze_scan_chains' is not available in the current system mode.
-//         It is available in the following system modes: analysis.
-//  command: set_system_mode analysis
-//  ---------------------------------------------------------------------------
-//  Begin scan chain identification process, memory elements = 0,
-//  sequential library cells = 0.
-//  ---------------------------------------------------------------------------
-//  Circuit has no memory elements.
-//  0 sequential library cells identified as scannable.
-//  Number of targeted sequential library cells = 0
-//  Warning: The tool may require a shift-capture clock during insertion, 
-//           but no 'shift_capture_clock' DFT signal was identified and no TCLK source was specified using the command 'set_scan_signals -tclk'.
-//  Error: No valid system clock can be used as the shift-capture clock.
-//  command: insert_test_logic 
-//  Error: Command 'insert_test_logic' is not available in the current system mode.
-//         It is available in the following system modes: analysis.
-//  command: set_system_mode -help
-Usage:  set_system_mode  {setup | insertion | analysis}
-//  command: set_system_mode analysis
-//  ---------------------------------------------------------------------------
-//  Begin scan chain identification process, memory elements = 0,
-//  sequential library cells = 0.
-//  ---------------------------------------------------------------------------
-//  Circuit has no memory elements.
-//  0 sequential library cells identified as scannable.
-//  Number of targeted sequential library cells = 0
-//  Warning: The tool may require a shift-capture clock during insertion, 
-//           but no 'shift_capture_clock' DFT signal was identified and no TCLK source was specified using the command 'set_scan_signals -tclk'.
-//  Error: No valid system clock can be used as the shift-capture clock.
-//  command: exit 
+//  command: set_design_level sub_block
+//  command: analyze_control_signals -auto
+//  Error: Undefined module '\**SEQGEN** ' found.
+//  Error: Instance of undefined model found. Check black box warnings and use add_black_boxes -auto to make these default black box models.
