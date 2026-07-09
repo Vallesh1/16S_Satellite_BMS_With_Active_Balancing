@@ -5,9 +5,9 @@ set_host_options -max_cores 8
 #################
 set DESIGN_NAME bms_master_control_unit_enhanced
 
-set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/outputs"
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs"
 
-set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/scripts"
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts"
 
 set DESIGN_STYLE hier
 

@@ -5,9 +5,9 @@ set_host_options -max_cores 8
 #################
 set DESIGN_NAME bms_lmu_wrapper
 
-set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs"
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs"
 
-set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts"
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts"
 
 set DESIGN_STYLE hier
 
@@ -73,8 +73,10 @@ if {$UPF_MODE == "golden"} {
 # Library Setup
 #################################################################################
 set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
-/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
-
+/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db  "
 
 
 set_app_var target_library ${TARGET_LIBRARY_FILES}
@@ -108,7 +110,7 @@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
 # Library Modifications
 # Apply library modifications after the libraries are loaded.
 #################################################################################
-source ${SCRIPTS}/dont_use.tcl
+####source ${SCRIPTS}/dont_use.tcl
 
 ##########################################################################################
 ## Message handling

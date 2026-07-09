@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Fri Jul  3 21:15:13 2026
+#@ # Date:   Thu Jul  9 21:28:05 2026
 #@ # Run by: MulukuriVNath@mavenserver-RH3
 #@ 
 
@@ -8619,25 +8619,305 @@ source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/admin/se
 
 #@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/admin/setup/.synopsys_dc.setup
 
+gui_start
+#@ # -- Starting source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/itk4.1.0/itk.tcl
+
+#@ #
+#@ # itk.tcl
+#@ # ----------------------------------------------------------------------
+#@ # Invoked automatically upon startup to customize the interpreter
+#@ # for [incr Tk].
+#@ # ----------------------------------------------------------------------
+#@ #   AUTHOR:  Michael J. McLennan
+#@ #            Bell Labs Innovations for Lucent Technologies
+#@ #            mmclennan@lucent.com
+#@ #            http://www.tcltk.com/itcl
+#@ # ----------------------------------------------------------------------
+#@ #            Copyright (c) 1993-1998  Lucent Technologies, Inc.
+#@ # ======================================================================
+#@ # See the file "license.terms" for information on usage and
+#@ # redistribution of this file, and for a DISCLAIMER OF ALL WARRANTIES.
+#@ 
+#@ package require -exact Itk 4.1.0
+#@ #
+#@ # Provide transparent access to all [incr Tk] commands
+#@ #
+#@ if {$tcl_platform(os) == "MacOS"} {
+#@     source -rsrc itk:tclIndex
+#@ } else {
+#@     lappend auto_path ${itk::library}
+#@ }
+#@ 
+#@ # ----------------------------------------------------------------------
+#@ #  USAGE:  itk::remove_destroy_hook <widget>
+#@ #
+#@ #  Used internally via "itk_component delete" when disconnecting a
+#@ #  component <widget> from the mega-widget that contains it.
+#@ #  Each component has a special binding for the <Destroy> event
+#@ #  that causes it to disconnect itself from its parent when destroyed.
+#@ #  This procedure removes the binding from the binding tag list and
+#@ #  deletes the binding.  It is much easier to implement this in
+#@ #  Tcl than C.
+#@ # ----------------------------------------------------------------------
+#@ proc ::itk::remove_destroy_hook {widget} {
+#@     if {![winfo exists $widget]} {return}
+#@     set tags [bindtags $widget]
+#@     set i [lsearch $tags "itk-destroy-$widget"]
+#@     if {$i >= 0} {
+#@         bindtags $widget [lreplace $tags $i $i]
+#@     }
+#@     bind itk-destroy-$widget <Destroy> {}
+#@ }
+#@ 
+#@ #
+#@ # Define "usual" option-handling code for the Tk widgets:
+#@ #
+#@ itk::usual Button {
+#@     keep -background -cursor -foreground -font
+#@     keep -activebackground -activeforeground -disabledforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Canvas {
+#@     keep -background -cursor
+#@     keep -insertbackground -insertborderwidth -insertwidth
+#@     keep -insertontime -insertofftime
+#@     keep -selectbackground -selectborderwidth -selectforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Checkbutton {
+#@     keep -background -cursor -foreground -font
+#@     keep -activebackground -activeforeground -disabledforeground
+#@     keep -selectcolor
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Entry {
+#@     keep -background -cursor -foreground -font
+#@     keep -insertbackground -insertborderwidth -insertwidth
+#@     keep -insertontime -insertofftime
+#@     keep -selectbackground -selectborderwidth -selectforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Frame {
+#@     keep -background -cursor
+#@ }
+#@ 
+#@ itk::usual Label {
+#@     keep -background -cursor -foreground -font
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Listbox {
+#@     keep -background -cursor -foreground -font
+#@     keep -selectbackground -selectborderwidth -selectforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Menu {
+#@     keep -background -cursor -foreground -font
+#@     keep -activebackground -activeforeground -disabledforeground
+#@     keep -selectcolor -tearoff
+#@ }
+#@ 
+#@ itk::usual Menubutton {
+#@     keep -background -cursor -foreground -font
+#@     keep -activebackground -activeforeground -disabledforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Message {
+#@     keep -background -cursor -foreground -font
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Radiobutton {
+#@     keep -background -cursor -foreground -font
+#@     keep -activebackground -activeforeground -disabledforeground
+#@     keep -selectcolor
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Scale {
+#@     keep -background -cursor -foreground -font -troughcolor
+#@     keep -activebackground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Scrollbar {
+#@     keep -background -cursor -troughcolor
+#@     keep -activebackground -activerelief
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Text {
+#@     keep -background -cursor -foreground -font
+#@     keep -insertbackground -insertborderwidth -insertwidth
+#@     keep -insertontime -insertofftime
+#@     keep -selectbackground -selectborderwidth -selectforeground
+#@     keep -highlightcolor -highlightthickness
+#@     rename -highlightbackground -background background Background
+#@ }
+#@ 
+#@ itk::usual Toplevel {
+#@     keep -background -cursor
+#@ }
+#@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/itk4.1.0/itk.tcl
+
+#@ # -- Starting source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/iwidgets4.1/iwidgets.tcl
+
+#@ #
+#@ # iwidgets.tcl
+#@ # ----------------------------------------------------------------------
+#@ # Invoked automatically by [incr Tk] upon startup to initialize
+#@ # the [incr Widgets] package.
+#@ # ----------------------------------------------------------------------
+#@ #  AUTHOR: Mark L. Ulferts               EMAIL: mulferts@spd.dsccc.com
+#@ #
+#@ #  @(#) $Id: iwidgets.tcl.in,v 1.8 2017/07/07 19:06:40 dgp Exp $
+#@ # ----------------------------------------------------------------------
+#@ #                Copyright (c) 1995  Mark L. Ulferts
+#@ # ======================================================================
+#@ # See the file "license.terms" for information on usage and
+#@ # redistribution of this file, and for a DISCLAIMER OF ALL WARRANTIES.
+#@ 
+#@ package require Tcl 8.0
+#@ package require Tk 8.0
+#@ package require Itcl 4.2.1
+#@ if {[string length [package provide Itk]] == 0} {
+#@     package forget Itk
+#@     package forget itk
+#@ }
+#@ package require Itk [string index 4.2.1 0]
+#@ 
+#@ namespace eval ::iwidgets {
+#@     namespace export *
+#@ 
+#@     variable library [file dirname [info script]]
+#@     variable version 4.1.1
+#@ 
+#@     lappend auto_path $iwidgets::library
+#@     variable subdir
+#@     foreach subdir {generic scripts} {
+#@ 	if {[file isdirectory [file join $iwidgets::library $subdir]]} {
+#@ 	    lappend auto_path [file join $iwidgets::library $subdir]
+#@ 	}
+#@     }
+#@     unset subdir
+#@ }
+#@ 
+#@ package provide Iwidgets $iwidgets::version
+#@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/iwidgets4.1/iwidgets.tcl
+
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {LeafCells}
+#@ # -- Starting source /tmp/dc_shell.WFKCgr
+
+#@ set_host_options -max_cores 8
+#@ # -- End source /tmp/dc_shell.WFKCgr
+
 set_host_options -max_cores 8
+#@ # -- Starting source /tmp/dc_shell.oVMLuK
+
+#@ set DESIGN_NAME bms_lmu_wrapper
+#@ 
+#@ set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs"
+#@ 
+#@ set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts"
+#@ 
+#@ set DESIGN_STYLE hier
+#@ 
+#@ set PHYSICAL_HIERARCHY_LEVEL bottom
+#@ 
+#@ set DC_BLOCK_ABSTRACTION_DESIGNS ""
+#@ 
+#@ set DDC_HIER_DESIGNS ""
+#@ 
+#@ set UPF_MODE golden
+#@ 
+#@ set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+#@ 
+#@ set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+#@ 
+#@ set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
+#@ 
+#@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+#@ /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+#@ # -- End source /tmp/dc_shell.oVMLuK
+
 set DESIGN_NAME bms_lmu_wrapper
-set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/outputs"
-set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts"
+
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs"
+
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts"
+
 set DESIGN_STYLE hier
+
 set PHYSICAL_HIERARCHY_LEVEL bottom
+
 set DC_BLOCK_ABSTRACTION_DESIGNS ""
+
 set DDC_HIER_DESIGNS ""
+
 set UPF_MODE golden
+
 set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+
 set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+
 set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
-set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+
+set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+#@ # -- Starting source /tmp/dc_shell.eecSLF
+
+#@ set rtl_path {}
+#@ set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
+#@ set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu"
+#@ set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
+#@ set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
+#@ set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
+#@ # -- End source /tmp/dc_shell.eecSLF
+
 set rtl_path {}
 set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
 set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu"
 set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
 set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
 set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
+#@ # -- Starting source /tmp/dc_shell.nurwju
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+#@   # For a hierarchical flow, add the block-level results directories to the
+#@   # For a hierarchical flow, add the block-level results directories to the
+#@   # search path to find the block-level design files.
+#@ 
+#@   set HIER_DESIGNS "${DDC_HIER_DESIGNS} ${DC_BLOCK_ABSTRACTION_DESIGNS}"
+#@   foreach design $HIER_DESIGNS {
+#@     lappend search_path ../../${design}/outputs/
+#@   }
+#@   # For a hierarchical UPF flow, add the results directory to the search path for
+#@   # Formality to find the output UPF files.
+#@   lappend search_path ${OUTPUTS_DIR}
+#@ }
+#@ # -- End source /tmp/dc_shell.nurwju
+
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # For a hierarchical flow, add the block-level results directories to the
   # For a hierarchical flow, add the block-level results directories to the
@@ -8651,17 +8931,86 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # Formality to find the output UPF files.
   lappend search_path ${OUTPUTS_DIR}
 }
+#@ # -- Starting source /tmp/dc_shell.wKfpXf
+
+#@ set_app_var alib_library_analysis_path .
+#@ # -- End source /tmp/dc_shell.wKfpXf
+
 set_app_var alib_library_analysis_path .
+#@ # -- Starting source /tmp/dc_shell.hRTcDj
+
+#@ if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
+#@ 
+#@ # -- End source /tmp/dc_shell.hRTcDj
+
 if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
+
+#@ # -- Starting source /tmp/dc_shell.LznzYI
+
+#@ if {$UPF_MODE == "golden"} {
+#@   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
+#@   # physical implementation, and verification flow.
+#@   set_app_var enable_golden_upf true
+#@ }
+#@ # -- End source /tmp/dc_shell.LznzYI
+
 if {$UPF_MODE == "golden"} {
   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
   # physical implementation, and verification flow.
   set_app_var enable_golden_upf true
 }
-set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
+#@ # -- Starting source /tmp/dc_shell.rWIqcc
+
+#@ set TARGET_LIBRARY_FILES "/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/*.db \
+#@ /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/*.db \
+#@ /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/*.dc \
+#@ /home1/14_nmts/14_nmts/stdcell_slvt/db_ccs/*.db"
+#@ 
+#@ # -- End source /tmp/dc_shell.rWIqcc
+
+set TARGET_LIBRARY_FILES "/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/*.db \
+/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/*.db \
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/*.dc \
+/home1/14_nmts/14_nmts/stdcell_slvt/db_ccs/*.db"
+
+#@ # -- Starting source /tmp/dc_shell.kPFkft
+
+#@ set_app_var target_library ${TARGET_LIBRARY_FILES}
+#@ # -- End source /tmp/dc_shell.kPFkft
+
 set_app_var target_library ${TARGET_LIBRARY_FILES}
+#@ # -- Starting source /tmp/dc_shell.LHqImN
+
+#@ set_app_var synthetic_library dw_foundation.sldb
+#@ # -- End source /tmp/dc_shell.LHqImN
+
 set_app_var synthetic_library dw_foundation.sldb
+#@ # -- Starting source /tmp/dc_shell.oRACUh
+
+#@ set_app_var link_library "* $target_library $synthetic_library"
+#@ # -- End source /tmp/dc_shell.oRACUh
+
 set_app_var link_library "* $target_library $synthetic_library"
+#@ # -- Starting source /tmp/dc_shell.bDZnMn
+
+#@ if {[shell_is_in_topographical_mode]} {
+#@   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
+#@     puts "RM-info: opening existing lib $DCRM_NDM_LIBRARY_NAME"
+#@     open_lib $DCRM_NDM_LIBRARY_NAME
+#@   } else {
+#@     if {[file exists $DCRM_NDM_LIBRARY_NAME]} {
+#@       puts "RM-info: deleting existing lib $DCRM_NDM_LIBRARY_NAME"
+#@       file delete -force $DCRM_NDM_LIBRARY_NAME
+#@     }
+#@ 
+#@     set create_lib_cmd "create_lib -technology $TECH_FILE $DCRM_NDM_LIBRARY_NAME"
+#@     if {${REFERENCE_LIBRARY} != ""} { append create_lib_cmd " -ref_libs \"${REFERENCE_LIBRARY}\""}
+#@     puts "RM-info: Running $create_lib_cmd"
+#@     eval ${create_lib_cmd}
+#@   }
+#@ }
+#@ # -- End source /tmp/dc_shell.bDZnMn
+
 if {[shell_is_in_topographical_mode]} {
   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
     puts "RM-info: opening existing lib $DCRM_NDM_LIBRARY_NAME"
@@ -8678,36 +9027,141 @@ if {[shell_is_in_topographical_mode]} {
     eval ${create_lib_cmd}
   }
 }
+#@ # -- Starting source /tmp/dc_shell.avftgQ
+
+#@ set set_check_library_cmd "set_check_library_options -mcmm"
+#@ if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
+#@ puts "RM-info: Running $set_check_library_cmd"
+#@ eval ${set_check_library_cmd}
+#@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+#@ # -- End source /tmp/dc_shell.avftgQ
+
 set set_check_library_cmd "set_check_library_options -mcmm"
 if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
 puts "RM-info: Running $set_check_library_cmd"
 eval ${set_check_library_cmd}
 redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+#@ # -- Starting source /tmp/dc_shell.eroxTK
+
+#@ eval ${set_check_library_cmd}
+#@ # -- End source /tmp/dc_shell.eroxTK
+
+eval ${set_check_library_cmd}
+#@ # -- Starting source /tmp/dc_shell.oaeCzz
+
+#@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+#@ # -- End source /tmp/dc_shell.oaeCzz
+
+redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+#@ # -- Starting source /tmp/dc_shell.IfCIGq
+
+#@ set_app_var sh_new_variable_message false
+#@ # -- End source /tmp/dc_shell.IfCIGq
+
 set_app_var sh_new_variable_message false
+#@ # -- Starting source /tmp/dc_shell.kVyHja
+
+#@ set_app_var auto_insert_level_shifters_on_clocks all
+#@ # -- End source /tmp/dc_shell.kVyHja
+
 set_app_var auto_insert_level_shifters_on_clocks all
+#@ # -- Starting source /tmp/dc_shell.ydyEWX
+
+#@ set_app_var spg_enable_via_resistance_support true
+#@ # -- End source /tmp/dc_shell.ydyEWX
+
 set_app_var spg_enable_via_resistance_support true
+#@ # -- Starting source /tmp/dc_shell.QhrInp
+
+#@ set_app_var simplified_verification_mode true
+#@ # -- End source /tmp/dc_shell.QhrInp
+
 set_app_var simplified_verification_mode true
+#@ # -- Starting source /tmp/dc_shell.ylIYmV
+
+#@ set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
+#@ # -- End source /tmp/dc_shell.ylIYmV
+
 set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
+#@ # -- Starting source /tmp/dc_shell.FqawGa
+
+#@ analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
+#@ # -- End source /tmp/dc_shell.FqawGa
+
 analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
-foreach path $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 {
-    analyze -f verilog [glob $path/*.v]
-}
+#@ # -- Starting source /tmp/dc_shell.rltuOK
+
+#@ foreach path $rtl_path_1 {
+#@     analyze -f verilog [glob $path/*.v]
+#@ }
+#@ # -- End source /tmp/dc_shell.rltuOK
+
 foreach path $rtl_path_1 {
     analyze -f verilog [glob $path/*.v]
 }
+#@ # -- Starting source /tmp/dc_shell.YLsHNg
+
+#@ foreach path $rtl_path_2 {
+#@     analyze -f verilog [glob $path/*.v]
+#@ }
+#@ # -- End source /tmp/dc_shell.YLsHNg
+
 foreach path $rtl_path_2 {
     analyze -f verilog [glob $path/*.v]
 }
+#@ # -- Starting source /tmp/dc_shell.VVccrX
+
+#@ foreach path $rtl_path_3 {
+#@     analyze -f verilog [glob $path/*.v]
+#@ }
+#@ # -- End source /tmp/dc_shell.VVccrX
+
 foreach path $rtl_path_3 {
     analyze -f verilog [glob $path/*.v]
 }
+#@ # -- Starting source /tmp/dc_shell.hRdfrW
+
+#@ foreach path $rtl_path_4 {
+#@     analyze -f verilog [glob $path/*.v]
+#@ }
+#@ # -- End source /tmp/dc_shell.hRdfrW
+
 foreach path $rtl_path_4 {
     analyze -f verilog [glob $path/*.v]
 }
+#@ # -- Starting source /tmp/dc_shell.MGgvKl
+
+#@ elaborate ${DESIGN_NAME}
+#@ # -- End source /tmp/dc_shell.MGgvKl
+
 elaborate ${DESIGN_NAME}
+#@ # -- Starting source /tmp/dc_shell.NajAoY
+
+#@ current_design ${DESIGN_NAME}
+#@ # -- End source /tmp/dc_shell.NajAoY
+
 current_design ${DESIGN_NAME}
 link
+#@ # -- Starting source /tmp/dc_shell.SjVzjr
+
+#@ set upf_create_implicit_supply_sets false
+#@ # -- End source /tmp/dc_shell.SjVzjr
+
 set upf_create_implicit_supply_sets false
+#@ # -- Starting source /tmp/dc_shell.KfLpxF
+
+#@ if {$UPF_MODE != "none"} {
+#@   if {$UPF_FILE != ""} {
+#@     set load_upf_cmd "load_upf ${UPF_FILE}"
+#@ 
+#@     if {$UPF_MODE == "golden"} {lappend load_upf_cmd -strict_check true}
+#@ 
+#@     puts "RM-info: Running $load_upf_cmd"
+#@     eval ${load_upf_cmd}
+#@   }
+#@ }
+#@ # -- End source /tmp/dc_shell.KfLpxF
+
 if {$UPF_MODE != "none"} {
   if {$UPF_FILE != ""} {
     set load_upf_cmd "load_upf ${UPF_FILE}"
@@ -8718,9 +9172,45 @@ if {$UPF_MODE != "none"} {
     eval ${load_upf_cmd}
   }
 }
+#@ # -- Starting source /tmp/dc_shell.ZRZbcK
+
+#@ set_voltage 0.6 -object_list {VDD}
+#@ set_voltage 0.0 -object_list {VSS}
+#@ # -- End source /tmp/dc_shell.ZRZbcK
+
 set_voltage 0.6 -object_list {VDD}
 set_voltage 0.0 -object_list {VSS}
+#@ # -- Starting source /tmp/dc_shell.sMXdav
+
+#@ set check_mv_design_failed false
+#@ # -- End source /tmp/dc_shell.sMXdav
+
 set check_mv_design_failed false
+#@ # -- Starting source /tmp/dc_shell.VYjiLV
+
+#@ if {[shell_is_in_topographical_mode]} {
+#@   ## For MCMM, perform this check for each scenario.
+#@   set current_scenario_saved [current_scenario]
+#@   foreach scenario [all_active_scenarios] {
+#@     current_scenario ${scenario}
+#@     if {![check_mv_design -power_nets]} {
+#@       set check_mv_design_failed true
+#@       break
+#@     }
+#@   }
+#@   current_scenario ${current_scenario_saved}
+#@ } else {
+#@   if {![check_mv_design -power_nets]} {
+#@     set check_mv_design_failed true
+#@   }
+#@ }
+#@ if {$check_mv_design_failed} {
+#@   puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
+#@   puts "This script will now exit."
+#@   exit 1
+#@ }
+#@ # -- End source /tmp/dc_shell.VYjiLV
+
 if {[shell_is_in_topographical_mode]} {
   ## For MCMM, perform this check for each scenario.
   set current_scenario_saved [current_scenario]
@@ -8742,276 +9232,26 @@ if {$check_mv_design_failed} {
   puts "This script will now exit."
   exit 1
 }
+#@ # -- Starting source /tmp/dc_shell.dTJnKE
+
+#@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+#@   # Check the readiness of the block abstraction
+#@   if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
+#@     check_block_abstraction
+#@   }
+#@ }
+#@ # -- End source /tmp/dc_shell.dTJnKE
+
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # Check the readiness of the block abstraction
   if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
     check_block_abstraction
   }
 }
-source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
+#@ # -- Starting source /tmp/dc_shell.qALoUx
 
-#@ # ==============================================================================
-#@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
-#@ # Architecture: Top-Down Hierarchical Constraint
-#@ # Target Node: 14nm FinFET (e.g., TSMC 16/14nm, GF 14LPP)
-#@ # Top Module: bms_system_3lmu_top_enhanced
-#@ # ==============================================================================
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 1. ENVIRONMENT SETTINGS & VARIABLES (Highly Reusable)
-#@ # ------------------------------------------------------------------------------
-#@ # Set units to match standard 14nm library characterization
-#@ set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
-#@ 
-#@ # Reusable System Variables
-#@ set SYS_CLK_PERIOD       10.0      ;# 100 MHz System Clock
-#@ set SYS_CLK_UNCERT_SETUP 0.15      ;# 150ps Setup Uncertainty (14nm Jitter + Skew budget)
-#@ set SYS_CLK_UNCERT_HOLD  0.05      ;# 50ps Hold Uncertainty 
-#@ set MAX_TRANSITION       0.15      ;# 150ps Max Slew Rate for 14nm
-#@ set MAX_CAPACITANCE      0.05      ;# 50fF Max Pin Capacitance
-#@ set IO_DELAY_MAX         3.0       ;# 30% of clock period for board trace delay
-#@ set IO_DELAY_MIN         0.2       ;# Minimum contamination delay from sensors
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 2. CLOCK DEFINITIONS
-#@ # ------------------------------------------------------------------------------
-#@ # Define the Primary Master Clock (100MHz)
-#@ create_clock -name sys_clk -period $SYS_CLK_PERIOD -waveform {0 5.0} [get_ports clk]
-#@ 
-#@ # Define the Generated SPI Clock (Divided by 16 in the MCU's SPI Master)
-#@ create_generated_clock -name spi_clk \
-#@     -source [get_ports clk] \
-#@     -divide_by 16 \
-#@     [get_pins u_mcu/u_spi_master/sclk_reg/Q]
-#@ 
-#@ # Apply Clock Uncertainties (Critical for 14nm setup/hold fixing)
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks sys_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks sys_clk]
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks spi_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks spi_clk]
-#@ 
-#@ # Define Clock Transition (Ideal network assumption pre-CTS, but constrained)
-#@ set_clock_transition 0.05 [get_clocks {sys_clk spi_clk}]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 3. CLOCK DOMAIN CROSSINGS (CDC)
-#@ # ------------------------------------------------------------------------------
-#@ # The BMS Comm Hub (UART/CAN) and SPI Master operate on disjoint frequencies.
-#@ # We must instruct the timing engine not to optimize paths between these domains,
-#@ # preventing metastability-driven timing violations.
-#@ set_clock_groups -asynchronous \
-#@     -group [get_clocks sys_clk] \
-#@     -group [get_clocks spi_clk]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 4. I/O TIMING CONSTRAINTS
-#@ # ------------------------------------------------------------------------------
-#@ # Define the virtual delay outside the chip boundary for Setup (Max) and Hold (Min)
-#@ 
-#@ # All Inputs (Analog sensor data, pack_current, etc.)
-#@ set_input_delay -clock sys_clk -max $IO_DELAY_MAX [remove_from_collection [all_inputs] [get_ports clk]]
-#@ set_input_delay -clock sys_clk -min $IO_DELAY_MIN [remove_from_collection [all_inputs] [get_ports clk]]
-#@ 
-#@ # All Outputs (allowed_current, global_fault_code, etc.)
-#@ set_output_delay -clock sys_clk -max $IO_DELAY_MAX [all_outputs]
-#@ set_output_delay -clock sys_clk -min $IO_DELAY_MIN [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 5. 14nm DESIGN RULE CONSTRAINTS (DRC)
-#@ # ------------------------------------------------------------------------------
-#@ # In 14nm, thick wires have low resistance but high coupling capacitance.
-#@ # We restrict the max transition (slew) to ensure signal integrity.
-#@ set_max_transition $MAX_TRANSITION [current_design]
-#@ 
-#@ # Restrict the maximum load capacitance a single gate can drive.
-#@ set_max_capacitance $MAX_CAPACITANCE [current_design]
-#@ 
-#@ # Set the environmental load on the output pads (e.g., 5pF for off-chip routing)
-#@ set_load 5.0 [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 6. ARCHITECTURE-SPECIFIC EXCEPTIONS (Safety & Power)
-#@ # ------------------------------------------------------------------------------
-#@ 
-#@ # A. Safety Derating Combinational Paths
-#@ # The Current Limit Supervisor is combinational logic mapping temperatures to
-#@ # the allowed current limits. It must propagate instantly (within 5ns).
-#@ set_max_delay 5.0 -from [get_ports *temp_die*]   -to [get_ports allowed_current*]
-#@ set_max_delay 5.0 -from [get_ports pack_current*] -to [get_ports allowed_current*]
-#@ 
-#@ # B. Clock Gating Checks for Power Management
-#@ # The bms_power_mgmt module generates an Integrated Clock Gating (ICG) enable.
-#@ # We must enforce setup/hold checks to ensure 'logic_clk_en' does not glitch 
-#@ # and clip the clock pulses going into the LMU cores.
-#@ set_clock_gating_check -setup 0.15 -hold 0.05 [get_cells -hierarchical *logic_clk_en*]
-#@ 
-#@ # C. Multi-Cycle Paths (Datapath Optimization)
-#@ # The SOC/SOH engine contains 32-bit multipliers for OCV calculation. 
-#@ # Assuming they are architected to take 2 clock cycles to complete:
-#@ # set_multicycle_path -setup 2 -from [get_cells *u_soc_soh_engine/*] -to [get_cells *u_soc_soh_engine/*]
-#@ # set_multicycle_path -hold 1  -from [get_cells *u_soc_soh_engine/*] -to [get_cells *u_soc_soh_engine/*]
-#@ 
-#@ # ==============================================================================
-#@ # END OF SDC
-#@ # ==============================================================================
-#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
-
-source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
-
-#@ # ==============================================================================
-#@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
-#@ # Architecture: Top-Down Hierarchical Constraint Matrix
-#@ # Target Node: 14nm FinFET 
-#@ # Top Module: bms_system_3lmu_top_enhanced
-#@ # ==============================================================================
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 1. TIMING ENVIRONMENT SETTINGS & VARIABLES
-#@ # ------------------------------------------------------------------------------
-#@ set SYS_CLK_PERIOD       10.0      ;# 100 MHz System Clock Targeted Period
-#@ set SYS_CLK_UNCERT_SETUP 0.15      ;# 150ps Clock Tree Jitter + Pre-CTS Skew Budget
-#@ set SYS_CLK_UNCERT_HOLD  0.05      ;# 50ps Hold Uncertainty Margin
-#@ set MAX_TRANSITION       0.15      ;# 150ps Slew Limit to combat wire resistance
-#@ set MAX_CAPACITANCE      0.05      ;# 50fF Gate Drive Pin Cap Limit
-#@ set IO_DELAY_MAX         3.0       ;# 30% Setup Window Budget for PCB traces
-#@ set IO_DELAY_MIN         0.2       ;# Minimum hold margin for board routing
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 2. CLOCK TREE STRUCTURE DEFINITIONS
-#@ # ------------------------------------------------------------------------------
-#@ # Define Primary Master Clock Node
-#@ create_clock -name sys_clk -period $SYS_CLK_PERIOD -waveform {0 5.0} [get_ports clk]
-#@ 
-#@ # Define Synchronous Divided SPI Master Clock Register Output
-#@ create_generated_clock -name spi_clk \
-#@     -source [get_ports clk] \
-#@     -divide_by 16 \
-#@     [get_pins u_mcu/u_spi_master/sclk_reg/Q]
-#@ 
-#@ # Enforce Jitter and Margin Rules to Ensure Structural Closure
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks sys_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks sys_clk]
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks spi_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks spi_clk]
-#@ 
-#@ set_clock_transition 0.05 [get_clocks {sys_clk spi_clk}]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 3. CLOCK DOMAIN CROSSING (CDC) ISOLATION
-#@ # ------------------------------------------------------------------------------
-#@ # Declares the 100MHz main clock and the divided SPI transfers as asynchronous.
-#@ # Cuts unneeded path optimization to focus cell mapping on real critical paths.
-#@ set_clock_groups -asynchronous -group [get_clocks sys_clk] -group [get_clocks spi_clk]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 4. CHIP IO INTERFACE DELAYS
-#@ # ------------------------------------------------------------------------------
-#@ set_input_delay -clock sys_clk -max $IO_DELAY_MAX [remove_from_collection [all_inputs] [get_ports clk]]
-#@ set_input_delay -clock sys_clk -min $IO_DELAY_MIN [remove_from_collection [all_inputs] [get_ports clk]]
-#@ 
-#@ set_output_delay -clock sys_clk -max $IO_DELAY_MAX [all_outputs]
-#@ set_output_delay -clock sys_clk -min $IO_DELAY_MIN [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 5. 14nm ELECTRICAL DESIGN RULE CONSTRAINTS (DRC)
-#@ # ------------------------------------------------------------------------------
-#@ set_max_transition $MAX_TRANSITION [current_design]
-#@ set_max_capacitance $MAX_CAPACITANCE [current_design]
-#@ set_load 5.0 [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 6. AUTOMOTIVE SAFETY EXCEPTIONS & TIMING STRATEGIES
-#@ # ------------------------------------------------------------------------------
-#@ # Combinational path tightening for instant safety current throttling
-#@ set_max_delay 5.0 -from [get_ports *temp_die*]   -to [get_ports allowed_current*]
-#@ set_max_delay 5.0 -from [get_ports pack_current*] -to [get_ports allowed_current*]
-#@ 
-#@ # Setup and Hold window guardbands around internal Integrated Clock Gating (ICG)
-#@ set_clock_gating_check -setup 0.15 -hold 0.05 [get_cells -hierarchical *logic_clk_en*]
-#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
-
-source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
-
-#@ # ==============================================================================
-#@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
-#@ # Architecture: Top-Down Hierarchical Constraint Matrix
-#@ # Target Node: 14nm FinFET 
-#@ # Top Module: bms_system_3lmu_top_enhanced
-#@ # ==============================================================================
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 1. TIMING ENVIRONMENT SETTINGS & VARIABLES
-#@ # ------------------------------------------------------------------------------
-#@ set SYS_CLK_PERIOD       10.0      ;# 100 MHz System Clock Targeted Period
-#@ set SYS_CLK_UNCERT_SETUP 0.15      ;# 150ps Clock Tree Jitter + Pre-CTS Skew Budget
-#@ set SYS_CLK_UNCERT_HOLD  0.05      ;# 50ps Hold Uncertainty Margin
-#@ set MAX_TRANSITION       0.15      ;# 150ps Slew Limit to combat wire resistance
-#@ set MAX_CAPACITANCE      0.05      ;# 50fF Gate Drive Pin Cap Limit
-#@ set IO_DELAY_MAX         3.0       ;# 30% Setup Window Budget for PCB traces
-#@ set IO_DELAY_MIN         0.2       ;# Minimum hold margin for board routing
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 2. CLOCK TREE STRUCTURE DEFINITIONS
-#@ # ------------------------------------------------------------------------------
-#@ # Define Primary Master Clock Node
-#@ create_clock -name sys_clk -period $SYS_CLK_PERIOD -waveform {0 5.0} [get_ports clk]
-#@ 
-#@ # Define Synchronous Divided SPI Master Clock Register Output
-#@ create_generated_clock -name spi_clk \
-#@     -source [get_ports clk] \
-#@     -divide_by 16 \
-#@     [get_pins u_mcu/u_spi_master/sclk_reg/Q]
-#@ 
-#@ # Enforce Jitter and Margin Rules to Ensure Structural Closure
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks sys_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks sys_clk]
-#@ set_clock_uncertainty -setup $SYS_CLK_UNCERT_SETUP [get_clocks spi_clk]
-#@ set_clock_uncertainty -hold  $SYS_CLK_UNCERT_HOLD  [get_clocks spi_clk]
-#@ 
-#@ set_clock_transition 0.05 [get_clocks {sys_clk spi_clk}]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 3. CLOCK DOMAIN CROSSING (CDC) ISOLATION
-#@ # ------------------------------------------------------------------------------
-#@ # Declares the 100MHz main clock and the divided SPI transfers as asynchronous.
-#@ # Cuts unneeded path optimization to focus cell mapping on real critical paths.
-#@ set_clock_groups -asynchronous -group [get_clocks sys_clk] -group [get_clocks spi_clk]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 4. CHIP IO INTERFACE DELAYS
-#@ # ------------------------------------------------------------------------------
-#@ set_input_delay -clock sys_clk -max $IO_DELAY_MAX [remove_from_collection [all_inputs] [get_ports clk]]
-#@ set_input_delay -clock sys_clk -min $IO_DELAY_MIN [remove_from_collection [all_inputs] [get_ports clk]]
-#@ 
-#@ set_output_delay -clock sys_clk -max $IO_DELAY_MAX [all_outputs]
-#@ set_output_delay -clock sys_clk -min $IO_DELAY_MIN [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 5. 14nm ELECTRICAL DESIGN RULE CONSTRAINTS (DRC)
-#@ # ------------------------------------------------------------------------------
-#@ set_max_transition $MAX_TRANSITION [current_design]
-#@ set_max_capacitance $MAX_CAPACITANCE [current_design]
-#@ set_load 5.0 [all_outputs]
-#@ 
-#@ # ------------------------------------------------------------------------------
-#@ # 6. AUTOMOTIVE SAFETY EXCEPTIONS & TIMING STRATEGIES
-#@ # ------------------------------------------------------------------------------
-#@ # Combinational path tightening for instant safety current throttling
-#@ set_max_delay 5.0 -from [get_ports *temp_die*]   -to [get_ports allowed_current*]
-#@ set_max_delay 5.0 -from [get_ports pack_current*] -to [get_ports allowed_current*]
-#@ 
-#@ # Setup and Hold window guardbands around internal Integrated Clock Gating (ICG)
-#@ set_clock_gating_check -setup 0.15 -hold 0.05 [get_cells -hierarchical *logic_clk_en*]
-#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
-
-x-special/nautilus-clipboard
-copy
-file:///home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/constraints/sdc/bms_lmu_wrapper.sdc
-source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
+#@ source ${SCRIPTS}/${DESIGN_NAME}.sdc
+#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.sdc
 
 #@ # ==============================================================================
 #@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
@@ -9081,230 +9321,53 @@ source ${SCRIPTS}/${DESIGN_NAME}.sdc
 #@ # Setup and Hold window guardbands around internal Integrated Clock Gating (ICG)
 #@ # Generated by the bms_power_mgmt block inside this wrapper.
 #@ set_clock_gating_check -setup 0.15 -hold 0.05 [get_cells -hierarchical *logic_clk_en*]
-#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/lmu/scripts/bms_lmu_wrapper.sdc
+#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.sdc
+
+#@ # -- End source /tmp/dc_shell.qALoUx
+
+source ${SCRIPTS}/${DESIGN_NAME}.sdc
+#@ # -- Starting source /tmp/dc_shell.rJPLWQ
+
+#@ check_design > ${OUTPUTS_DIR}/check_design.rpt
+#@ check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+#@ # -- End source /tmp/dc_shell.rJPLWQ
 
 check_design > ${OUTPUTS_DIR}/check_design.rpt
 check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+#@ # -- Starting source /tmp/dc_shell.JbrHZW
+
+#@ group_path -from [all_registers] -to [all_registers] -name reg2reg
+#@ group_path -from [all_registers] -to [all_outputs] -name reg2out
+#@ group_path -from [all_inputs] -to [all_registers] -name in2reg
+#@ group_path -from [all_inputs] -to [all_outputs] -name in2out
+#@ 
+#@ # -- End source /tmp/dc_shell.JbrHZW
+
 group_path -from [all_registers] -to [all_registers] -name reg2reg
 group_path -from [all_registers] -to [all_outputs] -name reg2out
 group_path -from [all_inputs] -to [all_registers] -name in2reg
 group_path -from [all_inputs] -to [all_outputs] -name in2out
-analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
+
+#@ # -- Starting source /tmp/dc_shell.JfsOom
+
+#@ set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+#@ # -- End source /tmp/dc_shell.JfsOom
+
 set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+#@ # -- Starting source /tmp/dc_shell.aaqAjF
+
+#@ if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
+#@ puts "RM-info: Running $compile_ultra_cmd"
+#@ # -- End source /tmp/dc_shell.aaqAjF
+
 if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
 puts "RM-info: Running $compile_ultra_cmd"
+#@ # -- Starting source /tmp/dc_shell.jVwkPk
+
+#@ eval ${compile_ultra_cmd}
+#@ # -- End source /tmp/dc_shell.jVwkPk
+
 eval ${compile_ultra_cmd}
-if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
-  # If this will be a sub-block in a hierarchical design, uniquify with block unique names
-  # to avoid name collisions when integrating the design at the top level
-  set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
-  uniquify -force
-}
-change_names -rules verilog -hierarchy
-write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
-write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
-report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
-report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
-report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
-report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
-report_area > ${OUTPUTS_DIR}/area.rpt
-report_qor > ${OUTPUTS_DIR}/qor.rpt
-change_names -rules verilog
-if {[shell_is_in_topographical_mode]} {
-  # For MCMM, some MV reports could have different voltages for different scenarios
-  set current_scenario_saved [current_scenario]
-  foreach scenario [all_active_scenarios] {
-    current_scenario ${scenario}
-
-    # Report all power domains in the design
-    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.power_domain.rpt ]       {report_power_domain -hierarchy}
-
-    # Report the top level supply nets
-    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.supply_net.rpt ]       {report_supply_net}
-
-    # Report the level shifters in the design
-    if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
-      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt ]         {report_level_shifter -domain [get_power_domains * -hierarchical]}
-    } else {
-      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt]         {report_level_shifter}
-    }
-  }
-  current_scenario ${current_scenario_saved}
-} else {
-  # Report all power domains in the design
-  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.power_domain.rpt     {report_power_domain -hierarchy}
-
-  # Report the top level supply nets
-  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.supply_net.rpt     {report_supply_net}
-
-  # Report the level shifters in the design
-  if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
-    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt       {report_level_shifter -domain [get_power_domains * -hierarchical]}
-  } else {
-    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt       {report_level_shifter}
-  }
-}
-if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
-
-  #################################################################################
-  # Write out Top-Level Design Without Hierarchical Blocks
-  #
-  # Note: The write command will automatically skip writing .ddc physical hierarchical
-  #       blocks in Design Compiler topographical mode and Design Compiler block
-  #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
-  #       the top-level design. In the same way for the multivoltage flow, save_upf will
-  #       skip hierarchical blocks when saving the power intent data.
-  #
-  # When reading the design into other tools, read in all of the mapped hierarchical
-  # blocks and the mapped top-level design.
-  #
-  # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
-  #                     block mapped netlist.
-  # For Formality: Verify each block and top separately.
-  #
-  #################################################################################
-
-  puts "RM-info: Writing out top level design without hierarchical blocks"
-
-  # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
-  if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-
-  write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-
-  # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
-  if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-
-  # Write out ddc mapped top-level design
-  write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-
-} else {
-
-  if {$DESIGN_STYLE == "flat"} {
-    puts "RM-info: Writing out flat design"
-  } else {
-    puts "RM-info: Writing out bottom-level design"
-    create_block_abstraction
-  }
-
-  if {$UPF_MODE == "golden"} {
-    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
-  }
-  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-
-}
-if {$UPF_MODE != "none"} {
-  set save_upf_cmd "save_upf"
-  if {$UPF_MODE == "golden"} {
-    lappend save_upf_cmd -include_supply_exceptions
-    lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
-  } elseif {$UPF_MODE == "prime"} {
-    lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
-  }
-  puts "RM-info: Running $save_upf_cmd"
-  eval ${save_upf_cmd}
-}
-if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-# Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
-if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-# Write out ddc mapped top-level design
-write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-} else {
-
-  if {$DESIGN_STYLE == "flat"} {
-    puts "RM-info: Writing out flat design"
-  } else {
-    puts "RM-info: Writing out bottom-level design"
-    create_block_abstraction
-  }
-
-  if {$UPF_MODE == "golden"} {
-    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
-  }
-  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-
-}if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
-#################################################################################
-# Write out Top-Level Design Without Hierarchical Blocks
-#
-# Note: The write command will automatically skip writing .ddc physical hierarchical
-#       blocks in Design Compiler topographical mode and Design Compiler block
-#       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
-#       the top-level design. In the same way for the multivoltage flow, save_upf will
-#       skip hierarchical blocks when saving the power intent data.
-#
-# When reading the design into other tools, read in all of the mapped hierarchical
-# blocks and the mapped top-level design.
-#
-# For IC Compiler II: Replace the Design Compiler block abstractions with the complete
-#                     block mapped netlist.
-# For Formality: Verify each block and top separately.
-#
-#################################################################################
-puts "RM-info: Writing out top level design without hierarchical blocks"
-# Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
-if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-# Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
-if {![shell_is_in_topographical_mode]} {
-    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
-      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
-    }
-  }
-# Write out ddc mapped top-level design
-write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-} else {
-
-  if {$DESIGN_STYLE == "flat"} {
-    puts "RM-info: Writing out flat design"
-  } else {
-    puts "RM-info: Writing out bottom-level design"
-    create_block_abstraction
-  }
-
-  if {$UPF_MODE == "golden"} {
-    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
-  }
-  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
-  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
-
-}if {$UPF_MODE != "none"} {
-set save_upf_cmd "save_upf"
-if {$UPF_MODE == "golden"} {
-    lappend save_upf_cmd -include_supply_exceptions
-    lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
-  } elseif {$UPF_MODE == "prime"} {
-    lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
-  }
-puts "RM-info: Running $save_upf_cmd"
-eval ${save_upf_cmd}
-}
-set_svf -off
-# Save NDM to disk
-if {[shell_is_in_topographical_mode]} {
-  save_lib
-}
-puts "SYNTHESIS COMPLETED :)"
-exit
+set TARGET_LIBRARY_FILES "/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/*.db /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/*.db /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/*.dc /home1/14_nmts/14_nmts/stdcell_slvt/db_ccs/*.db"
+set_app_var target_library ${TARGET_LIBRARY_FILES}
+eval ${compile_ultra_cmd}

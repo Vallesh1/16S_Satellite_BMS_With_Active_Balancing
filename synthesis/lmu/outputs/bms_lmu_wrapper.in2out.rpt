@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : bms_lmu_wrapper
 Version: T-2022.03-SP4
-Date   : Fri Jul  3 21:45:40 2026
+Date   : Thu Jul  9 19:23:28 2026
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -30,16 +30,16 @@ Wire Load Model Mode: top
                                                           0.00       3.00 f    
   u_lmu/u_comm/u_spi/ss_n (bms_lmu_wrapper_bms_spi_slave_0)
                                                           0.00       3.00 f    
-  u_lmu/u_comm/u_spi/U10/X (SAEDRVT14_INV_0P5)            0.01       3.01 r    0.60
-  u_lmu/u_comm/u_spi/U12/X (SAEDRVT14_OA221_U_0P5)        0.07       3.08 r    0.60
+  u_lmu/u_comm/u_spi/U7/X (SAEDRVT14_INV_S_0P5)           0.01       3.01 r    0.60
+  u_lmu/u_comm/u_spi/U6/X (SAEDHVT14_NR2B_U_0P5)          0.09       3.10 r    0.60
   u_lmu/u_comm/u_spi/miso (bms_lmu_wrapper_bms_spi_slave_0)
-                                                          0.00       3.08 r    
+                                                          0.00       3.10 r    
   u_lmu/u_comm/spi_miso (bms_lmu_wrapper_bms_comm_hub_0)
-                                                          0.00       3.08 r    
+                                                          0.00       3.10 r    
   u_lmu/spi_miso (bms_lmu_wrapper_bms_satellite_top_0)
-                                                          0.00       3.08 r    
-  spi_miso (out)                                          0.00       3.08 r    
-  data arrival time                                                  3.08      
+                                                          0.00       3.10 r    
+  spi_miso (out)                                          0.00       3.10 r    
+  data arrival time                                                  3.10      
 
   clock sys_clk (rise edge)                              10.00      10.00      
   clock network delay (ideal)                             0.00      10.00      
@@ -48,9 +48,9 @@ Wire Load Model Mode: top
   data required time                                                 6.85      
   ------------------------------------------------------------------------------------
   data required time                                                 6.85      
-  data arrival time                                                 -3.08      
+  data arrival time                                                 -3.10      
   ------------------------------------------------------------------------------------
-  slack (MET)                                                        3.77      
+  slack (MET)                                                        3.75      
 
 
 1
