@@ -1,7 +1,8 @@
 // ==============================================================================
 // MODULE: bms_spi_slave
 // Description: SPI Mode 0 Slave interface.
-// Optimized for maximum synthesis cell compatibility (EDK friendly).
+// Optimized for 14nmts & older EDK libraries to prevent generic \**SEQGEN** 
+// mapping and unwanted integrated clock-gating cells.
 // ==============================================================================
 
 module bms_spi_slave(
@@ -14,9 +15,14 @@ module bms_spi_slave(
     output reg  [7:0] rx_byte,
     output reg        rx_valid
 );
-    reg [2:0] bit_cnt;      // RX bit counter (updates on posedge)
+    reg [2:0] bit_cnt;      // RX bit counter
     reg [7:0] rx_shift;
     reg [7:0] tx_shift;
+
+    // Explicitly invert the clock. This allows the synthesis tool to treat the 
+    // TX path as a standard 'posedge' structural network on an inverted tree,
+    // bypassing the generic SEQGEN mapping bug on negedge blocks.
+    wire sclk_n = ~sclk;
 
     // --------------------------------------------------------------------------
     // 1. RX Data Path (Sample on posedge sclk)
@@ -45,28 +51,28 @@ module bms_spi_slave(
     end
 
     // --------------------------------------------------------------------------
-    // 2. TX Data Path (Shift on negedge sclk)
+    // 2. TX Data Path (Driven via the inverted clock wire)
     // --------------------------------------------------------------------------
-    // Clean load-on-idle structure avoids complex clock-gating cells
-    always @(negedge sclk or negedge rst_n) begin
+    always @(posedge sclk_n or negedge rst_n) begin
         if (!rst_n) begin
             tx_shift <= 8'd0;
-        end else if (ss_n) begin
-            tx_shift <= tx_byte; // Pre-load while chip select is high
         end else begin
-            tx_shift <= {tx_shift[6:0], 1'b0}; // Shift out MSB first
+            if (ss_n) begin
+                tx_shift <= tx_byte; // Pre-load while chip select is high
+            end else begin
+                tx_shift <= {tx_shift[6:0], 1'b0}; // Shift out MSB
+            end
         end
     end
 
     // --------------------------------------------------------------------------
     // 3. MISO Output Driver
     // --------------------------------------------------------------------------
-    // Directly drives the MSB of the shift register when active.
     always @(*) begin
         if (!ss_n) begin
             miso = tx_shift[7];
         end else begin
-            miso = 1'b0; // High-Z or 0 depending on bus needs (0 chosen for safety)
+            miso = 1'b0; 
         end
     end
 
