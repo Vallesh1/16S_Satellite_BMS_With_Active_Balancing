@@ -1,6 +1,6 @@
 *SPEF "IEEE 1481-1999"
 *DESIGN "bms_system_3lmu_top_enhanced"
-*DATE "Sat Jul  4 22:11:00 2026"
+*DATE "Sat Jul 18 22:16:09 2026"
 *VENDOR "SYNOPSYS INC"
 *PROGRAM "Synopsys Design Compiler cmos"
 *VERSION "T-2022.03-SP4"
@@ -952,7 +952,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U56:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U63:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U63:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U222:D0 5.349e-03
 *END
 
@@ -962,7 +962,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U57:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U61:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U61:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U221:D0 5.349e-03
 *END
 
@@ -972,7 +972,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U58:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U59:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U59:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U220:D0 5.349e-03
 *END
 
@@ -982,7 +982,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U59:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U57:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U57:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U219:D0 5.349e-03
 *END
 
@@ -992,7 +992,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U60:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U55:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U55:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U218:D0 5.349e-03
 *END
 
@@ -1002,7 +1002,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U61:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U53:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U53:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U217:D0 5.349e-03
 *END
 
@@ -1012,7 +1012,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U62:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U51:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U51:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U216:D0 5.349e-03
 *END
 
@@ -1022,7 +1022,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U63:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U49:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U49:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U215:D0 5.349e-03
 *END
 
@@ -1032,7 +1032,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U64:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U47:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U47:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U214:D0 5.349e-03
 *END
 
@@ -1042,7 +1042,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U65:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U45:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U45:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U213:D0 5.349e-03
 *END
 
@@ -1052,7 +1052,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U66:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U43:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U43:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U212:D0 5.349e-03
 *END
 
@@ -1062,7 +1062,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U67:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U41:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U41:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U211:D0 5.349e-03
 *END
 
@@ -1072,7 +1072,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U68:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U39:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U39:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U210:D0 5.349e-03
 *END
 
@@ -1082,7 +1082,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.177e-01 7.233e-02 4.177e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U69:CI 1.083e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U37:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U37:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U209:D0 5.349e-03
 *END
 
@@ -1092,7 +1092,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *C2_R1_C1 4.706e-01 7.233e-02 4.706e-01 
 *LOADS
 *RC u_lmu0/u_lmu/u_soc_soh/add_x_1/U70:B 1.302e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U36:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U36:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/abs_pack_i_reg_0_:D 5.751e-03
 *END
 
@@ -1101,7 +1101,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.671e-01 7.233e-02 3.671e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U36:A2 4.989e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U36:A2 4.989e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U88:A1 7.895e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U97:A1 5.227e-03
 *END
@@ -1111,7 +1111,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.308e-01 7.233e-02 3.308e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U64:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U64:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U88:A2 5.990e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U90:A 6.007e-03
 *END
@@ -1121,7 +1121,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 2.073e-01 4.437e-02 2.073e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U62:A 3.639e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U62:A 3.639e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U33:A1 5.566e-03
 *END
 
@@ -1130,7 +1130,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 1.879e-01 4.437e-02 1.879e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U50:A 3.639e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U50:A 3.639e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U33:A2 4.697e-03
 *END
 
@@ -1139,7 +1139,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.407e-01 7.233e-02 3.407e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U49:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U49:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U12:A1 7.274e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U91:A1 6.062e-03
 *END
@@ -1149,7 +1149,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.757e-01 7.233e-02 3.757e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U48:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U48:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U12:A3 5.711e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U91:A2 8.439e-03
 *END
@@ -1159,7 +1159,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.186e-01 7.233e-02 3.186e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U47:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U47:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U12:A2 7.054e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U22:A1 4.703e-03
 *END
@@ -1169,7 +1169,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 1.926e-01 4.437e-02 1.926e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U46:A 3.639e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U46:A 3.639e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U31:A2 4.905e-03
 *END
 
@@ -1178,7 +1178,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 1.929e-01 4.437e-02 1.929e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U45:A 3.639e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U45:A 3.639e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U31:A1 4.927e-03
 *END
 
@@ -1187,7 +1187,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 2.903e-01 7.233e-02 2.903e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U44:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U44:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U84:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U92:A1 6.062e-03
 *END
@@ -1197,7 +1197,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.190e-01 7.233e-02 3.190e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U43:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U43:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U86:B 4.467e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U91:A3 6.939e-03
 *END
@@ -1207,7 +1207,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 2.933e-01 7.233e-02 2.933e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U42:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U42:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U22:A2 5.953e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U85:B 4.221e-03
 *END
@@ -1217,7 +1217,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.517e-01 7.233e-02 3.517e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U41:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U41:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U92:A3 6.939e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U86:A1 6.066e-03
 *END
@@ -1227,7 +1227,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.127e-01 7.233e-02 3.127e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U40:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U40:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U22:A3 5.873e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U85:A1 5.227e-03
 *END
@@ -1237,7 +1237,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 3.112e-01 7.233e-02 3.112e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U39:A 3.976e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U39:A 3.976e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U22:A4 6.277e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U85:A2 5.048e-03
 *END
@@ -1247,7 +1247,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *CELL NULL
 *C2_R1_C1 2.246e-01 4.437e-02 2.246e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U38:A 3.639e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U38:A 3.639e-03
 *RC u_lmu0/u_lmu/u_soc_soh/U91:A4 6.325e-03
 *END
 
@@ -5862,7 +5862,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/spi_slave_sel_reg_1_:D 5.273e-03
 *END
 
-*R_NET u_mcu/net30409 1.365e+01
+*R_NET u_mcu/net30319 1.365e+01
 *DRIVER u_mcu/clk_gate_max_temp_seen_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 6.827e+00 5.000e+00 6.827e+00 
@@ -5915,7 +5915,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/max_temp_seen_reg_11_:CK 3.226e-02
 *END
 
-*R_NET u_mcu/net30415 7.778e-01
+*R_NET u_mcu/net30325 7.778e-01
 *DRIVER u_mcu/clk_gate_spi_slave_sel_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 3.889e-01 7.233e-02 3.889e-01 
@@ -5925,7 +5925,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/spi_slave_sel_reg_1_:CK 6.251e-03
 *END
 
-*R_NET u_mcu/net30420 7.778e-01
+*R_NET u_mcu/net30330 7.778e-01
 *DRIVER u_mcu/clk_gate_state_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 3.889e-01 7.233e-02 3.889e-01 
@@ -29643,7 +29643,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/u_spi_master/U50:A2 5.576e-03
 *END
 
-*R_NET u_mcu/u_spi_master/net30437 2.109e+00
+*R_NET u_mcu/u_spi_master/net30347 2.109e+00
 *DRIVER u_mcu/u_spi_master/clk_gate_tx_shift_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 1.054e+00 2.704e-01 1.054e+00 
@@ -29658,7 +29658,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/u_spi_master/tx_shift_reg_0_:CK 8.909e-03
 *END
 
-*R_NET u_mcu/u_spi_master/net30443 2.109e+00
+*R_NET u_mcu/u_spi_master/net30353 2.109e+00
 *DRIVER u_mcu/u_spi_master/clk_gate_clk_cnt_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 1.054e+00 2.704e-01 1.054e+00 
@@ -29673,7 +29673,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/u_spi_master/clk_cnt_reg_0_:CK 8.909e-03
 *END
 
-*R_NET u_mcu/u_spi_master/net30448 1.040e+00
+*R_NET u_mcu/u_spi_master/net30358 1.040e+00
 *DRIVER u_mcu/u_spi_master/clk_gate_bit_cnt_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 5.201e-01 1.036e-01 5.201e-01 
@@ -29684,7 +29684,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_mcu/u_spi_master/bit_cnt_reg_0_:CK 6.739e-03
 *END
 
-*R_NET u_mcu/u_spi_master/net30453 9.449e-01
+*R_NET u_mcu/u_spi_master/net30363 9.449e-01
 *DRIVER u_mcu/u_spi_master/clk_gate_cs_n_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 4.724e-01 1.036e-01 4.724e-01 
@@ -35059,7 +35059,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31009 1.304e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30919 1.304e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_sample_idx_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 6.522e-01 1.387e-01 6.522e-01 
@@ -35071,7 +35071,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/sample_idx_reg_1_:CK 7.237e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31015 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30925 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35094,7 +35094,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31020 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30930 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35117,7 +35117,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_239_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31025 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30935 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35140,7 +35140,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31030 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30940 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35163,7 +35163,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31035 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30945 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35186,7 +35186,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31040 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30950 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35209,7 +35209,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_175_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31045 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30955 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35232,7 +35232,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31050 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30960 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35255,7 +35255,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31055 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30965 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35278,7 +35278,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31060 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30970 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35301,7 +35301,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31065 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30975 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35324,7 +35324,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31070 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30980 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35347,7 +35347,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_78_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31075 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30985 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35370,7 +35370,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_62_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31080 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30990 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35393,7 +35393,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31085 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net30995 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35416,7 +35416,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31090 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31000 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35439,7 +35439,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_bus_reg_15_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31095 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31005 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35462,7 +35462,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31100 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31010 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35485,7 +35485,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_238_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31105 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31015 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35508,7 +35508,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31110 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31020 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35531,7 +35531,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31115 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31025 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35554,7 +35554,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31120 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31030 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35577,7 +35577,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_174_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31125 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31035 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35600,7 +35600,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31130 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31040 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35623,7 +35623,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31135 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31045 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35646,7 +35646,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31140 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31050 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35669,7 +35669,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31145 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31055 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35692,7 +35692,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31150 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31060 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35715,7 +35715,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_79_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31155 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31065 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35738,7 +35738,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_63_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31160 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31070 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35761,7 +35761,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31165 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31075 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -35784,7 +35784,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_adc/cell_v_red_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_adc/net31170 4.370e+00
+*R_NET u_lmu0/u_lmu/u_adc/net31080 4.370e+00
 *DRIVER u_lmu0/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -46156,7 +46156,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N29 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U38:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U38:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46164,7 +46164,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N30 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U40:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U40:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46172,7 +46172,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N31 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U42:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U42:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46180,7 +46180,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N32 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U44:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U44:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46188,7 +46188,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N33 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U46:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U46:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46196,7 +46196,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N34 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U48:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U48:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46204,7 +46204,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N35 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U50:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U50:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46212,7 +46212,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N36 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U52:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U52:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46220,7 +46220,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N37 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U54:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U54:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46228,7 +46228,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N38 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U56:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U56:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46236,7 +46236,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N39 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U58:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U58:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46244,7 +46244,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N40 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U60:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U60:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46252,7 +46252,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N41 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U62:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U62:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46260,7 +46260,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N42 1.733e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U64:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U64:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 8.667e-02 1.936e-02 8.667e-02 
 *LOADS
@@ -46268,7 +46268,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N43 2.510e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U35:X
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U35:X
 *CELL SAEDRVT14_EO2_1
 *C2_R1_C1 1.255e-01 1.936e-02 1.255e-01 
 *LOADS
@@ -47164,7 +47164,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N183 2.612e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U58:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U58:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.306e-01 1.936e-02 1.306e-01 
 *LOADS
@@ -47172,7 +47172,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N184 2.604e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U59:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U59:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.302e-01 1.936e-02 1.302e-01 
 *LOADS
@@ -47180,7 +47180,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N185 2.199e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U56:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U56:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.099e-01 1.936e-02 1.099e-01 
 *LOADS
@@ -47188,7 +47188,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N186 2.209e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U55:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U55:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.104e-01 1.936e-02 1.104e-01 
 *LOADS
@@ -47196,7 +47196,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N187 2.222e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U54:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U54:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.111e-01 1.936e-02 1.111e-01 
 *LOADS
@@ -47204,7 +47204,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N188 2.703e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U53:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U53:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.351e-01 1.936e-02 1.351e-01 
 *LOADS
@@ -47212,7 +47212,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N189 2.855e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U52:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U52:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.428e-01 1.936e-02 1.428e-01 
 *LOADS
@@ -47220,7 +47220,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N190 2.736e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U60:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U60:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.368e-01 1.936e-02 1.368e-01 
 *LOADS
@@ -47228,7 +47228,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N191 2.222e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U51:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U51:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.111e-01 1.936e-02 1.111e-01 
 *LOADS
@@ -47236,7 +47236,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N192 2.825e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U57:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U57:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.413e-01 1.936e-02 1.413e-01 
 *LOADS
@@ -47244,7 +47244,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N193 2.703e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U61:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U61:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.351e-01 1.936e-02 1.351e-01 
 *LOADS
@@ -47252,7 +47252,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N194 2.865e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U63:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U63:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.432e-01 1.936e-02 1.432e-01 
 *LOADS
@@ -47260,7 +47260,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N195 2.753e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U65:S
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U65:S
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.376e-01 1.936e-02 1.376e-01 
 *LOADS
@@ -47268,7 +47268,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/N196 2.830e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U36:X
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U36:X
 *CELL SAEDRVT14_EO2_1
 *C2_R1_C1 1.415e-01 1.936e-02 1.415e-01 
 *LOADS
@@ -47508,7 +47508,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_soc_soh/U82:B 4.091e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/net40522 9.947e+01
+*R_NET u_lmu0/u_lmu/u_soc_soh/net40432 9.947e+01
 *DRIVER u_lmu0/u_lmu/u_soc_soh/U4:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 4.974e+01 3.447e+01 4.974e+01 
@@ -48308,7 +48308,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/net30984 2.796e+01
+*R_NET u_lmu0/u_lmu/u_soc_soh/net30894 2.796e+01
 *DRIVER u_lmu0/u_lmu/u_soc_soh/clk_gate_coulomb_acc_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 1.398e+01 1.195e+01 1.398e+01 
@@ -48411,7 +48411,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_soc_soh/coulomb_acc_reg_31_:CK 3.782e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/net30990 9.310e+00
+*R_NET u_lmu0/u_lmu/u_soc_soh/net30900 9.310e+00
 *DRIVER u_lmu0/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 4.655e+00 3.053e+00 4.655e+00 
@@ -48593,7 +48593,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_soc_soh/U213:S 1.136e-02
 *RC u_lmu0/u_lmu/u_soc_soh/U211:S 1.136e-02
 *RC u_lmu0/u_lmu/u_soc_soh/U209:S 1.136e-02
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U65:A 5.719e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U65:A 5.719e-03
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/n12 1.706e-01
@@ -54702,7 +54702,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_bal/phase_on_reg:D 4.579e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_bal/net40526 2.465e+01
+*R_NET u_lmu0/u_lmu/u_bal/net40436 2.465e+01
 *DRIVER u_lmu0/u_lmu/u_bal/U43:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 1.232e+01 7.780e+00 1.232e+01 
@@ -66977,7 +66977,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30770 1.304e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30680 1.304e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_sample_idx_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 6.522e-01 1.387e-01 6.522e-01 
@@ -66989,7 +66989,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/sample_idx_reg_1_:CK 7.237e-03
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30776 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30686 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67012,7 +67012,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30781 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30691 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67035,7 +67035,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_239_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30786 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30696 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67058,7 +67058,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30791 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30701 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67081,7 +67081,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30796 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30706 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67104,7 +67104,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30801 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30711 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67127,7 +67127,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_175_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30806 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30716 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67150,7 +67150,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30811 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30721 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67173,7 +67173,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30816 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30726 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67196,7 +67196,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30821 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30731 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67219,7 +67219,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30826 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30736 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67242,7 +67242,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30831 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30741 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67265,7 +67265,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_79_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30836 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30746 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67288,7 +67288,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_63_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30841 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30751 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67311,7 +67311,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30846 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30756 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67334,7 +67334,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30851 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30761 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67357,7 +67357,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_bus_reg_15_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30856 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30766 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67380,7 +67380,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30861 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30771 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67403,7 +67403,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_239_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30866 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30776 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67426,7 +67426,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30871 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30781 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67449,7 +67449,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30876 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30786 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67472,7 +67472,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30881 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30791 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67495,7 +67495,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_175_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30886 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30796 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67518,7 +67518,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30891 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30801 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67541,7 +67541,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30896 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30806 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67564,7 +67564,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30901 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30811 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67587,7 +67587,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30906 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30816 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67610,7 +67610,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30911 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30821 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67633,7 +67633,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_79_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30916 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30826 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67656,7 +67656,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_63_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30921 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30831 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67679,7 +67679,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30926 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30836 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -67702,7 +67702,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_adc/cell_v_red_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_adc/net30931 4.370e+00
+*R_NET u_lmu1/u_lmu/u_adc/net30841 4.370e+00
 *DRIVER u_lmu1/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -79738,7 +79738,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_soc_soh/U83:B 4.091e-03
 *END
 
-*R_NET u_lmu1/u_lmu/u_soc_soh/net40536 9.947e+01
+*R_NET u_lmu1/u_lmu/u_soc_soh/net40446 9.947e+01
 *DRIVER u_lmu1/u_lmu/u_soc_soh/U4:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 4.974e+01 3.447e+01 4.974e+01 
@@ -80538,7 +80538,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu1/u_lmu/u_soc_soh/net30745 2.796e+01
+*R_NET u_lmu1/u_lmu/u_soc_soh/net30655 2.796e+01
 *DRIVER u_lmu1/u_lmu/u_soc_soh/clk_gate_coulomb_acc_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 1.398e+01 1.195e+01 1.398e+01 
@@ -80641,7 +80641,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_soc_soh/coulomb_acc_reg_31_:CK 3.782e-02
 *END
 
-*R_NET u_lmu1/u_lmu/u_soc_soh/net30751 9.310e+00
+*R_NET u_lmu1/u_lmu/u_soc_soh/net30661 9.310e+00
 *DRIVER u_lmu1/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 4.655e+00 3.053e+00 4.655e+00 
@@ -86946,7 +86946,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu1/u_lmu/u_bal/phase_on_reg:D 4.579e-03
 *END
 
-*R_NET u_lmu1/u_lmu/u_bal/net40540 2.465e+01
+*R_NET u_lmu1/u_lmu/u_bal/net40450 2.465e+01
 *DRIVER u_lmu1/u_lmu/u_bal/U45:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 1.232e+01 7.780e+00 1.232e+01 
@@ -99138,7 +99138,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30531 1.304e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30441 1.304e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_sample_idx_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 6.522e-01 1.387e-01 6.522e-01 
@@ -99150,7 +99150,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/sample_idx_reg_1_:CK 7.237e-03
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30537 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30447 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99173,7 +99173,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30542 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30452 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99196,7 +99196,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_239_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30547 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30457 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99219,7 +99219,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30552 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30462 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99242,7 +99242,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30557 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30467 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99265,7 +99265,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30562 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30472 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99288,7 +99288,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_175_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30567 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30477 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99311,7 +99311,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30572 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30482 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99334,7 +99334,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30577 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30487 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99357,7 +99357,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30582 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30492 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99380,7 +99380,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30587 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30497 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99403,7 +99403,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30592 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30502 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99426,7 +99426,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_79_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30597 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30507 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99449,7 +99449,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_63_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30602 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30512 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99472,7 +99472,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30607 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30517 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99495,7 +99495,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30612 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30522 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99518,7 +99518,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_bus_reg_15_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30617 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30527 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99541,7 +99541,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_255_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30622 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30532 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_0/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99564,7 +99564,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_239_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30627 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30537 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_1/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99587,7 +99587,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_223_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30632 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30542 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_2/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99610,7 +99610,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_207_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30637 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30547 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_3/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99633,7 +99633,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_191_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30642 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30552 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_4/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99656,7 +99656,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_175_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30647 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30557 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_5/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99679,7 +99679,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_159_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30652 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30562 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_6/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99702,7 +99702,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_143_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30657 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30567 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_7/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99725,7 +99725,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_127_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30662 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30572 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_8/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99748,7 +99748,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_111_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30667 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30577 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_9/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99771,7 +99771,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_95_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30672 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30582 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_10/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99794,7 +99794,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_79_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30677 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30587 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_11/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99817,7 +99817,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_63_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30682 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30592 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_12/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99840,7 +99840,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_47_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30687 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30597 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_13/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -99863,7 +99863,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_adc/cell_v_red_bus_reg_31_:CK 1.512e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_adc/net30692 4.370e+00
+*R_NET u_lmu2/u_lmu/u_adc/net30602 4.370e+00
 *DRIVER u_lmu2/u_lmu/u_adc/clk_gate_cell_v_red_bus_reg_14/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 2.185e+00 8.857e-01 2.185e+00 
@@ -112085,7 +112085,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_soc_soh/U82:B 4.091e-03
 *END
 
-*R_NET u_lmu2/u_lmu/u_soc_soh/net40550 9.947e+01
+*R_NET u_lmu2/u_lmu/u_soc_soh/net40460 9.947e+01
 *DRIVER u_lmu2/u_lmu/u_soc_soh/U4:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 4.974e+01 3.447e+01 4.974e+01 
@@ -112885,7 +112885,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:EN 3.885e-03
 *END
 
-*R_NET u_lmu2/u_lmu/u_soc_soh/net30506 2.796e+01
+*R_NET u_lmu2/u_lmu/u_soc_soh/net30416 2.796e+01
 *DRIVER u_lmu2/u_lmu/u_soc_soh/clk_gate_coulomb_acc_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 1.398e+01 1.195e+01 1.398e+01 
@@ -112988,7 +112988,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_soc_soh/coulomb_acc_reg_31_:CK 3.782e-02
 *END
 
-*R_NET u_lmu2/u_lmu/u_soc_soh/net30512 9.310e+00
+*R_NET u_lmu2/u_lmu/u_soc_soh/net30422 9.310e+00
 *DRIVER u_lmu2/u_lmu/u_soc_soh/clk_gate_relax_cnt_reg/latch:Q
 *CELL SAEDRVT14_CKGTPLT_V5_1
 *C2_R1_C1 4.655e+00 3.053e+00 4.655e+00 
@@ -119293,7 +119293,7 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu2/u_lmu/u_bal/phase_on_reg:D 4.579e-03
 *END
 
-*R_NET u_lmu2/u_lmu/u_bal/net40554 2.465e+01
+*R_NET u_lmu2/u_lmu/u_bal/net40464 2.465e+01
 *DRIVER u_lmu2/u_lmu/u_bal/U35:X
 *CELL SAEDLVT14_TIE0_V1_2
 *C2_R1_C1 1.232e+01 7.780e+00 1.232e+01 
@@ -158131,476 +158131,476 @@ supervisor_code\[0\] O *L 5.000e+00 *S 1.598e-02 5.801e-02
 *RC u_lmu0/u_lmu/u_fault/gte_x_4/U150:A1 4.875e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n68 2.510e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U39:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n68 2.510e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U39:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 1.255e-01 1.936e-02 1.255e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U37:A2 4.861e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U37:A2 4.861e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n69 1.788e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U38:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n69 1.788e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U38:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 8.940e-02 1.936e-02 8.940e-02 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U37:A1 3.462e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U37:A1 3.462e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n70 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U48:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n70 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U48:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U51:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U51:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n71 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U60:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n71 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U60:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U51:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U51:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n72 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U46:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n72 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U46:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U52:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U52:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n73 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U53:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n73 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U53:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U52:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U52:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n74 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U45:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n74 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U45:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U53:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U53:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n75 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U54:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n75 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U54:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U53:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U53:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n76 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U44:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n76 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U44:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U54:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U54:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n77 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U55:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n77 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U55:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U54:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U54:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n78 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U43:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n78 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U43:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U55:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U55:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n79 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U56:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n79 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U56:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U55:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U55:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n80 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U42:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n80 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U42:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U56:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U56:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n81 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U59:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n81 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U59:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U56:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U56:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n82 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U49:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n82 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U49:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U57:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U57:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n83 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U51:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n83 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U51:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U57:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U57:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n84 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U40:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n84 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U40:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U58:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U58:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n85 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U37:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n85 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U37:X
 *CELL SAEDRVT14_AN2_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U58:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U58:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n86 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U41:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n86 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U41:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U59:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U59:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n87 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U58:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n87 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U58:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U59:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U59:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n88 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U47:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n88 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U47:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U60:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U60:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n89 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U52:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n89 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U52:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U60:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U60:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n90 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U50:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n90 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U50:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U61:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U61:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n91 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U57:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n91 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U57:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U61:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U61:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n92 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U62:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n92 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U62:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U63:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U63:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n93 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U61:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n93 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U61:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U63:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U63:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n94 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U64:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n94 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U64:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U65:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U65:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n95 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U63:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n95 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U63:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U65:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U65:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/n96 3.305e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U65:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/n96 3.305e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U65:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.652e-01 1.936e-02 1.652e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J14_123_6527/U36:A1 6.400e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_30J11_123_6527/U36:A1 6.400e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n67 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U37:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n67 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U37:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U38:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U38:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n68 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U36:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n68 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U36:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U38:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U38:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n69 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U39:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n69 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U39:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U40:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U40:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n70 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U38:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n70 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U38:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U40:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U40:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n71 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U41:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n71 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U41:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U42:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U42:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n72 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U40:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n72 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U40:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U42:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U42:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n73 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U43:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n73 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U43:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U44:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U44:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n74 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U42:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n74 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U42:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U44:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U44:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n75 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U45:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n75 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U45:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U46:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U46:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n76 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U44:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n76 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U44:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U46:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U46:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n77 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U47:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n77 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U47:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U48:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U48:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n78 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U46:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n78 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U46:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U48:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U48:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n79 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U49:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n79 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U49:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U50:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U50:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n80 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U48:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n80 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U48:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U50:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U50:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n81 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U51:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n81 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U51:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U52:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U52:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n82 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U50:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n82 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U50:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U52:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U52:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n83 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U53:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n83 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U53:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U54:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U54:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n84 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U52:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n84 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U52:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U54:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U54:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n85 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U55:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n85 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U55:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U56:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U56:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n86 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U54:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n86 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U54:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U56:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U56:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n87 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U57:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n87 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U57:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U58:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U58:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n88 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U56:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n88 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U56:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U58:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U58:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n89 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U59:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n89 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U59:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U60:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U60:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n90 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U58:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n90 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U58:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U60:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U60:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n91 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U61:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n91 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U61:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U62:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U62:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n92 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U60:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n92 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U60:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U62:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U62:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n93 5.378e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U63:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n93 5.378e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U63:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 2.689e-01 1.936e-02 2.689e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U64:B 1.041e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U64:B 1.041e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n94 5.635e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U62:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n94 5.635e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U62:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 2.818e-01 1.936e-02 2.818e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U64:A 1.091e-02
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U64:A 1.091e-02
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n95 2.048e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U65:X
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n95 2.048e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U65:X
 *CELL SAEDRVT14_INV_0P5
 *C2_R1_C1 1.024e-01 1.936e-02 1.024e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U35:A2 3.966e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U35:A2 3.966e-03
 *END
 
-*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/n96 3.305e-01
-*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U64:CO
+*R_NET u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/n96 3.305e-01
+*DRIVER u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U64:CO
 *CELL SAEDRVT14_ADDH_0P5
 *C2_R1_C1 1.652e-01 1.936e-02 1.652e-01 
 *LOADS
-*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J14_122_6527/U35:A1 6.400e-03
+*RC u_lmu0/u_lmu/u_soc_soh/DP_OP_29J11_122_6527/U35:A1 6.400e-03
 *END
 
 *R_NET u_lmu0/u_lmu/u_soc_soh/div_13/n793 1.628e-01

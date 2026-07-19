@@ -2,7 +2,7 @@
 ****************************************
 check_design summary:
 Version:     T-2022.03-SP4
-Date:        Thu Jul  9 21:33:52 2026
+Date:        Fri Jul 17 16:31:47 2026
 ****************************************
 
                    Name                                            Total
@@ -10,8 +10,8 @@ Date:        Thu Jul  9 21:33:52 2026
 Inputs/Outputs                                                     24
     Unconnected ports (LINT-28)                                    24
 
-Cells                                                              76
-    Cells do not drive (LINT-1)                                    19
+Cells                                                              75
+    Cells do not drive (LINT-1)                                    18
     Connected to power or ground (LINT-32)                         56
     Nets connected to multiple pins on same cell (LINT-33)          1
 
@@ -36,8 +36,7 @@ Warning: In design 'bms_uart_tx', cell 'C389' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C396' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C397' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C401' does not drive any nets. (LINT-1)
-Warning: In design 'bms_spi_slave', cell 'C230' does not drive any nets. (LINT-1)
-Warning: In design 'bms_spi_slave', cell 'C239' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_slave', cell 'C190' does not drive any nets. (LINT-1)
 Warning: In design 'bms_lmu_wrapper', net 'u_lmu/sleep_mode' driven by pin 'u_lmu/u_pwr/sleep_mode' has no loads. (LINT-2)
 Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[0]' driven by pin 'u_lmu/u_bal/low_id_o[0]' has no loads. (LINT-2)
 Warning: In design 'bms_lmu_wrapper', net 'u_lmu/low_id[1]' driven by pin 'u_lmu/u_bal/low_id_o[1]' has no loads. (LINT-2)

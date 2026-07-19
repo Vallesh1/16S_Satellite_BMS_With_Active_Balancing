@@ -113,9 +113,7 @@ u_lmu0/u_lmu/u_comm/u_spi/rx_shift_reg[4]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/rx_shift_reg[5]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/rx_shift_reg[6]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/rx_valid_reg/next_state
-u_lmu0/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]/next_state
-u_lmu0/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]/next_state
-u_lmu0/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]/next_state
+u_lmu0/u_lmu/u_comm/u_spi/tx_shift_reg[0]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/tx_shift_reg[1]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/tx_shift_reg[2]/next_state
 u_lmu0/u_lmu/u_comm/u_spi/tx_shift_reg[3]/next_state
@@ -215,9 +213,7 @@ u_lmu1/u_lmu/u_comm/u_spi/rx_shift_reg[4]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/rx_shift_reg[5]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/rx_shift_reg[6]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/rx_valid_reg/next_state
-u_lmu1/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]/next_state
-u_lmu1/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]/next_state
-u_lmu1/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]/next_state
+u_lmu1/u_lmu/u_comm/u_spi/tx_shift_reg[0]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/tx_shift_reg[1]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/tx_shift_reg[2]/next_state
 u_lmu1/u_lmu/u_comm/u_spi/tx_shift_reg[3]/next_state
@@ -317,9 +313,7 @@ u_lmu2/u_lmu/u_comm/u_spi/rx_shift_reg[4]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/rx_shift_reg[5]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/rx_shift_reg[6]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/rx_valid_reg/next_state
-u_lmu2/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[0]/next_state
-u_lmu2/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[1]/next_state
-u_lmu2/u_lmu/u_comm/u_spi/tx_bit_cnt_reg[2]/next_state
+u_lmu2/u_lmu/u_comm/u_spi/tx_shift_reg[0]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/tx_shift_reg[1]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/tx_shift_reg[2]/next_state
 u_lmu2/u_lmu/u_comm/u_spi/tx_shift_reg[3]/next_state

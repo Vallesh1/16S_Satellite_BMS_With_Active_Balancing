@@ -2,7 +2,7 @@
 ****************************************
 check_design summary:
 Version:     T-2022.03-SP4
-Date:        Sat Jul  4 21:59:40 2026
+Date:        Sat Jul 18 22:11:49 2026
 ****************************************
 
                    Name                                            Total
@@ -10,8 +10,8 @@ Date:        Sat Jul  4 21:59:40 2026
 Inputs/Outputs                                                     24
     Unconnected ports (LINT-28)                                    24
 
-Cells                                                             107
-    Cells do not drive (LINT-1)                                    23
+Cells                                                             106
+    Cells do not drive (LINT-1)                                    22
     Connected to power or ground (LINT-32)                         75
     Nets connected to multiple pins on same cell (LINT-33)          9
 
@@ -40,8 +40,7 @@ Warning: In design 'bms_uart_tx', cell 'C389' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C396' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C397' does not drive any nets. (LINT-1)
 Warning: In design 'bms_uart_tx', cell 'C401' does not drive any nets. (LINT-1)
-Warning: In design 'bms_spi_slave', cell 'C230' does not drive any nets. (LINT-1)
-Warning: In design 'bms_spi_slave', cell 'C239' does not drive any nets. (LINT-1)
+Warning: In design 'bms_spi_slave', cell 'C190' does not drive any nets. (LINT-1)
 Warning: In design 'bms_system_3lmu_top_enhanced', net 'dummy_passive1[0]' driven by pin 'u_lmu1/passive_sw[0]' has no loads. (LINT-2)
 Warning: In design 'bms_system_3lmu_top_enhanced', net 'dummy_passive1[1]' driven by pin 'u_lmu1/passive_sw[1]' has no loads. (LINT-2)
 Warning: In design 'bms_system_3lmu_top_enhanced', net 'dummy_passive1[2]' driven by pin 'u_lmu1/passive_sw[2]' has no loads. (LINT-2)

@@ -1,0 +1,601 @@
+/home/cad/eda/Mentor_Graphics/tessent_2022.2/bin/tessent -shell -logfile ./logs/lmu_wrap_tr3.log -replace
+//  Tessent Shell  2022.2    Fri May 27 22:24:01 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Jul 17 16:38:14 IST 2026.
+//  64 bit version
+//  Host: mavenserver-RH3 (255072 MB RAM, 122071 MB Swap)
+//
+//  command: set_context dft -scan
+//  command: read_cell_library adk.tcelllib 
+//  Reading DFT Library file adk.tcelllib
+//  Finished reading file adk.tcelllib
+//  command: read_verilog bms_lmu_wrapper.mapped.v 
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/*.v
+//  command: set_current_design bms_lmu_wrapper -show_elaboration_warnings 
+//  Warning: Net 'net42452' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42453' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42454' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42455' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42456' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42457' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42458' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42459' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42460' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42461' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42462' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42463' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42464' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42465' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42466' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42467' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42468' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42469' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42470' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42471' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42472' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42473' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42474' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42475' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42476' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42477' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42478' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42479' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42480' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42481' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42482' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42483' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42484' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42485' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42486' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42487' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42488' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42489' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42490' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42491' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42492' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42493' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42494' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42495' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42496' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42497' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42498' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42499' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42500' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42501' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42502' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42503' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42504' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42505' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42506' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42507' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42508' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42509' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42510' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42511' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42512' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42513' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42514' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42515' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42516' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'net42517' in module 'bms_lmu_wrapper' is not driven
+//  Warning: Net 'can_frame[63]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[62]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[61]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[60]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[59]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[58]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[57]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[56]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[55]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[54]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[53]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[52]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[51]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[50]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[49]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[48]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[47]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[46]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[45]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[44]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[43]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[42]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[41]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[40]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[39]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[38]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[37]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[36]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[35]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[34]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[33]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[32]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[31]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[30]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[29]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[28]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[27]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[26]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[25]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[24]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[23]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[22]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[21]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[20]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[19]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[18]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[17]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[16]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[15]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[14]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[13]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[12]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[11]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[10]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[9]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'can_frame[8]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'fault_code[7]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'fault_code[6]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'fault_code[5]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'fault_code[4]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'fault_code[3]' in module 'bms_lmu_wrapper_bms_satellite_top_0' is not driven
+//  Warning: Net 'sample_idx[4]' in module 'bms_lmu_wrapper_bms_adc_if_0' is not driven
+//  Warning: Net 'sample_idx[3]' in module 'bms_lmu_wrapper_bms_adc_if_0' is not driven
+//  Warning: Net 'sample_idx[2]' in module 'bms_lmu_wrapper_bms_adc_if_0' is not driven
+//  Warning: Net 'sample_idx[1]' in module 'bms_lmu_wrapper_bms_adc_if_0' is not driven
+//  Warning: Net 'sample_idx[0]' in module 'bms_lmu_wrapper_bms_adc_if_0' is not driven
+//  Warning: Net 'iso_margin[15]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[14]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[13]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[12]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[11]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[10]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[9]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[8]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[7]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[6]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[5]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[4]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[3]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[2]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[1]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'iso_margin[0]' in module 'bms_lmu_wrapper_bms_isolation_monitor_0' is not driven
+//  Warning: Net 'fault_code[7]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'fault_code[6]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'fault_code[5]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'fault_code[4]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'fault_code[3]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[15]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[14]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[13]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[12]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[11]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[10]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[9]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[8]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[7]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[6]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[5]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[4]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[3]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[2]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[1]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'ov_map[0]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[15]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[14]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[13]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[12]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[11]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[10]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[9]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[8]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[7]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[6]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[5]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[4]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[3]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[2]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[1]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'uv_map[0]' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'sensor_mismatch' in module 'bms_lmu_wrapper_bms_fault_processor_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_2_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_1_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_4_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_2_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_7_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_3_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_9_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_4_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_12_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_5_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_14_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_6_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_17_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_7_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_19_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_8_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_22_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_9_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_24_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_10_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_27_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_11_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_29_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_12_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_32_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_13_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_34_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_14_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_37_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_15_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_39_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_16_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_42_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_17_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_44_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_18_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_47_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_19_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_49_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_20_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_52_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_21_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_54_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_22_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_57_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_23_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_59_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_24_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_62_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_25_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_64_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_26_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_67_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_27_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_69_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_28_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_72_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_29_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_74_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_30_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_77_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_fault_processor_DW01_sub_J3_31_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_fault_processor_DW_cmp_J3_79_0' is not driven
+//  Warning: Net 'ocv_soc[14]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[13]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[12]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[11]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[9]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[8]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[7]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[6]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[5]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[4]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[3]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'ocv_soc[2]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_0' has no pins
+//  Warning: Net 'O1[1]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0_0' is not driven
+//  Warning: Net 'O1[0]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0_0' is not driven
+//  Warning: Net 'O1[0]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DP_OP_29J4_122_4080_J4_0_0' is not driven
+//  Warning: Net 'quotient[31]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[30]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[29]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[28]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[27]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[26]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[25]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[24]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[23]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[22]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[21]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[20]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[19]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[18]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[17]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'quotient[16]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[16]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[15]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[14]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[13]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[12]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[11]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[10]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[9]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[8]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[7]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[6]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[5]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[4]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[3]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[2]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[1]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'remainder[0]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'divide_by_0' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW01_add_J4_38_0' is not driven
+//  Warning: Net 'product[47]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[46]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[45]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[44]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[43]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[42]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[41]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[40]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[39]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[38]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[37]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[36]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[35]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[34]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[33]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[32]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[3]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[2]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[1]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'product[0]' in module 'bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0' is not driven
+//  Warning: Net 'high_id_o[3]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'high_id_o[2]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'high_id_o[1]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'high_id_o[0]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'low_id_o[3]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'low_id_o[2]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'low_id_o[1]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'low_id_o[0]' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'balance_busy' in module 'bms_lmu_wrapper_bms_active_balancer_0' is not driven
+//  Warning: Net 'SUM[0]' in module 'bms_lmu_wrapper_bms_active_balancer_DW01_inc_J2_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_6_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_8_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_10_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_12_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_14_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_16_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_18_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_20_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_22_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_24_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_26_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_28_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_30_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_32_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J2_34_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_1_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_1_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_2_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_1_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J19_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_2_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_3_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_1_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_2_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J20_0_0' is not driven
+//  Warning: Net 'EQ_NE' in module 'bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_3_0' is not driven
+//  Warning: Net 'CO' in module 'bms_lmu_wrapper_bms_active_balancer_DW01_sub_J19_0_0' is not driven
+//  Warning: Net 'sleep_mode' in module 'bms_lmu_wrapper_bms_power_mgmt_0' is not driven
+//  Warning: Net 'can_frame[63]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[62]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[61]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[60]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[59]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[58]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[57]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[56]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[55]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[54]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[53]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[52]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[51]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[50]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[49]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[48]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[47]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[46]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[45]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[44]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[43]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[42]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[41]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[40]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[39]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[38]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[37]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[36]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[35]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[34]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[33]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[32]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[31]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[30]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[29]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[28]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[27]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[26]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[25]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[24]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[23]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[22]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[21]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[20]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[19]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[18]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[17]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[16]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[15]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[14]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[13]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[12]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[11]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[10]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[9]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'can_frame[8]' in module 'bms_lmu_wrapper_bms_comm_hub_0' is not driven
+//  Warning: Net 'tx_ready' in module 'bms_lmu_wrapper_bms_uart_tx_0' is not driven
+//  Warning: Net 'SUM[0]' in module 'bms_lmu_wrapper_bms_uart_tx_DW01_inc_J4_0_0' is not driven
+//  Warning: Net 'rx_byte[7]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[6]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[5]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[4]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[3]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[2]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[1]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_byte[0]' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'rx_valid' in module 'bms_lmu_wrapper_bms_spi_slave_0' is not driven
+//  Warning: Net 'frame_data[63]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[62]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[61]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[60]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[59]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[58]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[57]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[56]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[55]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[54]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[53]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[52]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[51]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[50]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[49]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[48]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[47]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[46]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[45]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[44]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[43]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[42]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[41]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[40]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[39]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[38]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[37]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[36]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[35]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[34]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[33]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[32]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[31]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[30]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[29]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[28]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[27]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[26]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[25]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[24]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[23]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[22]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[21]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[20]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[19]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[18]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[17]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[16]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[15]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[14]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[13]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[12]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[11]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[10]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[9]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  Warning: Net 'frame_data[8]' in module 'bms_lmu_wrapper_bms_can_status_if_0' is not driven
+//  command: set_design_level sub_block
+//  command: analyze_control_signals -auto
+//  Warning: Rule FN1 violation occurs 485 times
+//  Flattening process completed, cell instances=11340, gates=42359, PIs=294, POs=156, CPU time=0.66 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.13 sec.
+//  ---------------------------------------------------------------------------
+//  Begin control signals identification analysis.
+//  ---------------------------------------------------------------------------
+//  Identified 2 clock control primary inputs.
+//     '/clk' (1) with off-state = 1.
+//     '/spi_sclk' (292) with off-state = 1.
+//  Identified 1 set control primary inputs.
+//     '/rst_n' (2) with off-state = 1.
+//  Identified 1 reset control primary inputs.
+//     '/rst_n' (2) with off-state = 1.
+//  Identified 0 read control primary inputs.
+//  Identified 0 write control primary inputs.
+//  ---------------------------------------------------------------------------
+//  Total number of internal lines is 2442 (814 clocks, 814 sets , 814 resets, 0 reads, 0 writes).
+//  Total number of potentially clockable internal lines is 1590 (814 clocks, 40 sets , 736 resets, 0 reads, 0 writes).
+//  Total number of not clockable internal lines is 852 (0 clocks, 774 sets , 78 resets, 0 reads, 0 writes).
+//  Total number of added primary input controls 3 (2 clocks, 0 sets , 1 resets, 0 reads, 0 writes).
+//  ---------------------------------------------------------------------------
+//  Warning: Flattened model deleted.
+//  command: set_test_logic -set on -reset on -clock on
+//  command: check_design_rules 
+//  Warning: Rule FN1 violation occurs 485 times
+//  Flattening process completed, cell instances=11340, gates=42359, PIs=294, POs=156, CPU time=0.28 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.13 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 814,
+//  sequential library cells = 814.
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin scannability rules checking for 814 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  814 sequential library cells identified as scannable.
+//  ---------------------------------------------------------------------------
+//  Begin transparent latch checking for 38 latches.
+//  ---------------------------------------------------------------------------
+//  Number transparent latches = 38.
+//  ---------------------------------------------------------------------------
+//  Begin scan clock rules checking.
+//  ---------------------------------------------------------------------------
+//  3 scan clock/set/reset lines have been identified.
+//  All scan clocks successfully passed off-state check.
+//  776 sequential cells passed clock stability checking.
+//  ---------------------------------------------------------------------------
+//  814 non-scan memory elements are identified.
+//  ---------------------------------------------------------------------------
+//  776 non-scan memory elements are identified as INIT-X. (D5)
+//   38 non-scan memory elements are identified as TLA.    (D5)
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Begin gating checking
+//  ---------------------------------------------------------------------------
+//  ---------------------------------------------------------------------------
+//  Checking clock set and reset for 0 non-scannable sequential instances
+//  ---------------------------------------------------------------------------
+//  0 sequential instances can be gated to be scannable
+//  0 sequential instances remain non-scannable
+//  ---------------------------------------------------------------------------
+//  Checking test clocks
+//  ---------------------------------------------------------------------------
+//  Number of test clocks required = 0
+//  ---------------------------------------------------------------------------
+//  Begin shift register identification for 814 sequential library cells.
+//  ---------------------------------------------------------------------------
+//  No shift registers identified.
+//  Number of targeted sequential library cells = 0
+//  Warning: The tool may require a shift-capture clock during insertion, 
+//           but no 'shift_capture_clock' DFT signal was identified and no TCLK source was specified using the command 'set_scan_signals -tclk'.
+//  Note: The top-level clock port 'test_clk' will be used as the shift-capture clock, if needed.
+//  Warning: Pin 'test_clk' does not exist and will be created when inserting test logic
+//  command: set_scan_insertion_options -port_index_start_value 1 -single_clock_edge_chains ON -si_timing any_edge -so_timing any_edge
+//  command: add_scan_mode unwrapped -chain_count 20
+//  Error: Failed to identify any scan elements to populate unwrapped scan mode 'unwrapped'.
+//  command: add_scan_mode unwrapped -chain_count 40
+//  Error: Failed to identify any scan elements to populate unwrapped scan mode 'unwrapped'.
+//  command: analyze_scan_chains 
+//  Error: Failed to identify any scan elements to populate unwrapped scan mode 'unwrapped'.
+//  command: add_scan_mode unwrapped -chain_count 100
+//  Error: Failed to identify any scan elements to populate unwrapped scan mode 'unwrapped'.
+//  command: set_system_mode set
+//  command: set_dft_configuration -scan_insertions target
+//  Error: Command 'set_dft_configuration -scan_insertions target' is unknown

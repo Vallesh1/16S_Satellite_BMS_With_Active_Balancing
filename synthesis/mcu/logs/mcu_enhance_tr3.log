@@ -1,0 +1,1151 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP4 for linux64 - Aug 24, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home1/IITR_PD3/MulukuriVNath/.synopsys_dc_gui/preferences.tcl
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> 4.1.1
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/work
+dc_shell> set_host_options -max_cores 8
+1
+dc_shell> set DESIGN_NAME bms_master_control_unit_enhanced
+bms_master_control_unit_enhanced
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts
+set DESIGN_STYLE hier
+hier
+set PHYSICAL_HIERARCHY_LEVEL bottom
+bottom
+set DC_BLOCK_ABSTRACTION_DESIGNS ""
+set DDC_HIER_DESIGNS ""
+set UPF_MODE golden
+golden
+set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.upf
+set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+bms_master_control_unit_enhanced.ndm
+set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
+/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf
+set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm
+dc_shell> set rtl_path {}
+set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
+ /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top 
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # For a hierarchical flow, add the block-level results directories to the
+  # For a hierarchical flow, add the block-level results directories to the
+  # search path to find the block-level design files.
+
+  set HIER_DESIGNS "${DDC_HIER_DESIGNS} ${DC_BLOCK_ABSTRACTION_DESIGNS}"
+  foreach design $HIER_DESIGNS {
+    lappend search_path ../../${design}/outputs/
+  }
+  # For a hierarchical UPF flow, add the results directory to the search path for
+  # Formality to find the output UPF files.
+  lappend search_path ${OUTPUTS_DIR}
+}
+dc_shell> set_app_var alib_library_analysis_path .
+.
+dc_shell> if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
+dc_shell> if {$UPF_MODE == "golden"} {
+  # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
+  # physical implementation, and verification flow.
+  set_app_var enable_golden_upf true
+}
+true
+dc_shell> set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db 
+dc_shell> set_app_var target_library ${TARGET_LIBRARY_FILES}
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db 
+dc_shell> set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+dc_shell> set_app_var link_library "* $target_library $synthetic_library"
+* /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db  dw_foundation.sldb
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
+    puts "RM-info: opening existing lib $DCRM_NDM_LIBRARY_NAME"
+    open_lib $DCRM_NDM_LIBRARY_NAME
+  } else {
+    if {[file exists $DCRM_NDM_LIBRARY_NAME]} {
+      puts "RM-info: deleting existing lib $DCRM_NDM_LIBRARY_NAME"
+      file delete -force $DCRM_NDM_LIBRARY_NAME
+    }
+
+    set create_lib_cmd "create_lib -technology $TECH_FILE $DCRM_NDM_LIBRARY_NAME"
+    if {${REFERENCE_LIBRARY} != ""} { append create_lib_cmd " -ref_libs \"${REFERENCE_LIBRARY}\""}
+    puts "RM-info: Running $create_lib_cmd"
+    eval ${create_lib_cmd}
+  }
+}
+dc_shell> set set_check_library_cmd "set_check_library_options -mcmm"
+set_check_library_options -mcmm
+dc_shell> if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
+set_check_library_options -mcmm -upf
+puts "RM-info: Running $set_check_library_cmd"
+RM-info: Running set_check_library_options -mcmm -upf
+dc_shell> eval ${set_check_library_cmd}
+1
+dc_shell> redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+dc_shell> set_app_var sh_new_variable_message false
+false
+dc_shell> set_app_var auto_insert_level_shifters_on_clocks all
+all
+dc_shell> set_app_var spg_enable_via_resistance_support true
+true
+dc_shell> set_app_var simplified_verification_mode true
+true
+dc_shell> set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
+1
+dc_shell> analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+Presto compilation completed successfully.
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+1
+dc_shell> foreach path $rtl_path_1 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_2 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_3 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_4 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v
+Presto compilation completed successfully.
+dc_shell> elaborate ${DESIGN_NAME}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ss0p6v125c'
+  Loading link library 'saed14lvt_ss0p6v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 68 in file
+	'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            83            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine bms_master_control_unit_enhanced line 68 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+|     spi_start_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   max_temp_seen_reg   | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   spi_slave_sel_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     poll_busy_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   active_lmu_id_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+| global_fault_code_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   global_fault_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    spi_tx_byte_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pack_soc_avg_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   pack_soh_avg_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       state_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully. (bms_master_control_unit_enhanced)
+Elaborated 1 design.
+Current design is now 'bms_master_control_unit_enhanced'.
+Information: Building the design 'bms_spi_master'. (HDL-193)
+
+Statistics for case statements in always block at line 29 in file
+	'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+|            56            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine bms_spi_master line 29 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    tx_shift_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     clk_cnt_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bit_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    rx_shift_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      sclk_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      cs_n_reg       | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      mosi_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rx_byte_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      done_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_spi_master)
+Information: Building the design 'bms_current_limit_supervisor'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_current_limit_supervisor line 22 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  thermal_warn_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  thermal_trip_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| lmu_count_fault_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| allowed_current_reg | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+| allowed_current_reg | Flip-flop |   4   |  Y  | N  | N  | Y  | N  | N  | N  |
+| supervisor_code_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  current_warn_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  current_trip_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_current_limit_supervisor)
+1
+Current design is 'bms_master_control_unit_enhanced'.
+dc_shell> current_design ${DESIGN_NAME}
+Current design is 'bms_master_control_unit_enhanced'.
+{bms_master_control_unit_enhanced}
+dc_shell> link
+
+  Linking design 'bms_master_control_unit_enhanced'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/work/bms_master_control_unit_enhanced.db, etc
+  saed14rvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db
+  saed14lvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db
+  dw_foundation.sldb (library) /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb
+
+1
+dc_shell> set upf_create_implicit_supply_sets false
+false
+dc_shell> if {$UPF_MODE != "none"} {
+  if {$UPF_FILE != ""} {
+    set load_upf_cmd "load_upf ${UPF_FILE}"
+
+    if {$UPF_MODE == "golden"} {lappend load_upf_cmd -strict_check true}
+
+    puts "RM-info: Running $load_upf_cmd"
+    eval ${load_upf_cmd}
+  }
+}
+RM-info: Running load_upf /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.upf -strict_check true
+
+
+Loading Golden UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.upf ...
+# ==============================================================================
+# GOLDEN UPF SPECIFICATION: Battery Management System (BMS)
+# Standard: IEEE 1801 (UPF 2.1)
+# Top Module: bms_system_3lmu_top_enhanced
+# Description: Defines the architectural Power Domains, Supply Networks, and
+#              the Global Power State Table (PST) for sign-off.
+# ==============================================================================
+upf_version 2.1
+set_design_top bms_system_3lmu_top_enhanced
+Warning: Can't find object 'bms_system_3lmu_top_enhanced' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list 'instance' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 1. POWER DOMAIN CREATION
+# ------------------------------------------------------------------------------
+# PD_CORE: Always-On Domain (Includes Top Pad Ring & MCU Macro)
+create_power_domain PD_CORE -include_scope
+# PD_LMU[0:2]: Switchable Voltage Islands for Edge Satellites
+create_power_domain PD_LMU0 -elements {u_lmu0}
+Warning: Can't find cell 'u_lmu0' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU1 -elements {u_lmu1}
+Warning: Can't find cell 'u_lmu1' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU2 -elements {u_lmu2}
+Warning: Can't find cell 'u_lmu2' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 2. GLOBAL SUPPLY PORTS & NETS
+# ------------------------------------------------------------------------------
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+# Global Nets in Top Domain
+create_supply_net VDD -domain PD_CORE
+create_supply_net VSS -domain PD_CORE
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+# ------------------------------------------------------------------------------
+# 3. DOMAIN SUPPLY NETS & PRIMARY ROUTING
+# ------------------------------------------------------------------------------
+# Route Global Power/Ground to LMUs (Before Switches)
+create_supply_net VDD -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Create the Switched Power Nets (The rails *after* the header switches)
+create_supply_net VDD_LMU0_SW -domain PD_LMU0
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU1_SW -domain PD_LMU1
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU2_SW -domain PD_LMU2
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Assign Primary Nets to Domains
+set_domain_supply_net PD_CORE -primary_power_net VDD -primary_ground_net VSS
+set_domain_supply_net PD_LMU0 -primary_power_net VDD_LMU0_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU1 -primary_power_net VDD_LMU1_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_master_control_unit_enhanced'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 4. POWER STATE DEFINITIONS & PST (Power State Table)
+# ------------------------------------------------------------------------------
+# Define the nominal operating voltages for states
+add_port_state VDD -state {VDD_NOM 1.2}
+add_port_state VSS -state {GND 0.0}
+add_port_state header_sw_lmu0/vout -state {LMU0_ON 1.2} -state {LMU0_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu1/vout -state {LMU1_ON 1.2} -state {LMU1_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu2/vout -state {LMU2_ON 1.2} -state {LMU2_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+# Create the Power State Table to dictate legal combinations
+create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+Error: Nothing matched for VDD_LMU0_SW (SEL-005)
+Error: Nothing matched for VDD_LMU1_SW (SEL-005)
+Error: Nothing matched for VDD_LMU2_SW (SEL-005)
+# Legal State 1: EVERYTHING ON (Active Drive)
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 2: ALL LMUS ASLEEP (Standby / Parked)
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 3: LMU 0 ACTIVE, OTHERS SLEEP (Localized Wakeup)
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# ------------------------------------------------------------------------------
+# 5. LOAD SUPPLEMENTAL FILE (Switches, Isolation, Level Shifters)
+# ------------------------------------------------------------------------------
+load_upf constraints/upf/bms_power_supplemental.upf
+
+
+Loading Golden UPF file constraints/upf/bms_power_supplemental.upf ...
+Error: could not open script file "constraints/upf/bms_power_supplemental.upf" (CMD-015)
+Error: Errors while reading the UPF file: . Use the error_info command for more information. (UPF-044)
+
+End loading UPF file constraints/upf/bms_power_supplemental.upf
+# ==============================================================================
+# END OF GOLDEN UPF
+# ==============================================================================
+End loading UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.upf
+1
+dc_shell> set_voltage 0.6 -object_list {VDD}
+1
+set_voltage 0.0 -object_list {VSS}
+1
+dc_shell> set check_mv_design_failed false
+false
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  ## For MCMM, perform this check for each scenario.
+  set current_scenario_saved [current_scenario]
+  foreach scenario [all_active_scenarios] {
+    current_scenario ${scenario}
+    if {![check_mv_design -power_nets]} {
+      set check_mv_design_failed true
+      break
+    }
+  }
+  current_scenario ${current_scenario_saved}
+} else {
+  if {![check_mv_design -power_nets]} {
+    set check_mv_design_failed true
+  }
+}
+--------------------------------------------------------------------------------
+                      Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                         Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+dc_shell> if {$check_mv_design_failed} {
+  puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
+  puts "This script will now exit."
+  exit 1
+}
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # Check the readiness of the block abstraction
+  if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
+    check_block_abstraction
+  }
+}
+dc_shell> source ${SCRIPTS}/${DESIGN_NAME}.sdc
+Current design is 'bms_master_control_unit_enhanced'.
+Current design is 'bms_master_control_unit_enhanced'.
+1
+dc_shell> check_design > ${OUTPUTS_DIR}/check_design.rpt
+check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+Current design is 'bms_master_control_unit_enhanced'.
+dc_shell> group_path -from [all_registers] -to [all_registers] -name reg2reg
+1
+group_path -from [all_registers] -to [all_outputs] -name reg2out
+1
+group_path -from [all_inputs] -to [all_registers] -name in2reg
+1
+group_path -from [all_inputs] -to [all_outputs] -name in2out
+1
+dc_shell> analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
+Error: unknown command 'analyze_mv_feasibility' (CMD-005)
+dc_shell> set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+compile_ultra -gate_clock -scan -gate_clock
+dc_shell> if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
+puts "RM-info: Running $compile_ultra_cmd"
+RM-info: Running compile_ultra -gate_clock -scan -gate_clock
+dc_shell> eval ${compile_ultra_cmd}
+Warning: duplicate option '-gate_clock' overrides previous value. (CMD-018)
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.4 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.4 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -scan -gate_clock                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 339                                    |
+| Number of User Hierarchies                              | 2                                      |
+| Sequential Cell Count                                   | 142                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 1                                      |
+| Number of Path Groups                                   | 7                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 2                                      |
+| Number of Dont Touch Cells                              | 72                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 3                                      |
+| Design with UPF Data                                    | true                                   |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 19 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+Warning: No operating condition has been set explicitly on the current design. A default operating condition ss0p6v125c from library saed14rvt_ss0p6v125c will be assumed. (MV-028)
+Information: Related supplies are not explicitly specified on 269 port(s) and primary supplies (VDD, VSS) of top power domain will be assumed as the related supply. (UPF-405)
+Information: Total 0 repeater cells are inserted. (UPF-464)
+Information: A total of 0 isolation cells are inserted. (UPF-214)
+  Simplifying Design 'bms_master_control_unit_enhanced'
+Information: The register 'u_spi_master/rx_byte_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_byte_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/busy_reg' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_spi_master/rx_shift_reg[6]' will be removed. (OPT-1207)
+Information: Performing clock-gating with positive edge logic: 'integrated' and negative edge logic: 'integrated'. (PWR-1047)
+
+Loaded alib file './alib-52/saed14rvt_ss0p6v125c.db.alib'
+Loaded alib file './alib-52/saed14lvt_ss0p6v125c.db.alib' (placeholder)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bms_master_control_unit_enhanced'
+Information: The register 'spi_tx_byte_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'spi_tx_byte_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'spi_tx_byte_reg[6]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'bms_master_control_unit_enhanced'.
+  Processing 'bms_master_control_unit_enhanced_DW_div_uns_J1_0'
+  Processing 'bms_master_control_unit_enhanced_DW_div_uns_J1_1'
+  Processing 'bms_spi_master'
+Information: Added key list 'DesignWare' to design 'bms_spi_master'. (DDB-72)
+ Implement Synthetic for 'bms_spi_master'.
+  Processing 'bms_current_limit_supervisor'
+Information: The register 'supervisor_code_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'supervisor_code_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'allowed_current_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'lmu_count_fault_reg' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'bms_current_limit_supervisor'.
+Information: Added key list 'DesignWare' to design 'bms_current_limit_supervisor'. (DDB-72)
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_spi_master_0'
+  Mapping integrated clock gating circuitry
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[2]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/supervisor_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/supervisor_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/lmu_count_fault_reg' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[2]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/supervisor_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/supervisor_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/lmu_count_fault_reg' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[2]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from spi_tx_byte_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/supervisor_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/supervisor_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/allowed_current_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_curr_sup/lmu_count_fault_reg' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[2]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to spi_tx_byte_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/supervisor_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/supervisor_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/allowed_current_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_curr_sup/lmu_count_fault_reg' which no longer exists.  (TIM-179)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: A non-unate path in clock network for clock 'spi_clk' from pin 'u_spi_master/U3/X' is detected. (TIM-052)
+Information: The library cell 'SAEDRVT14_TIE1_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DP_OP_27J1_123_5989_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DP_OP_26J1_122_5989_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DW_cmp_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DW_cmp_J1_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DW_cmp_J1_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DW_div_uns_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_master_control_unit_enhanced_DW_div_uns_J1_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_spi_master_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_spi_master_DW01_inc_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_spi_master_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_spi_master_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_spi_master_3, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design bms_current_limit_supervisor. (PWR-730)
+Information: Performing clock-gating on design bms_spi_master. (PWR-730)
+Information: Performing clock-gating on design bms_master_control_unit_enhanced. (PWR-730)
+Warning: A non-unate path in clock network for clock 'spi_clk' from pin 'u_spi_master/U3/X' is detected. (TIM-052)
+Warning: A non-unate path in clock network for clock 'spi_clk' from pin 'u_spi_master/U3/X' is detected. (TIM-052)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+Warning: A non-unate path in clock network for clock 'spi_clk' from pin 'u_spi_master/U3/X' is detected. (TIM-052)
+Warning: A non-unate path in clock network for clock 'spi_clk' from pin 'u_spi_master/U3/X' is detected. (TIM-052)
+Information: Total 0 level shifters are removed. (MV-238)
+Information: Total 0 level shifters are inserted. (MV-239)
+Information: The register 'pack_soh_avg_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'pack_soc_avg_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/allowed_current_reg[6]' is removed because it is merged to 'u_curr_sup/allowed_current_reg[0]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/thermal_trip_reg' is removed because it is merged to 'u_curr_sup/allowed_current_reg[0]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/allowed_current_reg[8]' is removed because it is merged to 'u_curr_sup/allowed_current_reg[5]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/allowed_current_reg[7]' is removed because it is merged to 'u_curr_sup/allowed_current_reg[4]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/supervisor_code_reg[7]' is removed because it is merged to 'u_curr_sup/supervisor_code_reg[5]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_tx_byte_reg[5]' is removed because it is merged to 'spi_tx_byte_reg[4]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_tx_byte_reg[7]' is removed because it is merged to 'spi_tx_byte_reg[4]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_tx_byte_reg[0]' is removed because it is merged to 'active_lmu_id_reg[0]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_slave_sel_reg[0]' is removed because it is merged to 'active_lmu_id_reg[0]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_tx_byte_reg[1]' is removed because it is merged to 'active_lmu_id_reg[1]'. (OPT-1215)
+Information: In design 'bms_master_control_unit_enhanced', the register 'spi_slave_sel_reg[1]' is removed because it is merged to 'active_lmu_id_reg[1]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+Information: In design 'bms_master_control_unit_enhanced', the register 'u_curr_sup/thermal_warn_reg' is removed because it is merged to 'u_curr_sup/allowed_current_reg[1]'. (OPT-1215)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:37     375.6      0.00       0.0    8352.6                           1979106.0000
+    0:00:37     375.6      0.00       0.0    8352.6                           1979106.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:39     334.0      0.00       0.0    9853.9                           1383077.1250
+    0:00:39     334.0      0.00       0.0    9853.9                           1383077.1250
+    0:00:39     334.0      0.00       0.0    9853.9                           1383077.1250
+    0:00:39     334.0      0.00       0.0    9853.9                           1383077.1250
+    0:00:39     331.8      0.00       0.0    9848.4                           1382569.1250
+    0:00:39     331.8      0.00       0.0    9848.4                           1382569.1250
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+Information: Total 0 level shifters are removed incrementally. (MV-238)
+Information: Total 0 level shifters are inserted incrementally. (MV-239)
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:52     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:52     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:52     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:52     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:59     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:59     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:59     334.4      0.00       0.0    9842.3                           1380933.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:59     334.4      0.00       0.0    9760.2                           1355763.0000
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:01:02     380.5      0.00       0.0    6873.9 u_spi_master/cs_n[1]      1781336.5000
+    0:01:03     378.3      0.00       0.0    6844.5                           1785978.6250
+    0:01:03     378.3      0.00       0.0    6844.5                           1785978.6250
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:03     378.3      0.00       0.0    6844.5                           1785978.6250
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+    0:01:04     356.4      0.00       0.0    6731.4                           1721711.2500
+    0:01:04     356.4      0.00       0.0    6731.4                           1721711.2500
+    0:01:05     356.4      0.00       0.0    6731.4                           1721711.2500
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+    0:01:05     354.6      0.00       0.0    6732.5                           1603111.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:05     354.0      0.00       0.0    6732.5                           1613600.6250
+    0:01:06     350.8      0.00       0.0    6724.5                           1594848.7500
+    0:01:06     350.8      0.00       0.0    6724.5                           1594848.7500
+    0:01:06     350.8      0.00       0.0    6724.5                           1594848.7500
+    0:01:06     350.4      0.00       0.0    6725.7                           1595010.3750
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:01:12     350.4      0.00       0.0    6725.7                           1595010.3750
+    0:01:12     350.4      0.00       0.0    6725.7                           1595010.3750
+    0:01:12     350.4      0.00       0.0    6725.7                           1595010.3750
+    0:01:12     350.4      0.00       0.0    6725.7                           1595010.3750
+    0:01:21     378.8      0.00       0.0    6882.7 u_curr_sup/allowed_current[5] 1725255.5000
+    0:01:22     378.8      0.00       0.0    6882.7                           1725255.5000
+    0:01:22     378.8      0.00       0.0    6882.7                           1725255.5000
+    0:01:22     378.8      0.00       0.0    6882.7                           1725255.5000
+    0:01:22     378.8      0.00       0.0    6882.7                           1725255.5000
+    0:01:22     379.8      0.00       0.0    6882.7                           1735744.6250
+    0:01:22     379.8      0.00       0.0    6882.7                           1735744.6250
+    0:01:22     378.8      0.00       0.0    6882.5                           1727077.7500
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Current design is 'bms_master_control_unit_enhanced'.
+dc_shell> Current design is 'bms_master_control_unit_enhanced'.
+{bms_master_control_unit_enhanced}
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
+  # If this will be a sub-block in a hierarchical design, uniquify with block unique names
+  # to avoid name collisions when integrating the design at the top level
+  set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
+  uniquify -force
+}
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_spi_master_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DP_OP_27J1_123_5989_J1_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DP_OP_26J1_122_5989_J1_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DW_cmp_J1_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DW_cmp_J1_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DW_cmp_J1_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DW_div_uns_J1_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_master_control_unit_enhanced_DW_div_uns_J1_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_spi_master_DW01_inc_J1_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_master_control_unit_enhanced_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_spi_master_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_spi_master_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_spi_master_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_current_limit_supervisor'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_spi_master'. (OPT-1056)
+1
+dc_shell> change_names -rules verilog -hierarchy
+Warning: In the design bms_master_control_unit_enhanced, net 'lmu_count_fault' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_master_control_unit_enhanced_bms_current_limit_supervisor_0, net 'allowed_current[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_master_control_unit_enhanced_bms_current_limit_supervisor_0, net 'allowed_current[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_master_control_unit_enhanced_bms_current_limit_supervisor_0, net 'thermal_trip' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_master_control_unit_enhanced_bms_current_limit_supervisor_0, net 'thermal_warn' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_master_control_unit_enhanced_bms_current_limit_supervisor_0, net 'supervisor_code[7]' is connecting multiple ports. (UCN-1)
+1
+dc_shell> write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
+Information: Writing parasitics to file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs/bms_master_control_unit_enhanced.mapped.spef'. (WP-3)
+1
+dc_shell> write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+1
+dc_shell> report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
+report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
+report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
+report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
+report_area > ${OUTPUTS_DIR}/area.rpt
+report_qor > ${OUTPUTS_DIR}/qor.rpt
+dc_shell> change_names -rules verilog
+Warning: In the design bms_master_control_unit_enhanced, net 'lmu_count_fault' is connecting multiple ports. (UCN-1)
+1
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  # For MCMM, some MV reports could have different voltages for different scenarios
+  set current_scenario_saved [current_scenario]
+  foreach scenario [all_active_scenarios] {
+    current_scenario ${scenario}
+
+    # Report all power domains in the design
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.power_domain.rpt ] \
+      {report_power_domain -hierarchy}
+
+    # Report the top level supply nets
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.supply_net.rpt ] \
+      {report_supply_net}
+
+    # Report the level shifters in the design
+    if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt ] \
+        {report_level_shifter -domain [get_power_domains * -hierarchical]}
+    } else {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt] \
+        {report_level_shifter}
+    }
+  }
+  current_scenario ${current_scenario_saved}
+} else {
+  # Report all power domains in the design
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.power_domain.rpt \
+    {report_power_domain -hierarchy}
+
+  # Report the top level supply nets
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.supply_net.rpt \
+    {report_supply_net}
+
+  # Report the level shifters in the design
+  if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter -domain [get_power_domains * -hierarchical]}
+  } else {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter}
+  }
+}
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+
+  #################################################################################
+  # Write out Top-Level Design Without Hierarchical Blocks
+  #
+  # Note: The write command will automatically skip writing .ddc physical hierarchical
+  #       blocks in Design Compiler topographical mode and Design Compiler block
+  #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+  #       the top-level design. In the same way for the multivoltage flow, save_upf will
+  #       skip hierarchical blocks when saving the power intent data.
+  #
+  # When reading the design into other tools, read in all of the mapped hierarchical
+  # blocks and the mapped top-level design.
+  #
+  # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+  #                     block mapped netlist.
+  # For Formality: Verify each block and top separately.
+  #
+  #################################################################################
+
+  puts "RM-info: Writing out top level design without hierarchical blocks"
+
+  # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+
+  # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  # Write out ddc mapped top-level design
+  write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+} else {
+
+  if {$DESIGN_STYLE == "flat"} {
+    puts "RM-info: Writing out flat design"
+  } else {
+    puts "RM-info: Writing out bottom-level design"
+    create_block_abstraction
+  }
+
+  if {$UPF_MODE == "golden"} {
+    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+  }
+  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+}
+RM-info: Writing out bottom-level design
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+	internal power = 4.440136
+	leakage power = 1688186.000000
+	net switching power = 1.756926, dyn_unit = 1uW, leak_unit = 1pW
+Working on scenario: 
+Information: Following ports will be ignored
+for purposes of identifying interface logic:
+	Port:              clk clock port 
+
+                                tot time(mS) inc time(mS) mem (Kb)  inc mem
+--------------------------------  ----------  ----------  --------  -------
+STAT: Before compact input     :      129283  (  129283)     1669230   (1669230)
+Information: Starting MinMax Identify for Input ports
+Warning: Paths to or from port rst_n from/to some ports/registers (type: min_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_miso from/to some ports/registers (type: min_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[1] from/to some ports/registers (type: min_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[0] from/to some ports/registers (type: min_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port rst_n from/to some ports/registers (type: max_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_miso from/to some ports/registers (type: max_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[1] from/to some ports/registers (type: max_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[0] from/to some ports/registers (type: max_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port rst_n from/to some ports/registers (type: min_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_miso from/to some ports/registers (type: min_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[1] from/to some ports/registers (type: min_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[0] from/to some ports/registers (type: min_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port rst_n from/to some ports/registers (type: max_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_miso from/to some ports/registers (type: max_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[1] from/to some ports/registers (type: max_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port pack_current[0] from/to some ports/registers (type: max_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Information: Done MinMax Identify for Input ports
+STAT: Done compact input       :      129436  (     153)     1669230   (   0)
+STAT: Before compact output    :      129436  (       0)     1669230   (   0)
+Information: Starting MinMax Identify for Output ports
+Warning: Paths to or from port spi_sclk from/to some ports/registers (type: min_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_sclk from/to some ports/registers (type: max_fall) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_sclk from/to some ports/registers (type: min_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Warning: Paths to or from port spi_sclk from/to some ports/registers (type: max_rise) are unconstrained; retaining paths based on arrival time. (ABS-351)
+Information: Done MinMax Identify for Output ports
+STAT: Done compact output      :      129440  (       3)     1669230   (   0)
+STAT: Before regular input     :      129451  (      10)     1669230   (   0)
+STAT: Done regular input       :      129463  (      12)     1669230   (   0)
+STAT: Before regular output    :      129463  (       0)     1669230   (   0)
+STAT: Done regular output      :      129464  (       0)     1669230   (   0)
+Information on design: bms_master_control_unit_enhanced
+----------------------------------------------------------------------------------
+                             Design        Full-Interface    Compact-Interface
+----------------------------------------------------------------------------------
+Total cells                  767           611               571
+Leaf cells                   750           596               556
+*Immediate physical hiers    0             0                 0
+Combinational cells          644           511               471
+Level-sensitive latches      0             0                 0
+Edge-triggered flip-flops    99            79                79
+Nets                         1018          807               655
+Leaf cell compression %      --            20.53             25.87
+----------------------------------------------------------------------------------
+*Not counted in Leaf cells. These are immediate physical hierarchies
+Information: Abstraction information has been annotated on the design. Save the design using write_file command. (ABS-104)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs/bms_master_control_unit_enhanced.mapped.pg.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs/bms_master_control_unit_enhanced.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing ddc file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs/bms_master_control_unit_enhanced.mapped.ddc'.
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> if {$UPF_MODE != "none"} {
+  set save_upf_cmd "save_upf"
+  if {$UPF_MODE == "golden"} {
+    lappend save_upf_cmd -include_supply_exceptions
+    lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
+  } elseif {$UPF_MODE == "prime"} {
+    lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
+  }
+  puts "RM-info: Running $save_upf_cmd"
+  eval ${save_upf_cmd}
+}
+RM-info: Running save_upf -include_supply_exceptions -supplemental /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs/bms_master_control_unit_enhanced.supplement.upf
+1
+dc_shell> set_svf -off
+1
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  save_lib
+}
+dc_shell> puts "SYNTHESIS COMPLETED :)"SYNTHESIS COMPLETED :)
+dc_shell> 
+Memory usage for this session 1591 Mbytes.
+Memory usage for this session including child processes 1915 Mbytes.
+CPU usage for this session 155 seconds ( 0.04 hours ).
+Elapsed time for this session 751 seconds ( 0.21 hours ).
+
+Thank you...

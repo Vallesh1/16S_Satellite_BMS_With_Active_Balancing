@@ -3,7 +3,7 @@
 Report : qor
 Design : bms_master_control_unit_enhanced
 Version: T-2022.03-SP4
-Date   : Sat Jul  4 19:53:50 2026
+Date   : Sat Jul 18 22:03:55 2026
 ****************************************
 
 
@@ -103,11 +103,11 @@ Date   : Sat Jul  4 19:53:50 2026
   Compile CPU Statistics
   -----------------------------------------
   Resource Sharing:                    0.48
-  Logic Optimization:                 13.44
-  Mapping Optimization:               28.81
+  Logic Optimization:                 13.67
+  Mapping Optimization:               31.78
   -----------------------------------------
-  Overall Compile Time:              100.86
-  Overall Compile Wall Clock Time:    98.86
+  Overall Compile Time:              107.99
+  Overall Compile Wall Clock Time:   102.55
 
   --------------------------------------------------------------------
 

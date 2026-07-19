@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Sat Jul  4 19:35:08 2026
+#@ # Date:   Sat Jul 18 21:56:00 2026
 #@ # Run by: MulukuriVNath@mavenserver-RH3
 #@ 
 
@@ -8619,8 +8619,7 @@ source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/admin/se
 
 #@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/admin/setup/.synopsys_dc.setup
 
-set_host_options -max_cores 8
-gui_start
+start_gui
 #@ # -- Starting source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/itk4.1.0/itk.tcl
 
 #@ #
@@ -8824,38 +8823,31 @@ gui_start
 #@ # -- End source /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/auxx/tcllib/lib/iwidgets4.1/iwidgets.tcl
 
 gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {LeafCells}
-#@ # -- Starting source /tmp/dc_shell.BInzLY
+pwd
+#@ # -- Starting source /tmp/dc_shell.sEdyMV
 
 #@ set_host_options -max_cores 8
-#@ # -- End source /tmp/dc_shell.BInzLY
+#@ # -- End source /tmp/dc_shell.sEdyMV
 
 set_host_options -max_cores 8
-#@ # -- Starting source /tmp/dc_shell.gaushq
+#@ # -- Starting source /tmp/dc_shell.PSmNGC
 
 #@ set DESIGN_NAME bms_master_control_unit_enhanced
-#@ # -- End source /tmp/dc_shell.gaushq
-
-set DESIGN_NAME bms_master_control_unit_enhanced
-#@ # -- Starting source /tmp/dc_shell.QoJiSs
-
-#@ set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/outputs"
 #@ 
-#@ set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/scripts"
+#@ set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs"
+#@ 
+#@ set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts"
 #@ 
 #@ set DESIGN_STYLE hier
 #@ 
 #@ set PHYSICAL_HIERARCHY_LEVEL bottom
-#@ # -- End source /tmp/dc_shell.QoJiSs
-
-set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/outputs"
-
-set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/scripts"
-
-set DESIGN_STYLE hier
-
-set PHYSICAL_HIERARCHY_LEVEL bottom
-#@ # -- Starting source /tmp/dc_shell.vJDUIi
-
+#@ 
+#@ set DC_BLOCK_ABSTRACTION_DESIGNS ""
+#@ 
+#@ set DDC_HIER_DESIGNS ""
+#@ 
+#@ set UPF_MODE golden
+#@ 
 #@ set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
 #@ 
 #@ set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
@@ -8866,7 +8858,23 @@ set PHYSICAL_HIERARCHY_LEVEL bottom
 #@ /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
 #@ /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
 #@ /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
-#@ # -- End source /tmp/dc_shell.vJDUIi
+#@ # -- End source /tmp/dc_shell.PSmNGC
+
+set DESIGN_NAME bms_master_control_unit_enhanced
+
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/outputs"
+
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts"
+
+set DESIGN_STYLE hier
+
+set PHYSICAL_HIERARCHY_LEVEL bottom
+
+set DC_BLOCK_ABSTRACTION_DESIGNS ""
+
+set DDC_HIER_DESIGNS ""
+
+set UPF_MODE golden
 
 set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
 
@@ -8878,7 +8886,7 @@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14
 /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
 /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
 /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
-#@ # -- Starting source /tmp/dc_shell.ZuYhEn
+#@ # -- Starting source /tmp/dc_shell.LShdfJ
 
 #@ set rtl_path {}
 #@ set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
@@ -8886,7 +8894,7 @@ set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14
 #@ set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
 #@ set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
 #@ set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
-#@ # -- End source /tmp/dc_shell.ZuYhEn
+#@ # -- End source /tmp/dc_shell.LShdfJ
 
 set rtl_path {}
 set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
@@ -8894,7 +8902,7 @@ set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_A
 set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
 set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
 set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
-#@ # -- Starting source /tmp/dc_shell.LxlSUE
+#@ # -- Starting source /tmp/dc_shell.XXBkWk
 
 #@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 #@   # For a hierarchical flow, add the block-level results directories to the
@@ -8909,7 +8917,7 @@ set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
 #@   # Formality to find the output UPF files.
 #@   lappend search_path ${OUTPUTS_DIR}
 #@ }
-#@ # -- End source /tmp/dc_shell.LxlSUE
+#@ # -- End source /tmp/dc_shell.XXBkWk
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # For a hierarchical flow, add the block-level results directories to the
@@ -8924,79 +8932,61 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # Formality to find the output UPF files.
   lappend search_path ${OUTPUTS_DIR}
 }
-#@ # -- Starting source /tmp/dc_shell.UdBYAm
+#@ # -- Starting source /tmp/dc_shell.zFwFpq
 
 #@ set_app_var alib_library_analysis_path .
-#@ # -- End source /tmp/dc_shell.UdBYAm
+#@ # -- End source /tmp/dc_shell.zFwFpq
 
 set_app_var alib_library_analysis_path .
-#@ # -- Starting source /tmp/dc_shell.ATaKlg
+#@ # -- Starting source /tmp/dc_shell.eDJnap
 
 #@ if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
-#@ # -- End source /tmp/dc_shell.ATaKlg
+#@ # -- End source /tmp/dc_shell.eDJnap
 
 if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
-#@ # -- Starting source /tmp/dc_shell.MVztHO
+#@ # -- Starting source /tmp/dc_shell.LvCfwD
 
 #@ if {$UPF_MODE == "golden"} {
 #@   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
 #@   # physical implementation, and verification flow.
 #@   set_app_var enable_golden_upf true
 #@ }
-#@ # -- End source /tmp/dc_shell.MVztHO
+#@ # -- End source /tmp/dc_shell.LvCfwD
 
 if {$UPF_MODE == "golden"} {
   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
   # physical implementation, and verification flow.
   set_app_var enable_golden_upf true
 }
-#@ # -- Starting source /tmp/dc_shell.aeAqRF
-
-#@ set UPF_MODE golden
-#@ # -- End source /tmp/dc_shell.aeAqRF
-
-set UPF_MODE golden
-#@ # -- Starting source /tmp/dc_shell.pNczgN
-
-#@ if {$UPF_MODE == "golden"} {
-#@   # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
-#@   # physical implementation, and verification flow.
-#@   set_app_var enable_golden_upf true
-#@ }
-#@ # -- End source /tmp/dc_shell.pNczgN
-
-if {$UPF_MODE == "golden"} {
-  # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
-  # physical implementation, and verification flow.
-  set_app_var enable_golden_upf true
-}
-#@ # -- Starting source /tmp/dc_shell.RHfUDg
+#@ # -- Starting source /tmp/dc_shell.eQYkAa
 
 #@ set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
 #@ /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
-#@ # -- End source /tmp/dc_shell.RHfUDg
+#@ 
+#@ # -- End source /tmp/dc_shell.eQYkAa
 
 set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
 /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
-#@ # -- Starting source /tmp/dc_shell.sqqEpI
+
+#@ # -- Starting source /tmp/dc_shell.mSRsfp
 
 #@ set_app_var target_library ${TARGET_LIBRARY_FILES}
-#@ # -- End source /tmp/dc_shell.sqqEpI
+#@ # -- End source /tmp/dc_shell.mSRsfp
 
 set_app_var target_library ${TARGET_LIBRARY_FILES}
-#@ # -- Starting source /tmp/dc_shell.HvXIFx
+#@ # -- Starting source /tmp/dc_shell.quUXQx
 
 #@ set_app_var synthetic_library dw_foundation.sldb
-#@ # -- End source /tmp/dc_shell.HvXIFx
+#@ # -- End source /tmp/dc_shell.quUXQx
 
 set_app_var synthetic_library dw_foundation.sldb
-#@ # -- Starting source /tmp/dc_shell.HaXwCG
+#@ # -- Starting source /tmp/dc_shell.kdnOUT
 
 #@ set_app_var link_library "* $target_library $synthetic_library"
-#@ # -- End source /tmp/dc_shell.HaXwCG
+#@ # -- End source /tmp/dc_shell.kdnOUT
 
 set_app_var link_library "* $target_library $synthetic_library"
-#@ # -- Starting source /tmp/dc_shell.yfMFNv
+#@ # -- Starting source /tmp/dc_shell.jkSGpJ
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
@@ -9014,7 +9004,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 #@     eval ${create_lib_cmd}
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.yfMFNv
+#@ # -- End source /tmp/dc_shell.jkSGpJ
 
 if {[shell_is_in_topographical_mode]} {
   if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
@@ -9032,127 +9022,133 @@ if {[shell_is_in_topographical_mode]} {
     eval ${create_lib_cmd}
   }
 }
-#@ # -- Starting source /tmp/dc_shell.kwtqxu
+#@ # -- Starting source /tmp/dc_shell.pWlSOr
 
 #@ set set_check_library_cmd "set_check_library_options -mcmm"
-#@ # -- End source /tmp/dc_shell.kwtqxu
+#@ # -- End source /tmp/dc_shell.pWlSOr
 
 set set_check_library_cmd "set_check_library_options -mcmm"
-#@ # -- Starting source /tmp/dc_shell.tInXNq
+#@ # -- Starting source /tmp/dc_shell.fJTsxv
 
 #@ if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
 #@ puts "RM-info: Running $set_check_library_cmd"
-#@ # -- End source /tmp/dc_shell.tInXNq
+#@ # -- End source /tmp/dc_shell.fJTsxv
 
 if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
 puts "RM-info: Running $set_check_library_cmd"
-#@ # -- Starting source /tmp/dc_shell.uIMKjs
+#@ # -- Starting source /tmp/dc_shell.OAZOpx
 
 #@ eval ${set_check_library_cmd}
-#@ # -- End source /tmp/dc_shell.uIMKjs
+#@ # -- End source /tmp/dc_shell.OAZOpx
 
 eval ${set_check_library_cmd}
-#@ # -- Starting source /tmp/dc_shell.ByDtbk
+#@ # -- Starting source /tmp/dc_shell.wuhAkr
 
 #@ redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
-#@ # -- End source /tmp/dc_shell.ByDtbk
+#@ # -- End source /tmp/dc_shell.wuhAkr
 
 redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
-#@ # -- Starting source /tmp/dc_shell.xGQAgE
+#@ # -- Starting source /tmp/dc_shell.Iiuyoz
 
 #@ set_app_var sh_new_variable_message false
-#@ # -- End source /tmp/dc_shell.xGQAgE
+#@ # -- End source /tmp/dc_shell.Iiuyoz
 
 set_app_var sh_new_variable_message false
-#@ # -- Starting source /tmp/dc_shell.yfONoj
+#@ # -- Starting source /tmp/dc_shell.XZjgyY
 
 #@ set_app_var auto_insert_level_shifters_on_clocks all
-#@ # -- End source /tmp/dc_shell.yfONoj
+#@ # -- End source /tmp/dc_shell.XZjgyY
 
 set_app_var auto_insert_level_shifters_on_clocks all
-#@ # -- Starting source /tmp/dc_shell.WHoMtS
+#@ # -- Starting source /tmp/dc_shell.izgyAK
 
 #@ set_app_var spg_enable_via_resistance_support true
-#@ # -- End source /tmp/dc_shell.WHoMtS
+#@ # -- End source /tmp/dc_shell.izgyAK
 
 set_app_var spg_enable_via_resistance_support true
-#@ # -- Starting source /tmp/dc_shell.priBAX
+#@ # -- Starting source /tmp/dc_shell.tVxNNC
 
 #@ set_app_var simplified_verification_mode true
-#@ # -- End source /tmp/dc_shell.priBAX
+#@ # -- End source /tmp/dc_shell.tVxNNC
 
 set_app_var simplified_verification_mode true
-#@ # -- Starting source /tmp/dc_shell.YaPVSm
+#@ # -- Starting source /tmp/dc_shell.TsKvoi
 
 #@ set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
-#@ # -- End source /tmp/dc_shell.YaPVSm
+#@ # -- End source /tmp/dc_shell.TsKvoi
 
 set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
-#@ # -- Starting source /tmp/dc_shell.RDECSj
+#@ # -- Starting source /tmp/dc_shell.ImnjpT
 
 #@ analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
-#@ # -- End source /tmp/dc_shell.RDECSj
+#@ # -- End source /tmp/dc_shell.ImnjpT
 
 analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
-#@ # -- Starting source /tmp/dc_shell.rTKmRW
+#@ # -- Starting source /tmp/dc_shell.vUyCbi
 
-#@ # -- End source /tmp/dc_shell.rTKmRW
+#@ foreach path $rtl_path_1 {
+#@     analyze -f verilog [glob $path/*.v]
+#@ }
+#@ # -- End source /tmp/dc_shell.vUyCbi
 
-foreach path $rtl_path_1 {
-    analyze -f verilog [glob $path/*.v]
 foreach path $rtl_path_1 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.tuBfsN
+#@ # -- Starting source /tmp/dc_shell.vWocLH
 
 #@ foreach path $rtl_path_2 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.tuBfsN
+#@ # -- End source /tmp/dc_shell.vWocLH
 
 foreach path $rtl_path_2 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.bVwdeH
+#@ # -- Starting source /tmp/dc_shell.JFlqHc
 
 #@ foreach path $rtl_path_3 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.bVwdeH
+#@ # -- End source /tmp/dc_shell.JFlqHc
 
 foreach path $rtl_path_3 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.wynnVD
+#@ # -- Starting source /tmp/dc_shell.gwetjc
 
 #@ foreach path $rtl_path_4 {
 #@     analyze -f verilog [glob $path/*.v]
 #@ }
-#@ # -- End source /tmp/dc_shell.wynnVD
+#@ # -- End source /tmp/dc_shell.gwetjc
 
 foreach path $rtl_path_4 {
     analyze -f verilog [glob $path/*.v]
 }
-#@ # -- Starting source /tmp/dc_shell.MuoUYT
+#@ # -- Starting source /tmp/dc_shell.ZhHlsu
 
 #@ elaborate ${DESIGN_NAME}
-#@ # -- End source /tmp/dc_shell.MuoUYT
+#@ # -- End source /tmp/dc_shell.ZhHlsu
 
 elaborate ${DESIGN_NAME}
-#@ # -- Starting source /tmp/dc_shell.yPOkur
+#@ # -- Starting source /tmp/dc_shell.jeFQeh
 
 #@ current_design ${DESIGN_NAME}
-#@ # -- End source /tmp/dc_shell.yPOkur
+#@ # -- End source /tmp/dc_shell.jeFQeh
 
 current_design ${DESIGN_NAME}
+#@ # -- Starting source /tmp/dc_shell.FtilAB
+
+#@ link
+#@ # -- End source /tmp/dc_shell.FtilAB
+
 link
-#@ # -- Starting source /tmp/dc_shell.dTZgae
+#@ # -- Starting source /tmp/dc_shell.HgVEHP
 
 #@ set upf_create_implicit_supply_sets false
-#@ # -- End source /tmp/dc_shell.dTZgae
+#@ # -- End source /tmp/dc_shell.HgVEHP
 
 set upf_create_implicit_supply_sets false
-#@ # -- Starting source /tmp/dc_shell.jdSygg
+#@ # -- Starting source /tmp/dc_shell.EOjwvS
 
 #@ if {$UPF_MODE != "none"} {
 #@   if {$UPF_FILE != ""} {
@@ -9164,7 +9160,7 @@ set upf_create_implicit_supply_sets false
 #@     eval ${load_upf_cmd}
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.jdSygg
+#@ # -- End source /tmp/dc_shell.EOjwvS
 
 if {$UPF_MODE != "none"} {
   if {$UPF_FILE != ""} {
@@ -9176,15 +9172,21 @@ if {$UPF_MODE != "none"} {
     eval ${load_upf_cmd}
   }
 }
-#@ # -- Starting source /tmp/dc_shell.kIGQdP
+#@ # -- Starting source /tmp/dc_shell.ZysQYz
 
 #@ set_voltage 0.6 -object_list {VDD}
 #@ set_voltage 0.0 -object_list {VSS}
-#@ # -- End source /tmp/dc_shell.kIGQdP
+#@ # -- End source /tmp/dc_shell.ZysQYz
 
 set_voltage 0.6 -object_list {VDD}
 set_voltage 0.0 -object_list {VSS}
-#@ # -- Starting source /tmp/dc_shell.uhehcb
+#@ # -- Starting source /tmp/dc_shell.iDfxWx
+
+#@ set check_mv_design_failed false
+#@ # -- End source /tmp/dc_shell.iDfxWx
+
+set check_mv_design_failed false
+#@ # -- Starting source /tmp/dc_shell.xkNalT
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   ## For MCMM, perform this check for each scenario.
@@ -9202,7 +9204,7 @@ set_voltage 0.0 -object_list {VSS}
 #@     set check_mv_design_failed true
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.uhehcb
+#@ # -- End source /tmp/dc_shell.xkNalT
 
 if {[shell_is_in_topographical_mode]} {
   ## For MCMM, perform this check for each scenario.
@@ -9220,21 +9222,21 @@ if {[shell_is_in_topographical_mode]} {
     set check_mv_design_failed true
   }
 }
-#@ # -- Starting source /tmp/dc_shell.byezBE
+#@ # -- Starting source /tmp/dc_shell.OWOCFo
 
 #@ if {$check_mv_design_failed} {
 #@   puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
 #@   puts "This script will now exit."
 #@   exit 1
 #@ }
-#@ # -- End source /tmp/dc_shell.byezBE
+#@ # -- End source /tmp/dc_shell.OWOCFo
 
 if {$check_mv_design_failed} {
   puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
   puts "This script will now exit."
   exit 1
 }
-#@ # -- Starting source /tmp/dc_shell.MyOsWN
+#@ # -- Starting source /tmp/dc_shell.BrPvzq
 
 #@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 #@   # Check the readiness of the block abstraction
@@ -9242,7 +9244,7 @@ if {$check_mv_design_failed} {
 #@     check_block_abstraction
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.MyOsWN
+#@ # -- End source /tmp/dc_shell.BrPvzq
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   # Check the readiness of the block abstraction
@@ -9250,10 +9252,10 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
     check_block_abstraction
   }
 }
-#@ # -- Starting source /tmp/dc_shell.bpFIWO
+#@ # -- Starting source /tmp/dc_shell.pEXALa
 
 #@ source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/scripts/bms_master_control_unit_enhanced.sdc
+#@ # -- Starting source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.sdc
 
 #@ # ==============================================================================
 #@ # GOLDEN SDC SPECIFICATION: Battery Management System (BMS)
@@ -9326,58 +9328,59 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 #@ # Note: 'max_temp_seen' is an internal register/output, so it is inherently constrained 
 #@ # by the clock period. 'pack_current' is a direct input, so we explicitly constrain its feedthrough path.
 #@ set_max_delay 5.0 -from [get_ports pack_current*] -to [get_ports allowed_current*]
-#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/Synthesis/mcu/scripts/bms_master_control_unit_enhanced.sdc
+#@ # -- End source /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/mcu/scripts/bms_master_control_unit_enhanced.sdc
 
-#@ # -- End source /tmp/dc_shell.bpFIWO
+#@ # -- End source /tmp/dc_shell.pEXALa
 
 source ${SCRIPTS}/${DESIGN_NAME}.sdc
-#@ # -- Starting source /tmp/dc_shell.OiPbbw
+#@ # -- Starting source /tmp/dc_shell.lISJGB
 
 #@ check_design > ${OUTPUTS_DIR}/check_design.rpt
 #@ check_timing > ${OUTPUTS_DIR}/check_timing.rpt
-#@ # -- End source /tmp/dc_shell.OiPbbw
+#@ # -- End source /tmp/dc_shell.lISJGB
 
 check_design > ${OUTPUTS_DIR}/check_design.rpt
 check_timing > ${OUTPUTS_DIR}/check_timing.rpt
-#@ # -- Starting source /tmp/dc_shell.KNoZMW
+#@ # -- Starting source /tmp/dc_shell.pUEJBE
 
 #@ group_path -from [all_registers] -to [all_registers] -name reg2reg
 #@ group_path -from [all_registers] -to [all_outputs] -name reg2out
 #@ group_path -from [all_inputs] -to [all_registers] -name in2reg
 #@ group_path -from [all_inputs] -to [all_outputs] -name in2out
-#@ # -- End source /tmp/dc_shell.KNoZMW
+#@ # -- End source /tmp/dc_shell.pUEJBE
 
 group_path -from [all_registers] -to [all_registers] -name reg2reg
 group_path -from [all_registers] -to [all_outputs] -name reg2out
 group_path -from [all_inputs] -to [all_registers] -name in2reg
 group_path -from [all_inputs] -to [all_outputs] -name in2out
-#@ # -- Starting source /tmp/dc_shell.gvNUYa
+#@ # -- Starting source /tmp/dc_shell.XVNbfz
 
 #@ analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
-#@ # -- End source /tmp/dc_shell.gvNUYa
+#@ # -- End source /tmp/dc_shell.XVNbfz
 
 analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
-#@ # -- Starting source /tmp/dc_shell.MgZOYs
+#@ # -- Starting source /tmp/dc_shell.zngqfv
 
 #@ set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
-#@ # -- End source /tmp/dc_shell.MgZOYs
+#@ # -- End source /tmp/dc_shell.zngqfv
 
 set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
-#@ # -- Starting source /tmp/dc_shell.AdNedV
+#@ # -- Starting source /tmp/dc_shell.AdtRcA
 
 #@ if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
 #@ puts "RM-info: Running $compile_ultra_cmd"
-#@ # -- End source /tmp/dc_shell.AdNedV
+#@ # -- End source /tmp/dc_shell.AdtRcA
 
 if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
 puts "RM-info: Running $compile_ultra_cmd"
-#@ # -- Starting source /tmp/dc_shell.EDVZGc
+#@ # -- Starting source /tmp/dc_shell.cQCexq
 
 #@ eval ${compile_ultra_cmd}
-#@ # -- End source /tmp/dc_shell.EDVZGc
+#@ # -- End source /tmp/dc_shell.cQCexq
 
 eval ${compile_ultra_cmd}
-#@ # -- Starting source /tmp/dc_shell.OGJwrv
+current_design
+#@ # -- Starting source /tmp/dc_shell.JTOANZ
 
 #@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
 #@   # If this will be a sub-block in a hierarchical design, uniquify with block unique names
@@ -9385,7 +9388,7 @@ eval ${compile_ultra_cmd}
 #@   set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
 #@   uniquify -force
 #@ }
-#@ # -- End source /tmp/dc_shell.OGJwrv
+#@ # -- End source /tmp/dc_shell.JTOANZ
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
   # If this will be a sub-block in a hierarchical design, uniquify with block unique names
@@ -9393,37 +9396,47 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
   set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
   uniquify -force
 }
-#@ # -- Starting source /tmp/dc_shell.RwGCqu
+#@ # -- Starting source /tmp/dc_shell.ckvRXu
 
 #@ change_names -rules verilog -hierarchy
-#@ # -- End source /tmp/dc_shell.RwGCqu
+#@ # -- End source /tmp/dc_shell.ckvRXu
 
 change_names -rules verilog -hierarchy
-#@ # -- Starting source /tmp/dc_shell.SnyMtT
+#@ # -- Starting source /tmp/dc_shell.NYRDzc
 
 #@ write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
-#@ # Write out link library information for PrimeTime when using instance-based target library settings
+#@ # -- End source /tmp/dc_shell.NYRDzc
+
+write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
+#@ # -- Starting source /tmp/dc_shell.lZmxOP
+
 #@ write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+#@ # -- End source /tmp/dc_shell.lZmxOP
+
+write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+#@ # -- Starting source /tmp/dc_shell.jUAZsl
+
 #@ report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
 #@ report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
 #@ report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
 #@ report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
 #@ report_area > ${OUTPUTS_DIR}/area.rpt
 #@ report_qor > ${OUTPUTS_DIR}/qor.rpt
-#@ change_names -rules verilog
-#@ # -- End source /tmp/dc_shell.SnyMtT
+#@ # -- End source /tmp/dc_shell.jUAZsl
 
-write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
-# Write out link library information for PrimeTime when using instance-based target library settings
-write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
 report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
 report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
 report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
 report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
 report_area > ${OUTPUTS_DIR}/area.rpt
 report_qor > ${OUTPUTS_DIR}/qor.rpt
+#@ # -- Starting source /tmp/dc_shell.xGdZzf
+
+#@ change_names -rules verilog
+#@ # -- End source /tmp/dc_shell.xGdZzf
+
 change_names -rules verilog
-#@ # -- Starting source /tmp/dc_shell.iqotRq
+#@ # -- Starting source /tmp/dc_shell.QdnAqJ
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   # For MCMM, some MV reports could have different voltages for different scenarios
@@ -9467,7 +9480,7 @@ change_names -rules verilog
 #@       {report_level_shifter}
 #@   }
 #@ }
-#@ # -- End source /tmp/dc_shell.iqotRq
+#@ # -- End source /tmp/dc_shell.QdnAqJ
 
 if {[shell_is_in_topographical_mode]} {
   # For MCMM, some MV reports could have different voltages for different scenarios
@@ -9511,7 +9524,7 @@ if {[shell_is_in_topographical_mode]} {
       {report_level_shifter}
   }
 }
-#@ # -- Starting source /tmp/dc_shell.ouHYvA
+#@ # -- Starting source /tmp/dc_shell.DjsJhH
 
 #@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 #@ 
@@ -9570,7 +9583,7 @@ if {[shell_is_in_topographical_mode]} {
 #@   write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
 #@ 
 #@ }
-#@ # -- End source /tmp/dc_shell.ouHYvA
+#@ # -- End source /tmp/dc_shell.DjsJhH
 
 if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
 
@@ -9629,9 +9642,7 @@ if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
   write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
 
 }
-change_selection [get_cells clk_gate_max_temp_seen_reg]
-change_selection [get_cells clk_gate_state_reg]
-#@ # -- Starting source /tmp/dc_shell.LuYGfl
+#@ # -- Starting source /tmp/dc_shell.yyhQIw
 
 #@ if {$UPF_MODE != "none"} {
 #@   set save_upf_cmd "save_upf"
@@ -9644,7 +9655,7 @@ change_selection [get_cells clk_gate_state_reg]
 #@   puts "RM-info: Running $save_upf_cmd"
 #@   eval ${save_upf_cmd}
 #@ }
-#@ # -- End source /tmp/dc_shell.LuYGfl
+#@ # -- End source /tmp/dc_shell.yyhQIw
 
 if {$UPF_MODE != "none"} {
   set save_upf_cmd "save_upf"
@@ -9657,26 +9668,26 @@ if {$UPF_MODE != "none"} {
   puts "RM-info: Running $save_upf_cmd"
   eval ${save_upf_cmd}
 }
-#@ # -- Starting source /tmp/dc_shell.qaIjQs
+#@ # -- Starting source /tmp/dc_shell.savoxx
 
 #@ set_svf -off
-#@ # -- End source /tmp/dc_shell.qaIjQs
+#@ # -- End source /tmp/dc_shell.savoxx
 
 set_svf -off
-#@ # -- Starting source /tmp/dc_shell.pDEmSa
+#@ # -- Starting source /tmp/dc_shell.oPAKnN
 
 #@ if {[shell_is_in_topographical_mode]} {
 #@   save_lib
 #@ }
-#@ # -- End source /tmp/dc_shell.pDEmSa
+#@ # -- End source /tmp/dc_shell.oPAKnN
 
 if {[shell_is_in_topographical_mode]} {
   save_lib
 }
-#@ # -- Starting source /tmp/dc_shell.RnaunB
+#@ # -- Starting source /tmp/dc_shell.YXiAVY
 
 #@ puts "SYNTHESIS COMPLETED :)"
-#@ # -- End source /tmp/dc_shell.RnaunB
+#@ # -- End source /tmp/dc_shell.YXiAVY
 
 puts "SYNTHESIS COMPLETED :)"
 change_selection [get_cells bms_master_control_unit_enhanced]
@@ -9684,13 +9695,118 @@ gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting 
 gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
 change_selection [get_cells bms_master_control_unit_enhanced]
 change_selection [get_cells bms_master_control_unit_enhanced]
-change_selection [get_cells DP_OP_26J1_122_5989]
-change_selection [get_cells pack_soc_avg_reg_14_]
-gui_scroll -window [gui_get_current_window -view] -hrel -.2
-gui_scroll -window [gui_get_current_window -view] -hrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
 gui_scroll -window [gui_get_current_window -view] -vrel .2
 gui_scroll -window [gui_get_current_window -view] -vrel .2
 gui_scroll -window [gui_get_current_window -view] -vrel -.2
+change_selection [get_cells bms_master_control_unit_enhanced]
+change_selection [get_s {{lmu1_temp_die[]}}]
+change_selection -add [get_nets {{lmu1_temp_die[11]} {lmu1_temp_die[10]} {lmu1_temp_die[9]} {lmu1_temp_die[8]} {lmu1_temp_die[7]} {lmu1_temp_die[6]}}]
+change_selection -add [get_nets {{lmu1_temp_die[5]} {lmu1_temp_die[4]} {lmu1_temp_die[3]} {lmu1_temp_die[2]} {lmu1_temp_die[1]} {lmu1_temp_die[0]}}]
+change_selection [get_cells bms_master_control_unit_enhanced]
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+change_selection [get_nets clk]
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+change_selection [get_cells bms_master_control_unit_enhanced]
+gui_zoom -window [gui_get_current_window -view] -full
+change_selection 
+change_selection [get_cells bms_master_control_unit_enhanced]
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+change_selection [get_s {{lmu0_soc[]}}]
+change_selection -add [get_nets {{lmu0_soc[15]} {lmu0_soc[14]} {lmu0_soc[13]} {lmu0_soc[12]} {lmu0_soc[11]} {lmu0_soc[10]} {lmu0_soc[9]} {lmu0_soc[8]}}]
+change_selection -add [get_nets {{lmu0_soc[7]} {lmu0_soc[6]} {lmu0_soc[5]} {lmu0_soc[4]} {lmu0_soc[3]} {lmu0_soc[2]} {lmu0_soc[1]} {lmu0_soc[0]}}]
+change_selection [get_nets clk]
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
+gui_scroll -window [gui_get_current_window -view] -vrel -.2
 gui_scroll -window [gui_get_current_window -view] -hrel .2
+gui_scroll -window [gui_get_current_window -view] -hrel .2
+gui_scroll -window [gui_get_current_window -view] -hrel .2
+gui_scroll -window [gui_get_current_window -view] -hrel -.2
+change_selection [get_cells u_curr_sup]
+gui_scroll -window [gui_get_current_window -view] -hrel .2
+gui_scroll -window [gui_get_current_window -view] -hrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+gui_scroll -window [gui_get_current_window -view] -vrel .2
+change_selection [get_cells u_curr_sup/allowed_current_reg_0_]
 gui_zoom -window [gui_get_current_window -view] -full
-gui_zoom -window [gui_get_current_window -view] -full
+change_selection 
+change_selection [get_cells bms_master_control_unit_enhanced]
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schem_hierarchy:lineColor -value darkorange
+change_selection [get_cells bms_master_control_unit_enhanced]
+change_selection 
+exit

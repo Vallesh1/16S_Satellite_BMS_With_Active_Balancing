@@ -3,7 +3,7 @@
 Report : qor
 Design : bms_system_3lmu_top_enhanced
 Version: T-2022.03-SP4
-Date   : Sat Jul  4 22:11:02 2026
+Date   : Sat Jul 18 22:16:11 2026
 ****************************************
 
 
@@ -102,12 +102,12 @@ Date   : Sat Jul  4 22:11:02 2026
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                   17.06
-  Logic Optimization:                 40.52
-  Mapping Optimization:              149.57
+  Resource Sharing:                   17.72
+  Logic Optimization:                 42.67
+  Mapping Optimization:              155.00
   -----------------------------------------
-  Overall Compile Time:              341.58
-  Overall Compile Wall Clock Time:   236.96
+  Overall Compile Time:              357.13
+  Overall Compile Wall Clock Time:   245.70
 
   --------------------------------------------------------------------
 

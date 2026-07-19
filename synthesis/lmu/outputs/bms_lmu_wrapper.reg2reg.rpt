@@ -9,240 +9,304 @@ Report : timing
         -max_paths 1
 Design : bms_lmu_wrapper
 Version: T-2022.03-SP4
-Date   : Thu Jul  9 19:23:28 2026
+Date   : Fri Jul 17 16:35:54 2026
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
 Wire Load Model Mode: top
 
-  Startpoint: u_lmu/u_soc_soh/soh_calc_reg_5_
+  Startpoint: u_lmu/u_adc/cell_v_bus_reg_8_
               (rising edge-triggered flip-flop clocked by sys_clk)
-  Endpoint: u_lmu/u_soc_soh/soh_out_reg_0_
+  Endpoint: u_lmu/u_bal/active_rx_sw_reg_8_
             (rising edge-triggered flip-flop clocked by sys_clk)
   Path Group: reg2reg
   Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bms_lmu_wrapper    8000                  saed14rvt_ss0p6v125c
 
   Point                                                   Incr       Path      Voltage
   ------------------------------------------------------------------------------------
   clock sys_clk (rise edge)                               0.00       0.00      
   clock network delay (ideal)                             0.00       0.00      
-  u_lmu/u_soc_soh/soh_calc_reg_5_/CK (SAEDHVT14_FSDPSBQ_V2LP_1)
+  u_lmu/u_adc/cell_v_bus_reg_8_/CK (SAEDHVT14_FSDPRBQ_V2LP_1)
                                                           0.00       0.00 r    0.60
-  u_lmu/u_soc_soh/soh_calc_reg_5_/Q (SAEDHVT14_FSDPSBQ_V2LP_1)
-                                                          0.09       0.09 f    0.60
-  u_lmu/u_soc_soh/mult_x_12/a[5] (bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0)
-                                                          0.00       0.09 f    
-  u_lmu/u_soc_soh/mult_x_12/U79/X (SAEDHVT14_INV_0P5)     0.01       0.11 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U109/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.03       0.13 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U105/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.16 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U104/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.18 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U103/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.21 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U102/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.23 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U101/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.26 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U100/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.28 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U99/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.31 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U98/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.33 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U97/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.36 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U96/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.38 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U95/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.41 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U94/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.43 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U93/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.46 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U92/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       0.48 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U91/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       0.53 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U108/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       0.59 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U107/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       0.64 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U106/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       0.70 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U90/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       0.75 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U68/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.04       0.79 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U76/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.04       0.83 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U73/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       0.88 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U72/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       0.94 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U75/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.04       0.98 r    0.60
-  u_lmu/u_soc_soh/mult_x_12/U71/S (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.10       1.08 f    0.60
-  u_lmu/u_soc_soh/mult_x_12/product[30] (bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0)
-                                                          0.00       1.08 f    
-  u_lmu/u_soc_soh/div_13/a[30] (bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0)
-                                                          0.00       1.08 f    
-  u_lmu/u_soc_soh/div_13/U179/X (SAEDHVT14_ND2_CDC_1)     0.01       1.09 r    0.60
-  u_lmu/u_soc_soh/div_13/U180/X (SAEDHVT14_AOI21_0P5)     0.01       1.11 f    0.60
-  u_lmu/u_soc_soh/div_13/U5/X (SAEDRVT14_INV_S_0P5)       0.01       1.12 r    0.60
-  u_lmu/u_soc_soh/div_13/U6/X (SAEDRVT14_INV_S_0P5)       0.01       1.13 f    0.60
-  u_lmu/u_soc_soh/div_13/U189/X (SAEDHVT14_MUX2_U_0P5)
-                                                          0.04       1.17 r    0.60
-  u_lmu/u_soc_soh/div_13/U191/X (SAEDHVT14_ND2_CDC_1)     0.02       1.19 f    0.60
-  u_lmu/u_soc_soh/div_13/U194/X (SAEDHVT14_ND2_CDC_1)     0.02       1.21 r    0.60
-  u_lmu/u_soc_soh/div_13/U125/X (SAEDHVT14_AN2_0P5)       0.03       1.23 r    0.60
-  u_lmu/u_soc_soh/div_13/U126/X (SAEDRVT14_INV_S_0P5)     0.01       1.24 f    0.60
-  u_lmu/u_soc_soh/div_13/U128/X (SAEDHVT14_ND2_MM_0P5)
-                                                          0.01       1.25 r    0.60
-  u_lmu/u_soc_soh/div_13/U213/X (SAEDHVT14_ND3B_0P5)      0.06       1.32 f    0.60
-  u_lmu/u_soc_soh/div_13/U214/X (SAEDHVT14_AO2BB2_V1_0P75)
-                                                          0.08       1.40 f    0.60
-  u_lmu/u_soc_soh/div_13/U103/X (SAEDHVT14_ND2_MM_0P5)
-                                                          0.03       1.43 r    0.60
-  u_lmu/u_soc_soh/div_13/U102/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.03       1.46 f    0.60
-  u_lmu/u_soc_soh/div_13/U145/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       1.50 f    0.60
-  u_lmu/u_soc_soh/div_13/U26/X (SAEDHVT14_ND2_MM_0P5)     0.01       1.51 r    0.60
-  u_lmu/u_soc_soh/div_13/U242/X (SAEDHVT14_AO2BB2_0P5)
-                                                          0.05       1.56 r    0.60
-  u_lmu/u_soc_soh/div_13/U170/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       1.60 r    0.60
-  u_lmu/u_soc_soh/div_13/U246/X (SAEDHVT14_AO21B_0P5)     0.04       1.64 r    0.60
-  u_lmu/u_soc_soh/div_13/U247/X (SAEDHVT14_ND2_CDC_1)     0.02       1.67 f    0.60
-  u_lmu/u_soc_soh/div_13/U116/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       1.71 r    0.60
-  u_lmu/u_soc_soh/div_13/U114/X (SAEDHVT14_EO2_1)         0.03       1.74 r    0.60
-  u_lmu/u_soc_soh/div_13/U115/X (SAEDRVT14_INV_S_0P5)     0.01       1.75 f    0.60
-  u_lmu/u_soc_soh/div_13/U273/X (SAEDHVT14_NR3_0P5)       0.04       1.79 r    0.60
-  u_lmu/u_soc_soh/div_13/U274/X (SAEDHVT14_ND3B_0P5)      0.06       1.85 f    0.60
-  u_lmu/u_soc_soh/div_13/U152/X (SAEDHVT14_AO21B_0P5)     0.04       1.89 f    0.60
-  u_lmu/u_soc_soh/div_13/U295/X (SAEDHVT14_ND2_CDC_1)     0.02       1.91 r    0.60
-  u_lmu/u_soc_soh/div_13/U296/X (SAEDHVT14_AO2BB2_V1_0P75)
-                                                          0.05       1.97 r    0.60
-  u_lmu/u_soc_soh/div_13/U297/X (SAEDHVT14_ND2_CDC_1)     0.01       1.98 f    0.60
-  u_lmu/u_soc_soh/div_13/U300/X (SAEDHVT14_ND2_CDC_1)     0.02       2.00 r    0.60
-  u_lmu/u_soc_soh/div_13/U307/X (SAEDHVT14_ND2_CDC_1)     0.02       2.01 f    0.60
-  u_lmu/u_soc_soh/div_13/U315/X (SAEDHVT14_ND3B_0P5)      0.05       2.06 r    0.60
-  u_lmu/u_soc_soh/div_13/U324/X (SAEDHVT14_AO21B_0P5)     0.04       2.11 r    0.60
-  u_lmu/u_soc_soh/div_13/U329/X (SAEDHVT14_ND2_CDC_1)     0.02       2.13 f    0.60
-  u_lmu/u_soc_soh/div_13/U117/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       2.17 r    0.60
-  u_lmu/u_soc_soh/div_13/U138/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       2.21 r    0.60
-  u_lmu/u_soc_soh/div_13/U88/X (SAEDHVT14_ND2_MM_0P5)     0.02       2.23 f    0.60
-  u_lmu/u_soc_soh/div_13/U332/X (SAEDHVT14_ND2_CDC_1)     0.02       2.25 r    0.60
-  u_lmu/u_soc_soh/div_13/U358/X (SAEDHVT14_ND3B_0P5)      0.05       2.30 r    0.60
-  u_lmu/u_soc_soh/div_13/U153/X (SAEDHVT14_AOI31_0P5)     0.06       2.37 f    0.60
-  u_lmu/u_soc_soh/div_13/U2/X (SAEDRVT14_INV_S_0P5)       0.02       2.39 r    0.60
-  u_lmu/u_soc_soh/div_13/U364/X (SAEDHVT14_ND2_CDC_1)     0.03       2.42 f    0.60
-  u_lmu/u_soc_soh/div_13/U365/X (SAEDHVT14_AN2B_MM_1)     0.03       2.45 r    0.60
-  u_lmu/u_soc_soh/div_13/U390/X (SAEDHVT14_EN2_1)         0.03       2.48 f    0.60
-  u_lmu/u_soc_soh/div_13/U393/X (SAEDHVT14_NR3_0P5)       0.04       2.52 r    0.60
-  u_lmu/u_soc_soh/div_13/U394/X (SAEDHVT14_ND3B_0P5)      0.06       2.59 f    0.60
-  u_lmu/u_soc_soh/div_13/U403/X (SAEDHVT14_AO21B_0P5)     0.04       2.63 f    0.60
-  u_lmu/u_soc_soh/div_13/U408/X (SAEDHVT14_ND2_CDC_1)     0.02       2.65 r    0.60
-  u_lmu/u_soc_soh/div_13/U83/X (SAEDHVT14_NR2B_U_0P5)     0.03       2.68 f    0.60
-  u_lmu/u_soc_soh/div_13/U130/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       2.72 f    0.60
-  u_lmu/u_soc_soh/div_13/U411/X (SAEDHVT14_INV_0P5)       0.01       2.73 r    0.60
-  u_lmu/u_soc_soh/div_13/U412/X (SAEDHVT14_ND2_CDC_1)     0.01       2.74 f    0.60
-  u_lmu/u_soc_soh/div_13/U413/X (SAEDHVT14_ND2_CDC_1)     0.01       2.75 r    0.60
-  u_lmu/u_soc_soh/div_13/U439/X (SAEDHVT14_ND3B_0P5)      0.05       2.81 r    0.60
-  u_lmu/u_soc_soh/div_13/U154/X (SAEDHVT14_AOI31_0P5)     0.06       2.87 f    0.60
-  u_lmu/u_soc_soh/div_13/U4/X (SAEDRVT14_INV_S_0P5)       0.02       2.89 r    0.60
-  u_lmu/u_soc_soh/div_13/U445/X (SAEDHVT14_ND2_CDC_1)     0.03       2.92 f    0.60
-  u_lmu/u_soc_soh/div_13/U446/X (SAEDHVT14_AN2B_MM_1)     0.03       2.96 r    0.60
-  u_lmu/u_soc_soh/div_13/U132/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       3.00 r    0.60
-  u_lmu/u_soc_soh/div_13/U91/X (SAEDHVT14_ND2_MM_0P5)     0.01       3.01 f    0.60
-  u_lmu/u_soc_soh/div_13/U90/X (SAEDHVT14_ND2_MM_0P5)     0.02       3.03 r    0.60
-  u_lmu/u_soc_soh/div_13/U473/X (SAEDHVT14_ND3B_0P5)      0.06       3.09 r    0.60
-  u_lmu/u_soc_soh/div_13/U482/X (SAEDHVT14_AO21B_0P5)     0.04       3.13 r    0.60
-  u_lmu/u_soc_soh/div_13/U484/X (SAEDHVT14_ND2_CDC_1)     0.02       3.15 f    0.60
-  u_lmu/u_soc_soh/div_13/U162/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       3.19 r    0.60
-  u_lmu/u_soc_soh/div_13/U144/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       3.23 r    0.60
-  u_lmu/u_soc_soh/div_13/U486/X (SAEDHVT14_INV_0P5)       0.01       3.24 f    0.60
-  u_lmu/u_soc_soh/div_13/U20/X (SAEDHVT14_ND2_MM_0P5)     0.01       3.25 r    0.60
-  u_lmu/u_soc_soh/div_13/U92/X (SAEDHVT14_ND2_MM_0P5)     0.02       3.27 f    0.60
-  u_lmu/u_soc_soh/div_13/U512/X (SAEDHVT14_ND3B_0P5)      0.07       3.34 f    0.60
-  u_lmu/u_soc_soh/div_13/U156/X (SAEDHVT14_AO21B_0P5)     0.04       3.38 f    0.60
-  u_lmu/u_soc_soh/div_13/U528/X (SAEDHVT14_MUX2_U_0P5)
-                                                          0.05       3.43 r    0.60
-  u_lmu/u_soc_soh/div_13/U530/X (SAEDHVT14_ND2_CDC_1)     0.02       3.45 f    0.60
-  u_lmu/u_soc_soh/div_13/U535/X (SAEDHVT14_ND2_CDC_1)     0.02       3.47 r    0.60
-  u_lmu/u_soc_soh/div_13/U538/X (SAEDHVT14_ND2_CDC_1)     0.02       3.49 f    0.60
-  u_lmu/u_soc_soh/div_13/U545/X (SAEDHVT14_ND2_CDC_1)     0.02       3.50 r    0.60
-  u_lmu/u_soc_soh/div_13/U553/X (SAEDHVT14_ND3B_0P5)      0.06       3.57 f    0.60
-  u_lmu/u_soc_soh/div_13/U563/X (SAEDHVT14_AO21B_0P5)     0.04       3.61 f    0.60
-  u_lmu/u_soc_soh/div_13/U568/X (SAEDHVT14_ND2_CDC_1)     0.02       3.63 r    0.60
-  u_lmu/u_soc_soh/div_13/U84/X (SAEDHVT14_NR2B_U_0P5)     0.03       3.66 f    0.60
-  u_lmu/u_soc_soh/div_13/U134/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       3.70 f    0.60
-  u_lmu/u_soc_soh/div_13/U571/X (SAEDHVT14_INV_0P5)       0.01       3.71 r    0.60
-  u_lmu/u_soc_soh/div_13/U572/X (SAEDHVT14_ND2_CDC_1)     0.01       3.72 f    0.60
-  u_lmu/u_soc_soh/div_13/U573/X (SAEDHVT14_ND2_CDC_1)     0.01       3.73 r    0.60
-  u_lmu/u_soc_soh/div_13/U598/X (SAEDHVT14_ND3B_0P5)      0.05       3.79 r    0.60
-  u_lmu/u_soc_soh/div_13/U157/X (SAEDHVT14_AOI31_0P5)     0.06       3.85 f    0.60
-  u_lmu/u_soc_soh/div_13/U3/X (SAEDRVT14_INV_S_0P5)       0.02       3.87 r    0.60
-  u_lmu/u_soc_soh/div_13/U604/X (SAEDHVT14_ND2_CDC_1)     0.03       3.90 f    0.60
-  u_lmu/u_soc_soh/div_13/U605/X (SAEDHVT14_AN2B_MM_1)     0.03       3.94 r    0.60
-  u_lmu/u_soc_soh/div_13/U136/X (SAEDHVT14_NR2B_U_0P5)
-                                                          0.04       3.98 r    0.60
-  u_lmu/u_soc_soh/div_13/U607/X (SAEDHVT14_INV_0P5)       0.01       3.99 f    0.60
-  u_lmu/u_soc_soh/div_13/U22/X (SAEDHVT14_ND2_MM_0P5)     0.01       4.00 r    0.60
-  u_lmu/u_soc_soh/div_13/U96/X (SAEDHVT14_ND2_MM_0P5)     0.02       4.02 f    0.60
-  u_lmu/u_soc_soh/div_13/U634/X (SAEDHVT14_ND3B_0P5)      0.07       4.08 f    0.60
-  u_lmu/u_soc_soh/div_13/U643/X (SAEDHVT14_AO21B_0P5)     0.04       4.12 f    0.60
-  u_lmu/u_soc_soh/div_13/U646/X (SAEDHVT14_ND2_CDC_1)     0.02       4.14 r    0.60
-  u_lmu/u_soc_soh/div_13/U86/X (SAEDHVT14_NR2B_U_0P5)     0.03       4.18 f    0.60
-  u_lmu/u_soc_soh/div_13/U85/X (SAEDHVT14_NR2B_U_0P5)     0.04       4.22 f    0.60
-  u_lmu/u_soc_soh/div_13/U649/X (SAEDHVT14_INV_0P5)       0.01       4.22 r    0.60
-  u_lmu/u_soc_soh/div_13/U650/X (SAEDHVT14_ND2_CDC_1)     0.01       4.24 f    0.60
-  u_lmu/u_soc_soh/div_13/U651/X (SAEDHVT14_ND2_CDC_1)     0.01       4.25 r    0.60
-  u_lmu/u_soc_soh/div_13/U678/X (SAEDHVT14_ND3B_0P5)      0.05       4.30 r    0.60
-  u_lmu/u_soc_soh/div_13/U158/X (SAEDHVT14_AOI31_0P5)     0.06       4.37 f    0.60
-  u_lmu/u_soc_soh/div_13/U18/X (SAEDRVT14_INV_S_0P5)      0.03       4.39 r    0.60
-  u_lmu/u_soc_soh/div_13/U700/X (SAEDHVT14_ND2_CDC_1)     0.03       4.42 f    0.60
-  u_lmu/u_soc_soh/div_13/U89/X (SAEDHVT14_NR2B_U_0P5)     0.04       4.46 r    0.60
-  u_lmu/u_soc_soh/div_13/U99/X (SAEDHVT14_NR2B_U_0P5)     0.04       4.50 r    0.60
-  u_lmu/u_soc_soh/div_13/U98/X (SAEDHVT14_ND2_MM_0P5)     0.02       4.52 f    0.60
-  u_lmu/u_soc_soh/div_13/U710/X (SAEDHVT14_AO2BB2_0P5)
-                                                          0.06       4.58 f    0.60
-  u_lmu/u_soc_soh/div_13/U714/X (SAEDHVT14_AN2B_MM_1)     0.02       4.60 f    0.60
-  u_lmu/u_soc_soh/div_13/U719/X (SAEDHVT14_AO21B_0P5)     0.04       4.64 f    0.60
-  u_lmu/u_soc_soh/div_13/U726/X (SAEDHVT14_AOI21_0P5)     0.03       4.67 r    0.60
-  u_lmu/u_soc_soh/div_13/U727/X (SAEDHVT14_AN2B_MM_1)     0.03       4.70 r    0.60
-  u_lmu/u_soc_soh/div_13/U728/X (SAEDHVT14_AOI21_0P5)     0.02       4.72 f    0.60
-  u_lmu/u_soc_soh/div_13/U739/X (SAEDHVT14_OA31_1)        0.04       4.76 f    0.60
-  u_lmu/u_soc_soh/div_13/U745/X (SAEDHVT14_OAI21_0P5)     0.01       4.77 r    0.60
-  u_lmu/u_soc_soh/div_13/quotient[0] (bms_lmu_wrapper_bms_soc_soh_engine_DW_div_uns_J4_0_0)
-                                                          0.00       4.77 r    
-  u_lmu/u_soc_soh/soh_out_reg_0_/D (SAEDHVT14_FSDPSBQ_V2LP_1)
-                                                          0.00       4.77 r    0.60
-  data arrival time                                                  4.77      
+  u_lmu/u_adc/cell_v_bus_reg_8_/Q (SAEDHVT14_FSDPRBQ_V2LP_1)
+                                                          0.10       0.10 r    0.60
+  u_lmu/u_adc/cell_v_bus[8] (bms_lmu_wrapper_bms_adc_if_0)
+                                                          0.00       0.10 r    
+  u_lmu/u_bal/cell_v_bus[8] (bms_lmu_wrapper_bms_active_balancer_0)
+                                                          0.00       0.10 r    
+  u_lmu/u_bal/lt_x_4/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_3_0)
+                                                          0.00       0.10 r    
+  u_lmu/u_bal/lt_x_4/U373/X (SAEDHVT14_INV_0P5)           0.06       0.16 f    0.60
+  u_lmu/u_bal/lt_x_4/U392/X (SAEDHVT14_ND2_CDC_1)         0.03       0.19 r    0.60
+  u_lmu/u_bal/lt_x_4/U394/X (SAEDHVT14_OAI21_0P5)         0.03       0.21 f    0.60
+  u_lmu/u_bal/lt_x_4/U398/X (SAEDHVT14_AOI21_0P5)         0.03       0.24 r    0.60
+  u_lmu/u_bal/lt_x_4/U405/X (SAEDHVT14_OAI21_0P5)         0.03       0.27 f    0.60
+  u_lmu/u_bal/lt_x_4/U406/X (SAEDHVT14_AOI21_0P5)         0.03       0.30 r    0.60
+  u_lmu/u_bal/lt_x_4/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_3_0)
+                                                          0.00       0.30 r    
+  u_lmu/u_bal/U184/CKOUT (SAEDHVT14_CLKSPLT_1)            0.05       0.35 r    0.60
+  u_lmu/u_bal/U732/CKOUT (SAEDHVT14_CLKSPLT_1)            0.06       0.41 r    0.60
+  u_lmu/u_bal/U1419/X (SAEDHVT14_MUX2_U_0P5)              0.07       0.47 f    0.60
+  u_lmu/u_bal/lt_x_6/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J20_0_0)
+                                                          0.00       0.47 f    
+  u_lmu/u_bal/lt_x_6/U372/X (SAEDHVT14_INV_0P5)           0.02       0.49 r    0.60
+  u_lmu/u_bal/lt_x_6/U335/X (SAEDHVT14_ND2_CDC_1)         0.02       0.51 f    0.60
+  u_lmu/u_bal/lt_x_6/U394/X (SAEDHVT14_OAI21_0P5)         0.03       0.55 r    0.60
+  u_lmu/u_bal/lt_x_6/U397/X (SAEDHVT14_AOI21_0P5)         0.03       0.58 f    0.60
+  u_lmu/u_bal/lt_x_6/U405/X (SAEDHVT14_OAI21_0P5)         0.02       0.60 r    0.60
+  u_lmu/u_bal/lt_x_6/U406/X (SAEDHVT14_AOI21_0P5)         0.02       0.62 f    0.60
+  u_lmu/u_bal/lt_x_6/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J20_0_0)
+                                                          0.00       0.62 f    
+  u_lmu/u_bal/U600/X (SAEDRVT14_INV_S_0P5)                0.02       0.64 r    0.60
+  u_lmu/u_bal/U309/X (SAEDRVT14_INV_S_0P5)                0.02       0.66 f    0.60
+  u_lmu/u_bal/U310/X (SAEDRVT14_INV_S_0P5)                0.02       0.68 r    0.60
+  u_lmu/u_bal/U1420/X (SAEDHVT14_MUX2_U_0P5)              0.04       0.72 r    0.60
+  u_lmu/u_bal/lt_x_8/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_2_0)
+                                                          0.00       0.72 r    
+  u_lmu/u_bal/lt_x_8/U374/X (SAEDHVT14_INV_0P5)           0.02       0.73 f    0.60
+  u_lmu/u_bal/lt_x_8/U393/X (SAEDHVT14_ND2_CDC_1)         0.02       0.75 r    0.60
+  u_lmu/u_bal/lt_x_8/U395/X (SAEDHVT14_OAI21_0P5)         0.03       0.78 f    0.60
+  u_lmu/u_bal/lt_x_8/U399/X (SAEDHVT14_AOI21_0P5)         0.03       0.80 r    0.60
+  u_lmu/u_bal/lt_x_8/U405/X (SAEDHVT14_OAI21_0P5)         0.03       0.83 f    0.60
+  u_lmu/u_bal/lt_x_8/U406/X (SAEDHVT14_AOI21_0P5)         0.03       0.86 r    0.60
+  u_lmu/u_bal/lt_x_8/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_2_0)
+                                                          0.00       0.86 r    
+  u_lmu/u_bal/U481/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       0.90 r    0.60
+  u_lmu/u_bal/U342/X (SAEDRVT14_INV_S_0P5)                0.01       0.92 f    0.60
+  u_lmu/u_bal/U343/X (SAEDRVT14_INV_S_0P5)                0.02       0.94 r    0.60
+  u_lmu/u_bal/U504/X (SAEDHVT14_BUF_PS_1P5)               0.04       0.98 r    0.60
+  u_lmu/u_bal/U1521/X (SAEDHVT14_OA21_1)                  0.08       1.06 r    0.60
+  u_lmu/u_bal/lt_x_10/B[2] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_1_0)
+                                                          0.00       1.06 r    
+  u_lmu/u_bal/lt_x_10/U342/X (SAEDRVT14_INV_S_0P5)        0.01       1.08 f    0.60
+  u_lmu/u_bal/lt_x_10/U341/X (SAEDHVT14_ND2_MM_0P5)       0.02       1.09 r    0.60
+  u_lmu/u_bal/lt_x_10/U336/X (SAEDHVT14_NR2_MM_0P5)       0.02       1.11 f    0.60
+  u_lmu/u_bal/lt_x_10/U334/X (SAEDHVT14_OR2_MM_1)         0.03       1.14 f    0.60
+  u_lmu/u_bal/lt_x_10/U356/X (SAEDHVT14_AOI21_0P5)        0.02       1.15 r    0.60
+  u_lmu/u_bal/lt_x_10/U372/X (SAEDHVT14_OAI21_0P5)        0.02       1.18 f    0.60
+  u_lmu/u_bal/lt_x_10/U407/X (SAEDHVT14_AOI21_0P5)        0.03       1.21 r    0.60
+  u_lmu/u_bal/lt_x_10/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_1_0)
+                                                          0.00       1.21 r    
+  u_lmu/u_bal/U393/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       1.25 r    0.60
+  u_lmu/u_bal/U243/X (SAEDRVT14_INV_S_0P5)                0.01       1.26 f    0.60
+  u_lmu/u_bal/U244/X (SAEDRVT14_INV_S_0P5)                0.02       1.28 r    0.60
+  u_lmu/u_bal/U415/X (SAEDHVT14_BUF_PS_1P5)               0.04       1.32 r    0.60
+  u_lmu/u_bal/U780/X (SAEDHVT14_ND2_MM_0P5)               0.07       1.39 f    0.60
+  u_lmu/u_bal/U1487/X (SAEDHVT14_OA21_1)                  0.04       1.43 f    0.60
+  u_lmu/u_bal/lt_x_12/B[4] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_3_0)
+                                                          0.00       1.43 f    
+  u_lmu/u_bal/lt_x_12/U362/X (SAEDHVT14_INV_0P5)          0.02       1.45 r    0.60
+  u_lmu/u_bal/lt_x_12/U371/X (SAEDHVT14_ND2_CDC_1)        0.02       1.47 f    0.60
+  u_lmu/u_bal/lt_x_12/U373/X (SAEDHVT14_OAI21_0P5)        0.03       1.50 r    0.60
+  u_lmu/u_bal/lt_x_12/U376/X (SAEDHVT14_AOI21_0P5)        0.02       1.53 f    0.60
+  u_lmu/u_bal/lt_x_12/U377/X (SAEDHVT14_OAI21_0P5)        0.02       1.54 r    0.60
+  u_lmu/u_bal/lt_x_12/U408/X (SAEDHVT14_AOI21_0P5)        0.04       1.58 f    0.60
+  u_lmu/u_bal/lt_x_12/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_3_0)
+                                                          0.00       1.58 f    
+  u_lmu/u_bal/U389/CKOUTB (SAEDHVT14_CLKSPLT_1)           0.08       1.66 r    0.60
+  u_lmu/u_bal/U390/X (SAEDRVT14_INV_S_0P5)                0.04       1.70 f    0.60
+  u_lmu/u_bal/U1426/X (SAEDHVT14_OA21_1)                  0.05       1.75 f    0.60
+  u_lmu/u_bal/lt_x_14/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_2_0)
+                                                          0.00       1.75 f    
+  u_lmu/u_bal/lt_x_14/U342/X (SAEDRVT14_INV_S_0P5)        0.01       1.76 r    0.60
+  u_lmu/u_bal/lt_x_14/U393/X (SAEDHVT14_ND2_CDC_1)        0.02       1.79 f    0.60
+  u_lmu/u_bal/lt_x_14/U395/X (SAEDHVT14_OAI21_0P5)        0.03       1.82 r    0.60
+  u_lmu/u_bal/lt_x_14/U399/X (SAEDHVT14_AOI21_0P5)        0.03       1.85 f    0.60
+  u_lmu/u_bal/lt_x_14/U406/X (SAEDHVT14_OAI21_0P5)        0.03       1.88 r    0.60
+  u_lmu/u_bal/lt_x_14/U407/X (SAEDHVT14_AOI21_0P5)        0.03       1.91 f    0.60
+  u_lmu/u_bal/lt_x_14/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_2_0)
+                                                          0.00       1.91 f    
+  u_lmu/u_bal/U376/CKOUTB (SAEDHVT14_CLKSPLT_1)           0.08       1.98 r    0.60
+  u_lmu/u_bal/U377/X (SAEDRVT14_INV_S_0P5)                0.04       2.03 f    0.60
+  u_lmu/u_bal/U138/X (SAEDHVT14_ND2_CDC_1)                0.03       2.06 r    0.60
+  u_lmu/u_bal/U1405/X (SAEDHVT14_OA21_1)                  0.04       2.10 r    0.60
+  u_lmu/u_bal/lt_x_16/B[9] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J19_0_0)
+                                                          0.00       2.10 r    
+  u_lmu/u_bal/lt_x_16/U376/X (SAEDHVT14_INV_0P5)          0.02       2.11 f    0.60
+  u_lmu/u_bal/lt_x_16/U377/X (SAEDHVT14_NR2_MM_0P5)       0.02       2.13 r    0.60
+  u_lmu/u_bal/lt_x_16/U395/X (SAEDHVT14_OAI21_0P5)        0.03       2.16 f    0.60
+  u_lmu/u_bal/lt_x_16/U399/X (SAEDHVT14_AOI21_0P5)        0.03       2.18 r    0.60
+  u_lmu/u_bal/lt_x_16/U405/X (SAEDHVT14_OAI21_0P5)        0.03       2.21 f    0.60
+  u_lmu/u_bal/lt_x_16/U406/X (SAEDHVT14_AOI21_0P5)        0.03       2.24 r    0.60
+  u_lmu/u_bal/lt_x_16/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J19_0_0)
+                                                          0.00       2.24 r    
+  u_lmu/u_bal/U509/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       2.28 r    0.60
+  u_lmu/u_bal/U326/X (SAEDRVT14_INV_S_0P5)                0.01       2.29 f    0.60
+  u_lmu/u_bal/U327/X (SAEDRVT14_INV_S_0P5)                0.02       2.31 r    0.60
+  u_lmu/u_bal/U519/X (SAEDHVT14_BUF_PS_1P5)               0.04       2.35 r    0.60
+  u_lmu/u_bal/U1428/X (SAEDHVT14_OA21_1)                  0.09       2.44 r    0.60
+  u_lmu/u_bal/lt_x_18/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_1_0)
+                                                          0.00       2.44 r    
+  u_lmu/u_bal/lt_x_18/U372/X (SAEDHVT14_INV_0P5)          0.02       2.46 f    0.60
+  u_lmu/u_bal/lt_x_18/U392/X (SAEDHVT14_ND2_CDC_1)        0.02       2.48 r    0.60
+  u_lmu/u_bal/lt_x_18/U394/X (SAEDHVT14_OAI21_0P5)        0.03       2.50 f    0.60
+  u_lmu/u_bal/lt_x_18/U398/X (SAEDHVT14_AOI21_0P5)        0.03       2.53 r    0.60
+  u_lmu/u_bal/lt_x_18/U405/X (SAEDHVT14_OAI21_0P5)        0.03       2.56 f    0.60
+  u_lmu/u_bal/lt_x_18/U406/X (SAEDHVT14_AOI21_0P5)        0.03       2.59 r    0.60
+  u_lmu/u_bal/lt_x_18/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_1_0)
+                                                          0.00       2.59 r    
+  u_lmu/u_bal/U422/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       2.63 r    0.60
+  u_lmu/u_bal/U281/X (SAEDRVT14_INV_S_0P5)                0.01       2.64 f    0.60
+  u_lmu/u_bal/U282/X (SAEDRVT14_INV_S_0P5)                0.02       2.66 r    0.60
+  u_lmu/u_bal/U444/X (SAEDHVT14_BUF_PS_1P5)               0.04       2.71 r    0.60
+  u_lmu/u_bal/U1491/X (SAEDHVT14_ND2_CDC_1)               0.07       2.77 f    0.60
+  u_lmu/u_bal/U1492/X (SAEDHVT14_OA21_1)                  0.04       2.81 f    0.60
+  u_lmu/u_bal/lt_x_20/B[4] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_2_0)
+                                                          0.00       2.81 f    
+  u_lmu/u_bal/lt_x_20/U342/X (SAEDRVT14_INV_S_0P5)        0.01       2.83 r    0.60
+  u_lmu/u_bal/lt_x_20/U341/X (SAEDHVT14_ND2_CDC_1)        0.02       2.85 f    0.60
+  u_lmu/u_bal/lt_x_20/U370/X (SAEDHVT14_OAI21_0P5)        0.03       2.88 r    0.60
+  u_lmu/u_bal/lt_x_20/U374/X (SAEDHVT14_AOI21_0P5)        0.02       2.91 f    0.60
+  u_lmu/u_bal/lt_x_20/U375/X (SAEDHVT14_OAI21_0P5)        0.02       2.92 r    0.60
+  u_lmu/u_bal/lt_x_20/U406/X (SAEDHVT14_AOI21_0P5)        0.04       2.96 f    0.60
+  u_lmu/u_bal/lt_x_20/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_2_0)
+                                                          0.00       2.96 f    
+  u_lmu/u_bal/U447/CKOUT (SAEDHVT14_CLKSPLT_1)            0.05       3.01 f    0.60
+  u_lmu/u_bal/U258/X (SAEDRVT14_INV_S_0P5)                0.01       3.02 r    0.60
+  u_lmu/u_bal/U259/X (SAEDRVT14_INV_S_0P5)                0.02       3.04 f    0.60
+  u_lmu/u_bal/U463/X (SAEDRVT14_INV_S_0P5)                0.02       3.06 r    0.60
+  u_lmu/u_bal/U1300/X (SAEDHVT14_INV_0P5)                 0.03       3.09 f    0.60
+  u_lmu/u_bal/U104/X (SAEDHVT14_ND2_CDC_1)                0.03       3.12 r    0.60
+  u_lmu/u_bal/U1430/X (SAEDHVT14_OA21_1)                  0.04       3.16 r    0.60
+  u_lmu/u_bal/lt_x_22/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_1_0)
+                                                          0.00       3.16 r    
+  u_lmu/u_bal/lt_x_22/U374/X (SAEDHVT14_INV_0P5)          0.02       3.18 f    0.60
+  u_lmu/u_bal/lt_x_22/U393/X (SAEDHVT14_ND2_CDC_1)        0.02       3.19 r    0.60
+  u_lmu/u_bal/lt_x_22/U395/X (SAEDHVT14_OAI21_0P5)        0.03       3.22 f    0.60
+  u_lmu/u_bal/lt_x_22/U399/X (SAEDHVT14_AOI21_0P5)        0.03       3.25 r    0.60
+  u_lmu/u_bal/lt_x_22/U405/X (SAEDHVT14_OAI21_0P5)        0.03       3.27 f    0.60
+  u_lmu/u_bal/lt_x_22/U406/X (SAEDHVT14_AOI21_0P5)        0.03       3.30 r    0.60
+  u_lmu/u_bal/lt_x_22/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_1_0)
+                                                          0.00       3.30 r    
+  u_lmu/u_bal/U479/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       3.35 r    0.60
+  u_lmu/u_bal/U320/X (SAEDRVT14_INV_S_0P5)                0.01       3.36 f    0.60
+  u_lmu/u_bal/U321/X (SAEDRVT14_INV_S_0P5)                0.02       3.38 r    0.60
+  u_lmu/u_bal/U493/X (SAEDHVT14_BUF_PS_1P5)               0.04       3.42 r    0.60
+  u_lmu/u_bal/U1372/X (SAEDHVT14_ND2_CDC_1)               0.07       3.49 f    0.60
+  u_lmu/u_bal/U1373/X (SAEDHVT14_OA21_1)                  0.04       3.53 f    0.60
+  u_lmu/u_bal/lt_x_24/B[11] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_0_0)
+                                                          0.00       3.53 f    
+  u_lmu/u_bal/lt_x_24/U342/X (SAEDRVT14_INV_S_0P5)        0.01       3.54 r    0.60
+  u_lmu/u_bal/lt_x_24/U382/X (SAEDHVT14_NR2_MM_0P5)       0.02       3.56 f    0.60
+  u_lmu/u_bal/lt_x_24/U383/X (SAEDHVT14_NR2_MM_0P5)       0.03       3.59 r    0.60
+  u_lmu/u_bal/lt_x_24/U399/X (SAEDHVT14_AOI21_0P5)        0.03       3.62 f    0.60
+  u_lmu/u_bal/lt_x_24/U406/X (SAEDHVT14_OAI21_0P5)        0.03       3.65 r    0.60
+  u_lmu/u_bal/lt_x_24/U407/X (SAEDHVT14_AOI21_0P5)        0.03       3.68 f    0.60
+  u_lmu/u_bal/lt_x_24/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J18_0_0)
+                                                          0.00       3.68 f    
+  u_lmu/u_bal/U420/CKOUT (SAEDHVT14_CLKSPLT_1)            0.05       3.73 f    0.60
+  u_lmu/u_bal/U218/X (SAEDRVT14_INV_S_0P5)                0.01       3.74 r    0.60
+  u_lmu/u_bal/U219/X (SAEDRVT14_INV_S_0P5)                0.02       3.76 f    0.60
+  u_lmu/u_bal/U442/X (SAEDRVT14_INV_S_0P5)                0.02       3.77 r    0.60
+  u_lmu/u_bal/U793/X (SAEDHVT14_INV_0P5)                  0.03       3.80 f    0.60
+  u_lmu/u_bal/U1530/X (SAEDHVT14_ND2_CDC_1)               0.03       3.84 r    0.60
+  u_lmu/u_bal/U1531/X (SAEDHVT14_OA21_1)                  0.04       3.87 r    0.60
+  u_lmu/u_bal/lt_x_26/B[2] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_1_0)
+                                                          0.00       3.87 r    
+  u_lmu/u_bal/lt_x_26/U351/X (SAEDHVT14_INV_0P5)          0.02       3.89 f    0.60
+  u_lmu/u_bal/lt_x_26/U337/X (SAEDHVT14_ND2_MM_0P5)       0.02       3.91 r    0.60
+  u_lmu/u_bal/lt_x_26/U336/X (SAEDHVT14_NR2_MM_0P5)       0.02       3.92 f    0.60
+  u_lmu/u_bal/lt_x_26/U334/X (SAEDHVT14_OR2_MM_1)         0.03       3.95 f    0.60
+  u_lmu/u_bal/lt_x_26/U356/X (SAEDHVT14_AOI21_0P5)        0.02       3.97 r    0.60
+  u_lmu/u_bal/lt_x_26/U372/X (SAEDHVT14_OAI21_0P5)        0.02       3.99 f    0.60
+  u_lmu/u_bal/lt_x_26/U407/X (SAEDHVT14_AOI21_0P5)        0.03       4.02 r    0.60
+  u_lmu/u_bal/lt_x_26/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_1_0)
+                                                          0.00       4.02 r    
+  u_lmu/u_bal/U372/CKOUTB (SAEDHVT14_CLKSPLT_1)           0.07       4.09 f    0.60
+  u_lmu/u_bal/U373/X (SAEDRVT14_INV_S_0P5)                0.03       4.12 r    0.60
+  u_lmu/u_bal/U62/X (SAEDHVT14_ND2_CDC_1)                 0.04       4.16 f    0.60
+  u_lmu/u_bal/U1305/X (SAEDHVT14_OA21_1)                  0.03       4.19 f    0.60
+  u_lmu/u_bal/lt_x_28/B[15] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_0_0)
+                                                          0.00       4.19 f    
+  u_lmu/u_bal/lt_x_28/U340/X (SAEDRVT14_INV_S_0P5)        0.01       4.20 r    0.60
+  u_lmu/u_bal/lt_x_28/U391/X (SAEDHVT14_NR2_MM_0P5)       0.02       4.22 f    0.60
+  u_lmu/u_bal/lt_x_28/U392/X (SAEDHVT14_NR2_MM_0P5)       0.03       4.26 r    0.60
+  u_lmu/u_bal/lt_x_28/U348/X (SAEDHVT14_ND2_MM_0P5)       0.03       4.28 f    0.60
+  u_lmu/u_bal/lt_x_28/U393/X (SAEDHVT14_NR2_MM_0P5)       0.02       4.30 r    0.60
+  u_lmu/u_bal/lt_x_28/U406/X (SAEDHVT14_AOI21_0P5)        0.04       4.34 f    0.60
+  u_lmu/u_bal/lt_x_28/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J17_0_0)
+                                                          0.00       4.34 f    
+  u_lmu/u_bal/U368/CKOUT (SAEDHVT14_CLKSPLT_1)            0.05       4.39 f    0.60
+  u_lmu/u_bal/U203/X (SAEDRVT14_INV_S_0P5)                0.01       4.40 r    0.60
+  u_lmu/u_bal/U204/X (SAEDRVT14_INV_S_0P5)                0.02       4.42 f    0.60
+  u_lmu/u_bal/U565/X (SAEDHVT14_BUF_U_0P5)                0.05       4.47 f    0.60
+  u_lmu/u_bal/U829/X (SAEDHVT14_ND2_MM_0P5)               0.04       4.50 r    0.60
+  u_lmu/u_bal/U1434/X (SAEDHVT14_OA21_1)                  0.04       4.54 r    0.60
+  u_lmu/u_bal/lt_x_30/B[8] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_0_0)
+                                                          0.00       4.54 r    
+  u_lmu/u_bal/lt_x_30/U375/X (SAEDHVT14_INV_0P5)          0.02       4.56 f    0.60
+  u_lmu/u_bal/lt_x_30/U393/X (SAEDHVT14_ND2_CDC_1)        0.02       4.57 r    0.60
+  u_lmu/u_bal/lt_x_30/U395/X (SAEDHVT14_OAI21_0P5)        0.03       4.60 f    0.60
+  u_lmu/u_bal/lt_x_30/U398/X (SAEDHVT14_AOI21_0P5)        0.03       4.63 r    0.60
+  u_lmu/u_bal/lt_x_30/U405/X (SAEDHVT14_OAI21_0P5)        0.03       4.65 f    0.60
+  u_lmu/u_bal/lt_x_30/U406/X (SAEDHVT14_AOI21_0P5)        0.03       4.68 r    0.60
+  u_lmu/u_bal/lt_x_30/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J16_0_0)
+                                                          0.00       4.68 r    
+  u_lmu/u_bal/U483/CKOUT (SAEDHVT14_CLKSPLT_1)            0.04       4.73 r    0.60
+  u_lmu/u_bal/U248/X (SAEDRVT14_INV_S_0P5)                0.01       4.74 f    0.60
+  u_lmu/u_bal/U249/X (SAEDRVT14_INV_S_0P5)                0.02       4.76 r    0.60
+  u_lmu/u_bal/U508/X (SAEDHVT14_BUF_PS_1P5)               0.04       4.80 r    0.60
+  u_lmu/u_bal/U1379/X (SAEDHVT14_ND2_CDC_1)               0.07       4.87 f    0.60
+  u_lmu/u_bal/U1380/X (SAEDHVT14_OA21_1)                  0.04       4.91 f    0.60
+  u_lmu/u_bal/lt_x_32/B[11] (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_0_0)
+                                                          0.00       4.91 f    
+  u_lmu/u_bal/lt_x_32/U342/X (SAEDRVT14_INV_S_0P5)        0.01       4.92 r    0.60
+  u_lmu/u_bal/lt_x_32/U382/X (SAEDHVT14_NR2_MM_0P5)       0.02       4.94 f    0.60
+  u_lmu/u_bal/lt_x_32/U383/X (SAEDHVT14_NR2_MM_0P5)       0.03       4.97 r    0.60
+  u_lmu/u_bal/lt_x_32/U399/X (SAEDHVT14_AOI21_0P5)        0.03       5.00 f    0.60
+  u_lmu/u_bal/lt_x_32/U405/X (SAEDHVT14_OAI21_0P5)        0.03       5.03 r    0.60
+  u_lmu/u_bal/lt_x_32/U406/X (SAEDHVT14_AOI21_0P5)        0.03       5.06 f    0.60
+  u_lmu/u_bal/lt_x_32/GE_LT_GT_LE (bms_lmu_wrapper_bms_active_balancer_DW_cmp_J15_0_0)
+                                                          0.00       5.06 f    
+  u_lmu/u_bal/U325/CKOUT (SAEDHVT14_CLKSPLT_1)            0.05       5.11 f    0.60
+  u_lmu/u_bal/U266/X (SAEDRVT14_INV_S_0P5)                0.02       5.12 r    0.60
+  u_lmu/u_bal/U267/X (SAEDRVT14_INV_S_0P5)                0.02       5.14 f    0.60
+  u_lmu/u_bal/U26/X (SAEDHVT14_ND2_CDC_1)                 0.02       5.16 r    0.60
+  u_lmu/u_bal/U1831/X (SAEDHVT14_AO21B_0P5)               0.01       5.18 f    0.60
+  u_lmu/u_bal/sub_x_34/B[4] (bms_lmu_wrapper_bms_active_balancer_DW01_sub_J19_0_0)
+                                                          0.00       5.18 f    
+  u_lmu/u_bal/sub_x_34/U221/X (SAEDHVT14_INV_0P5)         0.01       5.19 r    0.60
+  u_lmu/u_bal/sub_x_34/U201/X (SAEDHVT14_ND2_MM_0P5)      0.02       5.21 f    0.60
+  u_lmu/u_bal/sub_x_34/U230/X (SAEDHVT14_OAI21_0P5)       0.03       5.25 r    0.60
+  u_lmu/u_bal/sub_x_34/U234/X (SAEDHVT14_AOI21_0P5)       0.03       5.28 f    0.60
+  u_lmu/u_bal/sub_x_34/U164/X (SAEDHVT14_OAI21_0P5)       0.03       5.31 r    0.60
+  u_lmu/u_bal/sub_x_34/U298/X (SAEDHVT14_AOI21_0P5)       0.04       5.35 f    0.60
+  u_lmu/u_bal/sub_x_34/U182/X (SAEDHVT14_EO2_1)           0.04       5.39 r    0.60
+  u_lmu/u_bal/sub_x_34/DIFF[14] (bms_lmu_wrapper_bms_active_balancer_DW01_sub_J19_0_0)
+                                                          0.00       5.39 r    
+  u_lmu/u_bal/U1281/X (SAEDHVT14_INV_0P5)                 0.01       5.40 f    0.60
+  u_lmu/u_bal/U1283/X (SAEDHVT14_ND4_0P75)                0.05       5.45 r    0.60
+  u_lmu/u_bal/U1285/X (SAEDHVT14_NR4_0P75)                0.05       5.50 f    0.60
+  u_lmu/u_bal/U743/X (SAEDRVT14_INV_S_0P5)                0.01       5.51 r    0.60
+  u_lmu/u_bal/U1758/X (SAEDHVT14_OAI211_0P5)              0.04       5.56 f    0.60
+  u_lmu/u_bal/U1760/X (SAEDHVT14_NR4_0P75)                0.06       5.62 r    0.60
+  u_lmu/u_bal/U233/X (SAEDHVT14_OAI211_0P5)               0.04       5.66 f    0.60
+  u_lmu/u_bal/U234/X (SAEDRVT14_INV_S_0P5)                0.01       5.67 r    0.60
+  u_lmu/u_bal/U228/X (SAEDRVT14_INV_S_0P5)                0.01       5.68 f    0.60
+  u_lmu/u_bal/U230/X (SAEDRVT14_INV_S_0P5)                0.02       5.70 r    0.60
+  u_lmu/u_bal/U5/X (SAEDHVT14_ND2_CDC_1)                  0.03       5.73 f    0.60
+  u_lmu/u_bal/U665/X (SAEDHVT14_NR2B_U_0P5)               0.05       5.77 r    0.60
+  u_lmu/u_bal/U849/X (SAEDHVT14_NR2B_U_0P5)               0.05       5.83 r    0.60
+  u_lmu/u_bal/active_rx_sw_reg_8_/D (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.00       5.83 r    0.60
+  data arrival time                                                  5.83      
 
   clock sys_clk (rise edge)                              10.00      10.00      
   clock network delay (ideal)                             0.00      10.00      
   clock uncertainty                                      -0.15       9.85      
-  u_lmu/u_soc_soh/soh_out_reg_0_/CK (SAEDHVT14_FSDPSBQ_V2LP_1)
+  u_lmu/u_bal/active_rx_sw_reg_8_/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
                                                           0.00       9.85 r    
   library setup time                                     -0.03       9.82      
   data required time                                                 9.82      
   ------------------------------------------------------------------------------------
   data required time                                                 9.82      
-  data arrival time                                                 -4.77      
+  data arrival time                                                 -5.83      
   ------------------------------------------------------------------------------------
-  slack (MET)                                                        5.06      
+  slack (MET)                                                        3.99      
 
 
 1

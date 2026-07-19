@@ -1,0 +1,1990 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version T-2022.03-SP4 for linux64 - Aug 24, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home1/IITR_PD3/MulukuriVNath/.synopsys_dc_gui/preferences.tcl
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> 4.1.1
+set_host_options -max_cores 8
+1
+dc_shell> set DESIGN_NAME bms_lmu_wrapper
+bms_lmu_wrapper
+set OUTPUTS_DIR "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs
+set SCRIPTS "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts
+set DESIGN_STYLE hier
+hier
+set PHYSICAL_HIERARCHY_LEVEL bottom
+bottom
+set DC_BLOCK_ABSTRACTION_DESIGNS ""
+set DDC_HIER_DESIGNS ""
+set UPF_MODE golden
+golden
+set UPF_FILE ${SCRIPTS}/${DESIGN_NAME}.upf
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.upf
+set DCRM_NDM_LIBRARY_NAME ${DESIGN_NAME}.ndm
+bms_lmu_wrapper.ndm
+set TECH_FILE "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
+/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf
+set REFERENCE_LIBRARY             "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm  /home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm
+dc_shell> set rtl_path {}
+set rtl_path_1 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+set rtl_path_2 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+set rtl_path_3 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+set rtl_path_4 "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top"
+/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+set_app_var search_path " $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4 "
+ /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top 
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # For a hierarchical flow, add the block-level results directories to the
+  # For a hierarchical flow, add the block-level results directories to the
+  # search path to find the block-level design files.
+
+  set HIER_DESIGNS "${DDC_HIER_DESIGNS} ${DC_BLOCK_ABSTRACTION_DESIGNS}"
+  foreach design $HIER_DESIGNS {
+    lappend search_path ../../${design}/outputs/
+  }
+  # For a hierarchical UPF flow, add the results directory to the search path for
+  # Formality to find the output UPF files.
+  lappend search_path ${OUTPUTS_DIR}
+}
+dc_shell> set_app_var alib_library_analysis_path .
+.
+dc_shell> if {![file exists $OUTPUTS_DIR]} {file mkdir $OUTPUTS_DIR} ;# do not change this line or directory may not be created properly
+dc_shell> if {$UPF_MODE == "golden"} {
+  # Enable the Golden UPF mode to use same originla UPF script file throughout the synthesis,
+  # physical implementation, and verification flow.
+  set_app_var enable_golden_upf true
+}
+true
+dc_shell> set TARGET_LIBRARY_FILES  "/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db  "
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db  
+dc_shell> set_app_var target_library ${TARGET_LIBRARY_FILES}
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db  
+set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set_app_var link_library "* $target_library $synthetic_library"
+* /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db  /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db   dw_foundation.sldb
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  if {[info exists view_target] && [file exists $DCRM_NDM_LIBRARY_NAME]} {
+    puts "RM-info: opening existing lib $DCRM_NDM_LIBRARY_NAME"
+    open_lib $DCRM_NDM_LIBRARY_NAME
+  } else {
+    if {[file exists $DCRM_NDM_LIBRARY_NAME]} {
+      puts "RM-info: deleting existing lib $DCRM_NDM_LIBRARY_NAME"
+      file delete -force $DCRM_NDM_LIBRARY_NAME
+    }
+
+    set create_lib_cmd "create_lib -technology $TECH_FILE $DCRM_NDM_LIBRARY_NAME"
+    if {${REFERENCE_LIBRARY} != ""} { append create_lib_cmd " -ref_libs \"${REFERENCE_LIBRARY}\""}
+    puts "RM-info: Running $create_lib_cmd"
+    eval ${create_lib_cmd}
+  }
+}
+dc_shell> set set_check_library_cmd "set_check_library_options -mcmm"
+set_check_library_options -mcmm
+dc_shell> if {$UPF_MODE != "none"} {lappend set_check_library_cmd -upf}
+set_check_library_options -mcmm -upf
+puts "RM-info: Running $set_check_library_cmd"
+RM-info: Running set_check_library_options -mcmm -upf
+dc_shell> eval ${set_check_library_cmd}
+1
+dc_shell> redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.check_library.rpt {check_library}
+dc_shell> set_app_var sh_new_variable_message false
+false
+dc_shell> set_app_var auto_insert_level_shifters_on_clocks all
+all
+dc_shell> set_app_var spg_enable_via_resistance_support true
+true
+dc_shell> set_app_var simplified_verification_mode true
+true
+dc_shell> set_svf ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.svf
+1
+dc_shell> analyze -f verilog [glob $rtl_path_1 $rtl_path_2 $rtl_path_3 $rtl_path_4]
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top
+Presto compilation completed successfully.
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+1
+dc_shell> foreach path $rtl_path_1 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_comm_hub.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_2 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_lmu_wrapper.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_3 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_current_limit_supervisor.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_master_control_unit_enhanced.v
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/mcu/bms_spi_master.v
+Presto compilation completed successfully.
+dc_shell> foreach path $rtl_path_4 {
+    analyze -f verilog [glob $path/*.v]
+}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Running PRESTO HDLC
+Compiling source file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/top/bms_system_3lmu_top_enhanced.v
+Presto compilation completed successfully.
+dc_shell> elaborate ${DESIGN_NAME}
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ss0p6v125c'
+  Loading link library 'saed14lvt_ss0p6v125c'
+  Loading link library 'saed14hvt_ss0p6v125c'
+  Loading link library 'saed14hvt_pg_ss0p6v125c'
+  Loading link library 'saed14hvt_dlvl_ss0p6v125c_i0p6v'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (bms_lmu_wrapper)
+Elaborated 1 design.
+Current design is now 'bms_lmu_wrapper'.
+Information: Building the design 'bms_satellite_top'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_satellite_top line 52 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    timestamp_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bms_satellite_top line 59 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_satellite_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  fault_trip_d_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_satellite_top)
+Information: Building the design 'bms_adc_if'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v:38: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_adc_if line 18 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_adc_if.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sample_idx_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   cell_v_bus_reg    | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+| cell_v_red_bus_reg  | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   frame_done_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    bank_sel_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    adc_busy_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_adc_if)
+Information: Building the design 'bms_emi_guard'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_emi_guard line 11 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_emi_guard.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      hist_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    emi_alert_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_emi_guard)
+Information: Building the design 'bms_isolation_monitor'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_isolation_monitor line 10 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_isolation_monitor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   iso_margin_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    iso_fault_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_isolation_monitor)
+Information: Building the design 'bms_fault_processor'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_fault_processor line 116 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_processor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     uv_map_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sensor_mismatch_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  mismatch_cnt_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    fault_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   fault_code_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     ov_map_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_fault_processor)
+Information: Building the design 'bms_soc_soh_engine'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v:56: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v:78: signed to unsigned part selection occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_soc_soh_engine line 39 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_soc_soh_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   coulomb_acc_reg   | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   coulomb_acc_reg   | Flip-flop |  14   |  Y  | N  | N  | Y  | N  | N  | N  |
+|     ocv_soc_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     ocv_soc_reg     | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    relax_cnt_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   abs_pack_i_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     soh_out_reg     | Flip-flop |  16   |  Y  | N  | N  | Y  | N  | N  | N  |
+|    soh_calc_reg     | Flip-flop |  26   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    soh_calc_reg     | Flip-flop |   6   |  Y  | N  | N  | Y  | N  | N  | N  |
+|     soc_out_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     soc_out_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_soc_soh_engine)
+Information: Building the design 'bms_active_balancer'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v:64: signed to unsigned part selection occurs. (VER-318)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v:68: signed to unsigned part selection occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_active_balancer line 34 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_active_balancer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    dwell_cnt_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    phase_on_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  active_tx_sw_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  active_rx_sw_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   passive_sw_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  balance_busy_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    high_id_o_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    low_id_o_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_active_balancer)
+Information: Building the design 'bms_power_mgmt'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_power_mgmt line 10 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_power_mgmt.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   sleep_mode_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  logic_clk_en_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_power_mgmt)
+Information: Building the design 'bms_comm_hub'. (HDL-193)
+Presto compilation completed successfully. (bms_comm_hub)
+Information: Building the design 'bms_fault_logger'. (HDL-193)
+Warning:  /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v:20: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine bms_fault_logger line 14 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/lmu/bms_fault_logger.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wr_ptr_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    overflow_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_fault_logger)
+Information: Building the design 'bms_uart_tx'. (HDL-193)
+
+Statistics for case statements in always block at line 22 in file
+	'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            32            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine bms_uart_tx line 22 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     tx_wire_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     bit_idx_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      shreg_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    tx_ready_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    baud_cnt_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_uart_tx)
+Information: Building the design 'bms_spi_slave'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_spi_slave line 24 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    rx_shift_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    rx_valid_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rx_byte_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bit_cnt_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bms_spi_slave line 51 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_spi_slave.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    tx_shift_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_spi_slave)
+Information: Building the design 'bms_can_status_if'. (HDL-193)
+
+Inferred memory devices in process
+	in routine bms_can_status_if line 9 in file
+		'/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/bms_complete/rtl/common/bms_can_status_if.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   frame_data_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   frame_valid_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (bms_can_status_if)
+1
+Current design is 'bms_lmu_wrapper'.
+dc_shell> current_design ${DESIGN_NAME}
+Current design is 'bms_lmu_wrapper'.
+{bms_lmu_wrapper}
+dc_shell> 
+  Linking design 'bms_lmu_wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (14 designs)              /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/work/bms_lmu_wrapper.db, etc
+  saed14rvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db
+  saed14lvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db
+  saed14hvt_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db
+  saed14hvt_pg_ss0p6v125c (library) /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db
+  saed14hvt_dlvl_ss0p6v125c_i0p6v (library) /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db
+  dw_foundation.sldb (library) /home/cad/eda/SYNOPSYS/Design_Compiler_2022.03/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb
+
+1
+dc_shell> set upf_create_implicit_supply_sets false
+false
+dc_shell> if {$UPF_MODE != "none"} {
+  if {$UPF_FILE != ""} {
+    set load_upf_cmd "load_upf ${UPF_FILE}"
+
+    if {$UPF_MODE == "golden"} {lappend load_upf_cmd -strict_check true}
+
+    puts "RM-info: Running $load_upf_cmd"
+    eval ${load_upf_cmd}
+  }
+}
+RM-info: Running load_upf /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.upf -strict_check true
+
+
+Loading Golden UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.upf ...
+# ==============================================================================
+# GOLDEN UPF SPECIFICATION: Battery Management System (BMS)
+# Standard: IEEE 1801 (UPF 2.1)
+# Top Module: bms_system_3lmu_top_enhanced
+# Description: Defines the architectural Power Domains, Supply Networks, and
+#              the Global Power State Table (PST) for sign-off.
+# ==============================================================================
+upf_version 2.1
+set_design_top bms_system_3lmu_top_enhanced
+Warning: Can't find object 'bms_system_3lmu_top_enhanced' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'instance' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 1. POWER DOMAIN CREATION
+# ------------------------------------------------------------------------------
+# PD_CORE: Always-On Domain (Includes Top Pad Ring & MCU Macro)
+create_power_domain PD_CORE -include_scope
+# PD_LMU[0:2]: Switchable Voltage Islands for Edge Satellites
+create_power_domain PD_LMU0 -elements {u_lmu0}
+Warning: Can't find cell 'u_lmu0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU1 -elements {u_lmu1}
+Warning: Can't find cell 'u_lmu1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+create_power_domain PD_LMU2 -elements {u_lmu2}
+Warning: Can't find cell 'u_lmu2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-elements' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 2. GLOBAL SUPPLY PORTS & NETS
+# ------------------------------------------------------------------------------
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+# Global Nets in Top Domain
+create_supply_net VDD -domain PD_CORE
+create_supply_net VSS -domain PD_CORE
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+# ------------------------------------------------------------------------------
+# 3. DOMAIN SUPPLY NETS & PRIMARY ROUTING
+# ------------------------------------------------------------------------------
+# Route Global Power/Ground to LMUs (Before Switches)
+create_supply_net VDD -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU0 -reuse
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU1 -reuse
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VSS -domain PD_LMU2 -reuse
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Create the Switched Power Nets (The rails *after* the header switches)
+create_supply_net VDD_LMU0_SW -domain PD_LMU0
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU1_SW -domain PD_LMU1
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+create_supply_net VDD_LMU2_SW -domain PD_LMU2
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list '-domain' must have 1 elements. (CMD-036)
+# Assign Primary Nets to Domains
+set_domain_supply_net PD_CORE -primary_power_net VDD -primary_ground_net VSS
+set_domain_supply_net PD_LMU0 -primary_power_net VDD_LMU0_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU0' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU1 -primary_power_net VDD_LMU1_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU1' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net VSS
+Warning: Can't find power_domain 'PD_LMU2' in design 'bms_lmu_wrapper'. (UID-95)
+Error: Value for list 'domain_name' must have 1 elements. (CMD-036)
+# ------------------------------------------------------------------------------
+# 4. POWER STATE DEFINITIONS & PST (Power State Table)
+# ------------------------------------------------------------------------------
+# Define the nominal operating voltages for states
+add_port_state VDD -state {VDD_NOM 1.2}
+add_port_state VSS -state {GND 0.0}
+add_port_state header_sw_lmu0/vout -state {LMU0_ON 1.2} -state {LMU0_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu1/vout -state {LMU1_ON 1.2} -state {LMU1_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+add_port_state header_sw_lmu2/vout -state {LMU2_ON 1.2} -state {LMU2_OFF off}
+Error: Nothing matched for supply_port_name (SEL-005)
+# Create the Power State Table to dictate legal combinations
+create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+Error: Nothing matched for VDD_LMU0_SW (SEL-005)
+Error: Nothing matched for VDD_LMU1_SW (SEL-005)
+Error: Nothing matched for VDD_LMU2_SW (SEL-005)
+# Legal State 1: EVERYTHING ON (Active Drive)
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 2: ALL LMUS ASLEEP (Standby / Parked)
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# Legal State 3: LMU 0 ACTIVE, OTHERS SLEEP (Localized Wakeup)
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
+Error: Cannot find power state table bms_global_pst. (UPF-034)
+# ------------------------------------------------------------------------------
+# 5. LOAD SUPPLEMENTAL FILE (Switches, Isolation, Level Shifters)
+# ------------------------------------------------------------------------------
+load_upf constraints/upf/bms_power_supplemental.upf
+
+
+Loading Golden UPF file constraints/upf/bms_power_supplemental.upf ...
+Error: could not open script file "constraints/upf/bms_power_supplemental.upf" (CMD-015)
+Error: Errors while reading the UPF file: . Use the error_info command for more information. (UPF-044)
+
+End loading UPF file constraints/upf/bms_power_supplemental.upf
+# ==============================================================================
+# END OF GOLDEN UPF
+# ==============================================================================
+End loading UPF file /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/scripts/bms_lmu_wrapper.upf
+1
+dc_shell> set_voltage 0.6 -object_list {VDD}
+1
+set_voltage 0.0 -object_list {VSS}
+1
+dc_shell> set check_mv_design_failed false
+false
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  ## For MCMM, perform this check for each scenario.
+  set current_scenario_saved [current_scenario]
+  foreach scenario [all_active_scenarios] {
+    current_scenario ${scenario}
+    if {![check_mv_design -power_nets]} {
+      set check_mv_design_failed true
+      break
+    }
+  }
+  current_scenario ${current_scenario_saved}
+} else {
+  if {![check_mv_design -power_nets]} {
+    set check_mv_design_failed true
+  }
+}
+--------------------------------------------------------------------------------
+                      Power/Ground Pin Connection Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+--------------------------------------------------------------------------------
+                         Supply Operating Voltage Checks
+--------------------------------------------------------------------------------
+No Errors/Warnings Found.
+
+Please review report above for warnings and errors.
+dc_shell> if {$check_mv_design_failed} {
+  puts "RM-error: One or more supply nets are missing a defined voltage.  Use the set_voltage command to set the appropriate voltage upon the supply."
+  puts "This script will now exit."
+  exit 1
+}
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+  # Check the readiness of the block abstraction
+  if {(${DC_BLOCK_ABSTRACTION_DESIGNS} != "")} {
+    check_block_abstraction
+  }
+}
+dc_shell> source ${SCRIPTS}/${DESIGN_NAME}.sdc
+Current design is 'bms_lmu_wrapper'.
+Current design is 'bms_lmu_wrapper'.
+1
+dc_shell> check_design > ${OUTPUTS_DIR}/check_design.rpt
+check_timing > ${OUTPUTS_DIR}/check_timing.rpt
+Current design is 'bms_lmu_wrapper'.
+dc_shell> group_path -from [all_registers] -to [all_registers] -name reg2reg
+1
+group_path -from [all_registers] -to [all_outputs] -name reg2out
+1
+group_path -from [all_inputs] -to [all_registers] -name in2reg
+1
+group_path -from [all_inputs] -to [all_outputs] -name in2out
+1
+dc_shell> analyze_mv_feasibility > ${OUTPUTS_DIR}/analyze_mv_feasibility.rpt
+Error: unknown command 'analyze_mv_feasibility' (CMD-005)
+dc_shell> set compile_ultra_cmd "compile_ultra -gate_clock -scan -gate_clock"
+compile_ultra -gate_clock -scan -gate_clock
+dc_shell> if {[shell_is_in_topographical_mode]} {lappend compile_ultra_cmd -spg}
+puts "RM-info: Running $compile_ultra_cmd"
+RM-info: Running compile_ultra -gate_clock -scan -gate_clock
+dc_shell> eval ${compile_ultra_cmd}
+Warning: duplicate option '-gate_clock' overrides previous value. (CMD-018)
+Information: Optimization is being performed with the 'simplified_verification_mode' variable enabled.  (INFO-114)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | T-2022.03-DWBB_202203.4 |     *     |
+| Licensed DW Building Blocks        | T-2022.03-DWBB_202203.4 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -scan -gate_clock                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2080                                   |
+| Number of User Hierarchies                              | 13                                     |
+| Sequential Cell Count                                   | 986                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 1                                      |
+| Number of Path Groups                                   | 7                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 2                                      |
+| Number of Dont Touch Cells                              | 302                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | true                                   |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 190 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Warning: Found 46 level shifter library cell(s) that are not in the correct power and ground(PG) pin format. (MV-167)
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+Warning: No operating condition has been set explicitly on the current design. A default operating condition ss0p6v125c from library saed14rvt_ss0p6v125c will be assumed. (MV-028)
+Information: Related supplies are not explicitly specified on 450 port(s) and primary supplies (VDD, VSS) of top power domain will be assumed as the related supply. (UPF-405)
+Information: Total 0 repeater cells are inserted. (UPF-464)
+Information: A total of 0 isolation cells are inserted. (UPF-214)
+  Simplifying Design 'bms_lmu_wrapper'
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_byte_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_valid_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/rx_shift_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_uart/tx_ready_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/overflow_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_pwr/sleep_mode_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/low_id_o_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/high_id_o_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_bal/balance_busy_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/ov_map_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/sensor_mismatch_reg' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_fault/uv_map_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_iso/iso_margin_reg[15]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[4]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[5]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[6]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[7]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[8]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[9]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[10]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[11]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[12]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[13]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[14]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/timestamp_reg[15]' will be removed. (OPT-1207)
+Information: Performing clock-gating with positive edge logic: 'integrated' and negative edge logic: 'integrated'. (PWR-1047)
+
+  Loading target library 'saed14hvt_pg_ss0p6v125c'
+  Loading target library 'saed14hvt_dlvl_ss0p6v125c_i0p6v'
+Loaded alib file './alib-52/saed14rvt_ss0p6v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/saed14lvt_ss0p6v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/saed14hvt_ss0p6v125c.db.alib'
+Loaded alib file './alib-52/saed14hvt_pg_ss0p6v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/saed14hvt_dlvl_ss0p6v125c_i0p6v.db.alib' (placeholder)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bms_adc_if'
+ Implement Synthetic for 'bms_adc_if'.
+  Processing 'bms_active_balancer'
+ Implement Synthetic for 'bms_active_balancer'.
+Information: Added key list 'DesignWare' to design 'bms_active_balancer'. (DDB-72)
+  Processing 'bms_can_status_if'
+Information: The register 'frame_data_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[32]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[33]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[34]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[35]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[36]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[37]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[38]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[39]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[42]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[43]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[44]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[45]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[46]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[47]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[48]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[49]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[50]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[51]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[52]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[53]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[54]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[56]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[57]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[58]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[59]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[60]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'frame_data_reg[63]' is a constant and will be removed. (OPT-1206)
+  Processing 'bms_fault_processor'
+Information: Added key list 'DesignWare' to design 'bms_fault_processor'. (DDB-72)
+Information: The register 'fault_code_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'fault_code_reg[7]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'bms_fault_processor'.
+  Processing 'bms_lmu_wrapper'
+  Processing 'bms_spi_slave'
+Information: Added key list 'DesignWare' to design 'bms_spi_slave'. (DDB-72)
+Warning: The register alt2706/*cell*2258 is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register 'tx_shift_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register tx_shift_reg[0] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[3] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[4] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[5] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[6] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register tx_shift_reg[7] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Error: The register 'tx_shift_reg[0]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[3]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[4]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[5]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[6]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'tx_shift_reg[7]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+  Processing 'bms_fault_logger'
+Information: Added key list 'DesignWare' to design 'bms_fault_logger'. (DDB-72)
+  Processing 'bms_isolation_monitor'
+ Implement Synthetic for 'bms_isolation_monitor'.
+Information: Added key list 'DesignWare' to design 'bms_isolation_monitor'. (DDB-72)
+  Processing 'bms_emi_guard'
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_0'
+  Mapping integrated clock gating circuitry
+  Processing 'bms_soc_soh_engine'
+ Implement Synthetic for 'bms_soc_soh_engine'.
+  Processing 'bms_soc_soh_engine_DW_div_uns_J4_0'
+  Processing 'bms_soc_soh_engine_DW_div_uns_J4_1'
+Information: Added key list 'DesignWare' to design 'bms_soc_soh_engine'. (DDB-72)
+  Processing 'bms_satellite_top'
+  Processing 'bms_uart_tx'
+Information: Added key list 'DesignWare' to design 'bms_uart_tx'. (DDB-72)
+ Implement Synthetic for 'bms_uart_tx'.
+  Processing 'bms_comm_hub'
+  Processing 'bms_power_mgmt'
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_fault_logger'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_can_status_if'
+  Mapping integrated clock gating circuitry
+  Processing 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0'
+  Mapping integrated clock gating circuitry
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'from u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[8]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[9]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[10]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[11]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[12]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[13]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[14]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[15]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[16]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[17]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[18]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[19]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[20]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[21]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[22]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[23]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[24]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[25]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[26]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[27]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[28]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[29]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[30]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[31]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[32]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[33]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[34]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[35]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[36]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[37]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[38]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[39]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[40]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[41]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[42]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[43]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[44]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[45]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[46]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[47]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[48]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[49]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[50]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[51]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[52]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[53]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[54]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[55]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[56]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[57]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[58]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[59]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[60]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[61]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[62]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_comm/u_can/frame_data_reg[63]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[3]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[4]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[5]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[6]' which no longer exists.  (TIM-179)
+Warning: 'group_path' constraint made a reference 'to u_lmu/u_fault/fault_code_reg[7]' which no longer exists.  (TIM-179)
+
+  Updating timing information
+Information: The register 'u_lmu/u_log/wr_ptr_reg[3]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_log/wr_ptr_reg[0]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[2]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[1]' will be removed. (OPT-1207)
+Information: The register 'u_lmu/u_comm/u_spi/bit_cnt_reg[0]' will be removed. (OPT-1207)
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDRVT14_TIE1_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_PV1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1ECO_1' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_PV1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1ECO_1' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE1_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_V1_2' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDLVT14_TIE0_4' in the library 'saed14lvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_PV1ECO_1' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_PV1ECO_1' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1ECO_1' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1_2' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_4' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_V1_2' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_4' in the library 'saed14hvt_ss0p6v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design bms_lmu_wrapper, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_comm_hub, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_logger, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_adc_if_DW01_inc_J1_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_37, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_39, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_42, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_49, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_54, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_57, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_59, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_62, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_64, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_67, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_69, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_72, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_74, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_77, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW01_sub_J3_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_fault_processor_DW_cmp_J3_79, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DP_OP_29J4_122_4080_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_div_uns_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_mult_uns_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_add_J4_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW_div_uns_J4_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_inc_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_soc_soh_engine_DW01_add_J4_38, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW01_inc_J2_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW01_sub_J2_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_33, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_active_balancer_DW_cmp_J2_34, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design bms_uart_tx_DW01_inc_J4_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_can_status_if, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_uart_tx_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_31, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_adc_if_32, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_1, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design bms_active_balancer. (PWR-730)
+Information: Performing clock-gating on design bms_uart_tx. (PWR-730)
+Information: Performing clock-gating on design bms_fault_processor. (PWR-730)
+Information: Performing clock-gating on design bms_spi_slave. (PWR-730)
+Information: Performing clock-gating on design bms_emi_guard. (PWR-730)
+Information: Performing clock-gating on design bms_adc_if. (PWR-730)
+Information: Performing clock-gating on design bms_soc_soh_engine. (PWR-730)
+Information: Performing clock-gating on design bms_satellite_top. (PWR-730)
+Information: Performing clock-gating on design bms_power_mgmt. (PWR-730)
+Information: Performing clock-gating on design bms_isolation_monitor. (PWR-730)
+Information: Performing clock-gating on design bms_can_status_if. (PWR-730)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+Information: Total 0 level shifters are removed. (MV-238)
+Information: Total 0 level shifters are inserted. (MV-239)
+Information: Added key list 'DesignWare' to design 'bms_satellite_top'. (DDB-72)
+Information: Removing unused design 'bms_fault_logger'. (OPT-1055)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[0]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' may not be optimally implemented because of a lack of compatible components with correct clock/enable phase. (OPT-1205)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[0] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[1] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[2] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[3] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[4] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[5] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[6] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Warning: The register u_lmu/u_comm/u_spi/tx_shift_reg[7] is inferred with async set/reset. This register is not mapped because of a lack of compatible library cells. Mapping will introduce priority logic that may result in race conditions. (OPT-1233)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[0]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[1]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[2]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[3]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[4]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[5]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[6]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Error: The register 'u_lmu/u_comm/u_spi/tx_shift_reg[7]' is not mapped  because ofa lack of compatible library cells with correct clock/enable phase. (OPT-1217)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_soc_soh/soh_calc_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_lmu/u_fault/mismatch_cnt_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[19]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[18]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[22]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[23]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[24]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[25]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[26]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[27]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[28]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[29]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[30]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[31]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[21]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[2]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[3]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[4]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[5]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[6]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[7]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[8]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[9]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[11]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[12]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[13]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/ocv_soc_reg[14]' is removed because it is merged to 'u_lmu/u_soc_soh/ocv_soc_reg[10]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[1]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[2]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[3]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[4]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[5]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[6]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[7]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[8]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[9]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[10]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[11]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[12]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[13]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[14]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_bal/passive_sw_reg[15]' is removed because it is merged to 'u_lmu/u_bal/passive_sw_reg[0]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'bms_adc_if'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:11    4166.0      0.00       0.0   82330.2                           8371402.0000
+    0:01:11    4164.3      0.00       0.0   82298.3                           8368855.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[18]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[17]'. (OPT-1215)
+Information: In design 'bms_lmu_wrapper', the register 'u_lmu/u_soc_soh/soh_calc_reg[20]' is removed because it is merged to 'u_lmu/u_soc_soh/soh_calc_reg[17]'. (OPT-1215)
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:15    3786.3      0.00       0.0   53229.6                           6095455.5000
+    0:01:15    3786.3      0.00       0.0   53229.6                           6095455.5000
+    0:01:15    3786.3      0.00       0.0   53229.6                           6095455.5000
+    0:01:15    3786.3      0.00       0.0   53229.6                           6095455.5000
+    0:01:16    3753.4      0.00       0.0   52831.4                           6055308.0000
+    0:01:17    3753.2      0.00       0.0   52827.4                           6054982.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+Information: Total 0 level shifters are removed incrementally. (MV-238)
+Information: Total 0 level shifters are inserted incrementally. (MV-239)
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:01:39    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:39    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:39    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:39    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:49    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:49    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:49    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:01:49    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:02:00    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:02:00    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:02:00    3750.0      0.00       0.0   52477.5                           6001822.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:03    3747.3      0.00       0.0   49567.0                           5386932.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:02:29    3963.1   5206.27   83256.7  566096.6 u_lmu/u_adc/cell_v_bus[203] 6019990.0000
+    0:02:30    3956.9      0.00       0.0   46747.1 u_lmu/u_bal/active_tx_sw[2] 6032361.5000
+    0:02:32    3960.4      0.00       0.0   46726.5                           6072314.5000
+    0:02:32    3960.4      0.00       0.0   46726.5                           6072314.5000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:32    3960.4      0.00       0.0   46726.5                           6072314.5000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:02:40    3862.6      0.00       0.0   46101.2                           5813421.0000
+    0:02:40    3862.6      0.00       0.0   46101.2                           5813421.0000
+    0:02:40    3862.6      0.00       0.0   46101.2                           5813421.0000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+    0:02:42    3862.5      0.00       0.0   46065.2                           5513797.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:43    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:45    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:45    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:45    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:46    3861.7      0.00       0.0   46065.2                           5555728.0000
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:02:55    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:55    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:55    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:02:55    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:03:05    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:03:05    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:03:05    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:03:05    3861.7      0.00       0.0   46065.2                           5555728.0000
+    0:03:18    3898.4      0.00       0.0   46268.3 u_lmu/u_bal/lt_x_32/GE_LT_GT_LE 5662112.0000
+    0:03:19    3918.3      0.00       0.0   46381.0 u_lmu/u_bal/net40456      5716959.0000
+    0:03:21    3912.0      0.00       0.0   46284.8 u_lmu/u_bal/passive_sw[0] 5714896.5000
+    0:03:22    3911.7      0.00       0.0   46281.2                           5713944.5000
+    0:03:22    3911.7      0.00       0.0   46281.2                           5713944.5000
+    0:03:22    3911.7      0.00       0.0   46281.2                           5713944.5000
+    0:03:22    3911.7      0.00       0.0   46281.2                           5713944.5000
+    0:03:22    3913.3      0.00       0.0   46281.2                           5714130.5000
+    0:03:22    3913.3      0.00       0.0   46281.2                           5714130.5000
+    0:03:23    3907.8      0.00       0.0   46317.2                           5715455.5000
+Loading db file '/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_pg_ss0p6v125c.db'
+Loading db file '/home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_dlvl_ss0p6v125c_i0p6v.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'bms_lmu_wrapper' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_lmu/u_adc/clk_gate_sample_idx_reg/TE': 1073 load(s), 1 driver(s)
+Warning: Operating voltages (max=0.60, min=0.60) mismatch the power states of supply net VDD.  (MV-523)
+  Loading target library 'saed14hvt_pg_ss0p6v125c'
+  Loading target library 'saed14hvt_dlvl_ss0p6v125c_i0p6v'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Current design is 'bms_lmu_wrapper'.
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "bottom"} {
+  # If this will be a sub-block in a hierarchical design, uniquify with block unique names
+  # to avoid name collisions when integrating the design at the top level
+  set_app_var uniquify_naming_style "${DESIGN_NAME}_%s_%d"
+  uniquify -force
+}
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW01_inc_J2_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_5'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_6'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_8'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_10'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_11'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_32'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_13'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_34'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_37'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_15'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_39'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_16'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_42'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_44'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_18'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_47'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_49'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_20'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_52'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_21'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_54'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_57'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_23'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_59'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_62'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_25'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_64'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_26'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_67'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_69'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_28'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_72'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_74'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_30'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_77'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW01_sub_J3_31'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor_DW_cmp_J3_79'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_comm_hub'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_can_status_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DP_OP_30J4_123_4080_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DP_OP_29J4_122_4080_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW_div_uns_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW01_inc_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW01_add_J4_38'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_uart_tx_DW01_inc_J4_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_uart_tx_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_5'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_6'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_7'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_8'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_9'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_10'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_11'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_12'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_13'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_14'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_15'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_16'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_17'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_18'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_19'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_20'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_21'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_22'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_23'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_24'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_25'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_26'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_27'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_28'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_29'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_30'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_31'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_adc_if_32'. (OPT-1056)
+Information: Uniquified 1 instances of design 'SNPS_CLOCK_GATE_HIGH_bms_soc_soh_engine_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_uart_tx'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_fault_processor'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_spi_slave'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_emi_guard'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_adc_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_satellite_top'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_power_mgmt'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_isolation_monitor'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_can_status_if'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_4'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_5'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J20_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J20_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J21_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J21_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_soc_soh_engine_DW_mult_uns_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW01_sub_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J19_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_2'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J20_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J16_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J18_1'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J21_0'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J15_3'. (OPT-1056)
+Information: Uniquified 1 instances of design 'bms_active_balancer_DW_cmp_J17_2'. (OPT-1056)
+1
+dc_shell> Warning: In the design bms_lmu_wrapper, net 'net10063' is connecting multiple ports. (UCN-1)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0, net 'a[4]' is connecting multiple ports. (UCN-1)
+1
+Current design is 'bms_lmu_wrapper'.
+dc_shell> dc_shell> change_names -rules verilog -hierarchy
+Warning: In the design bms_lmu_wrapper, net 'can_frame[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_active_balancer_0, net 'passive_sw[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design bms_lmu_wrapper_bms_soc_soh_engine_DW_mult_uns_0_0, net 'a[4]' is connecting multiple ports. (UCN-1)
+1
+dc_shell> write_parasitics -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.spef
+Information: Writing parasitics to file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs/bms_lmu_wrapper.mapped.spef'. (WP-3)
+1
+dc_shell> write_link_library -out ${OUTPUTS_DIR}/${DESIGN_NAME}.link_library.tcl
+1
+dc_shell> report_timing -group reg2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2reg.rpt
+report_timing -group in2reg > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2reg.rpt
+report_timing -group in2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.in2out.rpt
+report_timing -group reg2out > ${OUTPUTS_DIR}/${DESIGN_NAME}.reg2out.rpt
+report_area > ${OUTPUTS_DIR}/area.rpt
+report_qor > ${OUTPUTS_DIR}/qor.rpt
+change_names -rules verilog
+Warning: In the design bms_lmu_wrapper, net 'can_frame[8]' is connecting multiple ports. (UCN-1)
+1
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  # For MCMM, some MV reports could have different voltages for different scenarios
+  set current_scenario_saved [current_scenario]
+  foreach scenario [all_active_scenarios] {
+    current_scenario ${scenario}
+
+    # Report all power domains in the design
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.power_domain.rpt ] \
+      {report_power_domain -hierarchy}
+
+    # Report the top level supply nets
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.supply_net.rpt ] \
+      {report_supply_net}
+
+    # Report the level shifters in the design
+    if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt ] \
+        {report_level_shifter -domain [get_power_domains * -hierarchical]}
+    } else {
+      redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.${scenario}.level_shifter.rpt] \
+        {report_level_shifter}
+    }
+  }
+  current_scenario ${current_scenario_saved}
+} else {
+  # Report all power domains in the design
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.power_domain.rpt \
+    {report_power_domain -hierarchy}
+
+  # Report the top level supply nets
+  redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.supply_net.rpt \
+    {report_supply_net}
+
+  # Report the level shifters in the design
+  if {[sizeof_collection [get_power_domains * -hierarchical -quiet]] > 0} {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter -domain [get_power_domains * -hierarchical]}
+  } else {
+    redirect -file ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.level_shifter.rpt \
+      {report_level_shifter}
+  }
+}
+dc_shell> if {$DESIGN_STYLE == "hier" && $PHYSICAL_HIERARCHY_LEVEL == "top"} {
+
+  #################################################################################
+  # Write out Top-Level Design Without Hierarchical Blocks
+  #
+  # Note: The write command will automatically skip writing .ddc physical hierarchical
+  #       blocks in Design Compiler topographical mode and Design Compiler block
+  #       abstractions blocks. DC NXT WLM mode still need to be removed before writing out
+  #       the top-level design. In the same way for the multivoltage flow, save_upf will
+  #       skip hierarchical blocks when saving the power intent data.
+  #
+  # When reading the design into other tools, read in all of the mapped hierarchical
+  # blocks and the mapped top-level design.
+  #
+  # For IC Compiler II: Replace the Design Compiler block abstractions with the complete
+  #                     block mapped netlist.
+  # For Formality: Verify each block and top separately.
+  #
+  #################################################################################
+
+  puts "RM-info: Writing out top level design without hierarchical blocks"
+
+  # Remove the hierarchical designs before writing out the top-level mapped verilog design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  write_file -format verilog  -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+
+  # Remove the hierarchical designs before writing out the top-level mapped ddc design, in WLM mode.
+  if {![shell_is_in_topographical_mode]} {
+    if {[get_designs -quiet ${DDC_HIER_DESIGNS}] != "" } {
+      remove_design -hierarchy [get_designs -quiet ${DDC_HIER_DESIGNS}]
+    }
+  }
+
+  # Write out ddc mapped top-level design
+  write_file -format ddc -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+} else {
+
+  if {$DESIGN_STYLE == "flat"} {
+    puts "RM-info: Writing out flat design"
+  } else {
+    puts "RM-info: Writing out bottom-level design"
+    create_block_abstraction
+  }
+
+  if {$UPF_MODE == "golden"} {
+    write_file -format verilog -hierarchy -pg -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.pg.v
+  }
+  write_file -format verilog -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.v
+  write_file -format ddc     -hierarchy -output ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.ddc
+
+}
+RM-info: Writing out bottom-level design
+Error: Design 'bms_lmu_wrapper' contains unmapped logic, which is not supported by the create_block_abstraction command. (ABS-263)
+Warning: Some cells to be written lack PG pin information (MV-512)
+Warning: Logical lib_cell **SEQGEN** (linked to cell u_lmu/u_comm/u_spi/tx_shift_reg_0_) does not have power/ground pin definition. (MV-512)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs/bms_lmu_wrapper.mapped.pg.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing verilog file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs/bms_lmu_wrapper.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+Writing ddc file '/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs/bms_lmu_wrapper.mapped.ddc'.
+Warning: Could not find Golden UPF file 'constraints/upf/bms_power_supplemental.upf' in the search_path. (UPF-589)
+1
+dc_shell> if {$UPF_MODE != "none"} {
+  set save_upf_cmd "save_upf"
+  if {$UPF_MODE == "golden"} {
+    lappend save_upf_cmd -include_supply_exceptions
+    lappend save_upf_cmd -supplemental ${OUTPUTS_DIR}/${DESIGN_NAME}.supplement.upf
+  } elseif {$UPF_MODE == "prime"} {
+    lappend save_upf_cmd ${OUTPUTS_DIR}/${DESIGN_NAME}.mapped.upf
+  }
+  puts "RM-info: Running $save_upf_cmd"
+  eval ${save_upf_cmd}
+}
+RM-info: Running save_upf -include_supply_exceptions -supplemental /home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/lmu/outputs/bms_lmu_wrapper.supplement.upf
+1
+dc_shell> set_svf -off
+1
+dc_shell> if {[shell_is_in_topographical_mode]} {
+  save_lib
+}
+dc_shell> puts "SYNTHESIS COMPLETED :)"SYNTHESIS COMPLETED :)
+dc_shell> 
+Memory usage for this session 1712 Mbytes.
+Memory usage for this session including child processes 2193 Mbytes.
+CPU usage for this session 343 seconds ( 0.10 hours ).
+Elapsed time for this session 1072 seconds ( 0.30 hours ).
+
+Thank you...

@@ -8,7 +8,7 @@ Report : timing
         -max_paths 1
 Design : bms_master_control_unit_enhanced
 Version: T-2022.03-SP4
-Date   : Sat Jul  4 19:53:50 2026
+Date   : Sat Jul 18 22:03:55 2026
 ****************************************
 Wire Load Model Mode: top
 

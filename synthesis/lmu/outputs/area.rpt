@@ -3,32 +3,30 @@
 Report : area
 Design : bms_lmu_wrapper
 Version: T-2022.03-SP4
-Date   : Thu Jul  9 19:23:28 2026
+Date   : Fri Jul 17 16:35:54 2026
 ****************************************
 
 Library(s) Used:
 
     saed14lvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db)
-    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
     saed14hvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_hvt/db_ccs/saed14hvt_ss0p6v125c.db)
+    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
 
-Number of ports:                         7516
-Number of nets:                         17366
-Number of cells:                        10461
-Number of combinational cells:           9487
-Number of sequential cells:               820
+Number of ports:                         7512
+Number of nets:                         17619
+Number of cells:                        10679
+Number of combinational cells:           9712
+Number of sequential cells:               814
 Number of macros/black boxes:               0
-Number of buf/inv:                       2589
+Number of buf/inv:                       2779
 Number of references:                       2
 
-Combinational area:               2889.285570
-Buf/Inv area:                      492.307190
-Noncombinational area:            1027.149629
+Combinational area:               3003.393570
+Buf/Inv area:                      613.341589
+Noncombinational area:            1033.676429
 Macro/Black Box area:                0.000000
-Net Interconnect area:      undefined  (No wire load specified)
+Net Interconnect area:            5587.816082
 
-Total cell area:                  3916.435199
-Total area:                 undefined
-
-Information: This design contains unmapped logic. (RPT-7)
+Total cell area:                  4037.069999
+Total area:                       9624.886081
 1

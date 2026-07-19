@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : bms_lmu_wrapper
 Version: T-2022.03-SP4
-Date   : Thu Jul  9 19:23:28 2026
+Date   : Fri Jul 17 16:35:54 2026
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -18,6 +18,10 @@ Wire Load Model Mode: top
             (rising edge-triggered flip-flop clocked by sys_clk)
   Path Group: in2reg
   Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bms_lmu_wrapper    8000                  saed14rvt_ss0p6v125c
 
   Point                                                   Incr       Path      Voltage
   ------------------------------------------------------------------------------------
@@ -31,103 +35,87 @@ Wire Load Model Mode: top
                                                           0.00       3.00 f    
   u_lmu/u_soc_soh/add_x_1/B[0] (bms_lmu_wrapper_bms_soc_soh_engine_DW01_add_J4_38_0)
                                                           0.00       3.00 f    
-  u_lmu/u_soc_soh/add_x_1/U176/CO (SAEDHVT14_ADDH_0P5)
-                                                          0.02       3.02 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U175/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.07 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U174/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.13 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U173/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.19 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U172/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.25 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U171/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.32 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U170/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.38 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U169/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.44 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U168/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.50 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U167/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.56 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U166/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.62 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U165/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.68 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U164/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.74 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U163/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       3.80 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U162/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       3.86 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U156/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       3.94 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U130/X (SAEDHVT14_INV_0P5)      0.02       3.95 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U131/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       3.96 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U140/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       3.97 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U141/X (SAEDHVT14_INV_0P5)      0.01       3.98 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U134/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       3.99 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U127/X (SAEDHVT14_INV_0P5)      0.01       4.00 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U158/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.07       4.07 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U126/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.15 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U102/X (SAEDHVT14_INV_0P5)      0.02       4.16 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U103/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.18 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U112/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.19 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U113/X (SAEDHVT14_INV_0P5)      0.01       4.20 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U106/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.21 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U99/X (SAEDHVT14_INV_0P5)       0.01       4.22 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U161/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       4.27 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U98/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.35 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U74/X (SAEDHVT14_INV_0P5)       0.02       4.37 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U75/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.38 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U84/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.39 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U85/X (SAEDHVT14_INV_0P5)       0.01       4.40 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U78/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.41 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U71/X (SAEDHVT14_INV_0P5)       0.01       4.42 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U160/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       4.47 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U155/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.55 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U154/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.63 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U159/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.06       4.69 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U70/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.77 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U46/X (SAEDHVT14_INV_0P5)       0.02       4.78 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U47/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.80 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U56/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.80 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U57/X (SAEDHVT14_INV_0P5)       0.01       4.81 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U50/X (SAEDHVT14_NR2_MM_0P5)
-                                                          0.01       4.83 r    0.60
-  u_lmu/u_soc_soh/add_x_1/U43/X (SAEDHVT14_INV_0P5)       0.01       4.84 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U177/CO (SAEDHVT14_ADDF_V1_0P5)
-                                                          0.05       4.89 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U157/CO (SAEDHVT14_ADDF_V2_0P5)
-                                                          0.08       4.97 f    0.60
-  u_lmu/u_soc_soh/add_x_1/U179/X (SAEDHVT14_EO2_V1_0P75)
-                                                          0.01       4.98 r    0.60
+  u_lmu/u_soc_soh/add_x_1/U142/CO (SAEDHVT14_ADDH_0P5)
+                                                          0.03       3.03 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U141/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.10 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U140/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.17 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U139/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.25 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U138/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.32 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U137/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.40 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U136/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.47 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U135/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.55 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U134/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.62 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U133/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.70 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U132/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.77 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U131/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.85 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U130/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       3.92 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U129/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       4.00 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U128/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       4.06 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U124/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.09       4.15 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U112/X (SAEDHVT14_INV_0P5)      0.02       4.17 r    0.60
+  u_lmu/u_soc_soh/add_x_1/U113/X (SAEDHVT14_NR2_MM_0P5)
+                                                          0.02       4.19 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U65/X (SAEDHVT14_OR2_0P5)       0.03       4.21 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U63/X (SAEDHVT14_OR2_0P5)       0.03       4.25 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U125/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.08       4.32 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U109/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.08       4.40 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U100/X (SAEDHVT14_INV_0P5)      0.02       4.42 r    0.60
+  u_lmu/u_soc_soh/add_x_1/U101/X (SAEDHVT14_NR2_MM_0P5)
+                                                          0.02       4.44 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U58/X (SAEDHVT14_OR2_0P5)       0.03       4.47 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U56/X (SAEDHVT14_OR2_0P5)       0.04       4.50 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U127/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.06       4.57 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U97/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.09       4.65 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U88/X (SAEDHVT14_INV_0P5)       0.02       4.67 r    0.60
+  u_lmu/u_soc_soh/add_x_1/U89/X (SAEDHVT14_NR2_MM_0P5)
+                                                          0.02       4.69 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U51/X (SAEDHVT14_OR2_0P5)       0.03       4.72 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U49/X (SAEDHVT14_OR2_0P5)       0.03       4.75 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U122/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.08       4.83 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U121/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.08       4.91 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U126/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.08       4.99 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U85/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.09       5.08 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U76/X (SAEDHVT14_INV_0P5)       0.02       5.10 r    0.60
+  u_lmu/u_soc_soh/add_x_1/U77/X (SAEDHVT14_NR2_MM_0P5)
+                                                          0.02       5.11 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U44/X (SAEDHVT14_OR2_0P5)       0.03       5.14 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U42/X (SAEDHVT14_OR2_0P5)       0.04       5.18 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U143/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       5.25 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U144/CO (SAEDHVT14_ADDF_V1_0P5)
+                                                          0.07       5.31 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U123/CO (SAEDHVT14_ADDF_V2_0P5)
+                                                          0.08       5.40 f    0.60
+  u_lmu/u_soc_soh/add_x_1/U146/X (SAEDHVT14_EO2_V1_0P75)
+                                                          0.02       5.42 r    0.60
   u_lmu/u_soc_soh/add_x_1/SUM[31] (bms_lmu_wrapper_bms_soc_soh_engine_DW01_add_J4_38_0)
-                                                          0.00       4.98 r    
+                                                          0.00       5.42 r    
   u_lmu/u_soc_soh/coulomb_acc_reg_31_/D (SAEDHVT14_FSDPRBQ_V2LP_1)
-                                                          0.00       4.98 r    0.60
-  data arrival time                                                  4.98      
+                                                          0.00       5.43 r    0.60
+  data arrival time                                                  5.43      
 
   clock sys_clk (rise edge)                              10.00      10.00      
   clock network delay (ideal)                             0.00      10.00      
@@ -138,9 +126,9 @@ Wire Load Model Mode: top
   data required time                                                 9.82      
   ------------------------------------------------------------------------------------
   data required time                                                 9.82      
-  data arrival time                                                 -4.98      
+  data arrival time                                                 -5.43      
   ------------------------------------------------------------------------------------
-  slack (MET)                                                        4.84      
+  slack (MET)                                                        4.39      
 
 
 1
