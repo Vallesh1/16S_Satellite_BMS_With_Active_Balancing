@@ -17,10 +17,10 @@ read_cell_library adk.tcelllib
 Read the synthesized design and technology libraries
 
 read_verilog bms_lmu_wrapper.mapped.v
-read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/.v
-read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/.v
-read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/.v
-read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/.v
+read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/*.v
+read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/*.v
+read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/*.v
+read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/*.v
 
 Elaborate the design top
 

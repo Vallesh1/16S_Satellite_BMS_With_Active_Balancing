@@ -1,0 +1,32 @@
+/home/cad/eda/Mentor_Graphics/tessent_2022.2/bin/tessent -shell -logfile ./logs/lmu_wrap_tr5.log -replace
+//  Tessent Shell  2022.2    Fri May 27 22:24:01 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Mon Jul 20 21:01:26 IST 2026.
+//  64 bit version
+//  Host: mavenserver-RH3 (255072 MB RAM, 122071 MB Swap)
+//
+//  command: set_context dft -scan
+//  command: read_cell_library adk.tcelllib 
+//  Reading DFT Library file adk.tcelllib
+//  Finished reading file adk.tcelllib
+//  command: read_verilog bms_lmu_wrapper.mapped.v 
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/.v
+//  Error: File '/home1/14_nmts/14_nmts/stdcell_hvt/verilog/.v' not found.
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/.v
+//  Error: File '/home1/14_nmts/14_nmts/stdcell_lvt/verilog/.v' not found.
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/.v
+//  Error: File '/home1/14_nmts/14_nmts/stdcell_rvt/verilog/.v' not found.
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/.v
+//  Error: File '/home1/14_nmts/14_nmts/stdcell_slvt/verilog/.v' not found.
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_hvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_lvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_rvt/verilog/*.v
+//  command: read_verilog /home1/14_nmts/14_nmts/stdcell_slvt/verilog/*.v
+//  command: exit 
