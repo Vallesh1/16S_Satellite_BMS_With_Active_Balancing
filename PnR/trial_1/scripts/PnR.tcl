@@ -1,4 +1,4 @@
-set_host_options -max_cores 2
+set_host_options -max_cores 4
 
 ################################################################
 ##Global Variables##
