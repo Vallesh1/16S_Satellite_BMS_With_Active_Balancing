@@ -1,0 +1,173 @@
+==============================================================================
+
+SUPPLEMENTAL UPF SPECIFICATION: Low Power Cell Implementation Rules
+
+Standard: IEEE 1801 (UPF 2.1)
+
+Description: Defines MTCMOS Header Power Switches, Clamp Isolation Rules,
+
+and Level Shifter strategies for BMS switchable islands.
+
+==============================================================================
+
+------------------------------------------------------------------------------
+
+1. PHYSICAL MTCMOS POWER SWITCHES (Header Switches)
+
+------------------------------------------------------------------------------
+
+Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU0
+
+create_power_switch header_sw_lmu0 
+
+-domain PD_LMU0 
+
+-input_supply_port {vin VDD} 
+
+-output_supply_port {vout VDD_LMU0_SW} 
+
+-control_port {sleep_en u_lmu0/u_pwr/sleep_mode} 
+
+-on_state {ON_STATE vin {!sleep_en}} 
+
+-off_state {OFF_STATE {sleep_en}}
+
+Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU1
+
+create_power_switch header_sw_lmu1 
+
+-domain PD_LMU1 
+
+-input_supply_port {vin VDD} 
+
+-output_supply_port {vout VDD_LMU1_SW} 
+
+-control_port {sleep_en u_lmu1/u_pwr/sleep_mode} 
+
+-on_state {ON_STATE vin {!sleep_en}} 
+
+-off_state {OFF_STATE {sleep_en}}
+
+Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU2
+
+create_power_switch header_sw_lmu2 
+
+-domain PD_LMU2 
+
+-input_supply_port {vin VDD} 
+
+-output_supply_port {vout VDD_LMU2_SW} 
+
+-control_port {sleep_en u_lmu2/u_pwr/sleep_mode} 
+
+-on_state {ON_STATE vin {!sleep_en}} 
+
+-off_state {OFF_STATE {sleep_en}}
+
+------------------------------------------------------------------------------
+
+2. ISOLATION CELL STRATEGIES (Clamp Outputs to '0')
+
+------------------------------------------------------------------------------
+
+Apply output clamp isolation rules to LMU0 to prevent floating inputs in PD_CORE
+
+set_isolation iso_lmu0 
+
+-domain PD_LMU0 
+
+-isolation_power_net VDD 
+
+-isolation_ground_net VSS 
+
+-clamp_value 0 
+
+-applies_to outputs
+
+Configure control signal and activation sense for LMU0 isolation
+
+set_isolation_control iso_lmu0 
+
+-domain PD_LMU0 
+
+-isolation_signal u_lmu0/u_pwr/sleep_mode 
+
+-isolation_sense high 
+
+-location parent
+
+Apply output clamp isolation rules to LMU1
+
+set_isolation iso_lmu1 
+
+-domain PD_LMU1 
+
+-isolation_power_net VDD 
+
+-isolation_ground_net VSS 
+
+-clamp_value 0 
+
+-applies_to outputs
+
+Configure control signal and activation sense for LMU1 isolation
+
+set_isolation_control iso_lmu1 
+
+-domain PD_LMU1 
+
+-isolation_signal u_lmu1/u_pwr/sleep_mode 
+
+-isolation_sense high 
+
+-location parent
+
+Apply output clamp isolation rules to LMU2
+
+set_isolation iso_lmu2 
+
+-domain PD_LMU2 
+
+-isolation_power_net VDD 
+
+-isolation_ground_net VSS 
+
+-clamp_value 0 
+
+-applies_to outputs
+
+Configure control signal and activation sense for LMU2 isolation
+
+set_isolation_control iso_lmu2 
+
+-domain PD_LMU2 
+
+-isolation_signal u_lmu2/u_pwr/sleep_mode 
+
+-isolation_sense high 
+
+-location parent
+
+------------------------------------------------------------------------------
+
+3. LEVEL SHIFTER STRATEGIES
+
+------------------------------------------------------------------------------
+
+Enforce level shifter placement strategy for signals crossing into always-on PD_CORE
+
+set_level_shifter ls_lmu_to_core 
+
+-domain PD_CORE 
+
+-applies_to inputs 
+
+-rule both 
+
+-location self
+
+==============================================================================
+
+END OF SUPPLEMENTAL UPF
+
+==============================================================================

@@ -1,0 +1,127 @@
+==============================================================================
+
+GOLDEN UPF SPECIFICATION: Battery Management System (BMS)
+
+Standard: IEEE 1801 (UPF 2.1)
+
+Target Module: bms_system_3lmu_top_enhanced
+
+Description: Defines Architectural Power Domains, Supply Networks,
+
+and Global Power State Table (PST) for 14nm sign-off.
+
+==============================================================================
+
+upf_version 2.1
+set_design_top bms_system_3lmu_top_enhanced
+
+------------------------------------------------------------------------------
+
+1. POWER DOMAIN CREATION
+
+------------------------------------------------------------------------------
+
+Create always-on core domain containing MCU, Supervisor, SPI Master, and IO ring
+
+create_power_domain PD_CORE -include_scope
+
+Create switchable power domains for satellite monitoring nodes
+
+create_power_domain PD_LMU0 -elements {u_lmu0}
+create_power_domain PD_LMU1 -elements {u_lmu1}
+create_power_domain PD_LMU2 -elements {u_lmu2}
+
+------------------------------------------------------------------------------
+
+2. GLOBAL SUPPLY PORTS & NETS DEFINITION
+
+------------------------------------------------------------------------------
+
+Declare global primary power and ground ports
+
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+
+Create primary power and ground nets within always-on domain
+
+create_supply_net VDD -domain PD_CORE
+create_supply_net VSS -domain PD_CORE
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+
+------------------------------------------------------------------------------
+
+3. DOMAIN SUPPLY NETS & PRIMARY RAIL ASSIGNMENTS
+
+------------------------------------------------------------------------------
+
+Route global power and ground nets to satellite LMU domains for pre-switch inputs
+
+create_supply_net VDD -domain PD_LMU0 -reuse
+create_supply_net VSS -domain PD_LMU0 -reuse
+create_supply_net VDD -domain PD_LMU1 -reuse
+create_supply_net VSS -domain PD_LMU1 -reuse
+create_supply_net VDD -domain PD_LMU2 -reuse
+create_supply_net VSS -domain PD_LMU2 -reuse
+
+Declare switched power nets downstream of MTCMOS header power switches
+
+create_supply_net VDD_LMU0_SW -domain PD_LMU0
+create_supply_net VDD_LMU1_SW -domain PD_LMU1
+create_supply_net VDD_LMU2_SW -domain PD_LMU2
+
+Assign primary power and ground supply nets to each power domain
+
+set_domain_supply_net PD_CORE -primary_power_net VDD -primary_ground_net VSS
+set_domain_supply_net PD_LMU0 -primary_power_net VDD_LMU0_SW -primary_ground_net VSS
+set_domain_supply_net PD_LMU1 -primary_power_net VDD_LMU1_SW -primary_ground_net VSS
+set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net VSS
+
+------------------------------------------------------------------------------
+
+4. POWER STATE DEFINITIONS & POWER STATE TABLE (PST)
+
+------------------------------------------------------------------------------
+
+Define legal operating voltage states on global ports for 14nm library
+
+add_port_state VDD -state {VDD_NOM 0.6}
+add_port_state VSS -state {GND 0.0}
+
+Define port states directly on switched power rails
+
+add_port_state VDD_LMU0_SW -state {LMU0_ON 0.6} -state {LMU0_OFF off}
+add_port_state VDD_LMU1_SW -state {LMU1_ON 0.6} -state {LMU1_OFF off}
+add_port_state VDD_LMU2_SW -state {LMU2_ON 0.6} -state {LMU2_OFF off}
+
+Construct global power state table for multi-voltage combination checking
+
+create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+
+Add state 1: All LMU domains active during normal vehicle drive mode
+
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+
+Add state 2: Standby low-power mode with active MCU and power-gated LMUs
+
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+
+Add state 3: Partial pack monitoring mode with LMU0 active and others power-gated
+
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
+
+------------------------------------------------------------------------------
+
+5. LOAD SUPPLEMENTAL POWER RULES
+
+------------------------------------------------------------------------------
+
+Source supplemental UPF file containing cell-level implementation specifications
+
+load_upf constraints/upf/bms_power_supplemental.upf
+
+==============================================================================
+
+END OF GOLDEN UPF
+
+==============================================================================
