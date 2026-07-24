@@ -8388,4 +8388,594 @@ Information: Use the 'check_design' command for
 	 more information about warnings. (LINT-98)
 
 1
-dc_shell> dc_shell> 
+dc_shell> dc_shell> set_message_info -id LINT-28 -limit 5
+1
+dc_shell> set_message_info -id LINT-60 -limit 5
+1
+dc_shell> set_message_info -id LINT-2 -limit 5
+1
+dc_shell> check_design
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP4
+Date:        Wed Jul 22 19:49:26 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     94
+    Unloaded inputs (LINT-8)                                       48
+    Feedthrough (LINT-29)                                           3
+    Shorted outputs (LINT-31)                                      27
+    Constant outputs (LINT-52)                                     16
+
+Cells                                                             231
+    Cells do not drive (LINT-1)                                     1
+    Nets connected to multiple pins on same cell (LINT-33)        230
+--------------------------------------------------------------------------------
+
+Warning: In design 'bms_spi_master', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'bms_soc_soh_engine_2_DW_div_uns_J11_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[31]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[30]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[29]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[28]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[27]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[26]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[25]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[24]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[23]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[22]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[21]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[20]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[19]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[17]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_div_uns_J13_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[31]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[30]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[29]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[28]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[27]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[26]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[25]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[24]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[23]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[22]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[21]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[20]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[19]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[17]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_div_uns_J5_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[31]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[30]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[29]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[28]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[27]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[26]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[25]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[24]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[23]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[22]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[21]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[20]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[19]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[18]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[17]' is unloaded. (LINT-8)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', input port 'a[4]' is connected directly to output port 'product[4]'. (LINT-29)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', input port 'a[4]' is connected directly to output port 'product[4]'. (LINT-29)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', input port 'a[4]' is connected directly to output port 'product[4]'. (LINT-29)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'supervisor_code[3]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'supervisor_code[4]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[9]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[10]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[11]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[12]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[13]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[14]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'allowed_current[15]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'global_fault_code[3]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'global_fault_code[4]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'global_fault_code[5]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'global_fault_code[6]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'global_fault_code[7]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to output port 'pack_soh_avg[15]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'thermal_warn' is connected directly to output port 'allowed_current[1]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'thermal_trip' is connected directly to output port 'allowed_current[0]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'thermal_trip' is connected directly to output port 'allowed_current[6]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'allowed_current[8]' is connected directly to output port 'allowed_current[5]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'allowed_current[7]' is connected directly to output port 'allowed_current[4]'. (LINT-31)
+Warning: In design 'bms_current_limit_supervisor', output port 'supervisor_code[7]' is connected directly to output port 'supervisor_code[5]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', output port 'product[19]' is connected directly to output port 'product[17]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_2_DW_mult_uns_J37_0', output port 'product[19]' is connected directly to output port 'product[18]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', output port 'product[19]' is connected directly to output port 'product[17]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_1_DW_mult_uns_J34_0', output port 'product[19]' is connected directly to output port 'product[18]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', output port 'product[19]' is connected directly to output port 'product[17]'. (LINT-31)
+Warning: In design 'bms_soc_soh_engine_0_DW_mult_uns_J36_0', output port 'product[19]' is connected directly to output port 'product[18]'. (LINT-31)
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu0'. (LINT-33)
+   Net 'supervisor_code[3]' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu0'. (LINT-33)
+   Net 'n5' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu1'. (LINT-33)
+   Net 'supervisor_code[3]' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu1'. (LINT-33)
+   Net 'n5' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu2'. (LINT-33)
+   Net 'supervisor_code[3]' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_system_3lmu_top_enhanced', the same net is connected to more than one pin on submodule 'u_lmu2'. (LINT-33)
+   Net 'n5' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_lmu_wrapper_2', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n7' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_lmu_wrapper_2', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n6' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_lmu_wrapper_1', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n7' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_lmu_wrapper_1', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n6' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_lmu_wrapper_0', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n7' is connected to pins 'comm_sel[1]', 'spi_sclk'', 'spi_mosi'.
+Warning: In design 'bms_lmu_wrapper_0', the same net is connected to more than one pin on submodule 'u_lmu'. (LINT-33)
+   Net 'n6' is connected to pins 'comm_sel[0]', 'spi_ss_n''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'u_spi_master'. (LINT-33)
+   Net 'n38' is connected to pins 'slave_sel[1]', 'slave_sel[0]'', 'tx_byte[6]', 'tx_byte[5]', 'tx_byte[4]', 'tx_byte[3]', 'tx_byte[2]', 'miso'.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'u_curr_sup'. (LINT-33)
+   Net 'n38' is connected to pins 'pack_current[1]', 'pack_current[0]'', 'active_lmu_count[3]', 'active_lmu_count[2]'.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'u_curr_sup'. (LINT-33)
+   Net 'n37' is connected to pins 'active_lmu_count[1]', 'active_lmu_count[0]''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'gte_x_5'. (LINT-33)
+   Net 'n37' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'gte_x_4'. (LINT-33)
+   Net 'n37' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'gte_x_3'. (LINT-33)
+   Net 'n37' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'div_2'. (LINT-33)
+   Net 'n37' is connected to pins 'b[1]', 'b[0]''.
+Warning: In design 'bms_master_control_unit_enhanced', the same net is connected to more than one pin on submodule 'div_1'. (LINT-33)
+   Net 'n37' is connected to pins 'b[1]', 'b[0]''.
+Warning: In design 'bms_satellite_top_2', the same net is connected to more than one pin on submodule 'u_iso'. (LINT-33)
+   Net 'n38' is connected to pins 'iso_resistance[1]', 'iso_resistance[0]''.
+Warning: In design 'bms_satellite_top_2', the same net is connected to more than one pin on submodule 'u_bal'. (LINT-33)
+   Net 'n38' is connected to pins 'cell_t_bus[191]', 'cell_t_bus[190]'', 'cell_t_bus[189]', 'cell_t_bus[188]', 'cell_t_bus[187]', 'cell_t_bus[186]', 'cell_t_bus[185]', 'cell_t_bus[184]', 'cell_t_bus[183]', 'cell_t_bus[182]', 'cell_t_bus[181]', 'cell_t_bus[180]', 'cell_t_bus[179]', 'cell_t_bus[178]', 'cell_t_bus[177]', 'cell_t_bus[176]', 'cell_t_bus[175]', 'cell_t_bus[174]', 'cell_t_bus[173]', 'cell_t_bus[172]', 'cell_t_bus[171]', 'cell_t_bus[170]', 'cell_t_bus[169]', 'cell_t_bus[168]', 'cell_t_bus[167]', 'cell_t_bus[166]', 'cell_t_bus[165]', 'cell_t_bus[164]', 'cell_t_bus[163]', 'cell_t_bus[162]', 'cell_t_bus[161]', 'cell_t_bus[160]', 'cell_t_bus[159]', 'cell_t_bus[158]', 'cell_t_bus[157]', 'cell_t_bus[156]', 'cell_t_bus[155]', 'cell_t_bus[154]', 'cell_t_bus[153]', 'cell_t_bus[152]', 'cell_t_bus[151]', 'cell_t_bus[150]', 'cell_t_bus[149]', 'cell_t_bus[148]', 'cell_t_bus[147]', 'cell_t_bus[146]', 'cell_t_bus[145]', 'cell_t_bus[144]', 'cell_t_bus[143]', 'cell_t_bus[142]', 'cell_t_bus[141]', 'cell_t_bus[140]', 'cell_t_bus[139]', 'cell_t_bus[138]', 'cell_t_bus[137]', 'cell_t_bus[136]', 'cell_t_bus[135]', 'cell_t_bus[134]', 'cell_t_bus[133]', 'cell_t_bus[132]', 'cell_t_bus[131]', 'cell_t_bus[130]', 'cell_t_bus[129]', 'cell_t_bus[128]', 'cell_t_bus[127]', 'cell_t_bus[126]', 'cell_t_bus[125]', 'cell_t_bus[124]', 'cell_t_bus[123]', 'cell_t_bus[122]', 'cell_t_bus[121]', 'cell_t_bus[120]', 'cell_t_bus[119]', 'cell_t_bus[118]', 'cell_t_bus[117]', 'cell_t_bus[116]', 'cell_t_bus[115]', 'cell_t_bus[114]', 'cell_t_bus[113]', 'cell_t_bus[112]', 'cell_t_bus[111]', 'cell_t_bus[110]', 'cell_t_bus[109]', 'cell_t_bus[108]', 'cell_t_bus[107]', 'cell_t_bus[106]', 'cell_t_bus[105]', 'cell_t_bus[104]', 'cell_t_bus[103]', 'cell_t_bus[102]', 'cell_t_bus[101]', 'cell_t_bus[100]', 'cell_t_bus[99]', 'cell_t_bus[98]', 'cell_t_bus[97]', 'cell_t_bus[96]', 'cell_t_bus[95]', 'cell_t_bus[94]', 'cell_t_bus[93]', 'cell_t_bus[92]', 'cell_t_bus[91]', 'cell_t_bus[90]', 'cell_t_bus[89]', 'cell_t_bus[88]', 'cell_t_bus[87]', 'cell_t_bus[86]', 'cell_t_bus[85]', 'cell_t_bus[84]', 'cell_t_bus[83]', 'cell_t_bus[82]', 'cell_t_bus[81]', 'cell_t_bus[80]', 'cell_t_bus[79]', 'cell_t_bus[78]', 'cell_t_bus[77]', 'cell_t_bus[76]', 'cell_t_bus[75]', 'cell_t_bus[74]', 'cell_t_bus[73]', 'cell_t_bus[72]', 'cell_t_bus[71]', 'cell_t_bus[70]', 'cell_t_bus[69]', 'cell_t_bus[68]', 'cell_t_bus[67]', 'cell_t_bus[66]', 'cell_t_bus[65]', 'cell_t_bus[64]', 'cell_t_bus[63]', 'cell_t_bus[62]', 'cell_t_bus[61]', 'cell_t_bus[60]', 'cell_t_bus[59]', 'cell_t_bus[58]', 'cell_t_bus[57]', 'cell_t_bus[56]', 'cell_t_bus[55]', 'cell_t_bus[54]', 'cell_t_bus[53]', 'cell_t_bus[52]', 'cell_t_bus[51]', 'cell_t_bus[50]', 'cell_t_bus[49]', 'cell_t_bus[48]', 'cell_t_bus[47]', 'cell_t_bus[46]', 'cell_t_bus[45]', 'cell_t_bus[44]', 'cell_t_bus[43]', 'cell_t_bus[42]', 'cell_t_bus[41]', 'cell_t_bus[40]', 'cell_t_bus[39]', 'cell_t_bus[38]', 'cell_t_bus[37]', 'cell_t_bus[36]', 'cell_t_bus[35]', 'cell_t_bus[34]', 'cell_t_bus[33]', 'cell_t_bus[32]', 'cell_t_bus[31]', 'cell_t_bus[30]', 'cell_t_bus[29]', 'cell_t_bus[28]', 'cell_t_bus[27]', 'cell_t_bus[26]', 'cell_t_bus[25]', 'cell_t_bus[24]', 'cell_t_bus[23]', 'cell_t_bus[22]', 'cell_t_bus[21]', 'cell_t_bus[20]', 'cell_t_bus[19]', 'cell_t_bus[18]', 'cell_t_bus[17]', 'cell_t_bus[16]', 'cell_t_bus[15]', 'cell_t_bus[14]', 'cell_t_bus[13]', 'cell_t_bus[12]', 'cell_t_bus[11]', 'cell_t_bus[10]', 'cell_t_bus[9]', 'cell_t_bus[8]', 'cell_t_bus[7]', 'cell_t_bus[6]', 'cell_t_bus[5]', 'cell_t_bus[4]', 'cell_t_bus[3]', 'cell_t_bus[2]', 'cell_t_bus[1]', 'cell_t_bus[0]'.
+Warning: In design 'bms_satellite_top_1', the same net is connected to more than one pin on submodule 'u_iso'. (LINT-33)
+   Net 'n38' is connected to pins 'iso_resistance[1]', 'iso_resistance[0]''.
+Warning: In design 'bms_satellite_top_1', the same net is connected to more than one pin on submodule 'u_bal'. (LINT-33)
+   Net 'n38' is connected to pins 'cell_t_bus[191]', 'cell_t_bus[190]'', 'cell_t_bus[189]', 'cell_t_bus[188]', 'cell_t_bus[187]', 'cell_t_bus[186]', 'cell_t_bus[185]', 'cell_t_bus[184]', 'cell_t_bus[183]', 'cell_t_bus[182]', 'cell_t_bus[181]', 'cell_t_bus[180]', 'cell_t_bus[179]', 'cell_t_bus[178]', 'cell_t_bus[177]', 'cell_t_bus[176]', 'cell_t_bus[175]', 'cell_t_bus[174]', 'cell_t_bus[173]', 'cell_t_bus[172]', 'cell_t_bus[171]', 'cell_t_bus[170]', 'cell_t_bus[169]', 'cell_t_bus[168]', 'cell_t_bus[167]', 'cell_t_bus[166]', 'cell_t_bus[165]', 'cell_t_bus[164]', 'cell_t_bus[163]', 'cell_t_bus[162]', 'cell_t_bus[161]', 'cell_t_bus[160]', 'cell_t_bus[159]', 'cell_t_bus[158]', 'cell_t_bus[157]', 'cell_t_bus[156]', 'cell_t_bus[155]', 'cell_t_bus[154]', 'cell_t_bus[153]', 'cell_t_bus[152]', 'cell_t_bus[151]', 'cell_t_bus[150]', 'cell_t_bus[149]', 'cell_t_bus[148]', 'cell_t_bus[147]', 'cell_t_bus[146]', 'cell_t_bus[145]', 'cell_t_bus[144]', 'cell_t_bus[143]', 'cell_t_bus[142]', 'cell_t_bus[141]', 'cell_t_bus[140]', 'cell_t_bus[139]', 'cell_t_bus[138]', 'cell_t_bus[137]', 'cell_t_bus[136]', 'cell_t_bus[135]', 'cell_t_bus[134]', 'cell_t_bus[133]', 'cell_t_bus[132]', 'cell_t_bus[131]', 'cell_t_bus[130]', 'cell_t_bus[129]', 'cell_t_bus[128]', 'cell_t_bus[127]', 'cell_t_bus[126]', 'cell_t_bus[125]', 'cell_t_bus[124]', 'cell_t_bus[123]', 'cell_t_bus[122]', 'cell_t_bus[121]', 'cell_t_bus[120]', 'cell_t_bus[119]', 'cell_t_bus[118]', 'cell_t_bus[117]', 'cell_t_bus[116]', 'cell_t_bus[115]', 'cell_t_bus[114]', 'cell_t_bus[113]', 'cell_t_bus[112]', 'cell_t_bus[111]', 'cell_t_bus[110]', 'cell_t_bus[109]', 'cell_t_bus[108]', 'cell_t_bus[107]', 'cell_t_bus[106]', 'cell_t_bus[105]', 'cell_t_bus[104]', 'cell_t_bus[103]', 'cell_t_bus[102]', 'cell_t_bus[101]', 'cell_t_bus[100]', 'cell_t_bus[99]', 'cell_t_bus[98]', 'cell_t_bus[97]', 'cell_t_bus[96]', 'cell_t_bus[95]', 'cell_t_bus[94]', 'cell_t_bus[93]', 'cell_t_bus[92]', 'cell_t_bus[91]', 'cell_t_bus[90]', 'cell_t_bus[89]', 'cell_t_bus[88]', 'cell_t_bus[87]', 'cell_t_bus[86]', 'cell_t_bus[85]', 'cell_t_bus[84]', 'cell_t_bus[83]', 'cell_t_bus[82]', 'cell_t_bus[81]', 'cell_t_bus[80]', 'cell_t_bus[79]', 'cell_t_bus[78]', 'cell_t_bus[77]', 'cell_t_bus[76]', 'cell_t_bus[75]', 'cell_t_bus[74]', 'cell_t_bus[73]', 'cell_t_bus[72]', 'cell_t_bus[71]', 'cell_t_bus[70]', 'cell_t_bus[69]', 'cell_t_bus[68]', 'cell_t_bus[67]', 'cell_t_bus[66]', 'cell_t_bus[65]', 'cell_t_bus[64]', 'cell_t_bus[63]', 'cell_t_bus[62]', 'cell_t_bus[61]', 'cell_t_bus[60]', 'cell_t_bus[59]', 'cell_t_bus[58]', 'cell_t_bus[57]', 'cell_t_bus[56]', 'cell_t_bus[55]', 'cell_t_bus[54]', 'cell_t_bus[53]', 'cell_t_bus[52]', 'cell_t_bus[51]', 'cell_t_bus[50]', 'cell_t_bus[49]', 'cell_t_bus[48]', 'cell_t_bus[47]', 'cell_t_bus[46]', 'cell_t_bus[45]', 'cell_t_bus[44]', 'cell_t_bus[43]', 'cell_t_bus[42]', 'cell_t_bus[41]', 'cell_t_bus[40]', 'cell_t_bus[39]', 'cell_t_bus[38]', 'cell_t_bus[37]', 'cell_t_bus[36]', 'cell_t_bus[35]', 'cell_t_bus[34]', 'cell_t_bus[33]', 'cell_t_bus[32]', 'cell_t_bus[31]', 'cell_t_bus[30]', 'cell_t_bus[29]', 'cell_t_bus[28]', 'cell_t_bus[27]', 'cell_t_bus[26]', 'cell_t_bus[25]', 'cell_t_bus[24]', 'cell_t_bus[23]', 'cell_t_bus[22]', 'cell_t_bus[21]', 'cell_t_bus[20]', 'cell_t_bus[19]', 'cell_t_bus[18]', 'cell_t_bus[17]', 'cell_t_bus[16]', 'cell_t_bus[15]', 'cell_t_bus[14]', 'cell_t_bus[13]', 'cell_t_bus[12]', 'cell_t_bus[11]', 'cell_t_bus[10]', 'cell_t_bus[9]', 'cell_t_bus[8]', 'cell_t_bus[7]', 'cell_t_bus[6]', 'cell_t_bus[5]', 'cell_t_bus[4]', 'cell_t_bus[3]', 'cell_t_bus[2]', 'cell_t_bus[1]', 'cell_t_bus[0]'.
+Warning: In design 'bms_satellite_top_0', the same net is connected to more than one pin on submodule 'u_iso'. (LINT-33)
+   Net 'n38' is connected to pins 'iso_resistance[1]', 'iso_resistance[0]''.
+Warning: In design 'bms_satellite_top_0', the same net is connected to more than one pin on submodule 'u_bal'. (LINT-33)
+   Net 'n38' is connected to pins 'cell_t_bus[191]', 'cell_t_bus[190]'', 'cell_t_bus[189]', 'cell_t_bus[188]', 'cell_t_bus[187]', 'cell_t_bus[186]', 'cell_t_bus[185]', 'cell_t_bus[184]', 'cell_t_bus[183]', 'cell_t_bus[182]', 'cell_t_bus[181]', 'cell_t_bus[180]', 'cell_t_bus[179]', 'cell_t_bus[178]', 'cell_t_bus[177]', 'cell_t_bus[176]', 'cell_t_bus[175]', 'cell_t_bus[174]', 'cell_t_bus[173]', 'cell_t_bus[172]', 'cell_t_bus[171]', 'cell_t_bus[170]', 'cell_t_bus[169]', 'cell_t_bus[168]', 'cell_t_bus[167]', 'cell_t_bus[166]', 'cell_t_bus[165]', 'cell_t_bus[164]', 'cell_t_bus[163]', 'cell_t_bus[162]', 'cell_t_bus[161]', 'cell_t_bus[160]', 'cell_t_bus[159]', 'cell_t_bus[158]', 'cell_t_bus[157]', 'cell_t_bus[156]', 'cell_t_bus[155]', 'cell_t_bus[154]', 'cell_t_bus[153]', 'cell_t_bus[152]', 'cell_t_bus[151]', 'cell_t_bus[150]', 'cell_t_bus[149]', 'cell_t_bus[148]', 'cell_t_bus[147]', 'cell_t_bus[146]', 'cell_t_bus[145]', 'cell_t_bus[144]', 'cell_t_bus[143]', 'cell_t_bus[142]', 'cell_t_bus[141]', 'cell_t_bus[140]', 'cell_t_bus[139]', 'cell_t_bus[138]', 'cell_t_bus[137]', 'cell_t_bus[136]', 'cell_t_bus[135]', 'cell_t_bus[134]', 'cell_t_bus[133]', 'cell_t_bus[132]', 'cell_t_bus[131]', 'cell_t_bus[130]', 'cell_t_bus[129]', 'cell_t_bus[128]', 'cell_t_bus[127]', 'cell_t_bus[126]', 'cell_t_bus[125]', 'cell_t_bus[124]', 'cell_t_bus[123]', 'cell_t_bus[122]', 'cell_t_bus[121]', 'cell_t_bus[120]', 'cell_t_bus[119]', 'cell_t_bus[118]', 'cell_t_bus[117]', 'cell_t_bus[116]', 'cell_t_bus[115]', 'cell_t_bus[114]', 'cell_t_bus[113]', 'cell_t_bus[112]', 'cell_t_bus[111]', 'cell_t_bus[110]', 'cell_t_bus[109]', 'cell_t_bus[108]', 'cell_t_bus[107]', 'cell_t_bus[106]', 'cell_t_bus[105]', 'cell_t_bus[104]', 'cell_t_bus[103]', 'cell_t_bus[102]', 'cell_t_bus[101]', 'cell_t_bus[100]', 'cell_t_bus[99]', 'cell_t_bus[98]', 'cell_t_bus[97]', 'cell_t_bus[96]', 'cell_t_bus[95]', 'cell_t_bus[94]', 'cell_t_bus[93]', 'cell_t_bus[92]', 'cell_t_bus[91]', 'cell_t_bus[90]', 'cell_t_bus[89]', 'cell_t_bus[88]', 'cell_t_bus[87]', 'cell_t_bus[86]', 'cell_t_bus[85]', 'cell_t_bus[84]', 'cell_t_bus[83]', 'cell_t_bus[82]', 'cell_t_bus[81]', 'cell_t_bus[80]', 'cell_t_bus[79]', 'cell_t_bus[78]', 'cell_t_bus[77]', 'cell_t_bus[76]', 'cell_t_bus[75]', 'cell_t_bus[74]', 'cell_t_bus[73]', 'cell_t_bus[72]', 'cell_t_bus[71]', 'cell_t_bus[70]', 'cell_t_bus[69]', 'cell_t_bus[68]', 'cell_t_bus[67]', 'cell_t_bus[66]', 'cell_t_bus[65]', 'cell_t_bus[64]', 'cell_t_bus[63]', 'cell_t_bus[62]', 'cell_t_bus[61]', 'cell_t_bus[60]', 'cell_t_bus[59]', 'cell_t_bus[58]', 'cell_t_bus[57]', 'cell_t_bus[56]', 'cell_t_bus[55]', 'cell_t_bus[54]', 'cell_t_bus[53]', 'cell_t_bus[52]', 'cell_t_bus[51]', 'cell_t_bus[50]', 'cell_t_bus[49]', 'cell_t_bus[48]', 'cell_t_bus[47]', 'cell_t_bus[46]', 'cell_t_bus[45]', 'cell_t_bus[44]', 'cell_t_bus[43]', 'cell_t_bus[42]', 'cell_t_bus[41]', 'cell_t_bus[40]', 'cell_t_bus[39]', 'cell_t_bus[38]', 'cell_t_bus[37]', 'cell_t_bus[36]', 'cell_t_bus[35]', 'cell_t_bus[34]', 'cell_t_bus[33]', 'cell_t_bus[32]', 'cell_t_bus[31]', 'cell_t_bus[30]', 'cell_t_bus[29]', 'cell_t_bus[28]', 'cell_t_bus[27]', 'cell_t_bus[26]', 'cell_t_bus[25]', 'cell_t_bus[24]', 'cell_t_bus[23]', 'cell_t_bus[22]', 'cell_t_bus[21]', 'cell_t_bus[20]', 'cell_t_bus[19]', 'cell_t_bus[18]', 'cell_t_bus[17]', 'cell_t_bus[16]', 'cell_t_bus[15]', 'cell_t_bus[14]', 'cell_t_bus[13]', 'cell_t_bus[12]', 'cell_t_bus[11]', 'cell_t_bus[10]', 'cell_t_bus[9]', 'cell_t_bus[8]', 'cell_t_bus[7]', 'cell_t_bus[6]', 'cell_t_bus[5]', 'cell_t_bus[4]', 'cell_t_bus[3]', 'cell_t_bus[2]', 'cell_t_bus[1]', 'cell_t_bus[0]'.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_112'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_109'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_105'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_102'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_98'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_95'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_91'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_88'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_84'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_81'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_77'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_74'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_70'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_67'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_63'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_60'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_56'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_53'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_49'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_46'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_42'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_39'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_35'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_32'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_28'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_25'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_18'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_14'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_11'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_2', the same net is connected to more than one pin on submodule 'gte_x_4'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'net40432' is connected to pins 'a[3]', 'a[2]'', 'a[1]', 'a[0]', 'b[14]', 'b[13]', 'b[12]', 'b[11]', 'b[8]', 'b[6]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'n144' is connected to pins 'b[16]', 'b[15]'', 'b[10]', 'b[9]', 'b[7]', 'b[5]'.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n11' is connected to pins 'B[31]', 'B[29]'', 'B[27]', 'B[25]', 'B[23]', 'B[21]', 'B[19]', 'B[17]'.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n8' is connected to pins 'B[30]', 'B[28]'', 'B[26]', 'B[24]', 'B[22]', 'B[20]', 'B[18]', 'B[16]'.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'net40432' is connected to pins 'a[31]', 'a[30]'', 'a[29]', 'a[28]', 'a[27]', 'a[26]', 'a[25]', 'a[24]', 'a[23]', 'a[22]', 'a[21]', 'a[20]', 'a[19]', 'a[18]', 'a[17]', 'a[3]', 'a[2]', 'a[1]', 'a[0]'.
+Warning: In design 'bms_soc_soh_engine_2', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'n144' is connected to pins 'b[15]', 'b[14]'', 'b[13]', 'b[12]', 'b[11]', 'b[10]', 'b[9]', 'b[8]', 'b[7]', 'b[6]', 'b[5]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_31'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_29'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_27'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_25'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_23'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_19'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_17'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_15'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_13'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_11'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_9'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_5'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'gt_x_3'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_32'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_30'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_28'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_26'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_24'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_22'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_20'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_18'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_16'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_14'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_12'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_10'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_8'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_6'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_2', the same net is connected to more than one pin on submodule 'lt_x_4'. (LINT-33)
+   Net 'net40436' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_112'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_109'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_105'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_102'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_98'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_95'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_91'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_88'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_84'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_81'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_77'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_74'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_70'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_67'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_63'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_60'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_56'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_53'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_49'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_46'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_42'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_39'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_35'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_32'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_28'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_25'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_18'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_14'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_11'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_1', the same net is connected to more than one pin on submodule 'gte_x_4'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'net40446' is connected to pins 'a[3]', 'a[2]'', 'a[1]', 'a[0]', 'b[14]', 'b[13]', 'b[12]', 'b[11]', 'b[8]', 'b[6]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'n144' is connected to pins 'b[16]', 'b[15]'', 'b[10]', 'b[9]', 'b[7]', 'b[5]'.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n11' is connected to pins 'B[31]', 'B[29]'', 'B[27]', 'B[25]', 'B[23]', 'B[21]', 'B[19]', 'B[17]'.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n8' is connected to pins 'B[30]', 'B[28]'', 'B[26]', 'B[24]', 'B[22]', 'B[20]', 'B[18]', 'B[16]'.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'net40446' is connected to pins 'a[31]', 'a[30]'', 'a[29]', 'a[28]', 'a[27]', 'a[26]', 'a[25]', 'a[24]', 'a[23]', 'a[22]', 'a[21]', 'a[20]', 'a[19]', 'a[18]', 'a[17]', 'a[3]', 'a[2]', 'a[1]', 'a[0]'.
+Warning: In design 'bms_soc_soh_engine_1', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'n144' is connected to pins 'b[15]', 'b[14]'', 'b[13]', 'b[12]', 'b[11]', 'b[10]', 'b[9]', 'b[8]', 'b[7]', 'b[6]', 'b[5]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_31'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_29'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_27'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_25'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_23'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_19'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_17'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_15'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_13'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_11'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_9'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_5'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'gt_x_3'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_32'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_30'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_28'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_26'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_24'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_22'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_20'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_18'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_16'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_14'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_12'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_10'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_8'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_6'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_1', the same net is connected to more than one pin on submodule 'lt_x_4'. (LINT-33)
+   Net 'net40450' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_112'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_109'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_105'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_102'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_98'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_95'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_91'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_88'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_84'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_81'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_77'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_74'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_70'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_67'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_63'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_60'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_56'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_53'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_49'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_46'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_42'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_39'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_35'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_32'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_28'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_25'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_18'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_14'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_11'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'n427' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_fault_processor_0', the same net is connected to more than one pin on submodule 'gte_x_4'. (LINT-33)
+   Net 'n428' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'net40460' is connected to pins 'a[3]', 'a[2]'', 'a[1]', 'a[0]', 'b[14]', 'b[13]', 'b[12]', 'b[11]', 'b[8]', 'b[6]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'div_13'. (LINT-33)
+   Net 'n144' is connected to pins 'b[16]', 'b[15]'', 'b[10]', 'b[9]', 'b[7]', 'b[5]'.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n11' is connected to pins 'B[31]', 'B[29]'', 'B[27]', 'B[25]', 'B[23]', 'B[21]', 'B[19]', 'B[17]'.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n8' is connected to pins 'B[30]', 'B[28]'', 'B[26]', 'B[24]', 'B[22]', 'B[20]', 'B[18]', 'B[16]'.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'net40460' is connected to pins 'a[31]', 'a[30]'', 'a[29]', 'a[28]', 'a[27]', 'a[26]', 'a[25]', 'a[24]', 'a[23]', 'a[22]', 'a[21]', 'a[20]', 'a[19]', 'a[18]', 'a[17]', 'a[3]', 'a[2]', 'a[1]', 'a[0]'.
+Warning: In design 'bms_soc_soh_engine_0', the same net is connected to more than one pin on submodule 'mult_x_12'. (LINT-33)
+   Net 'n144' is connected to pins 'b[15]', 'b[14]'', 'b[13]', 'b[12]', 'b[11]', 'b[10]', 'b[9]', 'b[8]', 'b[7]', 'b[6]', 'b[5]', 'b[4]', 'b[3]', 'b[2]', 'b[1]', 'b[0]'.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_31'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_29'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_27'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_25'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_23'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_21'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_19'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_17'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_15'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_13'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_11'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_9'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_7'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_5'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'gt_x_3'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_32'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_30'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_28'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_26'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_24'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_22'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_20'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_18'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_16'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_14'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_12'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_10'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_8'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_6'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_active_balancer_0', the same net is connected to more than one pin on submodule 'lt_x_4'. (LINT-33)
+   Net 'net40464' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soc_avg[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'pack_soh_avg[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'global_fault_code[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'global_fault_code[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'global_fault_code[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'global_fault_code[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'global_fault_code[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'allowed_current[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'supervisor_code[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'bms_system_3lmu_top_enhanced', output port 'supervisor_code[3]' is connected directly to 'logic 0'. (LINT-52)
+1
+dc_shell> exit
+
+Memory usage for this session 1690 Mbytes.
+Memory usage for this session including child processes 1690 Mbytes.
+CPU usage for this session 38 seconds ( 0.01 hours ).
+Elapsed time for this session 1315 seconds ( 0.37 hours ).
+
+Thank you...

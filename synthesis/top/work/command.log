@@ -8828,3 +8828,8 @@ check_timing
 check_design
 check_design -summary
 exit
+set_message_info -id LINT-28 -limit 5
+set_message_info -id LINT-60 -limit 5
+set_message_info -id LINT-2 -limit 5
+check_design
+exit

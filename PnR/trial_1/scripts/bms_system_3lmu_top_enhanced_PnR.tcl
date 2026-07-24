@@ -23,22 +23,30 @@ set_host_options -max_cores 8
 Design variables (Directory paths are left clean for user customization)
 
 set DESIGN_NAME           "bms_system_3lmu_top_enhanced"
-set WORK_DIR              ""
-set OUTPUTS_DIR           ""
-set SCRIPT_DIR            ""
+set WORK_DIR              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/work"
+set OUTPUTS_DIR           "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/outputs"
+set SCRIPT_DIR            "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts"
 
 SAED 14nm NDM Reference Libraries and Technology Files
 
-set REFERENCE_LIBRARY     ""
-set LINK_LIBRARY          ""
-set TECH_FILE             ""
+set REFERENCE_LIBRARY     "/home1/14_nmts/14_nmts/stdcell_hvt/ndm/saed14hvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_slvt/ndm/saed14slvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_rvt/ndm/saed14rvt_frame_only.ndm \
+/home1/14_nmts/14_nmts/stdcell_lvt/ndm/saed14lvt_frame_only.ndm"
+
+set LINK_LIBRARY          "/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ff0p7vm40c.db \
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ff0p7vm40c.db \
+/home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db \
+/home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db "
+
+set TECH_FILE             "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf"
 
 Input Files generated during Logic Synthesis
 
-set VERILOG_NETLIST_FILES ""
-set UPF_FILE              ""
-set UPF_SUPPLEMENTAL_FILE ""
-set SDC_FILE              ""
+set VERILOG_NETLIST_FILES "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/top/outputs/bms_system_3lmu_top_enhanced.mapped.v"
+set UPF_FILE              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.golden.upf"
+set UPF_SUPPLEMENTAL_FILE "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.supplemental.upf"
+set SDC_FILE              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.sdc
 
 Define internal NDM design library container path
 
