@@ -1,23 +1,15 @@
-==============================================================================
+# ==============================================================================
+# SUPPLEMENTAL UPF SPECIFICATION: Low Power Cell Implementation Rules
+# Standard: IEEE 1801 (UPF 2.1)
+# Description: Defines MTCMOS Header Power Switches, Clamp Isolation Rules,
+#              and Level Shifter strategies for BMS switchable islands.
+# ==============================================================================
+# 
+# ------------------------------------------------------------------------------
+# 1. PHYSICAL MTCMOS POWER SWITCHES (Header Switches)
+# ------------------------------------------------------------------------------
 
-SUPPLEMENTAL UPF SPECIFICATION: Low Power Cell Implementation Rules
-
-Standard: IEEE 1801 (UPF 2.1)
-
-Description: Defines MTCMOS Header Power Switches, Clamp Isolation Rules,
-
-and Level Shifter strategies for BMS switchable islands.
-
-==============================================================================
-
-------------------------------------------------------------------------------
-
-1. PHYSICAL MTCMOS POWER SWITCHES (Header Switches)
-
-------------------------------------------------------------------------------
-
-Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU0
-
+# Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU0
 create_power_switch header_sw_lmu0 
 
 -domain PD_LMU0 
@@ -32,8 +24,7 @@ create_power_switch header_sw_lmu0
 
 -off_state {OFF_STATE {sleep_en}}
 
-Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU1
-
+# Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU1
 create_power_switch header_sw_lmu1 
 
 -domain PD_LMU1 
@@ -48,8 +39,7 @@ create_power_switch header_sw_lmu1
 
 -off_state {OFF_STATE {sleep_en}}
 
-Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU2
-
+# Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU2
 create_power_switch header_sw_lmu2 
 
 -domain PD_LMU2 
@@ -64,14 +54,11 @@ create_power_switch header_sw_lmu2
 
 -off_state {OFF_STATE {sleep_en}}
 
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# 2. ISOLATION CELL STRATEGIES (Clamp Outputs to '0')
+# ------------------------------------------------------------------------------
 
-2. ISOLATION CELL STRATEGIES (Clamp Outputs to '0')
-
-------------------------------------------------------------------------------
-
-Apply output clamp isolation rules to LMU0 to prevent floating inputs in PD_CORE
-
+# Apply output clamp isolation rules to LMU0 to prevent floating inputs in PD_CORE
 set_isolation iso_lmu0 
 
 -domain PD_LMU0 
@@ -84,8 +71,7 @@ set_isolation iso_lmu0
 
 -applies_to outputs
 
-Configure control signal and activation sense for LMU0 isolation
-
+# Configure control signal and activation sense for LMU0 isolation
 set_isolation_control iso_lmu0 
 
 -domain PD_LMU0 
@@ -96,8 +82,7 @@ set_isolation_control iso_lmu0
 
 -location parent
 
-Apply output clamp isolation rules to LMU1
-
+# Apply output clamp isolation rules to LMU1
 set_isolation iso_lmu1 
 
 -domain PD_LMU1 
@@ -110,8 +95,7 @@ set_isolation iso_lmu1
 
 -applies_to outputs
 
-Configure control signal and activation sense for LMU1 isolation
-
+# Configure control signal and activation sense for LMU1 isolation
 set_isolation_control iso_lmu1 
 
 -domain PD_LMU1 
@@ -122,8 +106,7 @@ set_isolation_control iso_lmu1
 
 -location parent
 
-Apply output clamp isolation rules to LMU2
-
+# Apply output clamp isolation rules to LMU2
 set_isolation iso_lmu2 
 
 -domain PD_LMU2 
@@ -136,8 +119,7 @@ set_isolation iso_lmu2
 
 -applies_to outputs
 
-Configure control signal and activation sense for LMU2 isolation
-
+# Configure control signal and activation sense for LMU2 isolation
 set_isolation_control iso_lmu2 
 
 -domain PD_LMU2 
@@ -148,14 +130,11 @@ set_isolation_control iso_lmu2
 
 -location parent
 
-------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# 3. LEVEL SHIFTER STRATEGIES
+# ------------------------------------------------------------------------------
 
-3. LEVEL SHIFTER STRATEGIES
-
-------------------------------------------------------------------------------
-
-Enforce level shifter placement strategy for signals crossing into always-on PD_CORE
-
+# Enforce level shifter placement strategy for signals crossing into always-on PD_CORE
 set_level_shifter ls_lmu_to_core 
 
 -domain PD_CORE 
@@ -166,8 +145,6 @@ set_level_shifter ls_lmu_to_core
 
 -location self
 
-==============================================================================
-
-END OF SUPPLEMENTAL UPF
-
-==============================================================================
+# ==============================================================================
+# END OF SUPPLEMENTAL UPF
+# ==============================================================================
