@@ -91,31 +91,50 @@ set_voltage 0.6 -object_list {VDD VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
 set_voltage 0.0 -object_list {VSS}
 # 
 # Read StarRC TLU+ Parasitic Models for 14nm FinFET extraction
-set parasitic_max "tlup_max"
-set tluplus_max   ""
-set layer_map     ""
-# 
-if {[file exists [which $tluplus_max]]} {
-read_parasitic_tech -tlup $tluplus_max -layermap $layer_map -name$parasitic_max
-set_parasitics_parameters 
+# ==============================================================================
+# 1. READ STARRC TLU+ PARASITIC MODELS (MAX & MIN)
+# ==============================================================================
 
--early_spec $parasitic_max 
+# Define Parasitic Model 1 (Setup / Max / Cmax)
+set parasitic1 "tlup_max"
+set tluplus_file($parasitic1)   "/home1/14_nmts/14_nmts/tech/star_rc/max/saed14nm_1p9m_Cmax.tluplus"
+set layer_map_file($parasitic1) "/home1/14_nmts/14_nmts/tech/star_rc/saed14nm_tf_itf_tluplus.map"
 
--late_spec $parasitic_max 
+# Define Parasitic Model 2 (Hold / Min / Cmin)
+set parasitic2 "tlup_min"
+set tluplus_file($parasitic2)   "/home1/14_nmts/14_nmts/tech/star_rc/min/saed14nm_1p9m_Cmin.tluplus"
+set layer_map_file($parasitic2) "/home1/14_nmts/14_nmts/tech/star_rc/saed14nm_tf_itf_tluplus.map"
 
--early_temperature 125 
-
--late_temperature 125 
-
--corners {ss0p6v125c}
+# Read both TLU+ files using an array loop
+foreach p [array names tluplus_file] {
+    if {[file exists [which $tluplus_file($p)]]} {
+        puts "FC-info: Reading StarRC TLU+ Parasitic Tech file for $p..."
+        read_parasitic_tech \
+            -tlup $tluplus_file($p) \
+            -layermap $layer_map_file($p) \
+            -name $p
+    } else {
+        puts "FC-warning: TLU+ Parasitic File ($tluplus_file($p)) not found!"
+    }
 }
-# 
-# Source top-level SDC constraints into current design database
+
+# Apply parasitic parameters linking early (hold) to min spec and late (setup) to max spec
+set_parasitics_parameters \
+    -early_spec $parasitic2 \
+    -late_spec $parasitic1 \
+    -early_temperature -40 \
+    -late_temperature 125 \
+    -corners {ss0p6v125c}
+
+# ==============================================================================
+# 2. READ TOP-LEVEL GOLDEN SDC CONSTRAINTS
+# ==============================================================================
+
 if {[file exists [which $SDC_FILE]]} {
-puts "FC-info: Sourcing Golden SDC file: $SDC_FILE"
-read_sdc $SDC_FILE
+    puts "FC-info: Sourcing Golden SDC file: $SDC_FILE"
+    read_sdc $SDC_FILE
 } else {
-puts "FC-error: SDC file ($SDC_FILE) not found!"
+    puts "FC-error: SDC file ($SDC_FILE) not found!"
 }
 # 
 # ------------------------------------------------------------------------------
