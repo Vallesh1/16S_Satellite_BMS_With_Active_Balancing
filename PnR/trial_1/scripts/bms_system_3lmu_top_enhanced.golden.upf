@@ -66,29 +66,17 @@ set_domain_supply_net PD_LMU2 -primary_power_net VDD_LMU2_SW -primary_ground_net
 add_port_state VDD -state {VDD_NOM 0.6}
 add_port_state VSS -state {GND 0.0}
 
-# Define port states directly on switched power rails
-add_port_state VDD_LMU0_SW -state {LMU0_ON 0.6} -state {LMU0_OFF off}
-add_port_state VDD_LMU1_SW -state {LMU1_ON 0.6} -state {LMU1_OFF off}
-add_port_state VDD_LMU2_SW -state {LMU2_ON 0.6} -state {LMU2_OFF off}
-
-# Construct global power state table for multi-voltage combination checking
-create_pst bms_global_pst -supplies {VDD VSS VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
+# Create global power state table for multi-voltage combination checking
+create_pst bms_global_pst -supplies {VDD VSS}
 
 # Add state 1: All LMU domains active during normal vehicle drive mode
-add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_ON LMU2_ON}
+add_pst_state ALL_ON -pst bms_global_pst -state {VDD_NOM GND}
 
 # Add state 2: Standby low-power mode with active MCU and power-gated LMUs
-add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND LMU0_OFF LMU1_OFF LMU2_OFF}
+add_pst_state STANDBY -pst bms_global_pst -state {VDD_NOM GND}
 
 # Add state 3: Partial pack monitoring mode with LMU0 active and others power-gated
-add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND LMU0_ON LMU1_OFF LMU2_OFF}
-
-# ------------------------------------------------------------------------------
-# 5. LOAD SUPPLEMENTAL POWER RULES
-# ------------------------------------------------------------------------------
-
-# Source supplemental UPF file containing cell-level implementation specifications
-load_upf constraints/upf/bms_power_supplemental.upf
+add_pst_state LMU0_ONLY -pst bms_global_pst -state {VDD_NOM GND}
 
 # ==============================================================================
 # END OF GOLDEN UPF

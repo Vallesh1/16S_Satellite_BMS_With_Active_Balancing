@@ -8,7 +8,7 @@
 # ------------------------------------------------------------------------------
 # 1. PHYSICAL MTCMOS POWER SWITCHES (Header Switches)
 # ------------------------------------------------------------------------------
-
+# 
 # Connect RTL sleep control lines to PMOS power transistors cutting VDD for LMU0
 create_power_switch header_sw_lmu0 
 
@@ -57,7 +57,7 @@ create_power_switch header_sw_lmu2
 # ------------------------------------------------------------------------------
 # 2. ISOLATION CELL STRATEGIES (Clamp Outputs to '0')
 # ------------------------------------------------------------------------------
-
+# 
 # Apply output clamp isolation rules to LMU0 to prevent floating inputs in PD_CORE
 set_isolation iso_lmu0 
 
@@ -133,7 +133,7 @@ set_isolation_control iso_lmu2
 # ------------------------------------------------------------------------------
 # 3. LEVEL SHIFTER STRATEGIES
 # ------------------------------------------------------------------------------
-
+# 
 # Enforce level shifter placement strategy for signals crossing into always-on PD_CORE
 set_level_shifter ls_lmu_to_core 
 
