@@ -1,0 +1,18 @@
+<Database>
+versionNumber:2
+Name/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/work/check_workspace.ems
+Creation TimeThu Aug  6 22:30:29 2026
+Modified TimeThu Aug  6 22:30:30 2026
+Design Name
+Library Name
+</Database>
+<RuleCount>
+LM-0501
+LMUI-0091
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+LMUI-009Warningpara1-allow_missing10para2option10para3physical_only10
+LM-050Informationpara1421210para2s10
+</Messages>

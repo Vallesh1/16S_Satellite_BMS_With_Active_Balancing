@@ -35,17 +35,21 @@ set TECH_FILE             "/home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw
 set VERILOG_NETLIST_FILES "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/synthesis/top/outputs/bms_system_3lmu_top_enhanced.mapped.v"
 set UPF_FILE              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.golden.upf"
 set UPF_SUPPLEMENTAL_FILE "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.supplemental.upf"
-set SDC_FILE              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.sdc
+set SDC_FILE              "/home1/IITR_PD3/MulukuriVNath/Documents/16S_Satellite_BMS_With_Active_Balancing/PnR/trial_1/scripts/bms_system_3lmu_top_enhanced.sdc"
 # 
 # Define internal NDM design library container path
-set DESIGN_LIBRARY        "${WORK_DIR}/${DESIGN_NAME}_fc_lib"
+#set DESIGN_LIBRARY        "${WORK_DIR}/${DESIGN_NAME}_fc_lib"
 # 
 # ------------------------------------------------------------------------------
 # 2. DESIGN LIBRARY INITIALIZATION & NETLIST IMPORT
 # ------------------------------------------------------------------------------
 # 
 # Enable Golden UPF Flow mode prior to library container creation
-set_app_options -name mv.upf.enable_golden_upf -value true
+set_app_options -name mv.upf.enable_golden_upf -value true -as_user_default
+#
+#
+set DESIGN_LIBRARY        "${WORK_DIR}/${DESIGN_NAME}_fc_lib"
+#
 # 
 # Create Fusion Compiler design library container referencing NDM and TF files
 create_lib -ref_libs $REFERENCE_LIBRARY -technology $TECH_FILE$DESIGN_LIBRARY
@@ -91,6 +95,7 @@ set_voltage 0.6 -object_list {VDD VDD_LMU0_SW VDD_LMU1_SW VDD_LMU2_SW}
 set_voltage 0.0 -object_list {VSS}
 # 
 # Read StarRC TLU+ Parasitic Models for 14nm FinFET extraction
+<<<<<<< Updated upstream
 # ==============================================================================
 # 1. READ STARRC TLU+ PARASITIC MODELS (MAX & MIN)
 # ==============================================================================
@@ -119,6 +124,9 @@ foreach p [array names tluplus_file] {
 }
 
 # Apply parasitic parameters linking early (hold) to min spec and late (setup) to max spec
+
+create_corner ss0p6v125c
+
 set_parasitics_parameters \
     -early_spec $parasitic2 \
     -late_spec $parasitic1 \
